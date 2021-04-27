@@ -1,0 +1,24 @@
+CMIP6 for EURO-CORDEX
+=====================
+
+Parse ESGF metadata to discover CMIP6 model runs meeting the criteria for
+downscaling.
+
+Usage
+-----
+
+```
+python3 CMIP6_for_EUROCORDEX.py
+```
+
+Does the search and builds a csv table (`CMIP6_summary_tags.csv`) tagging each
+simulation depending on the variables available in ESGF.
+
+```
+python3 scenario_stats.py
+```
+
+Performs cross-scenario availability statistics. See `scenario_stats.txt` for
+two- and three-scenario stats.
+
+![Two-scenario availability statistics](scenario_stats.png)
