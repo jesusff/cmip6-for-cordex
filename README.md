@@ -2,7 +2,7 @@ CMIP6 for EURO-CORDEX
 =====================
 
 Parse ESGF metadata to discover CMIP6 model runs meeting the criteria for
-downscaling. In table [CMIP6_summary_table.csv](./CMIP6_summary_table.csv),
+downscaling. In table [CMIP6_summary_tags.csv](./CMIP6_summary_tags.csv),
 each model run and scenario is tagged according to the availability of 
 enough variables to drive a Regional Climate Model (**RCM**), to provide typical
 predictors for Empirical-Statistical Downscaling (**ESD**) or for **Basic**
