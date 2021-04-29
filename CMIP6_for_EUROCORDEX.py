@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import datetime
 from pyesgf.search import SearchConnection
 import logging
 import natsort as ns
@@ -129,3 +130,8 @@ varcount.insert(0, 'synthesis',
 varcount.to_csv('CMIP6_summary_tags.csv', float_format = '%g',
   index_label = ['model', 'run']
 )
+#
+#   Time stamp
+#
+with open('LASTUPDATE', 'w') as fp:
+  fp.write(datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
