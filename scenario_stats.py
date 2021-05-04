@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sn
 
-varcount = pd.read_csv('CMIP6_summary_tags.csv')
+varcount = pd.read_csv('CMIP6_for_CORDEX_Summary.csv')
 
 rcm_bc_avail = varcount.iloc[:,4:] == 'RCM'
 rcm_bc_avail_crosscount = rcm_bc_avail.T.dot(rcm_bc_avail*1)

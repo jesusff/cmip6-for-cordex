@@ -86,7 +86,7 @@ for context in contexts.keys():
   logger.info(f'Retrieving {context} variables ...')
   ctx = conn.new_context(**contexts[context])
   dids = [result.dataset_id for result in ctx.search(batch_size=1000, ignore_facet_check=True)]
-  open('CMIP6_for_EUROCORDEX__%s.txt' % context, 'w').writelines([did+'\n' for did in sorted(dids)])
+  open('CMIP6_for_CORDEX__%s.txt' % context, 'w').writelines([did+'\n' for did in sorted(dids)])
   datanode_part = re.compile('\|.*$')
   dataset_ids = [datanode_part.sub('', did).split('.') for did in dids]
   df = df.append(pd.DataFrame(dataset_ids))
