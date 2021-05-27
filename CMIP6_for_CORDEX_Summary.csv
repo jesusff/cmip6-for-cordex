@@ -224,11 +224,13 @@ EC-Earth3,r1i1p1f1,0,ESD,,ESD,ESD,ESD,ESD
 EC-Earth3,r1i1p1f2,0,,,,ESD,,
 EC-Earth3,r2i1p1f1,0,Basic,,,Basic,,
 EC-Earth3,r2i1p1f2,0,,,,ESD,,
-EC-Earth3,r3i1p1f1,0,ESD,,-,,,ESD
+EC-Earth3,r3i1p1f1,0,ESD,,ESD,,,ESD
 EC-Earth3,r4i1p1f1,0,ESD,ESD,ESD,ESD,ESD,ESD
 EC-Earth3,r4i1p1f2,0,,,,ESD,,
 EC-Earth3,r6i1p1f1,0,ESD,,ESD,ESD,ESD,ESD
+EC-Earth3,r6i1p1f2,0,,,,ESD,,
 EC-Earth3,r7i1p1f1,0,Basic,,,Basic,,
+EC-Earth3,r7i1p1f2,0,,,,ESD,,
 EC-Earth3,r8i1p1f2,0,,,,ESD,,
 EC-Earth3,r9i1p1f1,0,ESD,,ESD,ESD,ESD,ESD
 EC-Earth3,r10i1p1f1,0,Basic,,,Basic,,
@@ -316,7 +318,7 @@ EC-Earth3,r147i1p1f1,0,Basic,Basic,,Basic,Basic,Basic
 EC-Earth3,r148i1p1f1,0,Basic,Basic,,Basic,Basic,Basic
 EC-Earth3,r149i1p1f1,0,Basic,Basic,,Basic,Basic,Basic
 EC-Earth3,r150i1p1f1,0,Basic,Basic,,Basic,Basic,Basic
-FGOALS-f3-L,r1i1p1f1,0,ESD,,-,-,-,-
+FGOALS-f3-L,r1i1p1f1,0,3Dml,,-,-,-,-
 FGOALS-f3-L,r2i1p1f1,0,ESD,,-,-,-,-
 FGOALS-f3-L,r3i1p1f1,0,ESD,,-,-,-,-
 FGOALS-g3,r1i1p1f1,0,3Dml,3Dml,3Dml,ESD,3Dml,ESD
@@ -634,11 +636,11 @@ NorCPM1,r30i1p1f1,0,Basic,,,,,
 NorESM2-LM,r1i1p1f1,1,RCM,,RCM,RCM,RCM,RCM
 NorESM2-LM,r2i1p1f1,0,3Dml,,,RCM,Basic,
 NorESM2-LM,r3i1p1f1,0,3Dml,,,RCM,Basic,
-NorESM2-MM,r1i1p1f1,0,RCM,,3Dml,3Dml,3Dml,3Dml
+NorESM2-MM,r1i1p1f1,0,RCM,,3Dml,3Dml,3Dml,RCM
 NorESM2-MM,r2i1p1f1,0,3Dml,,,3Dml,,
 NorESM2-MM,r3i1p1f1,0,3Dml,,,,,
 SAM0-UNICON,r1i1p1f1,0,3Dml,,,,,
-TaiESM1,r1i1p1f1,0,RCM,,RCM,RCM,ESD,Basic
+TaiESM1,r1i1p1f1,0,RCM,,RCM,RCM,ESD,ESD
 TaiESM1,r2i1p1f1,0,-,,,,,
 UKESM1-0-LL,r1i1p1f2,1,RCM,ESD,RCM,ESD,ESD,RCM
 UKESM1-0-LL,r2i1p1f2,0,ESD,ESD,ESD,ESD,ESD,ESD

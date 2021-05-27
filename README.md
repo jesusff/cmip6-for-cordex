@@ -13,7 +13,7 @@ Usage
 -----
 
 ```
-python3 CMIP6_for_EUROCORDEX.py
+python3 CMIP6_for_CORDEX.py
 ```
 
 Does the search and builds a csv table ([CMIP6_for_CORDEX_Summary.csv](./CMIP6_for_CORDEX_Summary.csv)) tagging each
