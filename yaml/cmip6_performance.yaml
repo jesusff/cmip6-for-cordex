@@ -1,0 +1,111 @@
+# In the following keys, select one of the predefined values:
+# metric_scope: performance | future_spread
+# metric_spatial_scope: Global | NH | Europe | NEU | CEU | MED
+# metric_source: reference | reference_extracted_from_plot | author | author_extended_model_set | author_adapted
+# plausible > source: reference | author | eurocordex_gcm_selection_team
+
+- key: Oudar_2020_jetpos
+  doi: 10.1029/2019GL086695
+  metric:
+    name: jetpos
+    description: Jet Stream North-South relative position
+    units: degrees_north
+    best: 0
+    worst: [+90, -90]
+  metric_scope: performance
+  metric_spatial_scope: Europe
+  metric_source: author
+  plausible_values:
+    min: -4
+    max: 4
+    source: eurocordex_gcm_selection_team
+  comment: >
+    Jet position bias against ERA5 in the Central Atlantic region. Note that
+    the bias is estimated by subtracting the ONDJFM mean eddy-driven jet
+    position over the period 1979-2018 in ERA5 to each model mean eddy-driven
+    jet position over the same period.
+  data:
+    CNRM-CM6-1_r1i1p1f2: -2.79
+    UKESM1-0-LL_r1i1p1f2: -0.43
+    EC-Earth3_r1i1p1f1: -0.26
+    IPSL-CM6A-LR_r1i1p1f1: -1.53
+    GFDL-ESM4_r1i1p1f1: -3.4
+    MIROC6_r1i1p1f1: -3.31
+    CanESM5_r1i1p1f1: 0.9
+    EC-Earth3-Veg_r1i1p1f1: -0.69
+    MPI-ESM1-2-HR_r1i1p1f1: -3.1
+    MRI-ESM2-0_r1i1p1f1: -2.66
+    CNRM-ESM2-1_r1i1p1f2: -3.02
+    NESM3_r1i1p1f1: -2.03
+    FGOALS-g3_r1i1p1f1: -0.43
+    BCC-CSM2-MR_r1i1p1f1: -1.49
+    CESM2_r2i1p1f1: 1.42
+    INM-CM5-0_r1i1p1f1: 0.03
+
+- key: Oudar_2020_jetposdelta
+  doi: 10.1029/2019GL086695
+  metric:
+    name: jetposdelta
+    description: Jet Stream North-South position delta change
+    units: degrees_north
+  metric_scope: future_spread
+  metric_spatial_scope: Europe
+  metric_source: author
+  classes:
+    limits: [-90, -0.5, 0.5, 90]
+    labels: [strong south change, weak change, strong north change]
+    source: eurocordex_gcm_selection_team
+  comment: >
+    Jet position delta change estimated by subtracting the ONDJFM mean eddy-driven jet
+    position over the period 2080-2099 w.r.t. preindustrial 1860-1900
+  data:
+    ssp585:
+      BCC-CSM2-MR_r1i1p1f1: 1.33
+      CanESM5_r1i1p1f1: 0.98
+      CESM2_r2i1p1f1: -1.53
+      CNRM-CM6-1_r1i1p1f2: 0.84
+      CNRM-ESM2-1_r1i1p1f2: 0
+      EC-Earth3_r1i1p1f1: -0.06
+      EC-Earth3-Veg_r1i1p1f1: -0.12
+      FGOALS-g3_r1i1p1f1: 0.8
+      GFDL-ESM4_r1i1p1f1: 0.32
+      IPSL-CM6A-LR_r1i1p1f1: 2.17
+      MIROC6_r1i1p1f1: -0.24
+      MPI-ESM1-2-HR_r1i1p1f1: 0.92
+      MRI-ESM2-0_r1i1p1f1: -0.05
+      NESM3_r1i1p1f1: 0.99
+      UKESM1-0-LL_r1i1p1f2: 1.46
+
+- key: Cannon_2020_marle
+  doi: 10.1088/1748-9326/ab7e4f
+  metric: &marle
+    name: marle
+    description: Median absolute run length error
+    units: rank
+    best: 1
+    worst: 27
+  metric_scope: performance
+  metric_spatial_scope: Europe
+  comment: >
+    Evaluation of automatic classification of weather types in 6 regions
+    including Europe. This metric is the rank of CMIP6 models according to
+    Median absolute run length error (MARLE; Figure 3) classified by MRT using
+    JRA55 as reference.
+
+    Ranks vary wildly depending on classification method and reference
+    reanalysis. Ranks according to frecuency errors are also available.
+  data:
+    CNRM-CM6-1_r1i1p1f2: 7
+    UKESM1-0-LL_r1i1p1f2: 2
+    EC-Earth3_r1i1p1f1: 5
+    IPSL-CM6A-LR_r1i1p1f1: 13
+    GFDL-ESM4_r1i1p1f1: 1
+    MIROC6_r1i1p1f1: 23
+    CanESM5_r1i1p1f1: 15
+    NorESM2-LM_r1i1p1f1: 27
+    MPI-ESM1-2-HR_r1i1p1f1: 9
+    MRI-ESM2-0_r1i1p1f1: 17
+    FGOALS-g3_r1i1p1f1: 21
+    BCC-CSM2-MR_r1i1p1f1: 19
+    CESM2_r2i1p1f1: 11
+    INM-CM5-0_r1i1p1f1: 21
