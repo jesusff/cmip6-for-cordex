@@ -72,6 +72,19 @@ tablespread.to_csv('CMIP6_spread.csv', float_format = '%.2f',
   index_label = ['model_run']
 )
 
-pd.concat([table,tablespread], axis=1).sort_index().to_csv(
+# Independence criteria
+indepdata = [x for x in alldata if x['type'] == 'independence']
+itemlist = []
+for item in indepdata:
+  pditem = pd.DataFrame.from_dict(
+    item['data'],
+    orient='index',
+    columns=[item['key']]
+  )
+  itemlist.append(pditem)
+tableindep = pd.concat(itemlist, axis=1).sort_index()
+tableindep.to_csv('CMIP6_indep.csv', index_label = ['model_run'])
+
+pd.concat([table,tablespread, tableindep], axis=1).sort_index().to_csv(
   'CMIP6_perfspread.csv', float_format = '%.2f', index_label = ['model_run']
 )

@@ -1,0 +1,43 @@
+- key: Bru20 mfamily
+  doi: 10.5194/esd-11-995-2020
+  metric:
+    name: mfamily
+    long_name: 
+    units: categorical
+    comment: >
+      From Figure 5. Model family tree for all 33 CMIP6 models, similar to
+      Knutti et al. (2013). Models branching further to the left are more
+      dependent, and models branching further to the right are more independent.
+      The analysis is based on global, horizontally resolved tasCLIM and
+      pslCLIM in the period from 1980 to 2014. Labels with the same color
+      indicate models with obvious dependencies, such as shared components
+      or the same origin, whereas models with no clear dependencies are
+      labeled in black.
+  type: independence
+  spatial_scope: Global
+  period:
+    reference: 1980-2014
+  data_source: reference
+  data:
+    ACCESS-CM2_r1i1p1f1: HadGEM
+    ACCESS-ESM1-5_r1i1p1f1: ACCESS
+    BCC-CSM2-MR_r1i1p1f1: BCC
+    CanESM5_r1i1p1f1: CanESM
+    CESM2_r2i1p1f1: CESM
+    CNRM-CM6-1_r1i1p1f2: CNRM
+    CNRM-CM6-1-HR_r1i1p1f2: CNRM
+    CNRM-ESM2-1_r1i1p1f2: CNRM
+    EC-Earth3_r1i1p1f1: EC-Earth
+    EC-Earth3-Veg_r1i1p1f1: EC-Earth
+    FGOALS-g3_r1i1p1f1: FGOALS
+    GFDL-ESM4_r1i1p1f1: GFDL
+    INM-CM5-0_r1i1p1f1: INM
+    IPSL-CM6A-LR_r1i1p1f1: IPSL
+    MIROC6_r1i1p1f1: MIROC
+    MPI-ESM1-2-HR_r1i1p1f1: MPI
+    MPI-ESM1-2-LR_r1i1p1f1: MPI
+    MRI-ESM2-0_r1i1p1f1: MRI
+    NESM3_r1i1p1f1: NESM
+    NorESM2-LM_r1i1p1f1: CESM
+    NorESM2-MM_r1i1p1f1: CESM
+    UKESM1-0-LL_r1i1p1f2: HadGEM
