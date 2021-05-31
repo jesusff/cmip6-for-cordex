@@ -1,0 +1,34 @@
+- key: Can20 marle
+  doi: 10.1088/1748-9326/ab7e4f
+  metric:
+    name: marle
+    long_name: Median absolute run length error
+    units: rank
+    best: 1
+    worst: 27
+  type: performance
+  spatial_scope: EUR
+  comment: >
+    Evaluation of automatic classification of weather types in 6 regions
+    including Europe. This metric is the rank of CMIP6 models according to
+    Median absolute run length error (MARLE; Figure 3) classified by MRT using
+    JRA55 as reference.
+
+    Ranks vary wildly depending on classification method and reference
+    reanalysis. Ranks according to frecuency errors are also available.
+  data_source: reference_extracted_from_plot
+  data:
+    CNRM-CM6-1_r1i1p1f2: 7
+    UKESM1-0-LL_r1i1p1f2: 2
+    EC-Earth3_r1i1p1f1: 5
+    IPSL-CM6A-LR_r1i1p1f1: 13
+    GFDL-ESM4_r1i1p1f1: 1
+    MIROC6_r1i1p1f1: 23
+    CanESM5_r1i1p1f1: 15
+    NorESM2-LM_r1i1p1f1: 27
+    MPI-ESM1-2-HR_r1i1p1f1: 9
+    MRI-ESM2-0_r1i1p1f1: 17
+    FGOALS-g3_r1i1p1f1: 21
+    BCC-CSM2-MR_r1i1p1f1: 19
+    CESM2_r2i1p1f1: 11
+    INM-CM5-0_r1i1p1f1: 21

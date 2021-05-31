@@ -8,7 +8,7 @@ for fname in glob.glob('yaml/*.yaml'):
   with open(fname) as fp:
     alldata.extend(yaml.load(fp, Loader=yaml.FullLoader))
 
-perfdata = [x for x in alldata if x['metric_scope'] == 'performance']
+perfdata = [x for x in alldata if x['type'] == 'performance']
 
 # Metric values
 table = pd.concat(
@@ -36,11 +36,13 @@ tableclass
 # Binary table
 itemlist = []
 for item in perfdata:
+  print(item['key'])
   pditem = pd.DataFrame.from_dict(item['data'], orient='index', columns=[item['key']])
   if 'plausible_values' in item:
+    values = item['plausible_values'][0] if type(item['plausible_values']) == type([]) else item['plausible_values']
     pditem = np.logical_and(
-      pditem <= item['plausible_values']['max'],
-      pditem >= item['plausible_values']['min']
+      pditem <= values['max'],
+      pditem >= values['min']
     ) * 1
   else:
     pditem = pditem*0+1 # all 1's (keep all, preserve not available models)
@@ -54,7 +56,7 @@ tablebin.to_csv('CMIP6_performance_binary.csv', float_format = '%g',
 
 # Spread data
 scenarios = ['ssp126','ssp245','ssp370','ssp585']
-spreaddata = [x for x in alldata if x['metric_scope'] == 'future_spread']
+spreaddata = [x for x in alldata if x['type'] == 'future_spread']
 itemlist = []
 for item in spreaddata:
   for scen in scenarios:

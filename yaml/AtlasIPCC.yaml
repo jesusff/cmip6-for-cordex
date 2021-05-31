@@ -4,13 +4,16 @@
     name: delta_tas
     description: Near surface delta change 2070-2100 w.r.t. 1980-2010
     units: K
-  metric_spatial_scope: NEU
-  metric_scope: future_spread
-  metric_source: author_adapted
+  spatial_scope: NEU
+  period: &period
+    reference: 1980-2010
+    target: 2070-2100
+  type: future_spread
   comment: >
     Data derived from
     https://github.com/IPCC-WG1/Atlas/tree/master/aggregated-datasets
     using the tas_landsea dataset.
+  data_source: author_adapted
   data:
     ssp585:
       ACCESS-CM2_r1i1p1f1: 6.124314
@@ -151,9 +154,10 @@
 - key: AtlasIPCC_delta_tas_WCE
   doi: 
   metric: *deltatas
-  metric_spatial_scope: WCE
-  metric_scope: future_spread_DISABLED
-  metric_source: author_adapted
+  period: *period
+  spatial_scope: WCE
+  type: future_spread_DISABLED
+  data_source: author_adapted
   comment: >
     Data derived from
     https://github.com/IPCC-WG1/Atlas/tree/master/aggregated-datasets
@@ -298,9 +302,10 @@
 - key: AtlasIPCC_delta_tas_MED
   doi: 
   metric: *deltatas
-  metric_spatial_scope: MED
-  metric_scope: future_spread_DISABLED
-  metric_source: author_adapted
+  period: *period
+  spatial_scope: MED
+  type: future_spread_DISABLED
+  data_source: author_adapted
   comment: >
     Data derived from
     https://github.com/IPCC-WG1/Atlas/tree/master/aggregated-datasets
@@ -445,9 +450,10 @@
 - key: AtlasIPCC_delta_tas_world
   doi: 
   metric: *deltatas
-  metric_spatial_scope: Global
-  metric_scope: future_spread_DISABLED
-  metric_source: author_adapted
+  period: *period
+  spatial_scope: Global
+  type: future_spread_DISABLED
+  data_source: author_adapted
   comment: >
     Data derived from
     https://github.com/IPCC-WG1/Atlas/tree/master/aggregated-datasets

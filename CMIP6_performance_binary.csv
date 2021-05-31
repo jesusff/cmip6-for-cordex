@@ -1,10 +1,10 @@
-model_run,Synthesis,Oudar_2020_jetpos,Cannon_2020_marle
+model_run,Synthesis,Can20 marle,Oud20 jetpos
 BCC-CSM2-MR_r1i1p1f1,1,1,1
 CESM2_r2i1p1f1,1,1,1
 CNRM-CM6-1_r1i1p1f2,1,1,1
-CNRM-ESM2-1_r1i1p1f2,1,1,
+CNRM-ESM2-1_r1i1p1f2,1,,1
 CanESM5_r1i1p1f1,1,1,1
-EC-Earth3-Veg_r1i1p1f1,1,1,
+EC-Earth3-Veg_r1i1p1f1,1,,1
 EC-Earth3_r1i1p1f1,1,1,1
 FGOALS-g3_r1i1p1f1,1,1,1
 GFDL-ESM4_r1i1p1f1,1,1,1
@@ -13,6 +13,6 @@ IPSL-CM6A-LR_r1i1p1f1,1,1,1
 MIROC6_r1i1p1f1,1,1,1
 MPI-ESM1-2-HR_r1i1p1f1,1,1,1
 MRI-ESM2-0_r1i1p1f1,1,1,1
-NESM3_r1i1p1f1,1,1,
-NorESM2-LM_r1i1p1f1,1,,1
+NESM3_r1i1p1f1,1,,1
+NorESM2-LM_r1i1p1f1,1,1,
 UKESM1-0-LL_r1i1p1f2,1,1,1
