@@ -65,27 +65,27 @@ key | | This is a unique key, that will appear as header in the summary table wh
 doi | | DOI for the reference where the metric was published. No other bibliographic information should be needed. Title, authors, etc. can be automatically retrieved out of the DOI.
 type| | Type of metric. Currently choose one of `performance` (performance metric, evaluating historical simulations against observations/reanalysis), `future_spread` (future delta change w.r.t. a reference period) or `independence` (model classification according to their a-priori or output dependence)
 metric | | Contains the details of the metric that is coded in this entry
- | name       | a unique name (no spaces)
- | long_name  | a more descriptive name (e.g. to be used as label for a plot axis)
- | units      | units following udunits conventions. The special names `rank` and `binary` are also allowed to indicate a ranking of models or a binary decision metric. Also, `categorical` can be used to indicate that the values are category names. This is usual for `independence` entries. It could be applied to other entries, but it is always preferred to code the metric as a numeric value and code the categories using the `classes` key (see below).
- | comment | A more detailed description of the metric, including is location in the reference publication (e.g. Figure or Table number), potential shortcomings, or any other detail not provided in the fields below.
- | best (opt) | This and the next key determine the direction of the metric. Indicate here the best attainable value.
- | worst (opt)| Worst value. `+inf` and `-inf` are allowed
+. | name       | a unique name (no spaces)
+. | long_name  | a more descriptive name (e.g. to be used as label for a plot axis)
+. | units      | units following udunits conventions. The special names `rank` and `binary` are also allowed to indicate a ranking of models or a binary decision metric. Also, `categorical` can be used to indicate that the values are category names. This is usual for `independence` entries. It could be applied to other entries, but it is always preferred to code the metric as a numeric value and code the categories using the `classes` key (see below).
+. | comment | A more detailed description of the metric, including is location in the reference publication (e.g. Figure or Table number), potential shortcomings, or any other detail not provided in the fields below.
+. | best (opt) | This and the next key determine the direction of the metric. Indicate here the best attainable value.
+. | worst (opt)| Worst value. `+inf` and `-inf` are allowed
 spatial_scope | | Spatial scope of the metric. Area where it applies (Global, a CORDEX domain acronym, an IPCC region, a country name or other region considered in the study)
 temporal_scope || Season when the metric applies. Enter `Annual` or a month sequence (`DJF`, `JJA`, ...)
 period || Periods relevant for the metric
- | reference | For performance entries, the evaluation period. For future spread, the reference period used in the deltas.
- | target | Target period to compute delta changes.
+. | reference | For performance entries, the evaluation period. For future spread, the reference period used in the deltas.
+. | target | Target period to compute delta changes.
 plausible_values (opt) | | Range of plausible values for the metric.
- | min |
- | max |
- | source | Source of the values. Use one of `reference` (if provided in the text of the peer reviewed reference), `author` (if provided by the authors by personal communication), `eurocordex_gcm_selection_team` if selected after decision of this team.
- | comment (opt) | Recommended if the source is not `reference`, to elaborate on the selection of this range.
-classes (opt) || 
- | limits | list of class limits (in square brackets, comma-separated)
- | labels | labels for each class (in square brackets, comma-separated, one item less than limits)
- | source | See potential values in the `plausible_values` source section.
- | comment (opt) |
+. | min |
+. | max |
+. | source | Source of the values. Use one of `reference` (if provided in the text of the peer reviewed reference), `author` (if provided by the authors by personal communication), `eurocordex_gcm_selection_team` if selected after decision of this team.
+. | comment (opt) | Recommended if the source is not `reference`, to elaborate on the selection of this range.
+classes (opt) || Classification of the metric values into an arbitrary number of categories.
+. | limits | list of class limits (in square brackets, comma-separated)
+. | labels | labels for each class (in square brackets, comma-separated, one item less than limits)
+. | source | See potential values in the `plausible_values` source section.
+. | comment (opt) |
 data_source | | Source of the actual data provided next. One of `reference` (if the numbers are readily available in the text of the peer reviewed reference), `reference_extracted_from_plot` (if extracted from a plot in the reference), `author` (if provided by the authors by personal communication), `author_extended_model_set` (if the authors provided values for model members beyond those published, but otherwise according to the reference) or `author_adapted` (if the authors provided values adapted in some form, e.g. the reference provides a global analysis and the author repeated the analysis for Europe, or for other season).
 data | | Data section providing the metric values. For `future_spread` entries, this data section is arranged using the scenario as sub-key.
 
