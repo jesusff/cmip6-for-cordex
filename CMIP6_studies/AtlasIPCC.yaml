@@ -1,4 +1,4 @@
-- key: AtlasIPCC_delta_tas_NEU
+- key: Atlas Dtas NEU
   doi: 
   metric: &deltatas
     name: delta_tas
@@ -153,7 +153,7 @@
       NorESM2-MM_r1i1p1f1: 0.369469
       UKESM1-0-LL_r1i1p1f2: 3.884197
 
-- key: AtlasIPCC_delta_tas_WCE
+- key: Atlas Dtas WCE
   doi: 
   metric: *deltatas
   period: *period
@@ -302,7 +302,7 @@
       NorESM2-MM_r1i1p1f1: 1.269681
       UKESM1-0-LL_r1i1p1f2: 3.829044
 
-- key: AtlasIPCC_delta_tas_MED
+- key: Atlas Dtas MED
   doi: 
   metric: *deltatas
   period: *period
@@ -451,7 +451,7 @@
       TaiESM1_r1i1p1f1: 5.625422
       UKESM1-0-LL_r1i1p1f2: 8.439872
 
-- key: AtlasIPCC_delta_tas_world
+- key: Atlas Dtas Global
   doi: 
   metric: *deltatas
   period: *period

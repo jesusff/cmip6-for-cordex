@@ -3,6 +3,12 @@ import numpy as np
 import pandas as pd
 import yaml
 
+def synthesis(binvalues):
+  return(np.logical_and.reduce(binvalues, 1)*1)
+
+def split_index(df):
+  return(pd.MultiIndex.from_tuples([idx.split('_') for idx in df.index]))
+
 alldata = []
 for fname in glob.glob('CMIP6_studies/*.yaml'):
   with open(fname) as fp:
@@ -15,9 +21,17 @@ table = pd.concat(
   [pd.DataFrame.from_dict(x['data'], orient='index', columns=[x['key']]) for x in perfdata],
   axis=1
 ).sort_index()
-table.to_csv('CMIP6_performance.csv', float_format = '%g',
-  index_label = ['model_run']
-)
+table.index = split_index(table)
+
+# Plausible range
+itemlist = []
+for item in perfdata:
+  if 'plausible_values' in item:
+    values = item['plausible_values'][0] if type(item['plausible_values']) == type([]) else item['plausible_values']
+    pditem = pd.DataFrame.from_dict(dict(min=values['min'], max=values['max']), orient='index', columns=[item['key']])
+    itemlist.append(pditem)
+tableprange = pd.concat(itemlist, axis=1)
+tableprange.index = pd.MultiIndex.from_tuples([('. Plausible values', idx) for idx in tableprange.index])
 
 # Classes table (where available)
 itemlist = []
@@ -31,12 +45,11 @@ for item in perfdata:
     )
   itemlist.append(pditem)
 tableclass = pd.concat(itemlist, axis=1).sort_index()
-tableclass
+tableclass.index = split_index(tableclass)
 
 # Binary table
 itemlist = []
 for item in perfdata:
-  print(item['key'])
   pditem = pd.DataFrame.from_dict(item['data'], orient='index', columns=[item['key']])
   if 'plausible_values' in item:
     values = item['plausible_values'][0] if type(item['plausible_values']) == type([]) else item['plausible_values']
@@ -48,28 +61,26 @@ for item in perfdata:
     pditem = pditem*0+1 # all 1's (keep all, preserve not available models)
   itemlist.append(pditem)
 tablebin = pd.concat(itemlist, axis=1).sort_index()
+tablebin.index = split_index(tablebin)
 # Add synthesis column
-tablebin.insert(0, column='Synthesis', value=np.logical_and.reduce(tablebin.values, 1)*1)
-tablebin.to_csv('CMIP6_performance_binary.csv', float_format = '%g',
-  index_label = ['model_run']
-)
+table.insert(0, column='Synthesis', value=synthesis(tablebin.values))
+tableprange = pd.concat([tableprange, table])
 
 # Spread data
-scenarios = ['ssp126','ssp245','ssp370','ssp585']
 spreaddata = [x for x in alldata if x['type'] == 'future_spread']
 itemlist = []
 for item in spreaddata:
-  for scen in scenarios:
-    if scen in item['data']:
-      pditem = pd.DataFrame.from_dict(
-        item['data'][scen],
-        orient='index',
-        columns=[f'{item["key"]}-{scen}']
-      )
-      itemlist.append(pditem)
+  for scen in item['data'].keys():
+    pditem = pd.DataFrame.from_dict(
+      item['data'][scen],
+      orient='index',
+      columns=[f'{item["key"]} {scen}']
+    )
+    itemlist.append(pditem)
 tablespread = pd.concat(itemlist, axis=1).sort_index()
+tablespread.index = split_index(tablespread)
 tablespread.to_csv('CMIP6_spread.csv', float_format = '%.2f',
-  index_label = ['model_run']
+  index_label = ['model','run']
 )
 
 # Independence criteria
@@ -83,8 +94,11 @@ for item in indepdata:
   )
   itemlist.append(pditem)
 tableindep = pd.concat(itemlist, axis=1).sort_index()
-tableindep.to_csv('CMIP6_indep.csv', index_label = ['model_run'])
+tableindep.index = split_index(tableindep)
+tableindep.to_csv('CMIP6_indep.csv', index_label = ['model', 'run'])
 
-pd.concat([table,tablespread, tableindep], axis=1).sort_index().to_csv(
-  'CMIP6_perfspread.csv', float_format = '%.2f', index_label = ['model_run']
+# All together
+tablefull = pd.concat([tableprange,tablespread, tableindep], axis=1)
+tablefull.to_csv(
+  'CMIP6_perfspread.csv', float_format = '%.2f', index_label = ['model', 'run']
 )
