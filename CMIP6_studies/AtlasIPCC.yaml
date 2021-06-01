@@ -4,7 +4,9 @@
     name: delta_tas
     description: Near surface delta change 2070-2100 w.r.t. 1980-2010
     units: K
+    variables: tas
   spatial_scope: NEU
+  temporal_scope: Annual
   period: &period
     reference: 1980-2010
     target: 2070-2100
@@ -156,6 +158,7 @@
   metric: *deltatas
   period: *period
   spatial_scope: WCE
+  temporal_scope: Annual
   type: future_spread_DISABLED
   data_source: author_adapted
   comment: >
@@ -304,6 +307,7 @@
   metric: *deltatas
   period: *period
   spatial_scope: MED
+  temporal_scope: Annual
   type: future_spread_DISABLED
   data_source: author_adapted
   comment: >
@@ -452,6 +456,7 @@
   metric: *deltatas
   period: *period
   spatial_scope: Global
+  temporal_scope: Annual
   type: future_spread_DISABLED
   data_source: author_adapted
   comment: >

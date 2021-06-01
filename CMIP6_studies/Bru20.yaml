@@ -4,6 +4,7 @@
     name: mfamily
     long_name: 
     units: categorical
+    variables: [tas, psl]
     comment: >
       From Figure 5. Model family tree for all 33 CMIP6 models, similar to
       Knutti et al. (2013). Models branching further to the left are more

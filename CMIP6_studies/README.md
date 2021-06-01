@@ -56,11 +56,14 @@ defined in the first entry). This simplifies hand writing and manually updating
 the entries, partly missing the readability.
 
 An example of the structure of the files can be seen e.g. in
-[Oud20.yaml](Oud20.yaml) (for the ` performance` and `future_spread` types) or 
-in [Bru20.yaml](Bru20.yaml) (for the `independence` type). The purpose of the entry keys is described next:
+[Oud20.yaml](Oud20.yaml) (for the ` performance` and `future_spread` types) or
+in [Bru20.yaml](Bru20.yaml) (for the `independence` type). Note that the syntax
+of the YAML files is based on **white space and indentation** and there is no
+need for quotes around strings. This highly improves readability, but requires
+careful typing. The purpose of the entry keys is described next:
 
 key | subkey | value
-----|--------|:------
+---:|--------|:------
 key | | This is a unique key, that will appear as header in the summary table when the entries are processed (see e.g. [../CMIP6_perfspread.csv](../CMIP6_perfspread.csv))
 doi | | DOI for the reference where the metric was published. No other bibliographic information should be needed. Title, authors, etc. can be automatically retrieved out of the DOI.
 type| | Type of metric. Currently choose one of `performance` (performance metric, evaluating historical simulations against observations/reanalysis), `future_spread` (future delta change w.r.t. a reference period) or `independence` (model classification according to their a-priori or output dependence)
@@ -68,6 +71,7 @@ metric | | Contains the details of the metric that is coded in this entry
 . | name       | a unique name (no spaces)
 . | long_name  | a more descriptive name (e.g. to be used as label for a plot axis)
 . | units      | units following udunits conventions. The special names `rank` and `binary` are also allowed to indicate a ranking of models or a binary decision metric. Also, `categorical` can be used to indicate that the values are category names. This is usual for `independence` entries. It could be applied to other entries, but it is always preferred to code the metric as a numeric value and code the categories using the `classes` key (see below).
+. | variables | variables involved in the metric. CF acronyms in a list. E.g. `[psl, tas]`
 . | comment | A more detailed description of the metric, including is location in the reference publication (e.g. Figure or Table number), potential shortcomings, or any other detail not provided in the fields below.
 . | best (opt) | This and the next key determine the direction of the metric. Indicate here the best attainable value.
 . | worst (opt)| Worst value. `+inf` and `-inf` are allowed
@@ -89,7 +93,7 @@ classes (opt) || Classification of the metric values into an arbitrary number of
 data_source | | Source of the actual data provided next. One of `reference` (if the numbers are readily available in the text of the peer reviewed reference), `reference_extracted_from_plot` (if extracted from a plot in the reference), `author` (if provided by the authors by personal communication), `author_extended_model_set` (if the authors provided values for model members beyond those published, but otherwise according to the reference) or `author_adapted` (if the authors provided values adapted in some form, e.g. the reference provides a global analysis and the author repeated the analysis for Europe, or for other season).
 data | | Data section providing the metric values. For `future_spread` entries, this data section is arranged using the scenario as sub-key.
 
-Different sets of `plausible_values` and `classes` from different sources can be accomodated in a list. 
+Different sets of `plausible_values` and `classes` from different sources can be accomodated in a list.
 
 Pending issues
 --------------
@@ -97,5 +101,16 @@ Pending issues
  * Coding of multi-member metrics (e.g. data for ensemble means).
    - The problem is mainly the input format. Display format can be easily accomodated using an asterisk or similar.
  * Hard and soft limits.
-   - Currently, alternative `plausible_values` can be provided. These could be used to define different limits.
-   - Another posibility is to leave the `plausible_values` for the hard limit, and use the `classes` to define a more fine-grained classification (e.g. having extreme `unplausible` levels in the labels).
+   1. Currently, alternative `plausible_values` can be provided. These could be used to define different limits.
+   2. Another posibility is to leave the `plausible_values` for the hard limit, and use the `classes` to define a more fine-grained classification (e.g. having extreme `unplausible` levels in the labels).
+   3. Yet another posibility is to have `plausible_values` coded as:
+   
+     ```
+     plausible_values:
+       hard: [-4, 4]
+       soft: [-2, 2]
+     ```
+
+   The advantage of 1.+2. is that one can easily highlight separately both
+   classifications, as it is done currently with the font color (grey/black) and
+   cell background colors.

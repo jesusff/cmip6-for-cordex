@@ -4,7 +4,7 @@ import pandas as pd
 import yaml
 
 alldata = []
-for fname in glob.glob('yaml/*.yaml'):
+for fname in glob.glob('CMIP6_studies/*.yaml'):
   with open(fname) as fp:
     alldata.extend(yaml.load(fp, Loader=yaml.FullLoader))
 
