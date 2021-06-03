@@ -98,8 +98,9 @@ Different sets of `plausible_values` and `classes` from different sources can be
 Pending issues
 --------------
 
- * Coding of multi-member metrics (e.g. data for ensemble means).
-   - The problem is mainly the input format. Display format can be easily accomodated using an asterisk or similar.
+ * ~~Coding of multi-member metrics (e.g. data for ensemble means).~~
+   - ~~The problem is mainly the input format. Display format can be easily accomodated using an asterisk or similar.~~
+   - Member ranges are now supported (see an example in [Tok20.yaml](Tok20.yaml)) and expanded automatically when rendering the table.
  * Hard and soft limits.
    1. Currently, alternative `plausible_values` can be provided. These could be used to define different limits.
    2. Another posibility is to leave the `plausible_values` for the hard limit, and use the `classes` to define a more fine-grained classification (e.g. having extreme `unplausible` levels in the labels).

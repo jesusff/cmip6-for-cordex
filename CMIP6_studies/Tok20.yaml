@@ -38,7 +38,7 @@
   data_source: reference
   data:
     BCC-CSM2-MR_r1i1p1f1: 1.6
-    CanESM5_r1i1p1f1: 2.75
+    CanESM5_r1-10i1p1f1: 2.75 # An example of multi-member average input
     CESM2_r2i1p1f1: 1.99
     CNRM-CM6-1_r1i1p1f2: 2.23
     CNRM-CM6-1-HR_r1i1p1f2: 2.47

@@ -1,40 +1,51 @@
-model,run,Oud20 jetpos,Tok20 Constrained TCR,Synthesis,Can20 marle,Atlas Dtas NEU ssp585,Atlas Dtas NEU ssp370,Atlas Dtas NEU ssp245,Atlas Dtas NEU ssp126,Oud20 jetposdelta ssp585,Bru20 mfamily
-. Plausible values,max,4.00,2.27,,,,,,,,
-. Plausible values,min,-4.00,0.90,,,,,,,,
+,,performance,performance,performance,performance,spread,spread,spread,spread,spread,independence
+,,Synthesis,Oud20 jetpos,Tok20 Constrained TCR,Can20 marle,Atlas Dtas NEU ssp585,Atlas Dtas NEU ssp370,Atlas Dtas NEU ssp245,Atlas Dtas NEU ssp126,Oud20 jetposdelta ssp585,Bru20 mfamily
+model,run,,,,,,,,,,
+. Plausible values,max,,4.00,2.27,,,,,,,
+. Plausible values,min,,-4.00,0.90,,,,,,,
 ACCESS-CM2,r1i1p1f1,,,,,6.12,5.13,3.86,3.06,,HadGEM
 ACCESS-ESM1-5,r1i1p1f1,,,,,4.30,3.39,2.72,1.93,,ACCESS
 AWI-CM-1-1-MR,r1i1p1f1,,,,,5.12,4.46,3.39,2.11,,
-BCC-CSM2-MR,r1i1p1f1,-1.49,1.60,1.00,19.00,4.05,4.26,2.76,2.07,1.33,BCC
+BCC-CSM2-MR,r1i1p1f1,1.00,-1.49,1.60,19.00,4.05,4.26,2.76,2.07,1.33,BCC
 CAMS-CSM1-0,r2i1p1f1,,,,,3.36,2.74,2.21,1.05,,
-CESM2,r2i1p1f1,1.42,1.99,1.00,11.00,,,,,-1.53,CESM
+CESM2,r2i1p1f1,1.00,1.42,1.99,11.00,,,,,-1.53,CESM
 CESM2,r4i1p1f1,,,,,2.80,1.88,1.13,0.25,,
 CESM2-WACCM,r1i1p1f1,,,,,3.75,2.83,1.60,0.61,,
 CMCC-CM2-SR5,r1i1p1f1,,,,,4.81,3.35,3.69,2.61,,
-CNRM-CM6-1,r1i1p1f2,-2.79,2.23,1.00,7.00,4.00,3.29,2.07,1.02,0.84,CNRM
-CNRM-CM6-1-HR,r1i1p1f2,,2.47,0.00,,5.08,4.21,3.26,2.41,,CNRM
-CNRM-ESM2-1,r1i1p1f2,-3.02,1.82,1.00,,3.71,2.87,1.94,1.09,0.00,CNRM
-CanESM5,r1i1p1f1,0.90,2.75,0.00,15.00,6.15,5.20,4.05,2.80,0.98,CanESM
-EC-Earth3,r1i1p1f1,-0.26,2.32,0.00,5.00,6.59,5.65,4.02,2.80,-0.06,EC-Earth
+CNRM-CM6-1,r1i1p1f2,1.00,-2.79,2.23,7.00,4.00,3.29,2.07,1.02,0.84,CNRM
+CNRM-CM6-1-HR,r1i1p1f2,0.00,,2.47,,5.08,4.21,3.26,2.41,,CNRM
+CNRM-ESM2-1,r1i1p1f2,1.00,-3.02,1.82,,3.71,2.87,1.94,1.09,0.00,CNRM
+CanESM5,r1i1p1f1,0.00,0.90,2.75,15.00,6.15,5.20,4.05,2.80,0.98,CanESM
+CanESM5,r2i1p1f1,0.00,,2.75,,,,,,,
+CanESM5,r3i1p1f1,0.00,,2.75,,,,,,,
+CanESM5,r4i1p1f1,0.00,,2.75,,,,,,,
+CanESM5,r5i1p1f1,0.00,,2.75,,,,,,,
+CanESM5,r6i1p1f1,0.00,,2.75,,,,,,,
+CanESM5,r7i1p1f1,0.00,,2.75,,,,,,,
+CanESM5,r8i1p1f1,0.00,,2.75,,,,,,,
+CanESM5,r9i1p1f1,0.00,,2.75,,,,,,,
+CanESM5,r10i1p1f1,0.00,,2.75,,,,,,,
+EC-Earth3,r1i1p1f1,0.00,-0.26,2.32,5.00,6.59,5.65,4.02,2.80,-0.06,EC-Earth
 EC-Earth3-AerChem,r1i1p1f1,,,,,,5.52,,,,
-EC-Earth3-Veg,r1i1p1f1,-0.69,2.76,0.00,,5.53,4.63,2.99,2.20,-0.12,EC-Earth
+EC-Earth3-Veg,r1i1p1f1,0.00,-0.69,2.76,,5.53,4.63,2.99,2.20,-0.12,EC-Earth
 EC-Earth3-Veg-LR,r1i1p1f1,,,,,,4.29,2.71,,,
-FGOALS-g3,r1i1p1f1,-0.43,,1.00,21.00,4.76,3.50,2.46,1.47,0.80,FGOALS
+FGOALS-g3,r1i1p1f1,1.00,-0.43,,21.00,4.76,3.50,2.46,1.47,0.80,FGOALS
 GFDL-CM4,r1i1p1f1,,,,,5.98,,4.25,,,
-GFDL-ESM4,r1i1p1f1,-3.40,1.61,1.00,1.00,3.56,3.45,2.14,1.09,0.32,GFDL
+GFDL-ESM4,r1i1p1f1,1.00,-3.40,1.61,1.00,3.56,3.45,2.14,1.09,0.32,GFDL
 HadGEM3-GC31-LL,r1i1p1f3,,,,,6.70,,4.46,3.32,,
 IITM-ESM,r1i1p1f1,,,,,3.25,2.57,1.45,0.43,,
 INM-CM4-8,r1i1p1f1,,,,,2.80,2.35,1.24,1.00,,
-INM-CM5-0,r1i1p1f1,0.03,1.39,1.00,21.00,3.90,3.48,2.48,1.76,,INM
-IPSL-CM6A-LR,r1i1p1f1,-1.53,2.39,0.00,13.00,5.71,4.22,3.30,1.80,2.17,IPSL
+INM-CM5-0,r1i1p1f1,1.00,0.03,1.39,21.00,3.90,3.48,2.48,1.76,,INM
+IPSL-CM6A-LR,r1i1p1f1,0.00,-1.53,2.39,13.00,5.71,4.22,3.30,1.80,2.17,IPSL
 KACE-1-0-G,r2i1p1f1,,,,,5.38,4.62,3.14,2.41,,
 KIOST-ESM,r1i1p1f1,,,,,3.10,,2.39,1.72,,
 MIROC-ES2L,r1i1p1f2,,,,,4.58,3.84,2.67,1.68,,
-MIROC6,r1i1p1f1,-3.31,1.58,1.00,23.00,3.83,3.10,2.12,1.60,-0.24,MIROC
-MPI-ESM1-2-HR,r1i1p1f1,-3.10,1.57,1.00,9.00,4.04,3.50,2.52,1.81,0.92,MPI
+MIROC6,r1i1p1f1,1.00,-3.31,1.58,23.00,3.83,3.10,2.12,1.60,-0.24,MIROC
+MPI-ESM1-2-HR,r1i1p1f1,1.00,-3.10,1.57,9.00,4.04,3.50,2.52,1.81,0.92,MPI
 MPI-ESM1-2-LR,r1i1p1f1,,,,,3.86,3.17,2.25,1.45,,MPI
-MRI-ESM2-0,r1i1p1f1,-2.66,1.67,1.00,17.00,3.02,2.67,1.89,0.86,-0.05,MRI
-NESM3,r1i1p1f1,-2.03,2.79,0.00,,6.43,,3.83,3.08,0.99,NESM
-NorESM2-LM,r1i1p1f1,,1.48,1.00,27.00,2.61,1.76,1.18,0.34,,CESM
-NorESM2-MM,r1i1p1f1,,1.48,1.00,,2.70,2.57,1.33,0.37,,CESM
+MRI-ESM2-0,r1i1p1f1,1.00,-2.66,1.67,17.00,3.02,2.67,1.89,0.86,-0.05,MRI
+NESM3,r1i1p1f1,0.00,-2.03,2.79,,6.43,,3.83,3.08,0.99,NESM
+NorESM2-LM,r1i1p1f1,1.00,,1.48,27.00,2.61,1.76,1.18,0.34,,CESM
+NorESM2-MM,r1i1p1f1,1.00,,1.48,,2.70,2.57,1.33,0.37,,CESM
 TaiESM1,r1i1p1f1,,,,,3.95,,,,,
-UKESM1-0-LL,r1i1p1f2,-0.43,2.79,0.00,2.00,7.68,6.55,5.19,3.88,1.46,HadGEM
+UKESM1-0-LL,r1i1p1f2,0.00,-0.43,2.79,2.00,7.68,6.55,5.19,3.88,1.46,HadGEM
