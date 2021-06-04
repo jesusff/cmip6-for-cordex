@@ -75,6 +75,10 @@ metric | | Contains the details of the metric that is coded in this entry
 . | comment | A more detailed description of the metric, including is location in the reference publication (e.g. Figure or Table number), potential shortcomings, or any other detail not provided in the fields below.
 . | best (opt) | This and the next key determine the direction of the metric. Indicate here the best attainable value.
 . | worst (opt)| Worst value. `+inf` and `-inf` are allowed
+disabled | | This key disables the processing of the entry. Use the sub-keys to specify the cause. See e.g. [Tok20.yaml](Tok20.yaml).
+. | cause | Choose one of `preferred_source`, `not_forcing_rcm`
+. | preferred | Specify the key(s) of the preferred source(s) for this metric.
+. | comment | Brief, free-text explanation for disabling this entry. 
 spatial_scope | | Spatial scope of the metric. Area where it applies (Global, a CORDEX domain acronym, an IPCC region, a country name or other region considered in the study)
 temporal_scope || Season when the metric applies. Enter `Annual` or a month sequence (`DJF`, `JJA`, ...)
 period || Periods relevant for the metric

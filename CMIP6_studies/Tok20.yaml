@@ -16,6 +16,10 @@
       on only one member.
 
       https://advances.sciencemag.org/content/advances/suppl/2020/03/16/6.12.eaaz9549.DC1/aaz9549_SM.pdf
+  disabled:
+    cause: preferred_source
+    preferred: Rib21 Constrained TCR
+    comment: More conservative estimate than preferred source
   type: performance
   spatial_scope: Global
   temporal_scope: Annual

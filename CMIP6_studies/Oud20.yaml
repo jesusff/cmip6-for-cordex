@@ -60,7 +60,7 @@
   doi: 10.1029/2019GL086695
   metric:
     name: jetposdelta
-    description: Jet Stream North-South position delta change
+    long_name: Jet Stream North-South position delta change
     units: degrees_north
     variables: ua850
     comment: >

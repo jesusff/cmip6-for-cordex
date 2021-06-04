@@ -2,7 +2,7 @@
   doi: 
   metric: &deltatas
     name: delta_tas
-    description: Near surface delta change 2070-2100 w.r.t. 1980-2010
+    long_name: Near surface delta change 2070-2100 w.r.t. 1980-2010
     units: K
     variables: tas
   spatial_scope: NEU
