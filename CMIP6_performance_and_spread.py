@@ -1,46 +1,16 @@
-import glob
 import natsort as ns
 import numpy as np
 import pandas as pd
 import re
-import yaml
+import YamlStudies as ys
+import importlib
 
-def synthesis(binvalues):
-  return(np.logical_and.reduce(binvalues, 1)*1)
+importlib.reload(ys)
+alldata = ys.load_from_files('CMIP6_studies/*.yaml', skip_disabled = False)
+[x.data for x in alldata]
 
-def split_index(df):
-  return(pd.MultiIndex.from_tuples([idx.split('_') for idx in df.index], names=['model','run']))
+perfdata = [x for x in alldata if x.type == 'performance']
 
-def parse_ripf(str):
-  p = re.compile(r'r(?P<r>[0-9-]+)i(?P<i>[0-9-]+)p(?P<p>[0-9-]+)f(?P<f>[0-9-]+)')
-  return(p.match(str).groupdict())
-
-def expand_data(entry):
-  # Expand ranges of members such as:
-  # MODEL_r1-3i1p1f1 into MODEL_r1i1p1f1, MODEL_r2i1p1f1, MODEL_r3i1p1f1
-  # preserving the same value for all members.
-  for key in tuple(entry['data']):
-    try:
-      model, member = key.split('_')
-    except ValueError as e:
-      print(f'Malformed model_run string: {key}\n{e}')
-      break
-    ripf = parse_ripf(member)
-    for item in ripf:
-      if '-' in ripf[item]:
-        ini,end = tuple([int(x) for x in ripf[item].split('-')])
-        for imem in range(ini,end+1):
-          thisripf = ripf.copy()
-          thisripf[item] = imem
-          entry['data'][model + '_r%(r)si%(i)sp%(p)sf%(f)s' % thisripf] = entry['data'][key]
-        entry['data'].pop(key)
-
-alldata = []
-for fname in glob.glob('CMIP6_studies/*.yaml'):
-  with open(fname) as fp:
-    alldata.extend(yaml.load(fp, Loader=yaml.FullLoader))
-
-perfdata = [x for x in alldata if x['type'] == 'performance']
 for x in perfdata: expand_data(x)
 
 # Metric values
