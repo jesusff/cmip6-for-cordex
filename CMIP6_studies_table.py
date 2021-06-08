@@ -52,5 +52,5 @@ tablefull = pd.concat([tableprange,tablespread, tableindep], axis=1, keys=['perf
 tablefull = tablefull.reindex(ns.natsorted(tablefull.index))
 # Dump final CSV
 tablefull.to_csv(
-  'CMIP6_study_table.csv', float_format = '%.2f', index_label = ['model', 'run']
+  'CMIP6_studies_table.csv', float_format = '%.2f', index_label = ['model', 'run']
 )
