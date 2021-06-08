@@ -27,11 +27,13 @@ class MetricEntry:
       else:
         self.plausible_values = [Plausible(**self.plausible_values)]
     if type(list(self.data.values())[0]) is dict:
-      self.data = pd.DataFrame.from_dict(self.data, orient='columns')
+      self.data = pd.DataFrame.from_dict(self.data, orient='columns') 
+      self.data.columns = [f'{self.key} {x}' for x in self.data.columns]
     else:
-      self.data = pd.DataFrame.from_dict(self.data, orient='index', columns=['data'])
+      self.data = pd.DataFrame.from_dict(self.data, orient='index', columns=[self.key])
     self.expand_data()
     self.data = self.data.reindex(ns.natsorted(self.data.index))
+    self.data.index = split_index(self.data)
 
   def __str__(self):
     rval = f'- {self.key}\n'
@@ -78,6 +80,22 @@ class MetricEntry:
         pd.DataFrame.from_dict(modelmeanflag, orient='index', columns=['ensmean'])
       ], axis=1)
   
+  def get_formatted_data(self):
+    if 'ensmean' in self.data.columns:
+      is_ens_mean = self.data['ensmean'] == 1
+      datacols = self.data.columns.drop('ensmean')
+      return(self.data[datacols].applymap(lambda x: '%.2f*' % x).where(
+        is_ens_mean,
+        other = self.data[datacols].applymap(lambda x: '%.2f' % x)
+      ))
+    else:
+      return(self.data)
+
+  def get_plausible_mask(self):
+    if self.has_plausible_values():
+      rval = self.data < self.plausible_values[0].max
+      return(rval)
+
   def has_plausible_values(self):
     return(hasattr(self, 'plausible_values'))
 
