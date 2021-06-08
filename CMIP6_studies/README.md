@@ -64,7 +64,7 @@ careful typing. The purpose of the entry keys is described next:
 
 key | subkey | value
 ---:|--------|:------
-key | | This is a unique key, that will appear as header in the summary table when the entries are processed (see e.g. [../CMIP6_perfspread.csv](../CMIP6_perfspread.csv))
+key | | This is a unique key, that will appear as header in the summary table when the entries are processed (see e.g. [../CMIP6_studies_table.csv](../CMIP6_studies_table.csv))
 doi | | DOI for the reference where the metric was published. No other bibliographic information should be needed. Title, authors, etc. can be automatically retrieved out of the DOI.
 type| | Type of metric. Currently choose one of `performance` (performance metric, evaluating historical simulations against observations/reanalysis), `future_spread` (future delta change w.r.t. a reference period) or `independence` (model classification according to their a-priori or output dependence)
 metric | | Contains the details of the metric that is coded in this entry
@@ -76,7 +76,7 @@ metric | | Contains the details of the metric that is coded in this entry
 . | best (opt) | This and the next key determine the direction of the metric. Indicate here the best attainable value.
 . | worst (opt)| Worst value. `+inf` and `-inf` are allowed
 disabled | | This key disables the processing of the entry. Use the sub-keys to specify the cause. See e.g. [Tok20.yaml](Tok20.yaml).
-. | cause | Choose one of `preferred_source`, `not_forcing_rcm`
+. | cause | Choose one of `preferred_source`, `not_forcing_rcm`, `incomplete`
 . | preferred | Specify the key(s) of the preferred source(s) for this metric.
 . | comment | Brief, free-text explanation for disabling this entry. 
 spatial_scope | | Spatial scope of the metric. Area where it applies (Global, a CORDEX domain acronym, an IPCC region, a country name or other region considered in the study)
