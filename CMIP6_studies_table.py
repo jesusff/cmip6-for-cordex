@@ -6,7 +6,7 @@ import YamlStudies as ys
 def synthesis(binvalues):
   return(np.logical_and.reduce(binvalues, 1)*1)
 
-alldata = ys.load_from_files('CMIP6_studies/*.yaml', skip_disabled = False)
+alldata = ys.load_from_files('CMIP6_studies/*.yaml', skip_disabled = False, skip_cause = 'incomplete')
 
 # Performance
 tableperf = pd.concat([x.get_formatted_data() for x in alldata if x.type=='performance'], axis=1)

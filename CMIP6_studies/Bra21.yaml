@@ -16,6 +16,11 @@
     best: 0
     worst: 100
   type: performance
+  disabled:
+    cause: incomplete
+    comment: >
+      Malformed model names that include underscores in the model names. E.g. EC-Earth3_veg
+      Also, keep upper- and lowercase as in ESGF
   spatial_scope: EUR
   temporal_scope: Annual
   period:

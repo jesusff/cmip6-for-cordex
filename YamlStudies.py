@@ -13,12 +13,14 @@ def split_index(df):
 
 def parse_ripf(str):
   p = re.compile(r'r(?P<r>[0-9-]+)i(?P<i>[0-9-]+)p(?P<p>[0-9-]+)f(?P<f>[0-9-]+)')
-  return(p.match(str).groupdict())
+  m = p.match(str)
+  return(m.groupdict() if m else [])
 
 class MetricEntry:
 
   def __init__(self, yamlentry):
     self.__dict__.update(yamlentry)
+    # print(f'instantiating {self.key} ...')
     self.metric = Metric(**self.metric)
     self.period = Period(**self.period)
     if self.has_plausible_values():
@@ -168,17 +170,21 @@ class Metric:
   def repr(self):
     return(f'{self.__class__} instance\n\n{self.__str()}')
 
-def load_from_files(pattern, skip_disabled = False):
+def load_from_files(pattern, skip_disabled = False, skip_cause = ''):
   alldata = []
   for fname in glob.glob(pattern):
     with open(fname) as fp:
       alldata.extend(yaml.load(fp, Loader=yaml.FullLoader))
   if skip_disabled:
-    return([MetricEntry(x) for x in alldata if not hasattr(x, 'disabled')])
+    rval = [MetricEntry(x) for x in alldata if not 'disabled' in x]
+  elif skip_cause:
+    rval = [MetricEntry(x) for x in alldata if not ('disabled' in x and x['disabled']['cause'] == skip_cause)]
   else:
-    return([MetricEntry(x) for x in alldata])
+    rval = [MetricEntry(x) for x in alldata]
+  return(rval)
+
 
 if __name__ == '__main__':
-  allmetrics = load_from_files('CMIP6_studies/*.yaml')
+  allmetrics = load_from_files('CMIP6_studies/*.yaml', skip_cause = 'incomplete')
   for item in allmetrics:
     print(item)
