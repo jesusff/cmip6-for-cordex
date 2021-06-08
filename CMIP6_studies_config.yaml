@@ -1,0 +1,15 @@
+spatial_scope_filter:
+  #
+  # Filter and sort the metrics according to CORDEX domain
+  #
+  EUR:
+    - Global
+    - NH
+    - EUR
+    - NEU
+    - CEU
+    - CWE
+    - MED
+
+preferred:
+  plausible_values_source: eurocordex_gcm_selection_team

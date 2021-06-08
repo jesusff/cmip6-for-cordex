@@ -183,8 +183,13 @@ def load_from_files(pattern, skip_disabled = False, skip_cause = ''):
     rval = [MetricEntry(x) for x in alldata]
   return(rval)
 
-
 if __name__ == '__main__':
   allmetrics = load_from_files('CMIP6_studies/*.yaml', skip_cause = 'incomplete')
-  for item in allmetrics:
-    print(item)
+  for field in ['type', 'spatial_scope', 'temporal_scope', 'data_source']:
+    values = sorted(set([x[field] for x in allmetrics if hasattr(x, field)]))
+    print(f'Current {field}s:')
+    [print(f'  - {x}') for x in values]
+  for field,subfield in [('disabled','cause')]:
+    values = sorted(set([x[field][subfield] for x in allmetrics if hasattr(x, field)]))
+    print(f'Current {field}.{subfield}s:')
+    [print(f'  - {x}') for x in values]

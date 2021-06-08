@@ -2,11 +2,16 @@ import natsort as ns
 import numpy as np
 import pandas as pd
 import YamlStudies as ys
+import yaml
 
 def synthesis(binvalues):
   return(np.logical_and.reduce(binvalues, 1)*1)
 
+with open('CMIP6_studies_config.yaml') as fp:
+  config = yaml.load(fp, Loader=yaml.FullLoader)
+
 alldata = ys.load_from_files('CMIP6_studies/*.yaml', skip_disabled = False, skip_cause = 'incomplete')
+alldata = [x for x in alldata if x.spatial_scope in config['spatial_scope_filter']['EUR']]
 
 # Performance
 tableperf = pd.concat([x.get_formatted_data() for x in alldata if x.type=='performance'], axis=1)
