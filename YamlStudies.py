@@ -74,27 +74,49 @@ class MetricEntry:
             self.data.loc[model + '_r%(r)si%(i)sp%(p)sf%(f)s' % thisripf] = self.data.loc[key]
             modelmeanflag[model + '_r%(r)si%(i)sp%(p)sf%(f)s' % thisripf] = 1
           self.data.drop(index = key, inplace = True)
-    if modelmeanflag:
-      self.data = pd.concat([
-        self.data,
-        pd.DataFrame.from_dict(modelmeanflag, orient='index', columns=['ensmean'])
-      ], axis=1)
+    self.is_ens_mean = self.data.iloc[:,0].copy()
+    self.is_ens_mean.iloc[:] = False
+    self.is_ens_mean = self.is_ens_mean | (pd.DataFrame.from_dict(modelmeanflag, orient='index', columns=['is_ens_mean']) != 1)
   
+  def get_class_data(self):
+    if self.has_classes():
+      rval = self.data.copy()
+      rval.iloc[:] = pd.cut(self.data.values.flat,
+        self.classes['limits'],
+        labels=self.classes['labels']
+      )
+    else:
+      rval = self.data
+    return(rval)
+
   def get_formatted_data(self):
     if 'ensmean' in self.data.columns:
-      is_ens_mean = self.data['ensmean'] == 1
-      datacols = self.data.columns.drop('ensmean')
-      return(self.data[datacols].applymap(lambda x: '%.2f*' % x).where(
-        is_ens_mean,
-        other = self.data[datacols].applymap(lambda x: '%.2f' % x)
+      return(self.data.applymap(lambda x: '%.2f*' % x).where(
+        self.is_ens_mean,
+        other = self.data.applymap(lambda x: '%.2f' % x)
       ))
     else:
       return(self.data)
 
   def get_plausible_mask(self):
     if self.has_plausible_values():
-      rval = self.data < self.plausible_values[0].max
-      return(rval)
+      rval = (self.data <= self.plausible_values[0].max) & (self.data >= self.plausible_values[0].min)
+    else:
+      rval = ~self.data.isnull()
+    return(rval)
+
+  def get_plausible_values(self):
+    if self.has_plausible_values():
+      rval = pd.DataFrame.from_dict(
+        dict(min=self.plausible_values[0].min, max=self.plausible_values[0].max),
+        orient='index', columns=[self.key]
+    )
+    else:
+      rval = ~self.data.isnull()
+    return(rval)
+
+  def has_classes(self):
+    return(hasattr(self, 'classes'))
 
   def has_plausible_values(self):
     return(hasattr(self, 'plausible_values'))
