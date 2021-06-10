@@ -55,7 +55,7 @@ tableindep = pd.concat(
 # Availability
 tableavail = pd.read_csv('CMIP6_for_CORDEX_Summary.csv').set_index(['model', 'run'])
 availscenarios = ['ssp126', 'ssp245', 'ssp370', 'ssp585']
-tableavail_row_filter = np.logical_or.reduce(tableavail.loc[:,availscenarios] == 'RCM', axis=1)
+tableavail_row_filter = np.sum(tableavail.loc[:,availscenarios] == 'RCM', axis=1) >= 2
 row_filter = set(tableavail.index[tableavail_row_filter]).union(
   tableprange.index,
   tablespread.index,
