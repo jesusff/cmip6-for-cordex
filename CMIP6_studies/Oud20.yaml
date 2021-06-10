@@ -1,9 +1,3 @@
-# In the following keys, select one of the predefined values:
-# type: performance | future_spread | independence | complexity?
-# spatial_scope: Global | NH | EUR | NEU | CEU | MED
-# data_source: reference | reference_extracted_from_plot | author | author_extended_model_set | author_adapted
-# plausible_values > source: reference | author | eurocordex_gcm_selection_team
-
 - key: Oud20 jetpos
   doi: 10.1029/2019GL086695
   metric:

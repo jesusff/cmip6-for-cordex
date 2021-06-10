@@ -22,7 +22,8 @@ class MetricEntry:
     self.__dict__.update(yamlentry)
     # print(f'instantiating {self.key} ...')
     self.metric = Metric(**self.metric)
-    self.period = Period(**self.period)
+    if self.has_period():
+      self.period = Period(**self.period)
     if self.has_plausible_values():
       if type(self.plausible_values) is list:
         self.plausible_values = [Plausible(**x) for x in self.plausible_values]
@@ -122,6 +123,9 @@ class MetricEntry:
 
   def has_classes(self):
     return(hasattr(self, 'classes'))
+
+  def has_period(self):
+    return(hasattr(self, 'period'))
 
   def has_plausible_values(self):
     return(hasattr(self, 'plausible_values'))

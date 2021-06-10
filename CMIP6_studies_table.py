@@ -52,8 +52,22 @@ tableindep = pd.concat(
   axis=1
 )
 
+# Availability
+tableavail = pd.read_csv('CMIP6_for_CORDEX_Summary.csv').set_index(['model', 'run'])
+availscenarios = ['ssp126', 'ssp245', 'ssp370', 'ssp585']
+tableavail_row_filter = np.logical_or.reduce(tableavail.loc[:,availscenarios] == 'RCM', axis=1)
+row_filter = set(tableavail.index[tableavail_row_filter]).union(
+  tableprange.index,
+  tablespread.index,
+  tableindep.index
+).intersection(tableavail.index)
+tableavail = tableavail.loc[row_filter]
+
 # All together
-tablefull = pd.concat([tableprange,tablespread, tableindep], axis=1, keys=['performance', 'spread', 'independence'])
+tablefull = pd.concat(
+  [tableavail, tableprange,tablespread, tableindep], axis=1, 
+  keys=['availability', 'performance', 'spread', 'independence']
+)
 tablefull = tablefull.reindex(ns.natsorted(tablefull.index))
 # Dump final CSV
 tablefull.to_csv(
