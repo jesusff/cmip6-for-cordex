@@ -14,6 +14,9 @@
       indicate models with obvious dependencies, such as shared components
       or the same origin, whereas models with no clear dependencies are
       labeled in black.
+
+      Strangely, ACCESS-CM2 is in the same family as UKESM and HadGEM3, but
+      not ACCESS-ESM1-5.
   type: independence
   spatial_scope: Global
   period:
@@ -42,3 +45,47 @@
     NorESM2-LM_r1i1p1f1: CESM
     NorESM2-MM_r1i1p1f1: CESM
     UKESM1-0-LL_r1i1p1f2: HadGEM
+
+- key: Bru20 perf
+  doi: 10.5194/esd-11-995-2020
+  metric:
+    name: perf
+    long_name:
+    units: 
+    variables:
+    comment: >
+      Evaluation of the model using global criteria (past trends + spatial pattern)
+      and independence criteria. Model with perfromance scores below 0.006 are
+      considered as irrealistic. This study is based on multi-member for each model,
+      not on only one member.
+  type: performance
+  spatial_scope: Global
+  plausible_values:
+    min: 0.006
+    max: 0.2
+    source: reference
+  period:
+    reference: 
+  data_source: reference
+  data:
+    ACCESS-CM2_r1i1p1f1: 0.07
+    ACCESS-ESM1-5_r1i1p1f1: 0.035
+    BCC-CSM2-MR_r1i1p1f1: 0.02
+    CanESM5_r1i1p1f1: 0.001
+    CESM2_r2i1p1f1: 0.019
+    CNRM-CM6-1_r1i1p1f2: 0.019
+    CNRM-CM6-1-HR_r1i1p1f2: 0.017
+    CNRM-ESM2-1_r1i1p1f2: 0.022
+    EC-Earth3_r1i1p1f1: 0.009
+    EC-Earth3-Veg_r1i1p1f1: 0.011
+    FGOALS-g3_r1i1p1f1: 0.003
+    GFDL-ESM4_r1i1p1f1: 0.128
+    INM-CM5-0_r1i1p1f1: 0.037
+    IPSL-CM6A-LR_r1i1p1f1: 0.016
+    MIROC6_r1i1p1f1: 0.016
+    MPI-ESM1-2-HR_r1i1p1f1: 0.081
+    MPI-ESM1-2-LR_r1i1p1f1: 0.056
+    MRI-ESM2-0_r1i1p1f1: 0.016
+    NESM3_r1i1p1f1: 0.09
+    NorESM2-MM_r1i1p1f1: 0.032
+    UKESM1-0-LL_r1i1p1f2: 0.06

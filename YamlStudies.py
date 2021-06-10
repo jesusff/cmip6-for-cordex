@@ -111,10 +111,13 @@ class MetricEntry:
     if self.has_plausible_values():
       rval = pd.DataFrame.from_dict(
         dict(min=self.plausible_values[0].min, max=self.plausible_values[0].max),
-        orient='index', columns=[self.key]
-    )
+        orient='index', columns=self.data.columns
+      )
     else:
-      rval = ~self.data.isnull()
+      rval = pd.DataFrame.from_dict(
+        dict(min=self.data.values.min(), max=self.data.values.max()),
+        orient='index', columns=self.data.columns
+      )
     return(rval)
 
   def has_classes(self):

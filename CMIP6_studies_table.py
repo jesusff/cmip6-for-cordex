@@ -18,7 +18,7 @@ tableperf = pd.concat([x.get_formatted_data() for x in alldata if x.type=='perfo
 
 # Plausible range rows
 tableprange= pd.concat(
-  [x.get_plausible_values() for x in alldata if x.has_plausible_values()],
+  [x.get_plausible_values() for x in alldata if x.type in ('performance')],
   axis=1
 )
 tableprange.index = pd.MultiIndex.from_tuples(

@@ -1,0 +1,46 @@
+- key: P. Nabat EUR AOD
+  doi: [pers_comm, Pierre Nabat]
+  metric:
+    name: aod_rmse_bin
+    long_name: plausibillity of RMSE of the Aerosol Optical Depth
+    units: binary
+    variables: aod550
+    comment: >
+      Numerical values of the RMSE over Europe can be provided later.
+      Only the GISS models are eliminated on this criteria (RMSE>0.7
+      whereas all other GCMs are below 0.2) 
+
+      TO-DO Reference data set and period?
+    best: 1
+    worst: 0
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  plausible_values:
+    min: 1
+    max: 1
+    source: author
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 1
+    ACCESS-ESM1-5_r1i1p1f1: 1
+    BCC-CSM2-MR_r1i1p1f1: 1
+    CanESM5_r1i1p1f1: 1
+    CESM2_r2i1p1f1: 1
+    CNRM-CM6-1_r1i1p1f2: 1
+    CNRM-CM6-1-HR_r1i1p1f2: 1
+    CNRM-ESM2-1_r1i1p1f2: 1
+    EC-Earth3_r1i1p1f1: 1
+    EC-Earth3-Veg_r1i1p1f1: 1
+    FGOALS-g3_r1i1p1f1: 1
+    GFDL-ESM4_r1i1p1f1: 1
+    INM-CM5-0_r1i1p1f1: 1
+    IPSL-CM6A-LR_r1i1p1f1: 1
+    MIROC6_r1i1p1f1: 1
+    MPI-ESM1-2-HR_r1i1p1f1: 1
+    MPI-ESM1-2-LR_r1i1p1f1: 1
+    MRI-ESM2-0_r1i1p1f1: 1
+    NESM3_r1i1p1f1: 1
+    NorESM2-LM_r1i1p1f1: 1
+    NorESM2-MM_r1i1p1f1: 1
+    UKESM1-0-LL_r1i1p1f2: 1
