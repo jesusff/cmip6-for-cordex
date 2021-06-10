@@ -3,6 +3,7 @@ import natsort as ns
 import numpy as np
 import pandas as pd
 import re
+import requests
 import yaml
 
 def synthesis(binvalues):
@@ -16,9 +17,23 @@ def parse_ripf(str):
   m = p.match(str)
   return(m.groupdict() if m else [])
 
+def doi2dic(doi):
+  url = "http://dx.doi.org/" + doi
+  headers = {"accept": "application/x-bibtex"}
+  r = requests.get(url, headers = headers)
+  rval = r.text.replace('@article{', '')
+  for char in '}{\t':
+    rval = rval.replace(char, '')
+  rdict = {}
+  for item in rval.split('\n'):
+    if '=' in item:
+      kv = item.split('=')
+      rdict[kv[0].strip()] = kv[1].strip().strip(',')
+  return(rdict)
+
 class MetricEntry:
 
-  def __init__(self, yamlentry):
+  def __init__(self, yamlentry, resolve_doi = False):
     self.__dict__.update(yamlentry)
     # print(f'instantiating {self.key} ...')
     self.metric = Metric(**self.metric)
@@ -29,6 +44,8 @@ class MetricEntry:
         self.plausible_values = [Plausible(**x) for x in self.plausible_values]
       else:
         self.plausible_values = [Plausible(**self.plausible_values)]
+    if resolve_doi and type(self.doi) == type('string'):
+      self.reference = '%(author)s (%(year)s) %(title)s, %(url)s' % doi2dic(self.doi)
     if type(list(self.data.values())[0]) is dict:
       self.data = pd.DataFrame.from_dict(self.data, orient='columns') 
       self.data.columns = [f'{self.key} {x}' for x in self.data.columns]
@@ -130,6 +147,9 @@ class MetricEntry:
   def has_plausible_values(self):
     return(hasattr(self, 'plausible_values'))
 
+  def has_reference(self):
+    return(hasattr(self, 'reference'))
+
   def is_disabled(self):
     return(hasattr(self, 'disabled'))
 
@@ -177,21 +197,21 @@ class Metric:
   def repr(self):
     return(f'{self.__class__} instance\n\n{self.__str()}')
 
-def load_from_files(pattern, skip_disabled = False, skip_cause = ''):
+def load_from_files(pattern, skip_disabled = False, skip_cause = '', resolve_doi = False):
   alldata = []
   for fname in glob.glob(pattern):
     with open(fname) as fp:
       alldata.extend(yaml.load(fp, Loader=yaml.FullLoader))
   if skip_disabled:
-    rval = [MetricEntry(x) for x in alldata if not 'disabled' in x]
+    rval = [MetricEntry(x, resolve_doi = resolve_doi) for x in alldata if not 'disabled' in x]
   elif skip_cause:
-    rval = [MetricEntry(x) for x in alldata if not ('disabled' in x and x['disabled']['cause'] == skip_cause)]
+    rval = [MetricEntry(x, resolve_doi = resolve_doi) for x in alldata if not ('disabled' in x and x['disabled']['cause'] == skip_cause)]
   else:
-    rval = [MetricEntry(x) for x in alldata]
+    rval = [MetricEntry(x, resolve_doi = resolve_doi) for x in alldata]
   return(rval)
 
 if __name__ == '__main__':
-  allmetrics = load_from_files('CMIP6_studies/*.yaml', skip_cause = 'incomplete')
+  allmetrics = load_from_files('CMIP6_studies/*.yaml', skip_cause = 'incomplete', resolve_doi = True)
   for field in ['type', 'spatial_scope', 'temporal_scope', 'data_source']:
     values = sorted(set([x[field] for x in allmetrics if hasattr(x, field)]))
     print(f'Current {field}s:')
@@ -200,3 +220,4 @@ if __name__ == '__main__':
     values = sorted(set([x[field][subfield] for x in allmetrics if hasattr(x, field)]))
     print(f'Current {field}.{subfield}s:')
     [print(f'  - {x}') for x in values]
+  print(set([x.reference for x in allmetrics if x.has_reference()]))
