@@ -10,6 +10,15 @@ spatial_scope_filter:
     - CEU
     - CWE
     - MED
+  AUS:
+    - Global
+    - SH
+    - AUS
+    - NAU
+    - CAU
+    - SAU
+    - EAU
+    - NZ
 
 preferred:
   plausible_values_source: eurocordex_gcm_selection_team

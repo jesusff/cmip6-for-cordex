@@ -54,7 +54,14 @@ tableindep = pd.concat(
 
 # Availability
 tableavail = pd.read_csv('CMIP6_for_CORDEX_Summary.csv').set_index(['model', 'run'])
+non_esgf = pd.read_csv('CMIP6_for_CORDEX_availability_non_ESGF.csv').set_index(['model', 'run'])
+tableavail.update(non_esgf)
+# - update synthesis column
 availscenarios = ['ssp126', 'ssp245', 'ssp370', 'ssp585']
+tableavail.loc[:,'synthesis'] = np.logical_and.reduce(
+  tableavail.loc[:,availscenarios] == 'RCM', axis=1
+) * 1
+# - filter out entries with less than 2 scenarios unless a metric is available for it
 tableavail_row_filter = np.sum(tableavail.loc[:,availscenarios] == 'RCM', axis=1) >= 2
 row_filter = set(tableavail.index[tableavail_row_filter]).union(
   tableprange.index,
