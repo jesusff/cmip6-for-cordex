@@ -107,10 +107,10 @@
     EC-Earth3_r23i1p1f1: 0.3329
     EC-Earth3_r24i1p1f1: 0.3264
     EC-Earth3_r25i1p1f1: 0.3434
-    EC-Earth3_veg_r1i1p1f1: 0.3898
-    EC-Earth3_veg_lr_r1i1p1f1: 0.4122
-    EC-Earth3_aerchem_r1i1p1f1: 0.4026
-    EC-Earth3_cc_r1i1p1f1: 0.3264
+    EC-Earth3-Veg_r1i1p1f1: 0.3898
+    EC-Earth3-Veg-LR_r1i1p1f1: 0.4122
+    EC-Earth3-AerChem_r1i1p1f1: 0.4026
+    EC-Earth3-CC_r1i1p1f1: 0.3264
     GFDL-CM3_r1i1p1: 0.6011
     GFDL-CM4_r1i1p1f1: 0.6426
     GISS-E2-H_r6i1p1: 0.7795
@@ -144,8 +144,8 @@
     MIROC5_r1i1p1: 0.9988
     MIROC6_r3i1p1f1: 0.8931
     MIROC-ESM_r1i1p1: 1.2972
-    MIROC_ES2L_r1i1p1f2: 1.1954
-    MIROC_ES2L_r5i1p1f2: 1.1494
+    MIROC-ES2L_r1i1p1f2: 1.1954
+    MIROC-ES2L_r5i1p1f2: 1.1494
     MRI-ESM1_r1i1p1: 0.6766
     MRI-ESM2-0_r1i1p1f1: 0.609
     MRI-ESM2-0_r2i1p1f1: 0.5682
