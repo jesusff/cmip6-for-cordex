@@ -83,3 +83,20 @@ tablefull = tablefull.reindex(ns.natsorted(tablefull.index))
 tablefull.to_csv(
   'CMIP6_studies_table.csv', float_format = '%.2f', index_label = ['model', 'run']
 )
+
+# Some fixes for Google Spreadsheet (add hyperlinks)
+fp = open('CMIP6_studies_table.csv', 'r')
+lines = fp.readlines()
+fp.close()
+types = lines[0].strip().split(',')
+keys = lines[1].strip().split(',')
+for i,key in enumerate(keys):
+  if key and types[i] != 'availability' and key.lower() != 'synthesis':
+    searchkey = key if key[-6:-3] != 'ssp' else key[0:-7]
+    thefile = [x.file for x in alldata if x.key==searchkey]
+    thefile = '' if not thefile else thefile[0]
+    keys[i] = f'=Hyperlink("https://github.com/jesusff/cmip6-for-cordex/blob/performance_tables/{thefile}"; {key})'
+lines[1] = ','.join(keys)
+fp = open('CMIP6_studies_table.csv', 'w')
+fp.writelines([lines[0]]+lines[3:5]+lines[1:3]+lines[5:])
+fp.close()

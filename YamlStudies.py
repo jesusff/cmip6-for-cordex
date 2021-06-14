@@ -59,6 +59,8 @@ class MetricEntry:
           self[key] = [SubKeys(**self[key])]
     if resolve_doi and type(self.doi) == type('string'):
       self.reference = '%(author)s (%(year)s) %(title)s, %(url)s' % doi2dic(self.doi)
+    else:
+      self.reference = str(self.doi)
     if type(list(self.data.values())[0]) is dict:
       self.data = pd.DataFrame.from_dict(self.data, orient='columns') 
       self.data.columns = [f'{self.key} {x}' for x in self.data.columns]
@@ -201,7 +203,9 @@ def load_from_files(pattern, skip_disabled = False, skip_cause = '', resolve_doi
   alldata = []
   for fname in glob.glob(pattern):
     with open(fname) as fp:
-      alldata.extend(yaml.load(fp, Loader=yaml.FullLoader))
+      entrylist = yaml.load(fp, Loader=yaml.FullLoader)
+      for x in entrylist: x['file'] = fname
+      alldata.extend(entrylist)
   if skip_disabled:
     rval = [MetricEntry(x, resolve_doi = resolve_doi) for x in alldata if not 'disabled' in x]
   elif skip_cause:
