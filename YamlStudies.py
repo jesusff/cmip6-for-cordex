@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import re
 import requests
+import textwrap
 import yaml
 
 def synthesis(binvalues):
@@ -17,6 +18,15 @@ def parse_ripf(str):
   m = p.match(str)
   return(m.groupdict() if m else [])
 
+def indent_text(str, nspace=2):
+  dedent = textwrap.dedent(str).strip()
+  return(textwrap.fill(
+    dedent,
+    width = 80,
+    initial_indent = ' '*nspace,
+    subsequent_indent = ' '*nspace
+  ))
+
 def doi2dic(doi):
   url = "http://dx.doi.org/" + doi
   headers = {"accept": "application/x-bibtex"}
@@ -29,6 +39,8 @@ def doi2dic(doi):
     if '=' in item:
       kv = item.split('=')
       rdict[kv[0].strip()] = kv[1].strip().strip(',')
+  if 'and' in rdict['author']:
+    rdict['author'] = rdict['author'].split(' and ')[0] + ' et al.'
   return(rdict)
 
 class MetricEntry:
@@ -36,14 +48,15 @@ class MetricEntry:
   def __init__(self, yamlentry, resolve_doi = False):
     self.__dict__.update(yamlentry)
     # print(f'instantiating {self.key} ...')
-    self.metric = Metric(**self.metric)
+    self.metric = SubKeys(**self.metric)
     if self.has_period():
-      self.period = Period(**self.period)
-    if self.has_plausible_values():
-      if type(self.plausible_values) is list:
-        self.plausible_values = [Plausible(**x) for x in self.plausible_values]
-      else:
-        self.plausible_values = [Plausible(**self.plausible_values)]
+      self.period = SubKeys(**self.period)
+    for key in ('plausible_values', 'classes'):
+      if hasattr(self, key):
+        if type(self[key]) is list:
+          self[key] = [SubKeys(**x) for x in self[key]]
+        else:
+          self[key] = [SubKeys(**self[key])]
     if resolve_doi and type(self.doi) == type('string'):
       self.reference = '%(author)s (%(year)s) %(title)s, %(url)s' % doi2dic(self.doi)
     if type(list(self.data.values())[0]) is dict:
@@ -56,16 +69,25 @@ class MetricEntry:
     self.data.index = split_index(self.data)
 
   def __str__(self):
-    rval = f'- {self.key}\n'
-    rval += self.metric.__str__() + '\n' + self.period.__str__() + '\n'
-    if self.has_plausible_values():
-      for x in self.plausible_values:
-        rval += str(x)
-    rval += '\n'
+    rval = f'- key: {self.key}\n'
+    for item in ('doi', 'type', 'spatial_scope', 'temporal_scope', 'data_source'):
+      if hasattr(self, item):
+        rval += f'  {item}: {self[item]}\n'
+    for item in ('metric', 'period'):
+      if hasattr(self, item):
+        rval += f'  {item}:\n' + self[item].__str__()
+    for item in ('plausible_values', 'classes'):
+      if hasattr(self, item):
+        rval += f'  {item}:\n'
+        for x in self[item]:
+          rval += f'  - ' + x.__str__().lstrip()
     return(rval)
 
   def __getitem__(self, item):
     return(self.__dict__[item])
+
+  def __setitem__(self, item, val):
+    self.__dict__[item] = val
 
   def __call__(self, column='data'):
     if column == 'data':
@@ -102,8 +124,8 @@ class MetricEntry:
     if self.has_classes():
       rval = self.data.copy()
       rval.iloc[:] = pd.cut(self.data.values.flat,
-        self.classes['limits'],
-        labels=self.classes['labels']
+        self.classes[0]['limits'],
+        labels=self.classes[0]['labels']
       )
     else:
       rval = self.data
@@ -158,44 +180,22 @@ class MetricEntry:
       idx = which if type(which) is int else [x.source for x in self.plausible_values].index(which)
       return(self.plausible_values[which])
 
-class Period:
+class SubKeys:
 
-  def __init__(self, **period_dict):
-    self.__dict__.update(period_dict)
-
-  def __str__(self):     
-    if hasattr(self, 'target'):
-      return(f'Period: {self.target} w.r.t. {self.reference}')
-    else:
-      return(f'Period: {self.reference}')
-
-class Plausible:
-
-  def __init__(self, **plausible_dict):
-    self.__dict__.update(plausible_dict)
-
-  def __str__(self):     
-    rval = f'  - Plausible range: [{self.min}, {self.max}] | source: {self.source}\n'
-    if hasattr(self, 'comment'):
-      rval += '      ' + self.comment
-    return(rval)
-
-class Metric:
-
-  def __init__(self, **metric_dict):
-    self.__dict__.update(metric_dict)
+  def __init__(self, **subkeydict):
+    self.__dict__.update(subkeydict)
 
   def __str__(self):
-    rval = f'{self.name} - {self.long_name} [{self.units}]\n'
-    if hasattr(self, 'comment'):
-      rval += f'{self.comment}'
-    rval += f'Variables: {self.variables}'
-    if hasattr(self, 'best'):
-      rval += f'\nBest score: {self.best} worst: {self.worst}'
+    rval = ''
+    for item in self.__dict__.keys():
+      if item == 'comment':
+        rval += f'    {item}:\n{indent_text(self[item], 6)}\n'
+      else:
+        rval += f'    {item}: {self[item]}\n'
     return(rval)
 
-  def repr(self):
-    return(f'{self.__class__} instance\n\n{self.__str()}')
+  def __getitem__(self, item):
+    return(self.__dict__[item])
 
 def load_from_files(pattern, skip_disabled = False, skip_cause = '', resolve_doi = False):
   alldata = []
@@ -211,7 +211,8 @@ def load_from_files(pattern, skip_disabled = False, skip_cause = '', resolve_doi
   return(rval)
 
 if __name__ == '__main__':
-  allmetrics = load_from_files('CMIP6_studies/*.yaml', skip_cause = 'incomplete', resolve_doi = True)
+  resolve_doi = False
+  allmetrics = load_from_files('CMIP6_studies/*.yaml', skip_cause = 'incomplete', resolve_doi = resolve_doi)
   for field in ['type', 'spatial_scope', 'temporal_scope', 'data_source']:
     values = sorted(set([x[field] for x in allmetrics if hasattr(x, field)]))
     print(f'Current {field}s:')
@@ -220,4 +221,6 @@ if __name__ == '__main__':
     values = sorted(set([x[field][subfield] for x in allmetrics if hasattr(x, field)]))
     print(f'Current {field}.{subfield}s:')
     [print(f'  - {x}') for x in values]
-  print(set([x.reference for x in allmetrics if x.has_reference()]))
+  if resolve_doi:
+    print(set([x.reference for x in allmetrics if x.has_reference()]))
+  print(allmetrics[6])

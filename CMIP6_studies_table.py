@@ -11,7 +11,10 @@ with open('CMIP6_studies_config.yaml') as fp:
   config = yaml.load(fp, Loader=yaml.FullLoader)
 
 alldata = ys.load_from_files('CMIP6_studies/*.yaml', skip_disabled = False, skip_cause = 'incomplete')
-alldata = [x for x in alldata if x.spatial_scope in config['spatial_scope_filter']['EUR']]
+# filter and sort
+CORDEX_DOMAIN = 'EUR'
+alldata = [x for x in alldata if x.spatial_scope in config['spatial_scope_filter'][CORDEX_DOMAIN]]
+alldata.sort(key=lambda x: config['spatial_scope_filter'][CORDEX_DOMAIN].index(x.spatial_scope))
 
 # Performance
 tableperf = pd.concat([x.get_formatted_data() for x in alldata if x.type=='performance'], axis=1)

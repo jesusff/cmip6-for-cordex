@@ -22,3 +22,4 @@ spatial_scope_filter:
 
 preferred:
   plausible_values_source: eurocordex_gcm_selection_team
+  classes_source: eurocordex_gcm_selection_team
