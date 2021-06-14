@@ -1,0 +1,177 @@
+- key: Dobler SICE rmse BNS
+  doi: [pers. comm., A. Dobler]
+  metric: &siconcrmse
+    name: siconcrmse
+    long_name: Sea Ice RMSE w.r.t. HadICE
+    units: percent
+    variables: siconc
+    comment: >
+      Root mean squared error of the annual mean sea ice concentration
+      as compared to the HadICE data set.
+
+      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+    best: 0
+    worst: +inf
+  type: performance
+  spatial_scope: BNS
+  temporal_scope: Annual
+  period:
+    reference: 1985-2014
+  plausible_values:
+    min: 0
+    max: 50
+    source: eurocordex_gcm_selection_team
+    comment: > 
+      Just a test value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 4.4
+    ACCESS-ESM1-5_r1i1p1f1: 9.3
+    BCC-CSM2-MR_r1i1p1f1: 8.1
+    CanESM5_r1i1p1f1: 6.2
+    CESM2_r1i1p1f1: 5.6
+    CNRM-CM6-1_r1i1p1f2: 4.9
+    CNRM-CM6-1-HR_r1i1p1f2: 7.8
+    CNRM-ESM2-1_r1i1p1f2: 4.6
+    EC-Earth3_r1i1p1f1: 5.1
+    EC-Earth3-Veg_r1i1p1f1: 5.1
+    FGOALS-g3_r1i1p1f1: 
+    GFDL-ESM4_r2i1p1f1: 10.2
+    INM-CM5-0_r1i1p1f1: 13.6
+    IPSL-CM6A-LR_r1i1p1f1: 9.4
+    MIROC6_r1i1p1f1: 4.9
+    MPI-ESM1-2-HR_r1i1p1f1: 4.5
+    MPI-ESM1-2-LR_r1i1p1f1: 5.1
+    MRI-ESM2-0_r1i1p1f1: 6.9
+    NESM3_r1i1p1f1: 6
+    NorESM2-LM_r1i1p1f1: 5.6
+    NorESM2-MM_r1i1p1f1: 5.3
+    UKESM1-0-LL_r1i1p1f2: 6.2
+
+- key: Dobler SICE rmse NAtl 
+  doi: [pers. comm., A. Dobler]
+  metric: *siconcrmse
+  type: performance
+  spatial_scope: NAtl
+  temporal_scope: Annual
+  period:
+    reference: 1985-2014
+  plausible_values:
+    min: 0
+    max: 50
+    source: eurocordex_gcm_selection_team
+    comment: > 
+      Just a test value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 22.3
+    ACCESS-ESM1-5_r1i1p1f1: 12.7
+    BCC-CSM2-MR_r1i1p1f1: 53.4
+    CanESM5_r1i1p1f1: 10.6
+    CESM2_r1i1p1f1: 15.4
+    CNRM-CM6-1_r1i1p1f2: 12.2
+    CNRM-CM6-1-HR_r1i1p1f2: 22.5
+    CNRM-ESM2-1_r1i1p1f2: 7.5
+    EC-Earth3_r1i1p1f1: 19.5
+    EC-Earth3-Veg_r1i1p1f1: 10.7
+    FGOALS-g3_r1i1p1f1: 67.2
+    GFDL-ESM4_r2i1p1f1: 10.1
+    INM-CM5-0_r1i1p1f1: 8.7
+    IPSL-CM6A-LR_r1i1p1f1: 10.3
+    MIROC6_r1i1p1f1: 6.7
+    MPI-ESM1-2-HR_r1i1p1f1: 17
+    MPI-ESM1-2-LR_r1i1p1f1: 6.9
+    MRI-ESM2-0_r1i1p1f1: 11.3
+    NESM3_r1i1p1f1: 37.4
+    NorESM2-LM_r1i1p1f1: 8.3
+    NorESM2-MM_r1i1p1f1: 15.5
+    UKESM1-0-LL_r1i1p1f2: 14.1
+
+- key: Dobler SST rmse NAtl
+  doi: [pers. comm., A. Dobler]
+  metric: &sstrmse
+    name: sstrmse
+    long_name: Sea Surface Temperature RMSE w.r.t. HadISST
+    units: K
+    variables: tos
+    comment: >
+      Root mean squared error of the annual mean sea surface temperature
+      as compared to the HadISST data set.
+
+      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+    best: 0
+    worst: +inf
+  type: performance
+  spatial_scope: NAtl
+  temporal_scope: Annual
+  period:
+    reference: 1985-2014
+  plausible_values:
+    min: 0
+    max: 4
+    source: eurocordex_gcm_selection_team
+    comment: > 
+      Just a test value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 1.8
+    ACCESS-ESM1-5_r1i1p1f1: 1.3
+    BCC-CSM2-MR_r1i1p1f1: 4.3
+    CanESM5_r1i1p1f1: 0.9
+    CESM2_r1i1p1f1: 1.7
+    CNRM-CM6-1_r1i1p1f2: 1
+    CNRM-CM6-1-HR_r1i1p1f2: 2
+    CNRM-ESM2-1_r1i1p1f2: 1.4
+    EC-Earth3_r1i1p1f1: 0.9
+    EC-Earth3-Veg_r1i1p1f1: 1
+    FGOALS-g3_r1i1p1f1: 5.3
+    GFDL-ESM4_r2i1p1f1: 1.4
+    INM-CM5-0_r1i1p1f1: 2
+    IPSL-CM6A-LR_r1i1p1f1: 1.9
+    MIROC6_r1i1p1f1: 1.2
+    MPI-ESM1-2-HR_r1i1p1f1: 1.5
+    MPI-ESM1-2-LR_r1i1p1f1: 1.5
+    MRI-ESM2-0_r1i1p1f1: 0.9
+    NESM3_r1i1p1f1: 3.1
+    NorESM2-LM_r1i1p1f1: 1.2
+    NorESM2-MM_r1i1p1f1: 1.9
+    UKESM1-0-LL_r1i1p1f2: 1.4
+
+- key: Dobler SST rmse BNS
+  doi: [pers. comm., A. Dobler]
+  metric: *sstrmse
+  type: performance
+  spatial_scope: BNS
+  temporal_scope: Annual
+  period:
+    reference: 1985-2014
+  plausible_values:
+    min: 0
+    max: 4
+    source: eurocordex_gcm_selection_team
+    comment: > 
+      Just a test value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 2.2
+    ACCESS-ESM1-5_r1i1p1f1: 1.7
+    BCC-CSM2-MR_r1i1p1f1: 2.7
+    CanESM5_r1i1p1f1: 1.3
+    CESM2_r1i1p1f1: 1.4
+    CNRM-CM6-1_r1i1p1f2: 1.4
+    CNRM-CM6-1-HR_r1i1p1f2: 1.2
+    CNRM-ESM2-1_r1i1p1f2: 1.9
+    EC-Earth3_r1i1p1f1: 1.1
+    EC-Earth3-Veg_r1i1p1f1: 1.1
+    FGOALS-g3_r1i1p1f1: 3.8
+    GFDL-ESM4_r2i1p1f1: 1.3
+    INM-CM5-0_r1i1p1f1: 2
+    IPSL-CM6A-LR_r1i1p1f1: 1.2
+    MIROC6_r1i1p1f1: 1.3
+    MPI-ESM1-2-HR_r1i1p1f1: 1.4
+    MPI-ESM1-2-LR_r1i1p1f1: 1
+    MRI-ESM2-0_r1i1p1f1: 1
+    NESM3_r1i1p1f1: 2.1
+    NorESM2-LM_r1i1p1f1: 1.4
+    NorESM2-MM_r1i1p1f1: 1.5
+    UKESM1-0-LL_r1i1p1f2: 1.3
