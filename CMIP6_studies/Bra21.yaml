@@ -77,6 +77,8 @@
     NESM3_r4i1p1f1: 0.6478
     NESM3_r5i1p1f1: 0.5917
     CMCC-CM_r1i1p1: 0.6527
+    CMCC-CM2-SR5_r1i1p1f1: 0.6344
+    CMCC-ESM2_r1i1p1f1: 0.5446
     NorESM1-M_r1i1p1: 0.9386
     NorESM2-LM_r1i1p1f1: 0.996
     NorESM2-LM_r2i1p1f1: 1.1238
@@ -173,28 +175,29 @@
         0 - not considered
         1 - prescribed
         2 - interactive component
-      in the following order Atm-Lnd-Ocn-SI-Aer-Chem-Veg-Gla
+      in the following order Atm-Lnd-Ocn-SI-Aer-Chem-Veg-Obgc-Gla
   type: complexity
   spatial_scope: Global
   temporal_scope: Annual
   plausible_values:
-      min: 22221000
-      max: 22222222
+      min: 222200000
+      max: 222222222
       source: eurocordex_gcm_selection_team
       comment: >
         At least coupled Atm-Lnd-Ocn-SI with some form of aerosol consideration
   data_source: reference
   data:
-    BCC-CSM2-MR_r1i1p1f1: 22220000
+    BCC-CSM2-MR_r1i1p1f1: 222200000
     CanESM5_r1i1p1f1: 
     CESM2_r2i1p1f1: 
-    CNRM-CM6-1_r1i1p1f2: 22221200
-    CNRM-ESM2-1_r1i1p1f2: 
-    EC-Earth3_r1i1p1f1: 
-    EC-Earth3-Veg_r1i1p1f1: 
+    CNRM-CM6-1_r1i1p1f2: 222212000
+    CNRM-ESM2-1_r1i1p1f2: 222222220
+    EC-Earth3_r1i1p1f1: 222200000
+    EC-Earth3-Veg_r1i1p1f1: 222200200
+    EC-Earth3-Veg-LR_r1i1p1f1: 222200200
+    EC-Earth3-AerChem_r1i1p1f1: 222222000
     FGOALS-g3_r1i1p1f1: 
     GFDL-ESM4_r1i1p1f1: 
-    INM-CM5-0_r1i1p1f1: 
     IPSL-CM6A-LR_r1i1p1f1: 
     MIROC6_r1i1p1f1: 
     MPI-ESM1-2-HR_r1i1p1f1: 
