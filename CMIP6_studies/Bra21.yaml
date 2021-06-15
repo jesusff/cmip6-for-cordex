@@ -30,7 +30,7 @@
         is here rounded to the next integer.
   data_source: reference
   data:  
-    ACCES-CM2_r1i1p1f1: 0.5631
+    ACCESS-CM2_r1i1p1f1: 0.5631
     ACCESS-ESM1-5_r1i1p1f1: 0.6518
     ACCESS-ESM1-5_r3i1p1f1: 0.6514
     HadGEM3-GC31-MM_r1i1p1f3: 0.4196
