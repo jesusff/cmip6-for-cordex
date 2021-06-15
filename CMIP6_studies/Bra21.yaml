@@ -1,7 +1,7 @@
 - key: Bra21 Lamb EUR
   doi: 10.5194/gmd-2020-418
   metric:
-    name: MAE_Lamb_Europe
+    name: lwtmae
     long_name: MAE of 27 Lamb Weather Type relative frequencies 
     units: percent
     variables: psl
@@ -12,15 +12,10 @@
       for each grid box of a regular 2.5 deg lat-lon mesh extending from 22.5W to
       42.5E and 30N to 70N. The spatial median MAE is provided here. Reference
       dataset to compute the metric is ERA-Interim. As reference, the value for
-      the JRA-55 reanalysis is 0.0956
+      the JRA-55 reanalysis (EUR) is 0.0956
     best: 0
     worst: 100
   type: performance
-  disabled:
-    cause: incomplete
-    comment: >
-      Malformed model names that include underscores in the model names. E.g. EC-Earth3_veg
-      Also, keep upper- and lowercase as in ESGF
   spatial_scope: EUR
   temporal_scope: Annual
   period:
@@ -35,20 +30,11 @@
         is here rounded to the next integer.
   data_source: reference
   data:  
-    CSIRO-MK3-6-0_r1i1p1: 1.2942
-    ACCESS1.0_r1i1p1: 0.4678
-    ACCESS1.3_r1i1p1: 0.6368
     ACCES-CM2_r1i1p1f1: 0.5631
     ACCESS-ESM1-5_r1i1p1f1: 0.6518
     ACCESS-ESM1-5_r3i1p1f1: 0.6514
-    HadGEM2-ES_r1i1p1: 0.4679
-    HadGEM2-ES_r2i1p1: 0.4753
-    HadGEM2-CC_r1i1p1: 0.563
     HadGEM3-GC31-MM_r1i1p1f3: 0.4196
-    FGOALS-g2_r1i1p1: 1.5308
     FGOALS-g3_r3i1p1f1: 0.9647
-    MPI-ESM-LR_r1i1p1: 0.7395
-    MPI-ESM-MR_r1i1p1: 0.8916
     MPI-ESM1-2-LR_r1i1p1f1: 0.6499
     MPI-ESM1-2-LR_r2i1p1f1: 0.7269
     MPI-ESM1-2-LR_r3i1p1f1: 0.6895
@@ -76,24 +62,19 @@
     NESM3_r3i1p1f1: 0.6403
     NESM3_r4i1p1f1: 0.6478
     NESM3_r5i1p1f1: 0.5917
-    CMCC-CM_r1i1p1: 0.6527
     CMCC-CM2-SR5_r1i1p1f1: 0.6344
     CMCC-ESM2_r1i1p1f1: 0.5446
-    NorESM1-M_r1i1p1: 0.9386
     NorESM2-LM_r1i1p1f1: 0.996
     NorESM2-LM_r2i1p1f1: 1.1238
     NorESM2-LM_r3i1p1f1: 1.0294
     NorESM2-MM_r1i1p1f1: 0.7085
     NorESM2-MM_r3i1p1f1: 0.6077
     SAM0-UNICON_r1i1p1f1: 0.7313
-    CCSM4_r6i1p1: 1.0204
-    CNRM-CM5_r1i1p1: 0.7825
     CNRM-CM6-1_r1i1p1f2: 0.7472
     CNRM-CM6-1_r2i1p1f2: 0.8193
     CNRM-CM6-1_r3i1p1f2: 0.7851
     CNRM-CM6-1-HR_r1i1p1f2: 0.8225
     CRNM-ESM2-1_r1i1p1f2: 0.7558
-    EC-Earth_r12i1p1: 0.4238
     EC-Earth3_r1i1p1f1: 0.331
     EC-Earth3_r3i1p1f1: 0.3504
     EC-Earth3_r4i1p1f1: 0.3585
@@ -115,18 +96,8 @@
     EC-Earth3-Veg-LR_r1i1p1f1: 0.4122
     EC-Earth3-AerChem_r1i1p1f1: 0.4026
     EC-Earth3-CC_r1i1p1f1: 0.3264
-    GFDL-CM3_r1i1p1: 0.6011
     GFDL-CM4_r1i1p1f1: 0.6426
-    GISS-E2-H_r6i1p1: 0.7795
-    GISS-E2-R_r6i1p1: 0.8711
     GISS-ES-1-G_r1i1p1f1: 0.7064
-    IPSL-CM5A-LR_r1i1p1: 1.0079
-    IPSL-CM5A-LR_r2i1p1: 1.0526
-    IPSL-CM5A-LR_r3i1p1: 1.0211
-    IPSL-CM5A-LR_r4i1p1: 1.0019
-    IPSL-CM5A-LR_r5i1p1: 0.9773
-    IPSL-CM5A-LR_r6i1p1: 0.9985
-    IPSL-CM5A-MR_r1i1p1: 1.0098
     IPSL-CM6A-LR_r1i1p1f1: 0.7877
     IPSL-CM6A-LR_r10i1p1f1: 0.7353
     IPSL-CM6A-LR_r11i1p1f1: 0.7273
@@ -145,20 +116,15 @@
     IPSL-CM6A-LR_r24i1p1f1: 0.7419
     IPSL-CM6A-LR_r25i1p1f1: 0.7166
     IPSL-CM6A-LR_r32i1p1f1: 0.7515
-    MIROC5_r1i1p1: 0.9988
     MIROC6_r3i1p1f1: 0.8931
-    MIROC-ESM_r1i1p1: 1.2972
     MIROC-ES2L_r1i1p1f2: 1.1954
     MIROC-ES2L_r5i1p1f2: 1.1494
-    MRI-ESM1_r1i1p1: 0.6766
     MRI-ESM2-0_r1i1p1f1: 0.609
     MRI-ESM2-0_r2i1p1f1: 0.5682
     MRI-ESM2-0_r3i1p1f1: 0.6352
     MRI-ESM2-0_r4i1p1f1: 0.5842
     MRI-ESM2-0_r5i1p1f1: 0.6296
     BCC-CSM2-MR_r1i1p1f1: 0.6482
-    CanESM2_r1i1p1: 0.8735
-    INM-CM4_r1i1p1: 0.6516
     IITM-ESM_r1i1p1f1: 0.8067
     KIOST-ESM_r1i1p1f1: 0.876
     TaiESM1_r1i1p1f1: 0.5147

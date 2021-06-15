@@ -1,15 +1,12 @@
 ## Incomplete entries
 
  * [Beo21](CMIP6_studies/Beo21.yaml)
- * [Bra21 Lamb EUR](CMIP6_studies/Bra21.yaml)
 ## Available entries (EUR scope)
 ### Sch20 ECS
 
 Located in [CMIP6_studies/Sch20.yaml](CMIP6_studies/Sch20.yaml)
 
 Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensitivity in CMIP5: do they hold for CMIP6?, https://doi.org/10.5194%2Fesd-11-1233-2020
-
-[10.5194/esd-11-1233-2020](https://doi.org/10.5194/esd-11-1233-2020)
 
 ```
 - key: Sch20 ECS
@@ -36,8 +33,6 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
 
 None
 
-[None](https://doi.org/None)
-
 ```
 - key: Atlas Dtas Global
   doi: None
@@ -61,8 +56,6 @@ None
 Located in [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
 
 Katarzyna B. Tokarska et al. (2020) Past warming trend constrains future warming in CMIP6 models, https://doi.org/10.1126%2Fsciadv.aaz9549
-
-[10.1126/sciadv.aaz9549](https://doi.org/10.1126/sciadv.aaz9549)
 
 ```
 - key: Tok20 Constrained TCR
@@ -108,8 +101,6 @@ Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
 
 Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
 
-[10.5194/gmd-2020-418](https://doi.org/10.5194/gmd-2020-418)
-
 ```
 - key: Bra21 complexity
   doi: 10.5194/gmd-2020-418
@@ -125,10 +116,10 @@ Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and
     comment:
       Model complexity from Table 1 is coded with ternary values   0 - not
       considered   1 - prescribed   2 - interactive component in the following
-      order Atm-Lnd-Ocn-SI-Aer-Chem-Veg-Gla
+      order Atm-Lnd-Ocn-SI-Aer-Chem-Veg-Obgc-Gla
   plausible_values:
-  - min: 22221000
-    max: 22222222
+  - min: 222200000
+    max: 222222222
     source: eurocordex_gcm_selection_team
     comment:
       At least coupled Atm-Lnd-Ocn-SI with some form of aerosol consideration
@@ -140,8 +131,6 @@ Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and
 Located in [CMIP6_studies/Bru20.yaml](CMIP6_studies/Bru20.yaml)
 
 Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when weighting models by performance and independence, https://doi.org/10.5194%2Fesd-11-995-2020
-
-[10.5194/esd-11-995-2020](https://doi.org/10.5194/esd-11-995-2020)
 
 ```
 - key: Bru20 mfamily
@@ -175,8 +164,6 @@ Located in [CMIP6_studies/Bru20.yaml](CMIP6_studies/Bru20.yaml)
 
 Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when weighting models by performance and independence, https://doi.org/10.5194%2Fesd-11-995-2020
 
-[10.5194/esd-11-995-2020](https://doi.org/10.5194/esd-11-995-2020)
-
 ```
 - key: Bru20 perf
   doi: 10.5194/esd-11-995-2020
@@ -207,8 +194,6 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
 Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
 
 None
-
-[None](https://doi.org/None)
 
 ```
 - key: Qas21 Constrained Dtas ssp245
@@ -242,8 +227,6 @@ Located in [CMIP6_studies/Can20.yaml](CMIP6_studies/Can20.yaml)
 
 Alex J Cannon (2020) Reductions in daily continental-scale atmospheric circulation biases between generations of global climate models: CMIP5 to CMIP6, https://doi.org/10.1088%2F1748-9326%2Fab7e4f
 
-[10.1088/1748-9326/ab7e4f](https://doi.org/10.1088/1748-9326/ab7e4f)
-
 ```
 - key: Can20 marle
   doi: 10.1088/1748-9326/ab7e4f
@@ -275,8 +258,6 @@ Alex J Cannon (2020) Reductions in daily continental-scale atmospheric circulati
 Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
 
 Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet Change in CMIP5 and CMIP6 Models, https://doi.org/10.1029%2F2019gl086695
-
-[10.1029/2019GL086695](https://doi.org/10.1029/2019GL086695)
 
 ```
 - key: Oud20 jetpos
@@ -321,8 +302,6 @@ Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
 
 Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet Change in CMIP5 and CMIP6 Models, https://doi.org/10.1029%2F2019gl086695
 
-[10.1029/2019GL086695](https://doi.org/10.1029/2019GL086695)
-
 ```
 - key: Oud20 jetposdelta
   doi: 10.1029/2019GL086695
@@ -348,13 +327,52 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
 
 ```
 
+### Bra21 Lamb EUR
+
+Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
+
+Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
+
+```
+- key: Bra21 Lamb EUR
+  doi: 10.5194/gmd-2020-418
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  data_source: reference
+  metric:
+    name: lwtmae
+    long_name: MAE of 27 Lamb Weather Type relative frequencies
+    units: percent
+    variables: psl
+    comment:
+      Mean absolute error (MAE) of the simulated vs. quasi-observed (reanalysis)
+      relative frequencies for the 27 Lamb Weather Types representing recurrent
+      regional atmospheric circulation patterns. The MAE was calculated
+      separately for each grid box of a regular 2.5 deg lat-lon mesh extending
+      from 22.5W to 42.5E and 30N to 70N. The spatial median MAE is provided
+      here. Reference dataset to compute the metric is ERA-Interim. As
+      reference, the value for the JRA-55 reanalysis (EUR) is 0.0956
+    best: 0
+    worst: 100
+  period:
+    reference: 1979-2005
+  plausible_values:
+  - min: 0
+    max: 5
+    source: reference
+    comment:
+      The range of plausible values is directly obtained from doi:
+      10.5194/gmd-2020-418, the maximum MAE obtained there is here rounded to
+      the next integer.
+
+```
+
 ### P. Nabat EUR AOD
 
 Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
 
 ['pers_comm', 'Pierre Nabat']
-
-[['pers_comm', 'Pierre Nabat']](https://doi.org/['pers_comm', 'Pierre Nabat'])
 
 ```
 - key: P. Nabat EUR AOD
@@ -387,8 +405,6 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
 
 None
 
-[None](https://doi.org/None)
-
 ```
 - key: Atlas Dtas NEU
   doi: None
@@ -413,8 +429,6 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
 
 None
 
-[None](https://doi.org/None)
-
 ```
 - key: Atlas Dtas MED
   doi: None
@@ -438,8 +452,6 @@ None
 Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
 
 ['pers_comm', 'F. Sevault']
-
-[['pers_comm', 'F. Sevault']](https://doi.org/['pers_comm', 'F. Sevault'])
 
 ```
 - key: F. Sevault MED SST
@@ -470,8 +482,6 @@ Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
 
 ['pers_comm', 'F. Sevault']
 
-[['pers_comm', 'F. Sevault']](https://doi.org/['pers_comm', 'F. Sevault'])
-
 ```
 - key: Sevault MED SST warming
   doi: ['pers_comm', 'F. Sevault']
@@ -495,6 +505,146 @@ Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
       [Sam] I have used a color code for making warming level categories (green:
       weak, orange: medium, red:strong). Arbitrary thresholds for now: green
       (2-3), orange (3-4), red (>4 deg)
+
+```
+
+### Dobler SICE rmse NAtl
+
+Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+
+['pers. comm.', 'A. Dobler']
+
+```
+- key: Dobler SICE rmse NAtl
+  doi: ['pers. comm.', 'A. Dobler']
+  type: performance
+  spatial_scope: NAtl
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: siconcrmse
+    long_name: Sea Ice RMSE w.r.t. HadICE
+    units: percent
+    variables: siconc
+    comment:
+      Root mean squared error of the annual mean sea ice concentration as
+      compared to the HadICE data set. https://docs.google.com/spreadsheets/d/1x
+      vqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+    best: 0
+    worst: +inf
+  period:
+    reference: 1985-2014
+  plausible_values:
+  - min: 0
+    max: 50
+    source: eurocordex_gcm_selection_team
+    comment:
+      Just a test value
+
+```
+
+### Dobler SST rmse NAtl
+
+Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+
+['pers. comm.', 'A. Dobler']
+
+```
+- key: Dobler SST rmse NAtl
+  doi: ['pers. comm.', 'A. Dobler']
+  type: performance
+  spatial_scope: NAtl
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: sstrmse
+    long_name: Sea Surface Temperature RMSE w.r.t. HadISST
+    units: K
+    variables: tos
+    comment:
+      Root mean squared error of the annual mean sea surface temperature as
+      compared to the HadISST data set. https://docs.google.com/spreadsheets/d/1
+      xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+    best: 0
+    worst: +inf
+  period:
+    reference: 1985-2014
+  plausible_values:
+  - min: 0
+    max: 4
+    source: eurocordex_gcm_selection_team
+    comment:
+      Just a test value
+
+```
+
+### Dobler SICE rmse BNS
+
+Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+
+['pers. comm.', 'A. Dobler']
+
+```
+- key: Dobler SICE rmse BNS
+  doi: ['pers. comm.', 'A. Dobler']
+  type: performance
+  spatial_scope: BNS
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: siconcrmse
+    long_name: Sea Ice RMSE w.r.t. HadICE
+    units: percent
+    variables: siconc
+    comment:
+      Root mean squared error of the annual mean sea ice concentration as
+      compared to the HadICE data set. https://docs.google.com/spreadsheets/d/1x
+      vqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+    best: 0
+    worst: +inf
+  period:
+    reference: 1985-2014
+  plausible_values:
+  - min: 0
+    max: 50
+    source: eurocordex_gcm_selection_team
+    comment:
+      Just a test value
+
+```
+
+### Dobler SST rmse BNS
+
+Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+
+['pers. comm.', 'A. Dobler']
+
+```
+- key: Dobler SST rmse BNS
+  doi: ['pers. comm.', 'A. Dobler']
+  type: performance
+  spatial_scope: BNS
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: sstrmse
+    long_name: Sea Surface Temperature RMSE w.r.t. HadISST
+    units: K
+    variables: tos
+    comment:
+      Root mean squared error of the annual mean sea surface temperature as
+      compared to the HadISST data set. https://docs.google.com/spreadsheets/d/1
+      xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+    best: 0
+    worst: +inf
+  period:
+    reference: 1985-2014
+  plausible_values:
+  - min: 0
+    max: 4
+    source: eurocordex_gcm_selection_team
+    comment:
+      Just a test value
 
 ```
 

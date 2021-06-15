@@ -36,5 +36,4 @@ for x in alldata:
   print(f'### {x.key}\n')
   print(f'Located in [{x.file}]({x.file})\n')
   print(f'{x.reference}\n')
-  print(f'[{x.doi}](https://doi.org/{x.doi})\n')
   print(f'```\n{x.__str__()}\n```\n')
