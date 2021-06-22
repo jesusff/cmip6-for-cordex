@@ -52,6 +52,7 @@
       NorESM2-MM_r1i1p1f1: 2.701519
       TaiESM1_r1i1p1f1: 3.954875
       UKESM1-0-LL_r1i1p1f2: 7.682689
+  data_other: # hidden data
     ssp370:
       ACCESS-CM2_r1i1p1f1: 5.130367
       ACCESS-ESM1-5_r1i1p1f1: 3.388167

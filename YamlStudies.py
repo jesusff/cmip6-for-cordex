@@ -127,10 +127,19 @@ class MetricEntry:
       rval = self.data.copy()
       rval.iloc[:] = pd.cut(self.data.values.flat,
         self.classes[0]['limits'],
-        labels=self.classes[0]['labels']
+        labels=self.classes[0]['labels'],
+        ordered = True # TODO: could be made False if 'colors' are passed (e.g. to have ['unplausible', 'medium','unplausible'])
       )
     else:
-      rval = self.data
+      rval = self.data.copy()
+      try:
+        for icol in range(rval.shape[1]):
+          rval.iloc[:,icol] = pd.qcut(rval.iloc[:,icol].values.flat,
+            q=3, # terciles
+            labels=[f'T{x}' for x in range(1,3+1)]
+          )
+      except ValueError:
+        rval = self.data.copy()
     return(rval)
 
   def get_formatted_data(self):
