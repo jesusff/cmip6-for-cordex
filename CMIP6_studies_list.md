@@ -1,6 +1,48 @@
 ## Incomplete entries
 
  * [Beo21](CMIP6_studies/Beo21.yaml)
+## Disabled entries
+
+ * [Atlas Dtas NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas NEU MAM](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas WCE MAM](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas MED MAM](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas world MAM](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas MED JJA](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas NEU SON](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas WCE SON](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas MED SON](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas world SON](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas NEU Annual](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas WCE Annual](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas MED Annual](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dtas world Annual](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr MED DJF](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr NEU MAM](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr WCE MAM](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr MED MAM](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr world MAM](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr NEU JJA](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr NEU SON](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr WCE SON](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr MED SON](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr world SON](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr NEU Annual](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr WCE Annual](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr MED Annual](CMIP6_studies/AtlasIPCC.yaml)
+ * [Atlas Dpr world Annual](CMIP6_studies/AtlasIPCC.yaml)
+ * [Beo21](CMIP6_studies/Beo21.yaml)
+ * [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
 ## Available entries (EUR scope)
 ### Sch20 ECS
 
@@ -24,74 +66,6 @@ Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensit
       ECS is calculated with ESMValTool (Gregory method). CMIP5 range is [2.08,
       4.67]. Ensemble member added to make it comparable to scenarioMIP runs,
       although ECS is derived from 4xCO2 runs, unrelated to scenarioMIP.
-
-```
-
-### Atlas Dtas Global
-
-Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
-
-None
-
-```
-- key: Atlas Dtas Global
-  doi: None
-  type: future_spread_DISABLED
-  spatial_scope: Global
-  temporal_scope: Annual
-  data_source: author_adapted
-  metric:
-    name: delta_tas
-    long_name: Near surface delta change 2070-2100 w.r.t. 1980-2010
-    units: K
-    variables: tas
-  period:
-    reference: 1980-2010
-    target: 2070-2100
-
-```
-
-### Tok20 Constrained TCR
-
-Located in [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
-
-Katarzyna B. Tokarska et al. (2020) Past warming trend constrains future warming in CMIP6 models, https://doi.org/10.1126%2Fsciadv.aaz9549
-
-```
-- key: Tok20 Constrained TCR
-  doi: 10.1126/sciadv.aaz9549
-  type: performance
-  spatial_scope: Global
-  temporal_scope: Annual
-  data_source: reference
-  metric:
-    name: TCR
-    long_name: Transient Climate Response
-    units: K
-    variables: tas
-    comment:
-      TCR is calculated from the CO2-only simulation, where the atmospheric CO2
-      concentration increases at a rate of 1% per year, centered on the time of
-      doubling of the atmospheric CO2, which occurs during simulation year 70
-      (we use the mean of the years 61 to 80). The values of the GCM TCR  can be
-      found in Suppl. Mat Table S1. Some model TCR are missing. This study is
-      based on multi-member for each model, not on only one member. https://adva
-      nces.sciencemag.org/content/advances/suppl/2020/03/16/6.12.eaaz9549.DC1/aa
-      z9549_SM.pdf
-  period:
-    reference: 1981-2014
-    comment:
-      This is not the period for the metric values (these are model years at the
-      time of doubling CO2), but the one used in the observational constraint.
-  plausible_values:
-  - min: 0.9
-    max: 2.27
-    source: reference
-    comment:
-      Constrained TCR using 1981-2014 temperature past trends, 90% likely range
-      (5-95%) for the TCR. See Table S3. On this Table there are also TCR ranges
-      based on 1981-2017. This period was selected because it leads to a wider,
-      more conservative plausible range.
 
 ```
 
@@ -399,51 +373,57 @@ Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
 
 ```
 
-### Atlas Dtas NEU
+### Atlas Dtas NEU JJA
 
 Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
 
-None
+['Pers. Comm.', 'Jesus Fernandez']
 
 ```
-- key: Atlas Dtas NEU
-  doi: None
+- key: Atlas Dtas NEU JJA
+  doi: ['Pers. Comm.', 'Jesus Fernandez']
   type: future_spread
   spatial_scope: NEU
-  temporal_scope: Annual
+  temporal_scope: JJA
   data_source: author_adapted
   metric:
     name: delta_tas
-    long_name: Near surface delta change 2070-2100 w.r.t. 1980-2010
+    long_name: Near surface delta change 2071-2100 w.r.t. 1981-2010
     units: K
     variables: tas
+    comment:
+      Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
+      aggregated-regionally using the tas_landsea dataset.
   period:
-    reference: 1980-2010
-    target: 2070-2100
+    reference: 1981-2010
+    target: 2071-2100
 
 ```
 
-### Atlas Dtas MED
+### Atlas Dpr MED JJA
 
 Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
 
-None
+['Pers. Comm.', 'Jesus Fernandez']
 
 ```
-- key: Atlas Dtas MED
-  doi: None
-  type: future_spread_DISABLED
+- key: Atlas Dpr MED JJA
+  doi: ['Pers. Comm.', 'Jesus Fernandez']
+  type: future_spread
   spatial_scope: MED
-  temporal_scope: Annual
+  temporal_scope: JJA
   data_source: author_adapted
   metric:
-    name: delta_tas
-    long_name: Near surface delta change 2070-2100 w.r.t. 1980-2010
-    units: K
-    variables: tas
+    name: delta_pr
+    long_name: Precipitation relative delta change 2071-2100 w.r.t. 1981-2010
+    units: percent
+    variables: pr
+    comment:
+      Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
+      aggregated-regionally using the pr_land dataset.
   period:
-    reference: 1980-2010
-    target: 2070-2100
+    reference: 1981-2010
+    target: 2071-2100
 
 ```
 

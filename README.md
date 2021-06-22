@@ -31,4 +31,4 @@ simulation depending on the variables available in ESGF.
 CMIP6 studies
 -------------
 
-These are collected as YAML files under [CMIP6_studies](./CMIP6_studies) and summarized in [CMIP6_studies_list.md](./CMIP6_studies_list.md). The information from all sources is merged in the [CMIP6_studies_table.csv](./CMIP6_studies_table.csv).
+These are collected as YAML files under [CMIP6_studies](./CMIP6_studies) and summarized in [CMIP6_studies_list.md](./CMIP6_studies_list.md). The information from all sources is merged in the [CMIP6_studies_table.csv](./CMIP6_studies_table.csv), which can be seen rendered as HTML in [CMIP6_studies_table.html](https://raw.githack.com/jesusff/cmip6-for-cordex/main/CMIP6_studies_table.html)
