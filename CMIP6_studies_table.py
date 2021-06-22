@@ -186,6 +186,6 @@ with open('CMIP6_studies_table.html','w') as f:
       .apply(color_classes, axis=0, subset=spreadcols)
       .render()
       .replace('nan','')
+      .replace('<style', '<!DOCTYPE html>\n<html><head></head><body><style')
       .replace('</table>','</table></body></html>')
-      .replace('<style', '<html><body><style')
   )
