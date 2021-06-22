@@ -57,14 +57,14 @@
     SAM0-UNICON_r1i1p1f1: 0.7313
     CNRM-CM6-1_r1i1p1f2: 0.7472
     CNRM-CM6-1-HR_r1i1p1f2: 0.8225
-    CRNM-ESM2-1_r1i1p1f2: 0.7558
+    CNRM-ESM2-1_r1i1p1f2: 0.7558
     EC-Earth3_r1i1p1f1: 0.331
     EC-Earth3-Veg_r1i1p1f1: 0.3898
     EC-Earth3-Veg-LR_r1i1p1f1: 0.4122
     EC-Earth3-AerChem_r1i1p1f1: 0.4026
     EC-Earth3-CC_r1i1p1f1: 0.3264
     GFDL-CM4_r1i1p1f1: 0.6426
-    GISS-ES-1-G_r1i1p1f1: 0.7064
+    GISS-E2-1-G_r1i1p1f1: 0.7064
     IPSL-CM6A-LR_r1i1p1f1: 0.7877
     IPSL-CM6A-LR_r14i1p1f1: 0.6758
     MIROC6_r3i1p1f1: 0.8931
