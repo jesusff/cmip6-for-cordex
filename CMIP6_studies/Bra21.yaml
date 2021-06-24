@@ -21,14 +21,19 @@
   period:
     reference: 1979-2005
   plausible_values:
-      min: 0
+    - min: 0
+      max: 1
+      source: eurocordex_gcm_selection_team
+      comment: >
+        Test value
+    - min: 0
       max: 5
-      source: reference
+      source: author
       comment: > 
         The range of plausible values is directly obtained from
-        doi: 10.5194/gmd-2020-418, the maximum MAE obtained there
+        the reference, the maximum MAE obtained there
         is here rounded to the next integer.
-  data_source: reference
+  data_source: author_adapted
   data:  
     ACCESS-CM2_r1i1p1f1: 0.5631
     ACCESS-ESM1-5_r1i1p1f1: 0.6518
@@ -177,7 +182,7 @@
   spatial_scope: Global
   temporal_scope: Annual
   plausible_values:
-      min: 222200000
+      min: 222210000
       max: 222222222
       source: eurocordex_gcm_selection_team
       comment: >

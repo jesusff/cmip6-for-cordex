@@ -16,8 +16,8 @@
  · [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr NEU JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dpr MED JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
+ · [Can20 marle](CMIP6_studies/Can20.yaml)
  · [Beo21](CMIP6_studies/Beo21.yaml)
 ## Available entries (EUR scope)
 ### Performance
@@ -168,38 +168,6 @@ None
 
 ```
 
-#### Can20 marle
-
-Located in [CMIP6_studies/Can20.yaml](CMIP6_studies/Can20.yaml)
-
-Alex J Cannon (2020) Reductions in daily continental-scale atmospheric circulation biases between generations of global climate models: CMIP5 to CMIP6, https://doi.org/10.1088%2F1748-9326%2Fab7e4f
-
-```
-- key: Can20 marle
-  doi: 10.1088/1748-9326/ab7e4f
-  type: performance
-  spatial_scope: EUR
-  temporal_scope: ONDJFM+AMJJAS
-  data_source: reference_extracted_from_plot
-  metric:
-    name: marle
-    long_name: Median absolute run length error
-    units: rank
-    variables: psl
-    comment:
-      Evaluation of automatic classification of weather types in 6 regions
-      including Europe. This metric is the rank of CMIP6 models according to
-      Median absolute run length error (MARLE; Figure 3) classified by MRT using
-      JRA55 as reference. Ranks vary wildly depending on classification method
-      and reference reanalysis. Ranks according to frecuency errors are also
-      available.
-    best: 1
-    worst: 27
-  period:
-    reference: 1960-2004
-
-```
-
 #### Oud20 jetpos
 
 Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
@@ -255,7 +223,7 @@ Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and
   type: performance
   spatial_scope: EUR
   temporal_scope: Annual
-  data_source: reference
+  data_source: author_adapted
   metric:
     name: lwtmae
     long_name: MAE of 27 Lamb Weather Type relative frequencies
@@ -275,12 +243,16 @@ Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and
     reference: 1979-2005
   plausible_values:
   - min: 0
-    max: 5
-    source: reference
+    max: 1
+    source: eurocordex_gcm_selection_team
     comment:
-      The range of plausible values is directly obtained from doi:
-      10.5194/gmd-2020-418, the maximum MAE obtained there is here rounded to
-      the next integer.
+      Test value
+  - min: 0
+    max: 5
+    source: author
+    comment:
+      The range of plausible values is directly obtained from the reference, the
+      maximum MAE obtained there is here rounded to the next integer.
 
 ```
 
@@ -562,6 +534,33 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
     comment:
       Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
       aggregated-regionally using the tas_landsea dataset.
+  period:
+    reference: 1981-2010
+    target: 2071-2100
+
+```
+
+#### Atlas Dpr MED JJA
+
+Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
+
+['Pers. Comm.', 'Jesus Fernandez']
+
+```
+- key: Atlas Dpr MED JJA
+  doi: ['Pers. Comm.', 'Jesus Fernandez']
+  type: future_spread
+  spatial_scope: MED
+  temporal_scope: JJA
+  data_source: author_adapted
+  metric:
+    name: delta_pr
+    long_name: Precipitation relative delta change 2071-2100 w.r.t. 1981-2010
+    units: percent
+    variables: pr
+    comment:
+      Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
+      aggregated-regionally using the pr_land dataset.
   period:
     reference: 1981-2010
     target: 2071-2100

@@ -2264,11 +2264,6 @@
       Data derived from
       https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-aggregated-regionally
       using the pr_land dataset.
-  disabled:
-    cause: preferred_source
-    preferred: 
-    comment: >
-      Too many possibilities for regions/seasons/scenarios available.
   spatial_scope: MED
   temporal_scope: JJA
   period:

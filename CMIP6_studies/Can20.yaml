@@ -15,6 +15,13 @@
       reanalysis. Ranks according to frecuency errors are also available.
     best: 1
     worst: 27
+  disabled:
+    cause: preferred_source
+    preferred: Bra21 Lamb EUR
+    comment: >
+      This is a ranking, which is hard to use as plausibility metric. Moreover,
+      Bra21 provides data for a much larger amount of models and explores also
+      weather type reproduction (frequency of occurrence rather than persistence).
   type: performance
   spatial_scope: EUR
   temporal_scope: ONDJFM+AMJJAS
