@@ -19,6 +19,7 @@
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Can20 marle](CMIP6_studies/Can20.yaml)
  · [Beo21](CMIP6_studies/Beo21.yaml)
+ · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
 ## Available entries (EUR scope)
 ### Performance
 #### Rib21 Constrained TCR
@@ -121,18 +122,22 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
     name: perf
     long_name: None
     units: None
-    variables: None
+    variables: ['tas', 'psl']
     comment:
       Evaluation of the model using global criteria (past trends + spatial
-      pattern) and independence criteria. Model with perfromance scores below
+      pattern) and independence criteria. Model with performance scores below
       0.006 are considered as irrealistic. This study is based on multi-member
-      for each model, not on only one member.
+      for each model, not on only one member. Here only the performance criteria
+      and not the combined criteria that takes also into account the
+      independence.
   period:
-    reference: None
+    reference: 1980-2014
   plausible_values:
   - min: 0.006
     max: 0.2
     source: reference
+    comment:
+      author provided? to be checked
 
 ```
 
@@ -214,6 +219,9 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
 #### Bra21 Lamb EUR
 
 Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
+
+Preferred to [CMIP6_studies/Can20.yaml](CMIP6_studies/Can20.yaml)
+[CMIP6_studies/Fer21.yaml](CMIP6_studies/Fer21.yaml)
 
 Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
 

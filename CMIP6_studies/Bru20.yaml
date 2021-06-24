@@ -52,20 +52,25 @@
     name: perf
     long_name:
     units: 
-    variables:
+    variables: [tas, psl]
     comment: >
       Evaluation of the model using global criteria (past trends + spatial pattern)
-      and independence criteria. Model with perfromance scores below 0.006 are
+      and independence criteria. Model with performance scores below 0.006 are
       considered as irrealistic. This study is based on multi-member for each model,
       not on only one member.
+
+      Here only the performance criteria and not the combined criteria that takes
+      also into account the independence.
   type: performance
   spatial_scope: Global
   plausible_values:
     min: 0.006
     max: 0.2
     source: reference
+    comment: >
+      author provided? to be checked
   period:
-    reference: 
+    reference: 1980-2014
   data_source: reference
   data:
     ACCESS-CM2_r1i1p1f1: 0.07

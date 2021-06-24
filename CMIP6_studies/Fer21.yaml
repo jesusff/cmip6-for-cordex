@@ -1,0 +1,38 @@
+- key: Fer21 Lamb TPMS
+  doi: 10.1007/s00382-021-05652-9
+  metric:
+    name: tpms
+    long_name: Transition Probability Matrix Score
+    units: 1
+    variables: psl
+    comment: >
+      Score summarizing the ability of the models to represent the transition
+      probabilities between weather types.
+      Values correspond to ERA-Interim as reference (blue bullets in Figure 6,
+      numbers provided by the author).
+    best: 0
+  disabled:
+    cause: preferred_source
+    preferred: Bra21 Lamb EUR
+    comment: >
+      Bra21 explores also weather type reproduction (frequency of occurrence
+      rather than transition probability) and provides data for a much larger
+      amount of models.
+      Weather types in Fer21 are centered over the British Isles, while Bra21
+      considers weather types for each grid point in Europe.
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  period:
+    reference: 1981-2010
+  data_source: author
+  data:
+    CNRM-CM6-1_r1i1p1f2: 1.73
+    EC-Earth3_r1i1p1f1: 1.86
+    GFDL-ESM4_r1i1p1f1: 1.96
+    IPSL-CM6A-LR_r1i1p1f1: 1.93
+    MIROC6_r1i1p1f1: 2.07
+    MPI-ESM1-2-LR_r1i1p1f1: 2.09
+    NESM3_r1i1p1f1: 3.44
+    NorESM2-LM_r1i1p1f1: 3.64
+    UKESM1-0-LL_r1i1p1f2: 1.78
