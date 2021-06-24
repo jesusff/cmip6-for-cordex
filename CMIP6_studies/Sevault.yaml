@@ -16,6 +16,8 @@
     min: 0
     max: 2
     source: author
+    comment: >
+      Threshold difficult to set. Currently it does not eliminate any GCM of the list
   data_source: author
   data:
     ACCESS-CM2_r1i1p1f1: 1.1
