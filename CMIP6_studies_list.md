@@ -3,47 +3,87 @@
  * [Beo21](CMIP6_studies/Beo21.yaml)
 ## Disabled entries
 
- * [Atlas Dtas NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas NEU MAM](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas WCE MAM](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas MED MAM](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas world MAM](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas MED JJA](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas NEU SON](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas WCE SON](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas MED SON](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas world SON](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas NEU Annual](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas WCE Annual](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas MED Annual](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dtas world Annual](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr MED DJF](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr NEU MAM](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr WCE MAM](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr MED MAM](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr world MAM](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr NEU JJA](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr NEU SON](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr WCE SON](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr MED SON](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr world SON](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr NEU Annual](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr WCE Annual](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr MED Annual](CMIP6_studies/AtlasIPCC.yaml)
- * [Atlas Dpr world Annual](CMIP6_studies/AtlasIPCC.yaml)
- * [Beo21](CMIP6_studies/Beo21.yaml)
- * [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
+ · [Atlas Dtas NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas NEU MAM](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas WCE MAM](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas MED MAM](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas world MAM](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas MED JJA](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas NEU SON](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas WCE SON](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas MED SON](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas world SON](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas NEU Annual](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas WCE Annual](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas MED Annual](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas world Annual](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr MED DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr NEU MAM](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr WCE MAM](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr MED MAM](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr world MAM](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr NEU JJA](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr NEU SON](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr WCE SON](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr MED SON](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr world SON](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr NEU Annual](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr WCE Annual](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr MED Annual](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr world Annual](CMIP6_studies/AtlasIPCC.yaml)
+ · [Beo21](CMIP6_studies/Beo21.yaml)
+ · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
 ## Available entries (EUR scope)
+### Rib21 Constrained TCR
+
+Located in [CMIP6_studies/Rib21.yaml](CMIP6_studies/Rib21.yaml)
+
+Aur\'elien Ribes et al. (2021) Making climate projections conditional on historical observations, https://doi.org/10.1126%2Fsciadv.abc0671
+
+```
+- key: Rib21 Constrained TCR
+  doi: 10.1126/sciadv.abc0671
+  type: performance
+  spatial_scope: Global
+  temporal_scope: Annual
+  data_source: reference
+  metric:
+    name: TCR
+    long_name: Transient Climate Response
+    units: K
+    variables: tas
+    comment:
+      TCR is calculated from the CO2-only simulation, where the atmospheric CO2
+      concentration increases at a rate of 1% per year, centered on the time of
+      doubling of the atmospheric CO2, which occurs during simulation year 70
+      (we use the mean of the years 61 to 80). The values of the GCM TCR  can be
+      found in Suppl. Mat Table S1. Some model TCR are missing. This study is
+      based on multi-member for each model, not on only one member.
+  period:
+    reference: 1850-2019
+    comment:
+      This is not the period for the metric values (these are model years at the
+      time of doubling CO2), but the one used in the observational constraint.
+  plausible_values:
+  - min: 1.33
+    max: 2.36
+    source: reference
+    comment:
+      This is a 90% likely range (5-95%) for the TCR. HadCRUT4-CW (Cowtan & Way,
+      2014) used as observational reference.
+
+```
+
 ### Sch20 ECS
 
 Located in [CMIP6_studies/Sch20.yaml](CMIP6_studies/Sch20.yaml)

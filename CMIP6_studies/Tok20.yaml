@@ -16,7 +16,7 @@
       on only one member.
 
       https://advances.sciencemag.org/content/advances/suppl/2020/03/16/6.12.eaaz9549.DC1/aaz9549_SM.pdf
-  undisabled: # while Rib21 Constrained TCR becomes available
+  undisabled: 
     cause: preferred_source
     preferred: Rib21 Constrained TCR
     comment: More conservative estimate than preferred source

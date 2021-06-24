@@ -26,7 +26,7 @@ for x in alldata:
 print(f'## Disabled entries\n')
 for x in alldata:
   if 'disabled' in x:
-    print(f' * [{x["key"]}]({x["file"]})')
+    print(f' · [{x["key"]}]({x["file"]})')
 
 with open('CMIP6_studies_config.yaml') as fp:
   config = yaml.load(fp, Loader=yaml.FullLoader)
