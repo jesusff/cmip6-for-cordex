@@ -36,9 +36,17 @@ alldata = ys.load_from_files('CMIP6_studies/*.yaml', resolve_doi = True, skip_di
 alldata = [x for x in alldata if x.spatial_scope in config['spatial_scope_filter'][CORDEX_DOMAIN]]
 alldata.sort(key=lambda x: config['spatial_scope_filter'][CORDEX_DOMAIN].index(x.spatial_scope))
 
+typenames = dict(
+  performance = 'Performance',
+  future_spread = 'Spread of future outcomes',
+  independence = 'Independence'
+)
 print(f'## Available entries ({CORDEX_DOMAIN} scope)')
-for x in alldata:
-  print(f'### {x.key}\n')
-  print(f'Located in [{x.file}]({x.file})\n')
-  print(f'{x.reference}\n')
-  print(f'```\n{x.__str__()}\n```\n')
+for t in typenames:
+  print(f'### {typenames[t]}')
+  for x in alldata:
+    if x.type == t:
+      print(f'#### {x.key}\n')
+      print(f'Located in [{x.file}]({x.file})\n')
+      print(f'{x.reference}\n')
+      print(f'```\n{x.__str__()}\n```\n')

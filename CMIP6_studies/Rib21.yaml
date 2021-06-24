@@ -1,0 +1,51 @@
+- key: Rib21 Constrained TCR
+  doi: 10.1126/sciadv.abc0671
+  metric:
+    name: TCR
+    long_name: Transient Climate Response
+    units: K
+    variables: tas
+    comment: >
+      TCR is calculated from the CO2-only simulation, where the atmospheric CO2
+      concentration increases at a rate of 1% per year, centered on the time of
+      doubling of the atmospheric CO2, which occurs during simulation year 70
+      (we use the mean of the years 61 to 80).
+
+      The values of the GCM TCR  can be found in Suppl. Mat Table S1. Some model
+      TCR are missing. This study is based on multi-member for each model, not
+      on only one member.
+  type: performance
+  spatial_scope: Global
+  temporal_scope: Annual
+  period:
+    reference: 1850-2019
+    comment: >
+      This is not the period for the metric values (these are model years at
+      the time of doubling CO2), but the one used in the observational constraint.
+  plausible_values:
+    min: 1.33
+    max: 2.36
+    source: reference
+    comment: >
+      This is a 90% likely range (5-95%) for the TCR.
+      HadCRUT4-CW (Cowtan & Way, 2014) used as observational reference.
+  data_source: reference
+  data:
+    BCC-CSM2-MR_r1i1p1f1: 1.6
+    CanESM5_r1-3i1p2f1: 2.75
+    CESM2_r2i1p1f1: 1.99
+    CNRM-CM6-1_r1i1p1f2: 2.23
+    CNRM-CM6-1-HR_r1i1p1f2: 2.47
+    CNRM-ESM2-1_r1i1p1f2: 1.82
+    EC-Earth3_r1i1p1f1: 2.32
+    EC-Earth3-Veg_r1i1p1f1: 2.76
+    GFDL-ESM4_r1i1p1f1: 1.61
+    INM-CM5-0_r1i1p1f1: 1.39
+    IPSL-CM6A-LR_r1i1p1f1: 2.39
+    MIROC6_r1i1p1f1: 1.58
+    MPI-ESM1-2-HR_r1i1p1f1: 1.57
+    MRI-ESM2-0_r1i1p1f1: 1.67
+    NESM3_r1i1p1f1: 2.79
+    NorESM2-LM_r1i1p1f1: 1.48
+    NorESM2-MM_r1i1p1f1: 1.48
+    UKESM1-0-LL_r1i1p1f2: 2.79
