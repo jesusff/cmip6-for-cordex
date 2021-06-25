@@ -42,7 +42,7 @@ enabled_data = [x for x in enabled_data if x.spatial_scope in config['spatial_sc
 enabled_data.sort(key=lambda x: config['spatial_scope_filter'][CORDEX_DOMAIN].index(x.spatial_scope))
 
 typenames = dict(
-  performance = 'Performance',
+  performance = 'Plausibility',
   future_spread = 'Spread of future outcomes',
   independence = 'Independence'
 )

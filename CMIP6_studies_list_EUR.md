@@ -3,9 +3,9 @@
  * [Beo21](CMIP6_studies/Beo21.yaml)
 ## Disabled entries
 
- · [Atlas Dtas NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas NEU JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas MED JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
@@ -15,12 +15,15 @@
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Can20 marle](CMIP6_studies/Can20.yaml)
  · [Beo21](CMIP6_studies/Beo21.yaml)
+ · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
  · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
 ## Available entries (EUR scope)
-### Performance
+### Plausibility
 #### Rib21 Constrained TCR
 
 Located in [CMIP6_studies/Rib21.yaml](CMIP6_studies/Rib21.yaml)
+
+Preferred to [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
 
 Aur\'elien Ribes et al. (2021) Making climate projections conditional on historical observations, https://doi.org/10.1126%2Fsciadv.abc0671
 
@@ -55,50 +58,6 @@ Aur\'elien Ribes et al. (2021) Making climate projections conditional on histori
     comment:
       This is a 90% likely range (5-95%) for the TCR. HadCRUT4-CW (Cowtan & Way,
       2014) used as observational reference.
-
-```
-
-#### Tok20 Constrained TCR
-
-Located in [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
-
-Katarzyna B. Tokarska et al. (2020) Past warming trend constrains future warming in CMIP6 models, https://doi.org/10.1126%2Fsciadv.aaz9549
-
-```
-- key: Tok20 Constrained TCR
-  doi: 10.1126/sciadv.aaz9549
-  type: performance
-  spatial_scope: Global
-  temporal_scope: Annual
-  data_source: reference
-  metric:
-    name: TCR
-    long_name: Transient Climate Response
-    units: K
-    variables: tas
-    comment:
-      TCR is calculated from the CO2-only simulation, where the atmospheric CO2
-      concentration increases at a rate of 1% per year, centered on the time of
-      doubling of the atmospheric CO2, which occurs during simulation year 70
-      (we use the mean of the years 61 to 80). The values of the GCM TCR  can be
-      found in Suppl. Mat Table S1. Some model TCR are missing. This study is
-      based on multi-member for each model, not on only one member. https://adva
-      nces.sciencemag.org/content/advances/suppl/2020/03/16/6.12.eaaz9549.DC1/aa
-      z9549_SM.pdf
-  period:
-    reference: 1981-2014
-    comment:
-      This is not the period for the metric values (these are model years at the
-      time of doubling CO2), but the one used in the observational constraint.
-  plausible_values:
-  - min: 0.9
-    max: 2.27
-    source: reference
-    comment:
-      Constrained TCR using 1981-2014 temperature past trends, 90% likely range
-      (5-95%) for the TCR. See Table S3. On this Table there are also TCR ranges
-      based on 1981-2017. This period was selected because it leads to a wider,
-      more conservative plausible range.
 
 ```
 
@@ -463,6 +422,38 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 ```
 
+#### atm. res. km
+
+Located in [CMIP6_studies/Resolution.yaml](CMIP6_studies/Resolution.yaml)
+
+None
+
+```
+- key: atm. res. km
+  doi: None
+  type: performance
+  spatial_scope: special
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: resolution
+    long_name: Nominal resolution of the atmospheric component
+    units: km
+    variables: None
+    comment:
+      Data extracted from the CMIP github https://github.com/WCRP-
+      CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json using
+      util/resolution_to_yaml.py Manually edited to include appropriate runs.
+    best: 0
+  plausible_values:
+  - min: 0
+    max: 300
+    source: eurocordex_gcm_selection_team
+    comment:
+      Test value
+
+```
+
 ### Spread of future outcomes
 #### Sch20 ECS
 
@@ -520,18 +511,18 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
 
 ```
 
-#### Atlas Dtas NEU JJA
+#### Atlas Dtas NEU DJF
 
 Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
 
 ['Pers. Comm.', 'Jesus Fernandez']
 
 ```
-- key: Atlas Dtas NEU JJA
+- key: Atlas Dtas NEU DJF
   doi: ['Pers. Comm.', 'Jesus Fernandez']
   type: future_spread
   spatial_scope: NEU
-  temporal_scope: JJA
+  temporal_scope: DJF
   data_source: author_adapted
   metric:
     name: delta_tas
