@@ -171,8 +171,13 @@ filter_all.iloc[:] = True
 pd.set_option('precision', 2)
 d1 = dict(selector=".level0", props=[('min-width', '150px')])
 f = open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w')
-f.write('<!DOCTYPE html>\n<html><head></head><body>')
-f.write(f'''<h1> CMIP6 for CORDEX summary tables (domain {CORDEX_DOMAIN})</h1>
+f.write(f'''<!DOCTYPE html>
+<html><head>
+<style>
+tr:hover {{background-color:#f5f5f5;}}
+</style>
+</head><body>
+<h1> CMIP6 for CORDEX summary tables (domain {CORDEX_DOMAIN})</h1>
 <ul>''')
 headers = [
   'Filter: available and plausible', 

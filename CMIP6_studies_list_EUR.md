@@ -454,6 +454,37 @@ None
 
 ```
 
+#### Bra21 complexity
+
+Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
+
+Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
+
+```
+- key: Bra21 complexity
+  doi: 10.5194/gmd-2020-418
+  type: performance
+  spatial_scope: special
+  temporal_scope: Annual
+  data_source: reference
+  metric:
+    name: complexity
+    long_name: Complexity of model components
+    units: categorical
+    variables: []
+    comment:
+      Model complexity from Table 1 is coded with ternary values   0 - not
+      considered   1 - prescribed   2 - interactive component in the following
+      order Atm-Lnd-Ocn-SI-Aer-Chem-Tbgc-Obgc-Veg-Gla
+  plausible_values:
+  - min: 2222100000
+    max: 2222222222
+    source: eurocordex_gcm_selection_team
+    comment:
+      At least coupled Atm-Lnd-Ocn-SI with some form of aerosol consideration
+
+```
+
 ### Spread of future outcomes
 #### Sch20 ECS
 
