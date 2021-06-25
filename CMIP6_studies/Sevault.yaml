@@ -6,7 +6,17 @@
     units: K
     variables: sst
     comment: >
-      For the performance criteria, we compute the spatial RMSE on the 12-month bias maps over the period 1985-2014. It means that we first compute the temporal average to obtain a mean seasonal cycle - 12maps- of the bias maps and then we compute the spatio-temporal RMSE). All the models are interpolated on the grid of the refererence dataset, and then a mask of the Mediterranean Sea is applied (no Black Sea).  The reference dataset is a specific CMEMS product developed for the Mediterranean Sea, GOS-L4_GHRSST-SSTfnd-OISST_HR_REP-MED-v02.0-fv02.0 data (Pisano et al. 2016, doi:10.1016/j.rse.2016.01.019, Casey et al. 2010, doi:10.1007/978-90-481-8681-5_16 . Generated/provided by Copernicus Marine Service and CNR - ISMAR ROME.
+      For the performance criteria, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014. It means that we first compute the
+      temporal average to obtain a mean seasonal cycle - 12maps- of the bias maps and
+      then we compute the spatio-temporal RMSE). All the models are interpolated on
+      the grid of the refererence dataset, and then a mask of the Mediterranean Sea
+      is applied (no Black Sea).  The reference dataset is a specific CMEMS product
+      developed for the Mediterranean Sea,
+      GOS-L4_GHRSST-SSTfnd-OISST_HR_REP-MED-v02.0-fv02.0 data (Pisano et al. 2016,
+      doi:10.1016/j.rse.2016.01.019, Casey et al. 2010,
+      doi:10.1007/978-90-481-8681-5_16 . Generated/provided by Copernicus Marine
+      Service and CNR - ISMAR ROME.
     best: 0
     worst: inf
   type: performance
@@ -63,8 +73,7 @@
     IPSL-CM6A-LR_r1i1p1f1: 1.2
     KACE-1-0-G_r1i1p1f1:       0.8
     KIOST-ESM_r1i1p1f1:         2.0 
-    MCM-UA-1-0_hist_r1i1p1f1:  0.8    
-    MCM-UA-1-0_r1i1_r1i1p1f1:  0.8
+    MCM-UA-1-0_r1i1p1f1:  0.8    
     MIROC6_r1i1p1f1: 1.7
     MIROC-ES2L_r1i1p1f1:        1.2
     MPI-ESM-1-2-HAM_r1i1p1f1:   1.4
