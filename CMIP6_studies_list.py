@@ -1,8 +1,12 @@
 import glob
 import YamlStudies as ys
 import yaml
+import sys
 
-CORDEX_DOMAIN = 'EUR'
+CORDEX_DOMAIN = sys.argv[1]
+
+with open('CMIP6_studies_config.yaml') as fp:
+  config = yaml.load(fp, Loader=yaml.FullLoader)
 
 alldata = []
 for fname in glob.glob('CMIP6_studies/*.yaml'):
@@ -11,6 +15,7 @@ for fname in glob.glob('CMIP6_studies/*.yaml'):
     for x in entrylist:
       x['file'] = fname
     alldata.extend(entrylist)
+alldata = [x for x in alldata if x['spatial_scope'] in config['spatial_scope_filter'][CORDEX_DOMAIN]]
 
 def is_incomplete(dic):
   try:
@@ -30,10 +35,6 @@ for x in alldata:
     print(f' · [{x["key"]}]({x["file"]})')
     if x['disabled']['cause'] == 'preferred_source' and x['disabled']['preferred']:
       preferred.setdefault(x['disabled']['preferred'], []).append(x['key'])
-    
-
-with open('CMIP6_studies_config.yaml') as fp:
-  config = yaml.load(fp, Loader=yaml.FullLoader)
 
 enabled_data = ys.load_from_files('CMIP6_studies/*.yaml', resolve_doi = True, skip_disabled = True)
 # filter and sort

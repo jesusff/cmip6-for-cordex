@@ -4,18 +4,14 @@
 ## Disabled entries
 
  · [Atlas Dtas NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dtas WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dtas WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas MED JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dpr WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr MED DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr NEU JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dpr WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Can20 marle](CMIP6_studies/Can20.yaml)
  · [Beo21](CMIP6_studies/Beo21.yaml)
@@ -321,6 +317,9 @@ Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
   - min: 0
     max: 2
     source: author
+    comment:
+      Threshold difficult to set. Currently it does not eliminate any GCM of the
+      list
 
 ```
 

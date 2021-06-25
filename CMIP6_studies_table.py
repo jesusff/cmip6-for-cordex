@@ -5,6 +5,8 @@ import seaborn as sns
 import YamlStudies as ys
 import yaml
 
+CORDEX_DOMAIN = 'EUR'
+
 def synthesis(binvalues):
   return(np.sum(binvalues, axis=1, where=~np.isnan(binvalues.astype(float))))
 
@@ -16,7 +18,6 @@ with open('CMIP6_studies_config.yaml') as fp:
 
 alldata = ys.load_from_files('CMIP6_studies/*.yaml', skip_disabled = True)
 # filter and sort
-CORDEX_DOMAIN = 'EUR'
 alldata = [x for x in alldata if x.spatial_scope in config['spatial_scope_filter'][CORDEX_DOMAIN]]
 alldata.sort(key=lambda x: config['spatial_scope_filter'][CORDEX_DOMAIN].index(x.spatial_scope))
 
@@ -60,7 +61,7 @@ tableindep = pd.concat(
 )
 
 # Availability
-tableavail = pd.read_csv('CMIP6_for_CORDEX_Summary.csv').set_index(['model', 'run'])
+tableavail = pd.read_csv('CMIP6_for_CORDEX_availability_ESGF.csv').set_index(['model', 'run'])
 non_esgf = pd.read_csv('CMIP6_for_CORDEX_availability_non_ESGF.csv').set_index(['model', 'run'])
 tableavail.update(non_esgf)
 # - update synthesis column
@@ -86,15 +87,14 @@ tablefull = pd.concat(
 )
 tablefull = tablefull.reindex(ns.natsorted(tablefull.index))
 # Dump final CSV
-tablefull.to_csv(
-  'CMIP6_studies_table.csv', float_format = '%.2f', index_label = ['model', 'run']
-)
+csvout = f'CMIP6_studies_table_{CORDEX_DOMAIN}.csv'
+tablefull.to_csv(csvout, float_format = '%.2f', index_label = ['model', 'run'])
 # Some fixes for Google Spreadsheet
-fp = open('CMIP6_studies_table.csv', 'r')
+fp = open(csvout, 'r')
 lines = fp.readlines()
 fp.close()
 lines[1] = lines[1].replace(',,','model,run,')
-fp = open('CMIP6_studies_table.csv', 'w')
+fp = open(csvout, 'w')
 fp.writelines([lines[0]]+lines[3:5]+[lines[1]]+lines[5:])
 fp.close()
 
@@ -165,20 +165,34 @@ indepcols = get_cols_under(main_headers[3], tablefull)
 filter_avail = tablefull[(main_headers[0], 'synthesis')] == 1
 filter_plausible = tablefull[(main_headers[1], 'Synthesis')] == 1
 filter_avail_and_plausible = filter_avail & filter_plausible
-filter_rows = filter_avail_and_plausible
-filter_rows.iloc[0:2] = True # keep plausible value rows
+filter_all = filter_avail.copy()
+filter_all.iloc[:] = True
 pd.set_option('precision', 2)
 d1 = dict(selector=".level0", props=[('min-width', '150px')])
-with open('CMIP6_studies_table.html','w') as f:
+f = open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w')
+f.write('<!DOCTYPE html>\n<html><head></head><body>')
+f.write(f'''<h1> CMIP6 for CORDEX summary tables (domain {CORDEX_DOMAIN})</h1>
+<ul>''')
+headers = [
+  'Filter: available and plausible', 
+  'Filter: available', 
+  'Filter: plausible', 
+  'All members with 2 or more scenarios and/or some metric available'
+]
+ids = ['avail-and-plausible', 'available', 'plausible', 'all']
+f.write('\n'.join([f'\n<li><a href="#{ids[k]}">{header}</a></li>' for k,header in enumerate(headers)]))
+f.write('</ul>')
+for item,filter_rows in enumerate([filter_avail_and_plausible, filter_avail, filter_plausible, filter_all]):
+  filter_rows.iloc[0:2] = True # keep plausible value rows
+  f.write(f'<h2 id="{ids[item]}">{headers[item]}</h2>')
   f.write(tablefull
-#    .loc[filter_rows]
+    .loc[filter_rows]
     .style
       .set_properties(**{'font-size':'8pt', 'border':'1px black solid collapse !important'})
       .set_table_styles([d1,{
         'selector': 'th',
         'props': [('font-size', '8pt'),('border-style','solid'),('border-width','1px')]
       }])
-#      .apply(hide_nan, axis=None)
       .apply(greyout_non_rcm, axis=None, subset=availcols)
       .apply(greyout_unplausible, axis=0, subset=perfcols)
       .apply(greyout_unplausible_rows, axis=0, subset=spreadcols+indepcols)
@@ -186,6 +200,6 @@ with open('CMIP6_studies_table.html','w') as f:
       .apply(color_classes, axis=0, subset=spreadcols)
       .render()
       .replace('nan','')
-      .replace('<style', '<!DOCTYPE html>\n<html><head></head><body><style')
-      .replace('</table>','</table></body></html>')
   )
+f.write('</body></html>')
+f.close()
