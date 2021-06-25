@@ -182,35 +182,36 @@
   spatial_scope: special
   temporal_scope: Annual
   plausible_values:
-      min: 222210000
-      max: 222222222
+      min: 2222100000
+      max: 2222222222
       source: eurocordex_gcm_selection_team
       comment: >
         At least coupled Atm-Lnd-Ocn-SI with some form of aerosol consideration
   data_source: reference
   data:
-    ACESS-CM2_r1i1p1f1:         2222200000
-    ACESS-ESM1-5_r1i1p1f1:      2222202200
-    AWI-ESM-1-1-1_r1i1p1f1:     2222000000
-    BCC-CSM2-MR_r1i1p1f1:       2222000000
+    #                           ALOIACtoVG
+    ACCESS-CM2_r1i1p1f1:        2222200000
+    ACCESS-ESM1-5_r1i1p1f1:     2222202200
+    AWI-ESM-1-1-LR_r1i1p1f1:    2222100000
+    BCC-CSM2-MR_r1i1p1f1:       2222100000
     CNRM-CM6-1_r1i1p1f2:        2222120000
     CNRM-CM6-1-HR_r1i1p1f2:     2222120000
     CNRM-ESM2-1_r1i1p1f2:       2222222200
-    EC-Earth3_r1i1p1f1:         2222000000
-    EC-Earth3-Veg_r1i1p1f1:     2222002000
-    EC-Earth3-Veg-LR_r1i1p1f1:  2222002000
+    EC-Earth3_r1i1p1f1:         2222100000
+    EC-Earth3-Veg_r1i1p1f1:     2222102000
+    EC-Earth3-Veg-LR_r1i1p1f1:  2222102000
     EC-Earth3-AerChem_r1i1p1f1: 2222220000
     GFDL-CM4_r1i1p1f1:          2222222200
-    GISS-E2-1-G_r1i1p1f1:       2222000000
+    GISS-E2-1-G_r1i1p1f1:       2222100000
     HadGEM3-GC31-MM_r1i1p1f3:   2222222000
-    IPSL-CM6A-LR_r1i1p1f1:      2222002200
+    IPSL-CM6A-LR_r1i1p1f1:      2222102200
     MIROC6_r3i1p1f1:            2222200000
     MIROC-ES2L_r5i1p1f2:        2222202200
-    MPI-ESM1-2-LR_r1i1p1f1:     2222002200
-    MPI-ESM1-2-HR_r1i1p1f1:     2222002200
-    MPI-ESM1-2-HAM_r1i1p1f1:    2222222200
+    MPI-ESM1-2-LR_r1i1p1f1:     2222102200
+    MPI-ESM1-2-HR_r1i1p1f1:     2222102200
+    MPI-ESM-1-2-HAM_r1i1p1f1:   2222222200
     MRI-ESM2-0_r1i1p1f1:        2222222200
-    NESM3_r1i1p1f1:             2222000000
+    NESM3_r1i1p1f1:             2222100000
     NorESM2-LM_r1i1p1f1:        2222222202
     NorESM2-MM_r1i1p1f1:        2222222202
     SAM0-UNICON_r1i1p1f1:       2222200000 
