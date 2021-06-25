@@ -2,10 +2,11 @@ import natsort as ns
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import sys
 import YamlStudies as ys
 import yaml
 
-CORDEX_DOMAIN = 'EUR'
+CORDEX_DOMAIN = sys.argv[1]
 
 def synthesis(binvalues):
   return(np.sum(binvalues, axis=1, where=~np.isnan(binvalues.astype(float))))
@@ -80,7 +81,7 @@ row_filter = set(tableavail.index[tableavail_row_filter]).union(
 tableavail = tableavail.loc[row_filter]
 
 # All together
-main_headers = ['1. Availability', '2. Performance', '3. Spread', '4. Independence']
+main_headers = ['1. Availability', '2. Plausibility', '3. Spread of future outcomes', '4. Independence']
 tablefull = pd.concat(
   [tableavail, tableprange,tablespread, tableindep], axis=1, 
   keys=main_headers

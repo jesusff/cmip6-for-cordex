@@ -1,4 +1,4 @@
-,,1. Availability,1. Availability,1. Availability,1. Availability,1. Availability,1. Availability,1. Availability,2. Performance,2. Performance,2. Performance,2. Performance,2. Performance,3. Spread,4. Independence
+,,1. Availability,1. Availability,1. Availability,1. Availability,1. Availability,1. Availability,1. Availability,2. Plausibility,2. Plausibility,2. Plausibility,2. Plausibility,2. Plausibility,3. Spread of future outcomes,4. Independence
 . Plausible values,max,,,,,,,,,2.36,2.27,0.20,1.00,,
 . Plausible values,min,,,,,,,,,1.33,0.90,0.01,1.00,,
 model,run,synthesis,historical,ssp119,ssp126,ssp245,ssp370,ssp585,Synthesis,Rib21 Constrained TCR,Tok20 Constrained TCR,Bru20 perf,Qas21 Constrained Dtas ssp245,Sch20 ECS,Bru20 mfamily
