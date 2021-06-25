@@ -38,14 +38,15 @@
     CNRM-CM6-1-HR_r1i1p1f2: 2.47
     CNRM-ESM2-1_r1i1p1f2: 1.82
     EC-Earth3_r1i1p1f1: 2.32
-    EC-Earth3-Veg_r1i1p1f1: 2.76
+    EC-Earth3-Veg_r1-3i1p1f1: 2.76
     GFDL-ESM4_r1i1p1f1: 1.61
     INM-CM5-0_r1i1p1f1: 1.39
-    IPSL-CM6A-LR_r1i1p1f1: 2.39
+    IPSL-CM6A-LR_r1-6i1p1f1: 2.39
+    IPSL-CM6A-LR_r14i1p1f1: 2.39
     MIROC6_r1i1p1f1: 1.58
     MPI-ESM1-2-HR_r1i1p1f1: 1.57
     MRI-ESM2-0_r1i1p1f1: 1.67
     NESM3_r1i1p1f1: 2.79
     NorESM2-LM_r1i1p1f1: 1.48
     NorESM2-MM_r1i1p1f1: 1.48
-    UKESM1-0-LL_r1i1p1f2: 2.79
+    UKESM1-0-LL_r1-3i1p1f2: 2.79

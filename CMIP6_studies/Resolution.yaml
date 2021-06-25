@@ -1,0 +1,90 @@
+- key: atm. res. km
+  doi: 
+  metric:
+    name: resolution
+    long_name: Nominal resolution of the atmospheric component 
+    units: km
+    variables: 
+    comment: >
+      Data extracted from the CMIP github
+      https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json
+      using util/resolution_to_yaml.py
+      Manually edited to include appropriate runs.
+    best: 0
+  type: performance
+  spatial_scope: special
+  temporal_scope: Annual
+  plausible_values:
+    - min: 0
+      max: 300
+      source: eurocordex_gcm_selection_team
+      comment: Test value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 250
+    ACCESS-ESM1-5_r1i1p1f1: 250
+    AWI-CM-1-1-MR_r1i1p1f1: 100
+    BCC-CSM2-MR_r1i1p1f1: 100
+    CAMS-CSM1-0_r1i1p1f1: 100
+    CAS-ESM2-0_r1i1p1f1: 100
+    CESM2_r2i1p1f1: 100
+    CESM2_r11i1p1f1: 100
+    CESM2-WACCM_r1i1p1f1: 100
+    CIESM_r1i1p1f1: 100
+    CMCC-CM2-SR5_r1i1p1f1: 100
+    CMCC-ESM2_r1i1p1f1: 100
+    CNRM-CM6-1_r1i1p1f2: 250
+    CNRM-ESM2-1_r1i1p1f2: 250
+    CanESM5_r1-3i1p2f1: 500
+    E3SM-1-0_r1i1p1f1: 100
+    E3SM-1-1_r1i1p1f1: 100
+    E3SM-1-1-ECA_r1i1p1f1: 100
+    EC-Earth3_r1i1p1f1: 100
+    EC-Earth3-AerChem_r1i1p1f1: 100
+    EC-Earth3-CC_r1i1p1f1: 100
+    EC-Earth3-Veg_r1-3i1p1f1: 100
+    EC-Earth3-Veg-LR_r1i1p1f1: 250
+    FGOALS-f3-L_r1i1p1f1: 100
+    FGOALS-g3_r1i1p1f1: 250
+    FIO-ESM-2-0_r1i1p1f1: 100
+    GFDL-CM4_r1i1p1f1: 100
+    GFDL-ESM4_r1i1p1f1: 100
+    GISS-E2-1-G_r1i1p1f1: 250
+    GISS-E2-1-H_r1i1p1f1: 250
+    HadGEM3-GC31-MM_r1i1p1f3: 100
+    IITM-ESM_r1i1p1f1: 250
+    INM-CM4-8_r1i1p1f1: 100
+    INM-CM5-0_r1i1p1f1: 100
+    IPSL-CM5A2-INCA_r1i1p1f1: 500
+    IPSL-CM6A-LR_r1-6i1p1f1: 250
+    IPSL-CM6A-LR_r14i1p1f1: 250
+    KACE-1-0-G_r1i1p1f1: 250
+    KIOST-ESM_r1i1p1f1: 250
+    MCM-UA-1-0_r1i1p1f1: 250
+    MIROC-ES2L_r1i1p1f2: 500
+    MIROC6_r1i1p1f1: 250
+    MPI-ESM-1-2-HAM_r1i1p1f1: 250
+    MPI-ESM1-2-HR_r1-2i1p1f1: 100
+    MPI-ESM1-2-LR_r1-10i1p1f1: 250
+    MRI-ESM2-0_r1i1p1f1: 100
+    NESM3_r1i1p1f1: 250
+    NorESM2-LM_r1i1p1f1: 250
+    NorESM2-MM_r1i1p1f1: 100
+    SAM0-UNICON_r1i1p1f1: 100
+    TaiESM1_r1i1p1f1: 100
+    UKESM1-0-LL_r1-3i1p1f2: 250
+  data_other:
+    AWI-CM-1-1-LR_r1i1p1f1: 250
+    BESM-2-9_r1i1p1f1: 250
+    BNU-ESM-1-1_r1i1p1f1: 250
+    CanESM5-CanOE_r1i1p1f1: 500
+    CNRM-CM6-1-HR_r1i1p1f1: 100
+    CNRM-ESM2-1-HR_r1i1p1f1: 100
+    GISS-E2-2-G_r1i1p1f1: 250
+    GISS-E2-2-H_r1i1p1f1: 250
+    GISS-E3-G_r1i1p1f1: 100
+    HadGEM3-GC31-LL_r1i1p1f1: 250
+    MIROC-ES2H_r1i1p1f1: 250
+    NorESM2-MH_r1i1p1f1: 100
+    UKESM1-0-MMh_r1i1p1f1: 100
+    VRESM-1-0_r1i1p1f1: 50
