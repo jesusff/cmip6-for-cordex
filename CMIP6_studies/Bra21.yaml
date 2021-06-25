@@ -177,9 +177,9 @@
         0 - not considered
         1 - prescribed
         2 - interactive component
-      in the following order Atm-Lnd-Ocn-SI-Aer-Chem-Veg-Obgc-Gla
-  type: complexity
-  spatial_scope: Global
+      in the following order Atm-Lnd-Ocn-SI-Aer-Chem-Tbgc-Obgc-Veg-Gla
+  type: performance
+  spatial_scope: special
   temporal_scope: Annual
   plausible_values:
       min: 222210000
@@ -189,20 +189,28 @@
         At least coupled Atm-Lnd-Ocn-SI with some form of aerosol consideration
   data_source: reference
   data:
-    BCC-CSM2-MR_r1i1p1f1: 222200000
-    CanESM5_r1i1p1f1: 
-    CESM2_r2i1p1f1: 
-    CNRM-CM6-1_r1i1p1f2: 222212000
-    CNRM-ESM2-1_r1i1p1f2: 222222220
-    EC-Earth3_r1i1p1f1: 222200000
-    EC-Earth3-Veg_r1i1p1f1: 222200200
-    EC-Earth3-Veg-LR_r1i1p1f1: 222200200
-    EC-Earth3-AerChem_r1i1p1f1: 222222000
-    FGOALS-g3_r1i1p1f1: 
-    GFDL-ESM4_r1i1p1f1: 
-    IPSL-CM6A-LR_r1i1p1f1: 
-    MIROC6_r1i1p1f1: 
-    MPI-ESM1-2-HR_r1i1p1f1: 
-    MRI-ESM2-0_r1i1p1f1: 
-    NESM3_r1i1p1f1: 
-    UKESM1-0-LL_r1i1p1f2: 
+    ACESS-CM2_r1i1p1f1:         2222200000
+    ACESS-ESM1-5_r1i1p1f1:      2222202200
+    AWI-ESM-1-1-1_r1i1p1f1:     2222000000
+    BCC-CSM2-MR_r1i1p1f1:       2222000000
+    CNRM-CM6-1_r1i1p1f2:        2222120000
+    CNRM-CM6-1-HR_r1i1p1f2:     2222120000
+    CNRM-ESM2-1_r1i1p1f2:       2222222200
+    EC-Earth3_r1i1p1f1:         2222000000
+    EC-Earth3-Veg_r1i1p1f1:     2222002000
+    EC-Earth3-Veg-LR_r1i1p1f1:  2222002000
+    EC-Earth3-AerChem_r1i1p1f1: 2222220000
+    GFDL-CM4_r1i1p1f1:          2222222200
+    GISS-E2-1-G_r1i1p1f1:       2222000000
+    HadGEM3-GC31-MM_r1i1p1f3:   2222222000
+    IPSL-CM6A-LR_r1i1p1f1:      2222002200
+    MIROC6_r3i1p1f1:            2222200000
+    MIROC-ES2L_r5i1p1f2:        2222202200
+    MPI-ESM1-2-LR_r1i1p1f1:     2222002200
+    MPI-ESM1-2-HR_r1i1p1f1:     2222002200
+    MPI-ESM1-2-HAM_r1i1p1f1:    2222222200
+    MRI-ESM2-0_r1i1p1f1:        2222222200
+    NESM3_r1i1p1f1:             2222000000
+    NorESM2-LM_r1i1p1f1:        2222222202
+    NorESM2-MM_r1i1p1f1:        2222222202
+    SAM0-UNICON_r1i1p1f1:       2222200000 
