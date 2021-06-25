@@ -8,11 +8,26 @@ import yaml
 
 CORDEX_DOMAIN = sys.argv[1]
 
-def synthesis(binvalues):
-  return(np.sum(binvalues, axis=1, where=~np.isnan(binvalues.astype(float))))
+def synthesis_sum_failures(binvalues, test = False):
+  if test:
+    return(binvalues == 0)
+  else:
+    return(np.sum(1-binvalues, axis=1, initial=0, where=~np.isnan(binvalues.astype(float))))
 
-def synthesis(binvalues):
-  return(np.logical_and.reduce(binvalues, axis=1, initial=True, where=~np.isnan(binvalues.astype(float)))*1)
+def synthesis_proportion_right(binvalues, test = False):
+  if test:
+    return(binvalues > 0.2)
+  else:
+    n = binvalues.shape[1]
+    return(np.sum(binvalues, axis=1, initial=0, where=~np.isnan(binvalues.astype(float)))/n)
+
+def synthesis_any_failure(binvalues, test = False):
+  if test: 
+    return(binvalues == 1)
+  else:
+    return(np.logical_and.reduce(binvalues, axis=1, initial=True, where=~np.isnan(binvalues.astype(float)))*1)
+
+synthesis = synthesis_sum_failures
 
 with open('CMIP6_studies_config.yaml') as fp:
   config = yaml.load(fp, Loader=yaml.FullLoader)
@@ -117,12 +132,12 @@ def greyout_non_rcm(df):
 def greyout_unplausible(df):
   attr = 'color: grey'
   is_out = (df > df.iloc[0]) | (df < df.iloc[1])
-  return([attr if v else '' for v in is_out])
+  return([attr if v else '' for v in is_out.fillna(False)])
 
 def greyout_unplausible_rows(df):
   global filter_plausible
-  attr = 'color: silver'
-  rval = df.copy()
+  attr = 'color: grey'
+  rval = df.copy().astype('string')
   rval.update(filter_plausible.map({False: attr, True: ''}))
   return(rval)
 
@@ -132,19 +147,23 @@ def highligh_plausible_range(df):
 
 def color_classes(df):
   class_data = get_class_info(df)
-  rval = df.copy()
+  rval = df.copy().astype('string')
   rval.iloc[:] = ''
   if class_data:
     levels, classes = class_data
     colors = sns.color_palette("Spectral_r", len(levels)).as_hex()
-    rval.update(classes.map(dict(zip(levels,[f'background-color:{c}' for c in colors]))))
+    rval.update(classes.astype('string').map(dict(zip(levels,[f'background-color:{c}' for c in colors]))))
+  return(rval)
+
+def remove_trailing_ssp(string):
+  rval = string
+  if rval[-6:-3] == 'ssp':
+    rval = rval[:-7]
   return(rval)
 
 def get_class_info(series):
   global alldata
-  key = series.name[1]
-  if key[-6:-3] == 'ssp':
-    key = key[:-7]
+  key = remove_trailing_ssp(series.name[1])
   entry = alldata[[x.key for x in alldata].index(key)]
   if entry.has_classes():
     return(entry.classes[0].labels,entry.get_class_data().loc[:,series.name[1]])
@@ -164,7 +183,7 @@ spreadcols = get_cols_under(main_headers[2], tablefull)
 indepcols = get_cols_under(main_headers[3], tablefull)
 # Row filters
 filter_avail = tablefull[(main_headers[0], 'synthesis')] == 1
-filter_plausible = tablefull[(main_headers[1], 'Synthesis')] == 1
+filter_plausible = synthesis(tablefull[(main_headers[1], 'Synthesis')], test = True)
 filter_avail_and_plausible = filter_avail & filter_plausible
 filter_all = filter_avail.copy()
 filter_all.iloc[:] = True
@@ -193,6 +212,7 @@ for item,filter_rows in enumerate([filter_avail_and_plausible, filter_avail, fil
   f.write(f'<h2 id="{ids[item]}">{headers[item]}</h2>')
   f.write(tablefull
     .loc[filter_rows]
+    .convert_dtypes(convert_string = False, convert_boolean = False)
     .style
       .set_properties(**{'font-size':'8pt', 'border':'1px black solid collapse !important'})
       .set_table_styles([d1,{
@@ -215,11 +235,12 @@ baseurl = f'https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_studies_
 with open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','r') as f:
   fulltext = f.read()
 
-for head in [x[1] for x in perfcols+spreadcols+indepcols]:
-  lowerhead = head.lower()
-  lowerhead = lowerhead.replace(' ', '-')
-  lowerhead = lowerhead.replace('.', '')
-  fulltext = fulltext.replace(head, f'<a href="{baseurl}#{lowerhead}">{head}</a>')
+for head in [x[1] for x in spreadcols+perfcols+indepcols]:
+  anchor = remove_trailing_ssp(head)
+  anchor = anchor.lower()
+  anchor = anchor.replace(' ', '-')
+  anchor = anchor.replace('.', '')
+  fulltext = fulltext.replace(head, f'<a href="{baseurl}#{anchor}">{head}</a>')
 
 with open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w') as f:
   f.write(fulltext)

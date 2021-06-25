@@ -250,15 +250,15 @@ Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
 
 ```
 
-#### F. Sevault MED SST
+#### Sevault MED SST
 
 Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
 
-['pers_comm', 'F. Sevault']
+['pers_comm', 'F. Sevault', 'CNRM']
 
 ```
-- key: F. Sevault MED SST
-  doi: ['pers_comm', 'F. Sevault']
+- key: Sevault MED SST
+  doi: ['pers_comm', 'F. Sevault', 'CNRM']
   type: performance
   spatial_scope: MED
   temporal_scope: Annual
@@ -269,7 +269,17 @@ Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
     units: K
     variables: sst
     comment:
-      TO-DO what is the reference data set and period?
+      For the performance criteria, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014. It means that we first compute the
+      temporal average to obtain a mean seasonal cycle - 12maps- of the bias
+      maps and then we compute the spatio-temporal RMSE). All the models are
+      interpolated on the grid of the refererence dataset, and then a mask of
+      the Mediterranean Sea is applied (no Black Sea).  The reference dataset is
+      a specific CMEMS product developed for the Mediterranean Sea,
+      GOS-L4_GHRSST-SSTfnd-OISST_HR_REP-MED-v02.0-fv02.0 data (Pisano et al.
+      2016, doi:10.1016/j.rse.2016.01.019, Casey et al. 2010,
+      doi:10.1007/978-90-481-8681-5_16 . Generated/provided by Copernicus Marine
+      Service and CNR - ISMAR ROME.
     best: 0
     worst: inf
   plausible_values:
@@ -277,8 +287,7 @@ Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
     max: 2
     source: author
     comment:
-      Threshold difficult to set. Currently it does not eliminate any GCM of the
-      list
+      The plausibility threshold is difficult to set.
 
 ```
 
@@ -615,16 +624,17 @@ Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
     units: K
     variables: sst
     comment:
-      Mediterranean SST future evolution, SSP585, end21st (F. Sevault, pers.
-      comm.) TO-DO which periods? temporal scope?
+      For the Future spread, we simply compute the basin-averaged and temporal-
+      averaged climate change response (annual mean) over the Mediterranean Sea
+      (no Black Sea) for the period 2070-2099 wrt the present-climate 1985-2014
+      period for the SSP585 scenario.
   classes:
   - limits: [2, 3, 4, 10]
     labels: ['weak', 'medium', 'strong']
     source: eurocordex_gcm_selection_team
     comment:
-      [Sam] I have used a color code for making warming level categories (green:
-      weak, orange: medium, red:strong). Arbitrary thresholds for now: green
-      (2-3), orange (3-4), red (>4 deg)
+      The limits of the warming level categories (weak, medium, strong) are
+      arbitrary.
 
 ```
 

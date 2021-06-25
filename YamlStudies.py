@@ -43,6 +43,10 @@ def doi2dic(doi):
     rdict['author'] = rdict['author'].split(' and ')[0] + ' et al.'
   return(rdict)
 
+def find_metric(mlist, key):
+  keys = [x.key for x in mlist]
+  return(mlist[keys.index(key)])
+
 class MetricEntry:
 
   def __init__(self, yamlentry, resolve_doi = False):

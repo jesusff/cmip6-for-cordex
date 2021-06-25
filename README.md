@@ -5,7 +5,7 @@ Collection of information in support of the selection of driving Global Climate 
 There are two main components:
 
  1. An automatic search for data availability in the ESGF ([CMIP6_for_CORDEX_availability_ESGF.csv](./CMIP6_for_CORDEX_availability_ESGF.csv)), plus a manual collection of boundaries available directly from the producers ([CMIP6_for_CORDEX_availability_non_ESGF.csv](./CMIP6_for_CORDEX_availability_non_ESGF.csv))
- 2. A manual collection of published results ([CMIP6_studies](./CMIP6_studies)) regarding the performance, spread of future outcomes and independence of the CMIP6 models.
+ 2. A manual collection of published results ([CMIP6_studies](./CMIP6_studies)) regarding the plausibility, spread of future outcomes and independence of the CMIP6 models.
 
 Data availability
 -----------------
