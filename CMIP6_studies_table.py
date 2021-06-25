@@ -204,3 +204,18 @@ for item,filter_rows in enumerate([filter_avail_and_plausible, filter_avail, fil
   )
 f.write('</body></html>')
 f.close()
+
+# Headers as links (dirty stuff...)
+baseurl = f'https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_studies_list_{CORDEX_DOMAIN}.md'
+with open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','r') as f:
+  fulltext = f.read()
+
+for head in [x[1] for x in perfcols+spreadcols+indepcols]:
+  lowerhead = head.lower()
+  lowerhead = lowerhead.replace(' ', '-')
+  lowerhead = lowerhead.replace('.', '')
+  fulltext = fulltext.replace(head, f'<a href="{baseurl}#{lowerhead}">{head}</a>')
+
+with open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w') as f:
+  f.write(fulltext)
+
