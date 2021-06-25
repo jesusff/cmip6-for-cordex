@@ -120,9 +120,9 @@ varcount.sort_values(by=['nsmodelrun'], inplace = True)
 varcount.drop(['nsmodelrun'], axis = 'columns', inplace = True)
 # Split model and run
 varcount.index = varcount.index.str.split('_', expand = True)
-# Add synthesis column (ssp126 and ssp585 available for dyn. downscaling)
+# Add synthesis column (ssp126 and ssp370 available for dyn. downscaling)
 varcount.insert(0, 'synthesis',
-  np.multiply((varcount['ssp126'] == 'RCM') & (varcount['ssp585'] == 'RCM'),1)
+  np.multiply((varcount['ssp126'] == 'RCM') & (varcount['ssp370'] == 'RCM'),1)
 )
 #
 #   CSV output
