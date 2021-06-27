@@ -520,6 +520,38 @@ Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensit
 
 ```
 
+#### Tok20 TCR as spread
+
+Located in [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
+
+None
+
+```
+- key: Tok20 TCR as spread
+  doi: None
+  type: future_spread
+  spatial_scope: Global
+  temporal_scope: Annual
+  data_source: reference
+  metric:
+    name: TCR
+    long_name: Transient Climate Response
+    units: K
+    variables: tas
+    comment:
+      TCR is calculated from the CO2-only simulation, where the atmospheric CO2
+      concentration increases at a rate of 1% per year, centered on the time of
+      doubling of the atmospheric CO2, which occurs during simulation year 70
+      (we use the mean of the years 61 to 80).
+  classes:
+  - limits: [-10, 1.5, 2, 2.5, 10]
+    labels: ['low', 'moderate', 'high', 'very high']
+    source: eurocordex_gcm_selection_team
+    comment:
+      Test values
+
+```
+
 #### Oud20 jetposdelta
 
 Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
@@ -548,6 +580,52 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
   - limits: [-90, -0.5, 0.5, 90]
     labels: ['strong south change', 'weak change', 'strong north change']
     source: eurocordex_gcm_selection_team
+
+```
+
+#### Qasmi tas warming class
+
+Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
+
+['pers_comm', 'S. Qasmi']
+
+```
+- key: Qasmi tas warming class
+  doi: ['pers_comm', 'S. Qasmi']
+  type: future_spread
+  spatial_scope: MED+NEU+CEU
+  temporal_scope: DJF+JJA
+  data_source: author
+  metric:
+    name: deltatas_class
+    long_name: Warming classes according to future surface air temperature change
+    units: categorical
+    variables: tas
+    comment:
+      Regional tas change in Europe MED, NEU, CEU, MED+NEU+CEU, DJF, JJA,
+      2041-2060 vs 1850-1900, SSP245. S. Qasmi, numerical values available soon.
+      Only warming classes for now.
+  period:
+    reference: 1850-1900
+    target: 2041-2060
+  classes:
+  - limits: [-0.5, 0.5, 1.5, 2.5, 3.5]
+    labels: ['implausible', 'weak warming', 'medium warming', 'strong warming']
+    source: author
+    comment:
+      From Google sheet [Sam] Class 2 lies in the interquartile (Q25-Q75) of the
+      constrained range, class 1 is between Q5 and Q25 and classe 3 is between
+      Q75 and Q95 of the constrained range. Class 0 means eliminated by the
+      plausibility criteria. [Chus] The elimination by plausibility criteria can
+      be automatically marked by the greyed out number (it is active now). In
+      this way, we can assess whether they also misbehave in the future spread.
+      Also, the data are available in case thresholds are adjusted and a model
+      comes back to the plausible range. [Sam] agreed. I will modify this when I
+      have the numerical values from Said Qasmi. But I guess that it is a
+      duplication of your atlas values, except for the fact that it uses pre-
+      indust as a reference what is interesting for GWL-based study TO-DO decide
+      on the source for these deltas and use classes to assign warming levels.
+      Atlas data can be used to generate deltas for any period/region/scenario
 
 ```
 

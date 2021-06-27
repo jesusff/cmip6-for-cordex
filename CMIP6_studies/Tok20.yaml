@@ -13,7 +13,7 @@
 
       The values of the GCM TCR  can be found in Suppl. Mat Table S1. Some model
       TCR are missing. This study is based on multi-member for each model, not
-      on only one member.
+      on only one member. Same value (ens mean) shown for all members here.
 
       https://advances.sciencemag.org/content/advances/suppl/2020/03/16/6.12.eaaz9549.DC1/aaz9549_SM.pdf
   disabled: 
@@ -41,22 +41,91 @@
       plausible range.
   data_source: reference
   data:
-    BCC-CSM2-MR_r1i1p1f1: 1.6
-    CanESM5_r1-3i1p2f1: 2.75 # An example of multi-member average input
-    CESM2_r2i1p1f1: 1.99
-    CNRM-CM6-1_r1i1p1f2: 2.23
+    BCC-CSM2-MR_r1i1p1f1: 1.50
+    BCC-ESM1_r1i1p1f1: 1.73
+    CAMS-CSM1-0_r1-2i1p1f1: 1.75
+    CanESM5_r1-3i1p2f1: 2.66 # An example of multi-member average input
+    CESM2_r2i1p1f1: 2.06
+    CESM2-WACCM_r1i1p1f1: 1.98
+    CNRM-CM6-1_r1i1p1f2: 2.13
     CNRM-CM6-1-HR_r1i1p1f2: 2.47
-    CNRM-ESM2-1_r1i1p1f2: 1.82
+    CNRM-ESM2-1_r1i1p1f2: 1.90
+    E3SM-1-0_r1i1p1f1: 2.99
     EC-Earth3_r1i1p1f1: 2.32
-    EC-Earth3-Veg_r1i1p1f1: 2.76
+    EC-Earth3-Veg_r1i1p1f1: 2.61
+    FGOALS-f3-L_r1i1p1f1: 2.09
+    GFDL-CM4_r1-2i1p1f1: 2.01
     GFDL-ESM4_r1i1p1f1: 1.61
+    GISS-E2-1-G_r1i1p1f1: 1.76
+    GISS-E2-1-H_r1i1p1f1: 1.92
+    HadGEM3-GC31-LL_r1i1p1f1: 2.51
+    HadGEM3-GC31-LL_r1i1p1f3: 2.51
+    INM-CM4-8_r1i1p1f1: 1.32
     INM-CM5-0_r1i1p1f1: 1.39
-    IPSL-CM6A-LR_r1-6i1p1f1: 2.39
-    IPSL-CM6A-LR_r14i1p1f1: 2.39
-    MIROC6_r1i1p1f1: 1.58
-    MPI-ESM1-2-HR_r1i1p1f1: 1.57
-    MRI-ESM2-0_r1i1p1f1: 1.67
+    IPSL-CM6A-LR_r1-6i1p1f1: 2.31
+    IPSL-CM6A-LR_r14i1p1f1: 2.31
+    MIROC-ES2L_r1-3i1p1f2: 1.55
+    MIROC6_r1i1p1f1: 1.55
+    MPI-ESM1-2-HR_r1i1p1f1: 1.65
+    MRI-ESM2-0_r1i1p1f1: 1.64
     NESM3_r1i1p1f1: 2.79
+    NorCPM1_r1i1p1f1: 1.56
     NorESM2-LM_r1i1p1f1: 1.48
-    NorESM2-MM_r1i1p1f1: 1.48
-    UKESM1-0-LL_r1-3i1p1f2: 2.79
+    SAM0-UNICON_r1i1p1f1: 2.26
+    UKESM1-0-LL_r1-3i1p1f2: 2.75
+
+- key: Tok20 TCR as spread
+  doi: 
+  metric:
+    name: TCR
+    long_name: Transient Climate Response
+    units: K
+    variables: tas
+    comment: >
+      TCR is calculated from the CO2-only simulation, where the atmospheric CO2
+      concentration increases at a rate of 1% per year, centered on the time of
+      doubling of the atmospheric CO2, which occurs during simulation year 70
+      (we use the mean of the years 61 to 80).
+  type: future_spread
+  spatial_scope: Global
+  temporal_scope: Annual
+  classes:
+    limits: [-10, 1.5, 2, 2.5, 10]
+    labels: [low, moderate, high, very high]
+    source: eurocordex_gcm_selection_team
+    comment: >
+      Test values
+  data_source: reference
+  data:
+    BCC-CSM2-MR_r1i1p1f1: 1.50
+    BCC-ESM1_r1i1p1f1: 1.73
+    CAMS-CSM1-0_r1-2i1p1f1: 1.75
+    CanESM5_r1-3i1p2f1: 2.66
+    CESM2_r2i1p1f1: 2.06
+    CESM2-WACCM_r1i1p1f1: 1.98
+    CNRM-CM6-1_r1i1p1f2: 2.13
+    CNRM-CM6-1-HR_r1i1p1f2: 2.47
+    CNRM-ESM2-1_r1i1p1f2: 1.90
+    E3SM-1-0_r1i1p1f1: 2.99
+    EC-Earth3_r1i1p1f1: 2.32
+    EC-Earth3-Veg_r1i1p1f1: 2.61
+    FGOALS-f3-L_r1i1p1f1: 2.09
+    GFDL-CM4_r1-2i1p1f1: 2.01
+    GFDL-ESM4_r1i1p1f1: 1.61
+    GISS-E2-1-G_r1i1p1f1: 1.76
+    GISS-E2-1-H_r1i1p1f1: 1.92
+    HadGEM3-GC31-LL_r1i1p1f1: 2.51
+    HadGEM3-GC31-LL_r1i1p1f3: 2.51
+    INM-CM4-8_r1i1p1f1: 1.32
+    INM-CM5-0_r1i1p1f1: 1.39
+    IPSL-CM6A-LR_r1-6i1p1f1: 2.31
+    IPSL-CM6A-LR_r14i1p1f1: 2.31
+    MIROC-ES2L_r1-3i1p1f2: 1.55
+    MIROC6_r1i1p1f1: 1.55
+    MPI-ESM1-2-HR_r1i1p1f1: 1.65
+    MRI-ESM2-0_r1i1p1f1: 1.64
+    NESM3_r1i1p1f1: 2.79
+    NorCPM1_r1i1p1f1: 1.56
+    NorESM2-LM_r1i1p1f1: 1.48
+    SAM0-UNICON_r1i1p1f1: 2.26
+    UKESM1-0-LL_r1-3i1p1f2: 2.75

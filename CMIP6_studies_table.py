@@ -240,7 +240,7 @@ for head in [x[1] for x in spreadcols+perfcols+indepcols]:
   anchor = anchor.lower()
   anchor = anchor.replace(' ', '-')
   anchor = anchor.replace('.', '')
-  fulltext = fulltext.replace(head, f'<a href="{baseurl}#{anchor}">{head}</a>')
+  fulltext = fulltext.replace('>'+head+'<', f'><a href="{baseurl}#{anchor}">{head}</a><')
 
 with open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w') as f:
   f.write(fulltext)
