@@ -6,10 +6,20 @@
     units: percent
     variables: siconc
     comment: >
-      Root mean squared error of the annual mean sea ice concentration
-      as compared to the HadICE data set.
-
-      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014: first the average monthly sea-ice
+      concentrations are computed. Then, over all 12 maps of biases the 
+      RMSEs are calculated.
+      All the models are interpolated on the grid of the refererence
+      HadISST sea ice concentration (Rayner et al. 2003, DOI:10.1029/2002JD002670)
+      Numbers are provided in:
+      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing      
+      Scripts and maps of the areas (PDF files) are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0     
+      The Baltic and North Sea (BNS) region is defined as the ocean area
+      -3:30°E and 52:67°N masking the North Atlantic north of 62°N.
+      The Nordic Atlantic (NAtl) region is defined as the ocean area
+      0:45°E and 60:78°N masking the Baltic Sea.
     best: 0
     worst: +inf
   type: performance
@@ -95,10 +105,19 @@
     units: K
     variables: tos
     comment: >
-      Root mean squared error of the annual mean sea surface temperature
-      as compared to the HadISST data set.
-
-      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014: first the average monthly SST are computed.
+      Then, over all 12 maps of biases the RMSEs are calculated.
+      All the models are interpolated on the grid of the refererence
+      HadISST 1.1 monthly average sea surface temperature (Rayner et al. 2003, DOI:10.1029/2002JD002670)
+      Numbers are provided in:
+      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing      
+      Scripts and maps of the areas (PDF files) are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0     
+      The Baltic and North Sea (BNS) region is defined as the ocean area
+      -3:30°E and 52:67°N masking the North Atlantic north of 62°N.
+      The Nordic Atlantic (NAtl) region is defined as the ocean area
+      0:45°E and 60:78°N masking the Baltic Sea.
     best: 0
     worst: +inf
   type: performance
