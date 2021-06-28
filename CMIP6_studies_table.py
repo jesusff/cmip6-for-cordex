@@ -187,6 +187,9 @@ filter_plausible = synthesis(tablefull[(main_headers[1], 'Synthesis')], test = T
 filter_avail_and_plausible = filter_avail & filter_plausible
 filter_all = filter_avail.copy()
 filter_all.iloc[:] = True
+selected = pd.read_csv('CMIP6_downscaling_commitments.csv').query(f'domain=="{CORDEX_DOMAIN}"')
+filter_selected = filter_all.copy()
+filter_selected.iloc[:] = filter_selected.index.isin(set(zip(selected['model'],selected['run'])))
 pd.set_option('precision', 2)
 d1 = dict(selector=".level0", props=[('min-width', '150px')])
 f = open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w')
@@ -194,6 +197,7 @@ f.write(f'''<!DOCTYPE html>
 <html><head>
 <style>
 tr:hover {{background-color:#f5f5f5;}}
+td:{{text-align: center}}
 </style>
 </head><body>
 <h1> CMIP6 for CORDEX summary tables (domain {CORDEX_DOMAIN})</h1>
@@ -202,12 +206,13 @@ headers = [
   'Filter: available and plausible', 
   'Filter: available', 
   'Filter: plausible', 
-  'All members with 2 or more scenarios and/or some metric available'
+  'All members with 2 or more scenarios and/or some metric available',
+  'Selected GCMs + institutional commitments'
 ]
-ids = ['avail-and-plausible', 'available', 'plausible', 'all']
+ids = ['avail-and-plausible', 'available', 'plausible', 'all', 'selected']
 f.write('\n'.join([f'\n<li><a href="#{ids[k]}">{header}</a></li>' for k,header in enumerate(headers)]))
 f.write('</ul>')
-for item,filter_rows in enumerate([filter_avail_and_plausible, filter_avail, filter_plausible, filter_all]):
+for item,filter_rows in enumerate([filter_avail_and_plausible, filter_avail, filter_plausible, filter_all, filter_selected]):
   filter_rows.iloc[0:2] = True # keep plausible value rows
   f.write(f'<h2 id="{ids[item]}">{headers[item]}</h2>')
   f.write(tablefull
