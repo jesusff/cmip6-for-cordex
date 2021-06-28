@@ -33,8 +33,8 @@
     CIESM_r1i1p1f1: 100
     CMCC-CM2-SR5_r1i1p1f1: 100
     CMCC-ESM2_r1i1p1f1: 100
-    CNRM-CM6-1_r1i1p1f2: 250
-    CNRM-ESM2-1_r1i1p1f2: 250
+    CNRM-CM6-1_r1i1p1f2: 150
+    CNRM-ESM2-1_r1i1p1f2: 150
     CanESM5_r1-3i1p2f1: 500
     E3SM-1-0_r1i1p1f1: 100
     E3SM-1-1_r1i1p1f1: 100
@@ -78,8 +78,8 @@
     BESM-2-9_r1i1p1f1: 250
     BNU-ESM-1-1_r1i1p1f1: 250
     CanESM5-CanOE_r1i1p1f1: 500
-    CNRM-CM6-1-HR_r1i1p1f1: 100
-    CNRM-ESM2-1-HR_r1i1p1f1: 100
+    CNRM-CM6-1-HR_r1i1p1f1: 50
+    CNRM-ESM2-1-HR_r1i1p1f1: 50
     GISS-E2-2-G_r1i1p1f1: 250
     GISS-E2-2-H_r1i1p1f1: 250
     GISS-E3-G_r1i1p1f1: 100
