@@ -10,8 +10,18 @@
       the bias is estimated by subtracting the ONDJFM mean eddy-driven jet
       position over the period 1979-2018 in ERA5 to each model mean eddy-driven
       jet position over the same period.
+
     best: 0
     worst: [+90, -90]
+  comment: >
+    Evaluation and future change for 22 CMIP6 GCMs of various relevant
+    variables for Europe: jet stream, arctic amplification, tropical
+    amplification, North Atlantic warming hole, Polar Vortex Strength,
+    West-East temperature gradient in the tropical Pacific, global near-surface
+    warming. For the performance criteria on the jet stream position. Bias is
+    expressed in degre North. Negative values means jet stream too far South,
+    that is to say model is too zonal. It is difficult to set an irrealistic
+    level (> 3° , > 4°). Note that one GCM (MIROC-ES2L has a 7° too south bias) 
   type: performance
   spatial_scope: EUR
   temporal_scope: ONDJFM

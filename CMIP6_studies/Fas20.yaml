@@ -1,0 +1,7 @@
+- key: Fas20
+  doi: 10.5194/gmd-13-3627-2020
+  disabled:
+    cause: incomplete
+    comment: >
+      this paper could be used for the global performance metrics
+  spatial_scope: Global

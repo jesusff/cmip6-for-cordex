@@ -1,8 +1,10 @@
 ## Incomplete entries
 
+ * [Fas20](CMIP6_studies/Fas20.yaml)
  * [Beo21](CMIP6_studies/Beo21.yaml)
 ## Disabled entries
 
+ · [Fas20](CMIP6_studies/Fas20.yaml)
  · [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas NEU JJA](CMIP6_studies/AtlasIPCC.yaml)
