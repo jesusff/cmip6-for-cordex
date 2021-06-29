@@ -197,7 +197,13 @@ f.write(f'''<!DOCTYPE html>
 <html><head>
 <style>
 tr:hover {{background-color:#f5f5f5;}}
-td:{{text-align: center}}
+th, td {{text-align: center; padding: 3px;}}
+table {{border-collapse: collapse;}}
+a {{color: DodgerBlue}}
+a:link {{ text-decoration: none; }}
+a:visited {{ text-decoration: none; }}
+a:hover {{ text-decoration: underline; }}
+a:active {{ text-decoration: underline;}}
 </style>
 </head><body>
 <h1> CMIP6 for CORDEX summary tables (domain {CORDEX_DOMAIN})</h1>
@@ -213,13 +219,15 @@ ids = ['avail-and-plausible', 'available', 'plausible', 'all', 'selected']
 f.write('\n'.join([f'\n<li><a href="#{ids[k]}">{header}</a></li>' for k,header in enumerate(headers)]))
 f.write('</ul>')
 for item,filter_rows in enumerate([filter_avail_and_plausible, filter_avail, filter_plausible, filter_all, filter_selected]):
+  if ~filter_rows.any(): # Skip empty tables
+    continue
   filter_rows.iloc[0:2] = True # keep plausible value rows
   f.write(f'<h2 id="{ids[item]}">{headers[item]}</h2>')
   f.write(tablefull
     .loc[filter_rows]
     .convert_dtypes(convert_string = False, convert_boolean = False)
     .style
-      .set_properties(**{'font-size':'8pt', 'border':'1px black solid collapse !important'})
+      .set_properties(**{'font-size':'8pt', 'border':'1px lightgrey solid !important'})
       .set_table_styles([d1,{
         'selector': 'th',
         'props': [('font-size', '8pt'),('border-style','solid'),('border-width','1px')]

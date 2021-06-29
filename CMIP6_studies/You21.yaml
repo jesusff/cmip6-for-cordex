@@ -1,0 +1,11 @@
+- key: You21
+  doi: 10.1007/s00382-021-05691-2
+  metric:
+    name:
+    long_name:
+    variables: tas
+  spatial_scope: China
+  type: performance
+  disabled:
+    cause: not_rcm_forcing
+    cause: incomplete
