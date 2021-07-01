@@ -2,3 +2,5 @@ domain,institute,rcm,model,run,scenario
 EUR,CNRM,,CNRM-ESM2-1,r1i1p1f2,
 EUR,NUKLEUS,,MPI-ESM1-2-HR,r1i1p1f1,ssp370
 EUR,NUKLEUS,,EC-Earth3,r1i1p1f1,ssp370
+EUR,CESAM,,MPI-ESM1-2-HR,r1i1p1f1,ssp370
+EUR,CESAM,,MPI-ESM1-2-HR,r1i1p1f1,ssp126
