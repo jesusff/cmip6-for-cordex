@@ -11,8 +11,8 @@ spatial_scope_filter:
     - CEU
     - CWE
     - MED
-    - NAtl # Atlantic ocean north of Scandinavia
-    - BNS  # Baltic and North Sea
+    - NBS # Norwegian and Barents Sea
+    - BAL # Baltic Sea
     - special # especial scope (e.g. for resolution or complexity) last
   AUS:
     - Global

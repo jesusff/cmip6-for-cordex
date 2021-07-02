@@ -293,17 +293,17 @@ Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
 
 ```
 
-#### Dobler SICE rmse NAtl
+#### Dobler SICE rmse NBS
 
 Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
 ```
-- key: Dobler SICE rmse NAtl
+- key: Dobler SICE rmse NBS
   doi: ['pers. comm.', 'A. Dobler']
   type: performance
-  spatial_scope: NAtl
+  spatial_scope: NBS
   temporal_scope: Annual
   data_source: author
   metric:
@@ -321,10 +321,10 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
       the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
       provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
       z9ctgRrCHqw5xGAmnNSIiI/edit#gid=1435900047 Area definitions: BNS: Baltic
-      and North Sea BAL: Baltic Sea NBS: Norwegian and Baltic Sea Maps are
-      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
-      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502 R-script reports (PDF files)
-      used for the calcualtions are available at
+      and North Sea BAL: Baltic Sea NBS: Norwegian and Barents Sea NAtl: Nordic
+      Atlantic Maps are provided in: https://docs.google.com/spreadsheets/d/1xvq
+      c2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502 R-script
+      reports (PDF files) used for the calcualtions are available at
       https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
     best: 0
     worst: +inf
@@ -339,64 +339,17 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 ```
 
-#### Dobler SST rmse NAtl
+#### Dobler SICE rmse BAL
 
 Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
 ```
-- key: Dobler SST rmse NAtl
+- key: Dobler SICE rmse BAL
   doi: ['pers. comm.', 'A. Dobler']
   type: performance
-  spatial_scope: NAtl
-  temporal_scope: Annual
-  data_source: author
-  metric:
-    name: sstrmse
-    long_name: Sea Surface Temperature RMSE w.r.t. HadISST
-    units: K
-    variables: tos
-    comment:
-      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
-      bias maps over the period 1985-2014: first the average monthly SST are
-      computed. Then, over all 12 maps of biases the RMSEs are calculated. All
-      the models are interpolated onto the grid of the refererence HadISST 1.1
-      monthly average sea surface temperature (Rayner et al. 2003,
-      DOI:10.1029/2002JD002670) Missing values due to non-existing sea areas (in
-      the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
-      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
-      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=0 Area definitions: BNS: Baltic and North
-      Sea NBS: Norwegian and Baltic Sea NAtl: Nordic Atlantic SNA: (Southern)
-      Nord Atlantic MED: Mediterranean BLK: Black Sea EUR: Europe box Maps are
-      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
-      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502 R-script reports (PDF files)
-      used for the calcualtions are available at
-      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
-    best: 0
-    worst: +inf
-  period:
-    reference: 1985-2014
-  plausible_values:
-  - min: 0
-    max: 4
-    source: eurocordex_gcm_selection_team
-    comment:
-      Just a test value
-
-```
-
-#### Dobler SICE rmse BNS
-
-Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
-
-['pers. comm.', 'A. Dobler']
-
-```
-- key: Dobler SICE rmse BNS
-  doi: ['pers. comm.', 'A. Dobler']
-  type: performance
-  spatial_scope: BNS
+  spatial_scope: BAL
   temporal_scope: Annual
   data_source: author
   metric:
@@ -414,10 +367,10 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
       the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
       provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
       z9ctgRrCHqw5xGAmnNSIiI/edit#gid=1435900047 Area definitions: BNS: Baltic
-      and North Sea BAL: Baltic Sea NBS: Norwegian and Baltic Sea Maps are
-      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
-      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502 R-script reports (PDF files)
-      used for the calcualtions are available at
+      and North Sea BAL: Baltic Sea NBS: Norwegian and Barents Sea NAtl: Nordic
+      Atlantic Maps are provided in: https://docs.google.com/spreadsheets/d/1xvq
+      c2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502 R-script
+      reports (PDF files) used for the calcualtions are available at
       https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
     best: 0
     worst: +inf
@@ -426,53 +379,6 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
   plausible_values:
   - min: 0
     max: 50
-    source: eurocordex_gcm_selection_team
-    comment:
-      Just a test value
-
-```
-
-#### Dobler SST rmse BNS
-
-Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
-
-['pers. comm.', 'A. Dobler']
-
-```
-- key: Dobler SST rmse BNS
-  doi: ['pers. comm.', 'A. Dobler']
-  type: performance
-  spatial_scope: BNS
-  temporal_scope: Annual
-  data_source: author
-  metric:
-    name: sstrmse
-    long_name: Sea Surface Temperature RMSE w.r.t. HadISST
-    units: K
-    variables: tos
-    comment:
-      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
-      bias maps over the period 1985-2014: first the average monthly SST are
-      computed. Then, over all 12 maps of biases the RMSEs are calculated. All
-      the models are interpolated onto the grid of the refererence HadISST 1.1
-      monthly average sea surface temperature (Rayner et al. 2003,
-      DOI:10.1029/2002JD002670) Missing values due to non-existing sea areas (in
-      the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
-      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
-      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=0 Area definitions: BNS: Baltic and North
-      Sea NBS: Norwegian and Baltic Sea NAtl: Nordic Atlantic SNA: (Southern)
-      Nord Atlantic MED: Mediterranean BLK: Black Sea EUR: Europe box Maps are
-      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
-      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502 R-script reports (PDF files)
-      used for the calcualtions are available at
-      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
-    best: 0
-    worst: +inf
-  period:
-    reference: 1985-2014
-  plausible_values:
-  - min: 0
-    max: 4
     source: eurocordex_gcm_selection_team
     comment:
       Just a test value
