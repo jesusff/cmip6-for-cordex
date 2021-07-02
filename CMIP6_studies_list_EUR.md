@@ -312,9 +312,20 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     units: percent
     variables: siconc
     comment:
-      Root mean squared error of the annual mean sea ice concentration as
-      compared to the HadICE data set. https://docs.google.com/spreadsheets/d/1x
-      vqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014: first the average monthly sea-ice
+      concentrations are computed. Then, over all 12 maps of biases the  RMSEs
+      are calculated. All the models are interpolated onto the grid of the
+      refererence HadISST sea ice concentration (Rayner et al. 2003,
+      DOI:10.1029/2002JD002670) Missing values due to non-existing sea areas (in
+      the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=1435900047 Area definitions: BNS: Baltic
+      and North Sea BAL: Baltic Sea NBS: Norwegian and Baltic Sea Maps are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502 R-script reports (PDF files)
+      used for the calcualtions are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
     best: 0
     worst: +inf
   period:
@@ -347,9 +358,21 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     units: K
     variables: tos
     comment:
-      Root mean squared error of the annual mean sea surface temperature as
-      compared to the HadISST data set. https://docs.google.com/spreadsheets/d/1
-      xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014: first the average monthly SST are
+      computed. Then, over all 12 maps of biases the RMSEs are calculated. All
+      the models are interpolated onto the grid of the refererence HadISST 1.1
+      monthly average sea surface temperature (Rayner et al. 2003,
+      DOI:10.1029/2002JD002670) Missing values due to non-existing sea areas (in
+      the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=0 Area definitions: BNS: Baltic and North
+      Sea NBS: Norwegian and Baltic Sea NAtl: Nordic Atlantic SNA: (Southern)
+      Nord Atlantic MED: Mediterranean BLK: Black Sea EUR: Europe box Maps are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502 R-script reports (PDF files)
+      used for the calcualtions are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
     best: 0
     worst: +inf
   period:
@@ -382,9 +405,20 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     units: percent
     variables: siconc
     comment:
-      Root mean squared error of the annual mean sea ice concentration as
-      compared to the HadICE data set. https://docs.google.com/spreadsheets/d/1x
-      vqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014: first the average monthly sea-ice
+      concentrations are computed. Then, over all 12 maps of biases the  RMSEs
+      are calculated. All the models are interpolated onto the grid of the
+      refererence HadISST sea ice concentration (Rayner et al. 2003,
+      DOI:10.1029/2002JD002670) Missing values due to non-existing sea areas (in
+      the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=1435900047 Area definitions: BNS: Baltic
+      and North Sea BAL: Baltic Sea NBS: Norwegian and Baltic Sea Maps are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502 R-script reports (PDF files)
+      used for the calcualtions are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
     best: 0
     worst: +inf
   period:
@@ -417,9 +451,21 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     units: K
     variables: tos
     comment:
-      Root mean squared error of the annual mean sea surface temperature as
-      compared to the HadISST data set. https://docs.google.com/spreadsheets/d/1
-      xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing
+      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014: first the average monthly SST are
+      computed. Then, over all 12 maps of biases the RMSEs are calculated. All
+      the models are interpolated onto the grid of the refererence HadISST 1.1
+      monthly average sea surface temperature (Rayner et al. 2003,
+      DOI:10.1029/2002JD002670) Missing values due to non-existing sea areas (in
+      the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=0 Area definitions: BNS: Baltic and North
+      Sea NBS: Norwegian and Baltic Sea NAtl: Nordic Atlantic SNA: (Southern)
+      Nord Atlantic MED: Mediterranean BLK: Black Sea EUR: Europe box Maps are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502 R-script reports (PDF files)
+      used for the calcualtions are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
     best: 0
     worst: +inf
   period:
