@@ -17,16 +17,21 @@
       Numbers are provided in:
       https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit#gid=1435900047
       Area definitions:
-      BNS: Baltic and North Sea
+      BNS: Baltic and North Sea (replaced by BAL)
       BAL: Baltic Sea
       NBS: Norwegian and Barents Sea
-      NAtl: Nordic Atlantic
+      NAtl: Nordic Atlantic (replaced by NBS)
       Maps are provided in:
       https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502
       R-script reports (PDF files) used for the calcualtions are available at
       https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
     best: 0
     worst: +inf
+  disabled:
+    cause: preferred_source
+    preferred: Dobler SICE rmse BAL
+    comment: >
+      Exclude the North Sea from the sea-ice evaluation.
   type: performance
   spatial_scope: BNS
   temporal_scope: Annual
@@ -66,6 +71,11 @@
 - key: Dobler SICE rmse NAtl 
   doi: [pers. comm., A. Dobler]
   metric: *siconcrmse
+  disabled:
+    cause: preferred_source
+    preferred: Dobler SICE rmse NBS
+    comment: >
+      The NAtl icludes too much Arctic waters.
   type: performance
   spatial_scope: NAtl
   temporal_scope: Annual
@@ -200,9 +210,9 @@
       Area definitions:
       BNS: Baltic and North Sea
       NBS: Norwegian and Barents Sea
-      NAtl: Nordic Atlantic
+      NAtl: Nordic Atlantic (replaced by NBS)
       SNA: (Southern) Nord Atlantic
-      MED: Mediterranean
+      MED: Mediterranean (disabled, use Sevault MED SST instead.  )
       BLK: Black Sea
       EUR: Europe box
       Maps are provided in:
@@ -211,6 +221,11 @@
       https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
     best: 0
     worst: +inf
+  disabled:
+    cause: preferred_source
+    preferred: Dobler SST rmse NBS
+    comment: >
+      The NAtl icludes too much Arctic waters
   type: performance
   spatial_scope: NAtl
   temporal_scope: Annual
@@ -406,6 +421,11 @@
 - key: Dobler SST rmse MED
   doi: [pers. comm., A. Dobler]
   metric: *sstrmse
+  disabled:
+    cause: preferred_source
+    preferred: Sevault MED SST
+    comment: >
+      The study by Sevault icludes a more suitable SST reference data set.
   type: performance
   spatial_scope: MED
   temporal_scope: Annual
