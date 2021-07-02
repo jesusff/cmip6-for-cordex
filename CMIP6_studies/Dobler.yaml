@@ -19,7 +19,8 @@
       Area definitions:
       BNS: Baltic and North Sea
       BAL: Baltic Sea
-      NBS: Norwegian and Baltic Sea
+      NBS: Norwegian and Barents Sea
+      NAtl: Nordic Atlantic
       Maps are provided in:
       https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502
       R-script reports (PDF files) used for the calcualtions are available at
@@ -100,7 +101,85 @@
     NorESM2-LM_r1i1p1f1: 8.3
     NorESM2-MM_r1i1p1f1: 15.5
     UKESM1-0-LL_r1i1p1f2: 14.1
-
+    
+- key: Dobler SICE rmse NBS 
+  doi: [pers. comm., A. Dobler]
+  metric: *siconcrmse
+  type: performance
+  spatial_scope: NBS
+  temporal_scope: Annual
+  period:
+    reference: 1985-2014
+  plausible_values:
+    min: 0
+    max: 50
+    source: eurocordex_gcm_selection_team
+    comment: > 
+      Just a test value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 18.3
+    ACCESS-ESM1-5_r1i1p1f1:	3.1
+    BCC-CSM2-MR_r1i1p1f1:	38.1
+    CanESM5_r1i1p1f1:	3.4
+    CESM2_r1i1p1f1:	9.4
+    CNRM-CM6-1_r1i1p1f2: 4.2
+    CNRM-CM6-1-HR_r1i1p1f2:	14.3
+    CNRM-ESM2-1_r1i1p1f2:	3.3
+    EC-Earth3_r1i1p1f1:	6
+    EC-Earth3-Veg_r1i1p1f1:	2.7
+    FGOALS-g3_r1i1p1f1:	53
+    GFDL-ESM4_r2i1p1f1:	7.5
+    INM-CM5-0_r1i1p1f1:	8
+    IPSL-CM6A-LR_r1i1p1f1: 3.2
+    MIROC6_r1i1p1f1: 4.3
+    MPI-ESM1-2-HR_r1i1p1f1:	8.3
+    MPI-ESM1-2-LR_r1i1p1f1:	4.8
+    MRI-ESM2-0_r1i1p1f1: 7.6
+    NESM3_r1i1p1f1:	32.5
+    NorESM2-LM_r1i1p1f1: 7.7
+    NorESM2-MM_r1i1p1f1: 7.3
+    UKESM1-0-LL_r1i1p1f2:	7.4
+        
+- key: Dobler SICE rmse BAL 
+  doi: [pers. comm., A. Dobler]
+  metric: *siconcrmse
+  type: performance
+  spatial_scope: BAL
+  temporal_scope: Annual
+  period:
+    reference: 1985-2014
+  plausible_values:
+    min: 0
+    max: 50
+    source: eurocordex_gcm_selection_team
+    comment: > 
+      Just a test value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 6.8
+    ACCESS-ESM1-5_r1i1p1f1:	14.5
+    BCC-CSM2-MR_r1i1p1f1:	13.4
+    CanESM5_r1i1p1f1:	9.8
+    CESM2_r1i1p1f1:	8.9
+    CNRM-CM6-1_r1i1p1f2: 7.7
+    CNRM-CM6-1-HR_r1i1p1f2:	12.2
+    CNRM-ESM2-1_r1i1p1f2:	7.3
+    EC-Earth3_r1i1p1f1:	8
+    EC-Earth3-Veg_r1i1p1f1:	8
+    FGOALS-g3_r1i1p1f1:	-99
+    GFDL-ESM4_r2i1p1f1:	15.5
+    INM-CM5-0_r1i1p1f1:	21.1
+    IPSL-CM6A-LR_r1i1p1f1: 14.8
+    MIROC6_r1i1p1f1: 8.4
+    MPI-ESM1-2-HR_r1i1p1f1:	7.2
+    MPI-ESM1-2-LR_r1i1p1f1:	8.2
+    MRI-ESM2-0_r1i1p1f1: 10.7
+    NESM3_r1i1p1f1:	9.6
+    NorESM2-LM_r1i1p1f1: 8.9
+    NorESM2-MM_r1i1p1f1: 8.5
+    UKESM1-0-LL_r1i1p1f2: 9.8
+    
 - key: Dobler SST rmse NAtl
   doi: [pers. comm., A. Dobler]
   metric: &sstrmse
@@ -120,7 +199,7 @@
       https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit#gid=0
       Area definitions:
       BNS: Baltic and North Sea
-      NBS: Norwegian and Baltic Sea
+      NBS: Norwegian and Barents Sea
       NAtl: Nordic Atlantic
       SNA: (Southern) Nord Atlantic
       MED: Mediterranean
