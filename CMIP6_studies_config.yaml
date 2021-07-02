@@ -9,11 +9,15 @@ spatial_scope_filter:
     - MED+NEU+CEU
     - NEU
     - CEU
-    - CWE
+    - WCE # Western and Central Europe
     - MED
     - NBS # Norwegian and Barents Sea
     - BAL # Baltic Sea
+    - BLK # Black Sea
+    - NAtl # Nordic Atlantic
+    - SNA # (Southern) North Atlantic
     - special # especial scope (e.g. for resolution or complexity) last
+
   AUS:
     - Global
     - SH

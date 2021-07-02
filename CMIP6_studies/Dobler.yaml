@@ -75,7 +75,7 @@
     cause: preferred_source
     preferred: Dobler SICE rmse NBS
     comment: >
-      The NAtl icludes too much Arctic waters.
+      The NAtl includes too much Arctic waters.
   type: performance
   spatial_scope: NAtl
   temporal_scope: Annual
@@ -225,7 +225,7 @@
     cause: preferred_source
     preferred: Dobler SST rmse NBS
     comment: >
-      The NAtl icludes too much Arctic waters
+      The NAtl includes too much Arctic waters
   type: performance
   spatial_scope: NAtl
   temporal_scope: Annual
