@@ -10,16 +10,20 @@
       bias maps over the period 1985-2014: first the average monthly sea-ice
       concentrations are computed. Then, over all 12 maps of biases the 
       RMSEs are calculated.
-      All the models are interpolated on the grid of the refererence
+      All the models are interpolated onto the grid of the refererence
       HadISST sea ice concentration (Rayner et al. 2003, DOI:10.1029/2002JD002670)
+      Missing values due to non-existing sea areas (in the GCM) are coded as -99 (RMSE is strictly positive).
+      -----
       Numbers are provided in:
-      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing      
-      Scripts and maps of the areas (PDF files) are available at
-      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0     
-      The Baltic and North Sea (BNS) region is defined as the ocean area
-      -3:30°E and 52:67°N masking the North Atlantic north of 62°N.
-      The Nordic Atlantic (NAtl) region is defined as the ocean area
-      0:45°E and 60:78°N masking the Baltic Sea.
+      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit#gid=1435900047
+      Area definitions:
+      BNS: Baltic and North Sea
+      BAL: Baltic Sea
+      NBS: Norwegian and Baltic Sea
+      Maps are provided in:
+      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502
+      R-script reports (PDF files) used for the calcualtions are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
     best: 0
     worst: +inf
   type: performance
@@ -45,7 +49,7 @@
     CNRM-ESM2-1_r1i1p1f2: 4.6
     EC-Earth3_r1i1p1f1: 5.1
     EC-Earth3-Veg_r1i1p1f1: 5.1
-    FGOALS-g3_r1i1p1f1: 
+    FGOALS-g3_r1i1p1f1: -99
     GFDL-ESM4_r2i1p1f1: 10.2
     INM-CM5-0_r1i1p1f1: 13.6
     IPSL-CM6A-LR_r1i1p1f1: 9.4
@@ -108,16 +112,24 @@
       Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
       bias maps over the period 1985-2014: first the average monthly SST are computed.
       Then, over all 12 maps of biases the RMSEs are calculated.
-      All the models are interpolated on the grid of the refererence
+      All the models are interpolated onto the grid of the refererence
       HadISST 1.1 monthly average sea surface temperature (Rayner et al. 2003, DOI:10.1029/2002JD002670)
+      Missing values due to non-existing sea areas (in the GCM) are coded as -99 (RMSE is strictly positive).
+      -----
       Numbers are provided in:
-      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit?usp=sharing      
-      Scripts and maps of the areas (PDF files) are available at
-      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0     
-      The Baltic and North Sea (BNS) region is defined as the ocean area
-      -3:30°E and 52:67°N masking the North Atlantic north of 62°N.
-      The Nordic Atlantic (NAtl) region is defined as the ocean area
-      0:45°E and 60:78°N masking the Baltic Sea.
+      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit#gid=0
+      Area definitions:
+      BNS: Baltic and North Sea
+      NBS: Norwegian and Baltic Sea
+      NAtl: Nordic Atlantic
+      SNA: (Southern) Nord Atlantic
+      MED: Mediterranean
+      BLK: Black Sea
+      EUR: Europe box
+      Maps are provided in:
+      https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xGAmnNSIiI/edit#gid=334563502
+      R-script reports (PDF files) used for the calcualtions are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
     best: 0
     worst: +inf
   type: performance
@@ -182,7 +194,7 @@
     CNRM-ESM2-1_r1i1p1f2: 1.9
     EC-Earth3_r1i1p1f1: 1.1
     EC-Earth3-Veg_r1i1p1f1: 1.1
-    FGOALS-g3_r1i1p1f1: 3.8
+    FGOALS-g3_r1i1p1f1: -99
     GFDL-ESM4_r2i1p1f1: 1.3
     INM-CM5-0_r1i1p1f1: 2
     IPSL-CM6A-LR_r1i1p1f1: 1.2
