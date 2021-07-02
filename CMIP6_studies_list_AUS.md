@@ -1,8 +1,10 @@
 ## Incomplete entries
 
+ * [Fas20](CMIP6_studies/Fas20.yaml)
  * [Beo21](CMIP6_studies/Beo21.yaml)
 ## Disabled entries
 
+ · [Fas20](CMIP6_studies/Fas20.yaml)
  · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
@@ -152,6 +154,37 @@ None
 
 ```
 
+#### Bra21 complexity
+
+Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
+
+Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
+
+```
+- key: Bra21 complexity
+  doi: 10.5194/gmd-2020-418
+  type: performance
+  spatial_scope: special
+  temporal_scope: Annual
+  data_source: reference
+  metric:
+    name: complexity
+    long_name: Complexity of model components
+    units: categorical
+    variables: []
+    comment:
+      Model complexity from Table 1 is coded with ternary values   0 - not
+      considered   1 - prescribed   2 - interactive component in the following
+      order Atm-Lnd-Ocn-SI-Aer-Chem-Tbgc-Obgc-Veg-Gla
+  plausible_values:
+  - min: 2222100000
+    max: 2222222222
+    source: eurocordex_gcm_selection_team
+    comment:
+      At least coupled Atm-Lnd-Ocn-SI with some form of aerosol consideration
+
+```
+
 ### Spread of future outcomes
 #### Sch20 ECS
 
@@ -175,6 +208,38 @@ Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensit
       ECS is calculated with ESMValTool (Gregory method). CMIP5 range is [2.08,
       4.67]. Ensemble member added to make it comparable to scenarioMIP runs,
       although ECS is derived from 4xCO2 runs, unrelated to scenarioMIP.
+
+```
+
+#### Tok20 TCR as spread
+
+Located in [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
+
+None
+
+```
+- key: Tok20 TCR as spread
+  doi: None
+  type: future_spread
+  spatial_scope: Global
+  temporal_scope: Annual
+  data_source: reference
+  metric:
+    name: TCR
+    long_name: Transient Climate Response
+    units: K
+    variables: tas
+    comment:
+      TCR is calculated from the CO2-only simulation, where the atmospheric CO2
+      concentration increases at a rate of 1% per year, centered on the time of
+      doubling of the atmospheric CO2, which occurs during simulation year 70
+      (we use the mean of the years 61 to 80).
+  classes:
+  - limits: [-10, 1.5, 2, 2.5, 10]
+    labels: ['low', 'moderate', 'high', 'very high']
+    source: eurocordex_gcm_selection_team
+    comment:
+      Test values
 
 ```
 

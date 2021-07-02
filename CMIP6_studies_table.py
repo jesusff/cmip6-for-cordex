@@ -127,7 +127,11 @@ def hide_nan(df):
 
 def greyout_non_rcm(df):
   attr = 'color: grey'
-  return(df.where(df == 'RCM', attr))
+# Bug in pandas https://github.com/pandas-dev/pandas/issues/35429
+#  return(df.where(df == 'RCM', attr))
+  rval = df.copy()
+  rval.iloc[:] = np.where((rval == 'RCM').fillna(False), rval, attr)
+  return(rval)
 
 def greyout_unplausible(df):
   attr = 'color: grey'
