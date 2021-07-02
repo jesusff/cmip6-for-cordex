@@ -285,3 +285,198 @@
     NorESM2-LM_r1i1p1f1: 1.4
     NorESM2-MM_r1i1p1f1: 1.5
     UKESM1-0-LL_r1i1p1f2: 1.3
+    
+- key: Dobler SST rmse NBS
+  doi: [pers. comm., A. Dobler]
+  metric: *sstrmse
+  type: performance
+  spatial_scope: NBS
+  temporal_scope: Annual
+  period:
+    reference: 1985-2014
+  plausible_values:
+    min: 0
+    max: 4
+    source: eurocordex_gcm_selection_team
+    comment: > 
+      Just a test value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 2
+    ACCESS-ESM1-5_r1i1p1f1: 0.8
+    BCC-CSM2-MR_r1i1p1f1: 4.4
+    CanESM5_r1i1p1f1: 1.1
+    CESM2_r1i1p1f1: 1.6
+    CNRM-CM6-1_r1i1p1f2: 1.1
+    CNRM-CM6-1-HR_r1i1p1f2: 2.2
+    CNRM-ESM2-1_r1i1p1f2: 1.5
+    EC-Earth3_r1i1p1f1: 0.6
+    EC-Earth3-Veg_r1i1p1f1: 0.9
+    FGOALS-g3_r1i1p1f1: 5.8
+    GFDL-ESM4_r2i1p1f1: 1.6
+    INM-CM5-0_r1i1p1f1: 3
+    IPSL-CM6A-LR_r1i1p1f1: 1.5
+    MIROC6_r1i1p1f1: 1
+    MPI-ESM1-2-HR_r1i1p1f1: 1.6
+    MPI-ESM1-2-LR_r1i1p1f1: 1.1
+    MRI-ESM2-0_r1i1p1f1: 0.9
+    NESM3_r1i1p1f1: 3.6
+    NorESM2-LM_r1i1p1f1: 1.5
+    NorESM2-MM_r1i1p1f1: 2.2
+    UKESM1-0-LL_r1i1p1f2: 1.5
+    
+- key: Dobler SST rmse SNA
+  doi: [pers. comm., A. Dobler]
+  metric: *sstrmse
+  type: performance
+  spatial_scope: SNA
+  temporal_scope: Annual
+  period:
+    reference: 1985-2014
+  plausible_values:
+    min: 0
+    max: 4
+    source: eurocordex_gcm_selection_team
+    comment: > 
+      Just a test value
+  data_source: author
+  data:    
+    ACCESS-CM2_r1i1p1f1: 0.6
+    ACCESS-ESM1-5_r1i1p1f1: 1.4
+    BCC-CSM2-MR_r1i1p1f1: 1
+    CanESM5_r1i1p1f1: 1.8
+    CESM2_r1i1p1f1: 1.5
+    CNRM-CM6-1_r1i1p1f2: 1
+    CNRM-CM6-1-HR_r1i1p1f2: 1.3
+    CNRM-ESM2-1_r1i1p1f2: 1.3
+    EC-Earth3_r1i1p1f1: 1.1
+    EC-Earth3-Veg_r1i1p1f1: 1
+    FGOALS-g3_r1i1p1f1: 0.9
+    GFDL-ESM4_r2i1p1f1: 0.8
+    INM-CM5-0_r1i1p1f1: 2
+    IPSL-CM6A-LR_r1i1p1f1: 1.3
+    MIROC6_r1i1p1f1: 1.2
+    MPI-ESM1-2-HR_r1i1p1f1: 1.5
+    MPI-ESM1-2-LR_r1i1p1f1: 1.5
+    MRI-ESM2-0_r1i1p1f1: 0.8
+    NESM3_r1i1p1f1: 2.5
+    NorESM2-LM_r1i1p1f1: 1.4
+    NorESM2-MM_r1i1p1f1: 1.2
+    UKESM1-0-LL_r1i1p1f2: 1.1
+    
+- key: Dobler SST rmse BLK
+  doi: [pers. comm., A. Dobler]
+  metric: *sstrmse
+  type: performance
+  spatial_scope: BLK
+  temporal_scope: Annual
+  period:
+    reference: 1985-2014
+  plausible_values:
+    min: 0
+    max: 4
+    source: eurocordex_gcm_selection_team
+    comment: > 
+      Just a test value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: -99
+    ACCESS-ESM1-5_r1i1p1f1: -99
+    BCC-CSM2-MR_r1i1p1f1: 1.8
+    CanESM5_r1i1p1f1: 1.6
+    CESM2_r1i1p1f1: 2.3
+    CNRM-CM6-1_r1i1p1f2: 1.6
+    CNRM-CM6-1-HR_r1i1p1f2: 1.1
+    CNRM-ESM2-1_r1i1p1f2: 2.1
+    EC-Earth3_r1i1p1f1: 1.1
+    EC-Earth3-Veg_r1i1p1f1: 1.3
+    FGOALS-g3_r1i1p1f1: -99
+    GFDL-ESM4_r2i1p1f1: 1
+    INM-CM5-0_r1i1p1f1: 1.3
+    IPSL-CM6A-LR_r1i1p1f1: 1.2
+    MIROC6_r1i1p1f1: 1.8
+    MPI-ESM1-2-HR_r1i1p1f1: 1.4
+    MPI-ESM1-2-LR_r1i1p1f1: 1.5
+    MRI-ESM2-0_r1i1p1f1: 2.3
+    NESM3_r1i1p1f1: 1.7
+    NorESM2-LM_r1i1p1f1: 1.9
+    NorESM2-MM_r1i1p1f1: 1.8
+    UKESM1-0-LL_r1i1p1f2: 1.2
+
+- key: Dobler SST rmse MED
+  doi: [pers. comm., A. Dobler]
+  metric: *sstrmse
+  type: performance
+  spatial_scope: MED
+  temporal_scope: Annual
+  period:
+    reference: 1985-2014
+  plausible_values:
+    min: 0
+    max: 4
+    source: eurocordex_gcm_selection_team
+    comment: > 
+      Just a test value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 1.1
+    ACCESS-ESM1-5_r1i1p1f1: 1.1
+    BCC-CSM2-MR_r1i1p1f1: 1.7
+    CanESM5_r1i1p1f1: 1.1
+    CESM2_r1i1p1f1: 1.1
+    CNRM-CM6-1_r1i1p1f2: 0.9
+    CNRM-CM6-1-HR_r1i1p1f2: 1.4
+    CNRM-ESM2-1_r1i1p1f2: 1
+    EC-Earth3_r1i1p1f1: 0.9
+    EC-Earth3-Veg_r1i1p1f1: 0.8
+    FGOALS-g3_r1i1p1f1: 2.2
+    GFDL-ESM4_r2i1p1f1: 0.9
+    INM-CM5-0_r1i1p1f1: 0.9
+    IPSL-CM6A-LR_r1i1p1f1: 1.3
+    MIROC6_r1i1p1f1: 1.4
+    MPI-ESM1-2-HR_r1i1p1f1: 1
+    MPI-ESM1-2-LR_r1i1p1f1: 1.3
+    MRI-ESM2-0_r1i1p1f1: 1.8
+    NESM3_r1i1p1f1: 1.8
+    NorESM2-LM_r1i1p1f1: 1.4
+    NorESM2-MM_r1i1p1f1: 0.8
+    UKESM1-0-LL_r1i1p1f2: 1.1
+    
+- key: Dobler SST rmse EUR
+  doi: [pers. comm., A. Dobler]
+  metric: *sstrmse
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  period:
+    reference: 1985-2014
+  plausible_values:
+    min: 0
+    max: 4
+    source: eurocordex_gcm_selection_team
+    comment: > 
+      Just a test value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 1.4
+    ACCESS-ESM1-5_r1i1p1f1: 1.4
+    BCC-CSM2-MR_r1i1p1f1: 2.5
+    CanESM5_r1i1p1f1: 1.8
+    CESM2_r1i1p1f1: 1.6
+    CNRM-CM6-1_r1i1p1f2: 1.2
+    CNRM-CM6-1-HR_r1i1p1f2: 1.7
+    CNRM-ESM2-1_r1i1p1f2: 1.5
+    EC-Earth3_r1i1p1f1: 1.1
+    EC-Earth3-Veg_r1i1p1f1: 1.2
+    FGOALS-g3_r1i1p1f1: 3.2
+    GFDL-ESM4_r2i1p1f1: 1.2
+    INM-CM5-0_r1i1p1f1: 2.4
+    IPSL-CM6A-LR_r1i1p1f1: 1.5
+    MIROC6_r1i1p1f1: 1.3
+    MPI-ESM1-2-HR_r1i1p1f1: 1.6
+    MPI-ESM1-2-LR_r1i1p1f1: 1.5
+    MRI-ESM2-0_r1i1p1f1: 1.2
+    NESM3_r1i1p1f1: 2.8
+    NorESM2-LM_r1i1p1f1: 1.7
+    NorESM2-MM_r1i1p1f1: 1.8
+    UKESM1-0-LL_r1i1p1f2: 1.3
