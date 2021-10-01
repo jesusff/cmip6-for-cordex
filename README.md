@@ -1,3 +1,6 @@
+[![Visit website view](https://img.shields.io/badge/www-Website%20view-f39f37)](https://jesusff.github.io/cmip6-for-cordex)
+[![EUR table](https://img.shields.io/badge/table-EUR-4078c0)](https://jesusff.github.io/cmip6-for-cordex/CMIP6_studies_table_EUR.html)
+
 CMIP6 input data for CORDEX
 ===========================
 
