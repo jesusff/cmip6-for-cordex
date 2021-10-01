@@ -70,9 +70,9 @@ tablespread = pd.concat(
   axis=1
 )
 
-# Independence
-tableindep = pd.concat(
-  [x.data for x in alldata if x.type=='independence'],
+# Other
+tableother = pd.concat(
+  [x.data for x in alldata if x.type=='other'],
   axis=1
 )
 
@@ -91,14 +91,14 @@ tableavail_row_filter = np.sum(tableavail.loc[:,availscenarios] == 'RCM', axis=1
 row_filter = set(tableavail.index[tableavail_row_filter]).union(
   tableprange.index,
   tablespread.index,
-  tableindep.index
+  tableother.index
 ).intersection(tableavail.index)
 tableavail = tableavail.loc[row_filter]
 
 # All together
-main_headers = ['1. Availability', '2. Plausibility', '3. Spread of future outcomes', '4. Independence']
+main_headers = ['1. Availability', '2. Plausibility', '3. Spread of future outcomes', '4. Other criteria']
 tablefull = pd.concat(
-  [tableavail, tableprange,tablespread, tableindep], axis=1, 
+  [tableavail, tableprange,tablespread, tableother], axis=1, 
   keys=main_headers
 )
 tablefull = tablefull.reindex(ns.natsorted(tablefull.index))
@@ -184,7 +184,7 @@ def get_cols_under(header, df, drop=''):
 availcols = get_cols_under(main_headers[0], tablefull, drop = 'synthesis')
 perfcols = get_cols_under(main_headers[1], tablefull, drop = 'Synthesis')
 spreadcols = get_cols_under(main_headers[2], tablefull)
-indepcols = get_cols_under(main_headers[3], tablefull)
+othercols = get_cols_under(main_headers[3], tablefull)
 # Row filters
 filter_avail = tablefull[(main_headers[0], 'synthesis')] == 1
 filter_plausible = synthesis(tablefull[(main_headers[1], 'Synthesis')], test = True)
@@ -242,7 +242,7 @@ for item,filter_rows in enumerate([filter_avail_and_plausible, filter_avail, fil
       }])
       .apply(greyout_non_rcm, axis=None, subset=availcols)
       .apply(greyout_unplausible, axis=0, subset=perfcols)
-      .apply(greyout_unplausible_rows, axis=0, subset=spreadcols+indepcols)
+      .apply(greyout_unplausible_rows, axis=0, subset=spreadcols+othercols)
       .apply(highligh_plausible_range, axis=0)
       .apply(color_classes, axis=0, subset=spreadcols)
       .render()
@@ -256,7 +256,7 @@ baseurl = f'https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_studies_
 with open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','r') as f:
   fulltext = f.read()
 
-for head in [x[1] for x in spreadcols+perfcols+indepcols]:
+for head in [x[1] for x in spreadcols+perfcols+othercols]:
   anchor = remove_trailing_ssp(head)
   anchor = anchor.lower()
   anchor = anchor.replace(' ', '-')

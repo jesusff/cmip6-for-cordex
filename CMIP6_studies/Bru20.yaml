@@ -17,7 +17,7 @@
 
       Strangely, ACCESS-CM2 is in the same family as UKESM and HadGEM3, but
       not ACCESS-ESM1-5.
-  type: independence
+  type: other
   spatial_scope: Global
   period:
     reference: 1980-2014

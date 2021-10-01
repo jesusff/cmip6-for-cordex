@@ -178,7 +178,7 @@
         1 - prescribed
         2 - interactive component
       in the following order Atm-Lnd-Ocn-SI-Aer-Chem-Tbgc-Obgc-Veg-Gla
-  type: performance
+  type: other
   spatial_scope: special
   temporal_scope: Annual
   plausible_values:

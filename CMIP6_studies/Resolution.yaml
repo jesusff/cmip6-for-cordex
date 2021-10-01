@@ -11,7 +11,7 @@
       using util/resolution_to_yaml.py
       Manually edited to include appropriate runs.
     best: 0
-  type: performance
+  type: other
   spatial_scope: special
   temporal_scope: Annual
   plausible_values:
