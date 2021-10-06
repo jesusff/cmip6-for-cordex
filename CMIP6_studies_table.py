@@ -211,6 +211,29 @@ a:active {{ text-decoration: underline;}}
 </style>
 </head><body>
 <h1> CMIP6 for CORDEX summary tables (domain {CORDEX_DOMAIN})</h1>
+<p style="font-size: smaller">
+Summary of CMIP6 ScenarioMIP simulation (1) availability, (2) plausibility, (3) spread of future outcomes and (4) other criteria relevant for GCM selection for downscaling in the context of the CORDEX {CORDEX_DOMAIN} domain.
+<b>Availability</b> is labeled according to the variables and frequency available:
+RCM (6h 3D model level data, along with SST, sea ice and AOD),
+3Dml (6h 3D model level data),
+ESD (6h specific or relative humidity, geopotential height, temperature and wind at pressure levels, and mean sea level pressure, precipitation, near-surface mean, minimum and maximum air temperature),
+Basic (daily precipitation and mean near-sueface air temperature).
+A dash (-) indicates that the simulation exists in ESGF, but none of the conditions to get one of the previous labels applied.
+Empty cells represent unavailable simulations (either at ESGF or the producing center).
+The synthesis column indicates whether the CORDEX-CMIP6 protocol mandatory scenarios (SSP3-7.0 and SSP1-2.6) are available (1) or not (0).
+<b>Plausibility</b> is measured by different performance metrics (in columns), usually against reanalysis or other observational data.
+Additional metrics can be contributed at <a href="https://github.com/jesusff/cmip6-for-cordex/tree/main/CMIP6_studies">https://github.com/jesusff/cmip6-for-cordex/tree/main/CMIP6_studies</a>
+The range of plausible values (top two rows) determine the values of the metrics which are considered unplausible (these values are greyed out).
+Column headers are links to full details of the metric definitions, scope, plausible ranges and their origin.
+Colums are sorted according to the spatial scope of the metrics (global metrics to the left).
+The synthesis column indicates the number of unplausible metric values for a given model simulation.
+Note that low synthesis values represent plausible models, but also models included in few evaluation studies.
+The <b>spread of future outcomes</b> is also based on published metrics, but usually referred to differences between a future period from a scenario simulation and a historical period (delta change).
+Cell background is coloured according to categories clustering the range of outcomes.
+Numbers for simulations showing some unplausible performace metric are greyed out.
+<b>Other criteria</b> include other aspects, such as model family, complexity, or resolution.
+The values for simulations showing some unplausible performace metric are also greyed out.
+</p>
 <ul>''')
 headers = [
   'Filter: available and plausible', 
