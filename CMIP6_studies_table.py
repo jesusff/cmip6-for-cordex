@@ -200,6 +200,7 @@ f = open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w')
 f.write(f'''<!DOCTYPE html>
 <html><head>
 <style>
+body {{ padding-bottom: 600px; }}
 tr:hover {{background-color:#f5f5f5;}}
 th, td {{text-align: center; padding: 3px;}}
 table {{border-collapse: collapse;}}
@@ -211,7 +212,7 @@ a:active {{ text-decoration: underline;}}
 </style>
 </head><body>
 <h1> CMIP6 for CORDEX summary tables (domain {CORDEX_DOMAIN})</h1>
-<p style="font-size: smaller">
+<p style="font-size: smaller; text-align: justify;">
 Summary of CMIP6 ScenarioMIP simulation (1) availability, (2) plausibility, (3) spread of future outcomes and (4) other criteria relevant for GCM selection for downscaling in the context of the CORDEX {CORDEX_DOMAIN} domain.
 <b>Availability</b> is labeled according to the variables and frequency available:
 RCM (6h 3D model level data, along with SST, sea ice and AOD),
