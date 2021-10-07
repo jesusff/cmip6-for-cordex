@@ -194,6 +194,16 @@ filter_all.iloc[:] = True
 selected = pd.read_csv('CMIP6_downscaling_commitments.csv').query(f'domain.str.startswith("{CORDEX_DOMAIN}")')
 filter_selected = filter_all.copy()
 filter_selected.iloc[:] = filter_selected.index.isin(set(zip(selected['model'],selected['run'])))
+filter_single_member = ~filter_all.copy()
+best_member = ( # the one with the smallest amount of missing evaluation metrics
+  np.sum(np.isnan(tablefull[main_headers[1]].iloc[:,1:]), axis=1)
+    .groupby(level=0)
+    .idxmin()
+)
+filter_single_member.loc[best_member] = True
+filter_avail = filter_avail & filter_single_member
+filter_avail_and_plausible = filter_avail_and_plausible & filter_single_member
+filter_plausible = filter_plausible & filter_single_member
 pd.set_option('precision', 2)
 d1 = dict(selector=".level0", props=[('min-width', '150px')])
 f = open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w')
@@ -237,9 +247,9 @@ The values for simulations showing some unplausible performace metric are also g
 </p>
 <ul>''')
 headers = [
-  'Filter: available and plausible', 
-  'Filter: available', 
-  'Filter: plausible', 
+  'Filter: available and plausible (single member)', 
+  'Filter: available (single member)', 
+  'Filter: plausible (single member)', 
   'All members with 2 or more scenarios and/or some metric available',
   'Selected GCMs + institutional commitments'
 ]
