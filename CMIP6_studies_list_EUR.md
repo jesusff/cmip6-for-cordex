@@ -814,4 +814,99 @@ Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
 
 ```
 
-### Independence
+### Other criteria
+#### Bru20 mfamily
+
+Located in [CMIP6_studies/Bru20.yaml](CMIP6_studies/Bru20.yaml)
+
+Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when weighting models by performance and independence, https://doi.org/10.5194%2Fesd-11-995-2020
+
+```
+- key: Bru20 mfamily
+  doi: 10.5194/esd-11-995-2020
+  type: other
+  spatial_scope: Global
+  data_source: reference
+  metric:
+    name: mfamily
+    long_name: None
+    units: categorical
+    variables: ['tas', 'psl']
+    comment:
+      From Figure 5. Model family tree for all 33 CMIP6 models, similar to
+      Knutti et al. (2013). Models branching further to the left are more
+      dependent, and models branching further to the right are more independent.
+      The analysis is based on global, horizontally resolved tasCLIM and pslCLIM
+      in the period from 1980 to 2014. Labels with the same color indicate
+      models with obvious dependencies, such as shared components or the same
+      origin, whereas models with no clear dependencies are labeled in black.
+      Strangely, ACCESS-CM2 is in the same family as UKESM and HadGEM3, but not
+      ACCESS-ESM1-5.
+  period:
+    reference: 1980-2014
+
+```
+
+#### atm. res. km
+
+Located in [CMIP6_studies/Resolution.yaml](CMIP6_studies/Resolution.yaml)
+
+None
+
+```
+- key: atm. res. km
+  doi: None
+  type: other
+  spatial_scope: special
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: resolution
+    long_name: Nominal resolution of the atmospheric component
+    units: km
+    variables: None
+    comment:
+      Data extracted from the CMIP github https://github.com/WCRP-
+      CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json using
+      util/resolution_to_yaml.py Manually edited to include appropriate runs.
+    best: 0
+  plausible_values:
+  - min: 0
+    max: 300
+    source: eurocordex_gcm_selection_team
+    comment:
+      Test value
+
+```
+
+#### Bra21 complexity
+
+Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
+
+Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
+
+```
+- key: Bra21 complexity
+  doi: 10.5194/gmd-2020-418
+  type: other
+  spatial_scope: special
+  temporal_scope: Annual
+  data_source: reference
+  metric:
+    name: complexity
+    long_name: Complexity of model components
+    units: categorical
+    variables: []
+    comment:
+      Model complexity from Table 1 is coded with ternary values   0 - not
+      considered   1 - prescribed   2 - interactive component in the following
+      order Atm-Lnd-Ocn-SI-Aer-Chem-Tbgc-Obgc-Veg-Gla
+  plausible_values:
+  - min: 2222100000
+    max: 2222222222
+    source: eurocordex_gcm_selection_team
+    comment:
+      At least coupled Atm-Lnd-Ocn-SI with some form of aerosol consideration
+
+```
+

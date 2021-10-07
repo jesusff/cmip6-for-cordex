@@ -44,7 +44,7 @@ enabled_data.sort(key=lambda x: config['spatial_scope_filter'][CORDEX_DOMAIN].in
 typenames = dict(
   performance = 'Plausibility',
   future_spread = 'Spread of future outcomes',
-  independence = 'Independence'
+  other = 'Other criteria'
 )
 print(f'## Available entries ({CORDEX_DOMAIN} scope)')
 for t in typenames:
