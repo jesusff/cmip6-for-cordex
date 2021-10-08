@@ -1,0 +1,121 @@
+- key: Pri20 storm track DJF
+  doi: 10.1175/JCLI-D-19-0928.1
+  metric: &stormtrack
+    name: storm_track
+    long_name: zonal mean North Atlantic storm track
+    units: rank
+    variables: ua850 va850 MSLP 850 relative vorticity
+    comment: |
+      Scoring of models on performance for the North Atlantic storm track.
+      Based on RMSE of the zonal mean track profile between 25-80N compared
+      to ERA5 and qualitative assessment of the trimodal structure of the storm
+      track. Storm track calculated by method in Priestly et al. (2020), data
+      and scores provided by author. Based on the method of qualitative scoring
+      in McSweeney et al. (2015) and adapted for CMIP6. The scoring has been
+      changed from the traffic light coding to numbers for EURO-CORDEX.
+
+      Values
+      0 - Low errors over both local and remote regions.
+          Captures key characteristics of the criteria spatially or temporarily,
+      1 - Some substantial errors present but not widespread or not present in
+          the local region of interest. Location of larger remote errors are not
+          known to have a downstream impact in the local region of interest.
+          Captures key characteristics of the criteria spatially or temporarily,
+      2 - Substantial errors in remote regions where downstream effects could
+          be expected to impact on the reliability of regional information
+          and/or present in the local region of interest,
+      3 - Large widespread errors to the extent that the model is unable to
+          represent the present-day climatology in a useful way and future
+          projections by the model cannot be interpreted in a meaningful way.
+    best: 0
+    worst: 3
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJF
+  period:
+    reference: 1979-2014
+  plausible_values: &plausval
+    - min: 0
+      max: 2
+      source: author
+      comment: >
+        Large widespread errors (value 3) lead to consider the model unplausible.
+        The data has been taken from the first realisation.
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 0
+    ACCESS-ESM1-5_r1i1p1f1: 1
+    AWI-ESM-1-1-LR_r1i1p1f1: 1
+    BCC-CSM2-MR_r1i1p1f1: 1
+    CMCC-CM2-HR4_r1i1p1f1: 3
+    CMCC-CM2-SR5_r1i1p1f1: 2
+    CNRM-CM6-1-HR_r1i1p1f2: 1
+    EC-Earth3_r1i1p1f1: 0
+    C-Earth3-CC_r1i1p1f1: 1
+    EC-Earth3-Veg_r1i1p1f1: 0
+    EC-Earth3-AerChem_r1i1p1f1: 0
+    EC-Earth3-Veg-LR_r1i1p1f1: 1
+    FGOALS-f3-L_r1i1p1f1: 3
+    GFDL-CM4_r1i1p1f1: 1
+    GISS-E2-1-G_r1i1p1f1: 3
+    HadGEM3-GC31-LL_r1i1p1f1: 1
+    HadGEM3-GC31-MM_r1i1p1f1: 0
+    IPSL-CM6A-LR_r1i1p1f1: 3
+    KACE-1-0-G_r1i1p1f1: 0
+    KIOST-ESM_r1i1p1f1: 2
+    MIROC6_r1i1p1f1: 2
+    MIROC-ES2L_r1i1p1f1: 3
+    MPI-ESM-1-2-HAM_r1i1p1f1: 1
+    MPI-ESM1-2-HR_r1i1p1f1: 1
+    MPI-ESM1-2-LR_r1i1p1f1: 1
+    MRI-ESM2-0_r1i1p1f1: 0
+    NESM3_r1i1p1f1: 1
+    NorESM2-LM_r1i1p1f1: 3
+    NorESM2-MM_r1i1p1f1: 2
+    SAM0-UNICON_r1i1p1f1: 2
+    TaiESM1_r1i1p1f1: 2
+    UKESM1-0-LL_r1i1p1f2: 0
+
+- key: Pri20 storm track JJA
+    doi: 10.1175/JCLI-D-19-0928.1
+    metric: *stormtrack
+    type: performance
+    spatial_scope: EUR
+    temporal_scope: JJA
+    period:
+      reference: 1979-2014
+    plausible_values: *plausval
+    data_source: author
+    data:
+      ACCESS-CM2_r1i1p1f1: 2
+      ACCESS-ESM1-5_r1i1p1f1: 3
+      AWI-ESM-1-1-LR_r1i1p1f1: 0
+      BCC-CSM2-MR_r1i1p1f1: 2
+      CMCC-CM2-HR4_r1i1p1f1: 1
+      CMCC-CM2-SR5_r1i1p1f1: 0
+      CNRM-CM6-1-HR_r1i1p1f2: 1
+      EC-Earth3_r1i1p1f1: 0
+      EC-Earth3-Veg-LR_r1i1p1f1: 0
+      EC-Earth3-Veg_r1i1p1f1: 1
+      EC-Earth3-AerChem_r1i1p1f1: 0
+      EC-Earth3-CC_r1i1p1f1: 0
+      FGOALS-f3-L_r1i1p1f1: 2
+      GFDL-CM4_r1i1p1f1: 1
+      GISS-E2-1-G_r1i1p1f1: 1
+      HadGEM3-GC31-LL_r1i1p1f1: 1
+      HadGEM3-GC31-MM_r1i1p1f1: 0
+      IPSL-CM6A-LR_r1i1p1f1: 2
+      KACE-1-0-G_r1i1p1f1: 1
+      KIOST-ESM_r1i1p1f1: 3
+      MIROC6_r1i1p1f1: 1
+      MIROC-ES2L_r1i1p1f1: 3
+      MPI-ESM-1-2-HAM_r1i1p1f1: 3
+      MPI-ESM1-2-HR_r1i1p1f1: 1
+      MPI-ESM1-2-LR_r1i1p1f1: 1
+      MRI-ESM2-0_r1i1p1f1: 1
+      NESM3_r1i1p1f1: 1
+      NorESM2-LM_r1i1p1f1: 3
+      NorESM2-MM_r1i1p1f1: 3
+      SAM0-UNICON_r1i1p1f1: 0
+      TaiESM1_r1i1p1f1: 1
+      UKESM1-0-LL_r1i1p1f2: 2
