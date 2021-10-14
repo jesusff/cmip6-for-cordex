@@ -55,7 +55,7 @@
     E3SM-1-1_r1i1p1f1:          2.5
     EC-Earth3_r1i1p1f1: 0.8
     EC-Earth3-Veg_r1i1p1f1: 0.9
-    EC-Earth3-Veg-L_r1i1p1f1:  1.0
+    EC-Earth3-Veg-LR_r1i1p1f1:  1.0
     FGOALS-f3-L_r1i1p1f1:       2.1
     FGOALS-g3_r1i1p1f1: 1.9
     FIO-ESM-2-0_r1i1p1f1:      0.9
@@ -75,7 +75,7 @@
     KIOST-ESM_r1i1p1f1:         2.0 
     MCM-UA-1-0_r1i1p1f1:  0.8    
     MIROC6_r1i1p1f1: 1.7
-    MIROC-ES2L_r1i1p1f1:        1.2
+    MIROC-ES2L_r1i1p1f2:        1.2
     MPI-ESM-1-2-HAM_r1i1p1f1:   1.4
     MPI-ESM1-2-HR_r1i1p1f1: 0.7
     MPI-ESM1-2-LR_r1i1p1f1: 1.1
@@ -140,7 +140,7 @@
       KIOST-ESM_r1i1p1f1:              2.6    
       MCM-UA-1-0_r1i1p1f1:        3.0    
       MIROC6_r1i1p1f1: 3.3
-      MIROC-ES2L_r1i1p1f1:             3.5 
+      MIROC-ES2L_r1i1p1f2:             3.5 
       MPI-ESM1-2-HR_r1i1p1f1: 2.8
       MPI-ESM1-2-LR_r1i1p1f1: 2.7
       MRI-ESM2-0_r1i1p1f1: 2.9

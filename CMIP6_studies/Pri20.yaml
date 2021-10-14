@@ -51,7 +51,7 @@
     CMCC-CM2-SR5_r1i1p1f1: 2
     CNRM-CM6-1-HR_r1i1p1f2: 1
     EC-Earth3_r1i1p1f1: 0
-    C-Earth3-CC_r1i1p1f1: 1
+    EC-Earth3-CC_r1i1p1f1: 1
     EC-Earth3-Veg_r1i1p1f1: 0
     EC-Earth3-AerChem_r1i1p1f1: 0
     EC-Earth3-Veg-LR_r1i1p1f1: 1
@@ -64,7 +64,7 @@
     KACE-1-0-G_r1i1p1f1: 0
     KIOST-ESM_r1i1p1f1: 2
     MIROC6_r1i1p1f1: 2
-    MIROC-ES2L_r1i1p1f1: 3
+    MIROC-ES2L_r1i1p1f2: 3
     MPI-ESM-1-2-HAM_r1i1p1f1: 1
     MPI-ESM1-2-HR_r1i1p1f1: 1
     MPI-ESM1-2-LR_r1i1p1f1: 1
@@ -77,45 +77,45 @@
     UKESM1-0-LL_r1i1p1f2: 0
 
 - key: Pri20 storm track JJA
-    doi: 10.1175/JCLI-D-19-0928.1
-    metric: *stormtrack
-    type: performance
-    spatial_scope: EUR
-    temporal_scope: JJA
-    period:
-      reference: 1979-2014
-    plausible_values: *plausval
-    data_source: author
-    data:
-      ACCESS-CM2_r1i1p1f1: 2
-      ACCESS-ESM1-5_r1i1p1f1: 3
-      AWI-ESM-1-1-LR_r1i1p1f1: 0
-      BCC-CSM2-MR_r1i1p1f1: 2
-      CMCC-CM2-HR4_r1i1p1f1: 1
-      CMCC-CM2-SR5_r1i1p1f1: 0
-      CNRM-CM6-1-HR_r1i1p1f2: 1
-      EC-Earth3_r1i1p1f1: 0
-      EC-Earth3-Veg-LR_r1i1p1f1: 0
-      EC-Earth3-Veg_r1i1p1f1: 1
-      EC-Earth3-AerChem_r1i1p1f1: 0
-      EC-Earth3-CC_r1i1p1f1: 0
-      FGOALS-f3-L_r1i1p1f1: 2
-      GFDL-CM4_r1i1p1f1: 1
-      GISS-E2-1-G_r1i1p1f1: 1
-      HadGEM3-GC31-LL_r1i1p1f1: 1
-      HadGEM3-GC31-MM_r1i1p1f1: 0
-      IPSL-CM6A-LR_r1i1p1f1: 2
-      KACE-1-0-G_r1i1p1f1: 1
-      KIOST-ESM_r1i1p1f1: 3
-      MIROC6_r1i1p1f1: 1
-      MIROC-ES2L_r1i1p1f1: 3
-      MPI-ESM-1-2-HAM_r1i1p1f1: 3
-      MPI-ESM1-2-HR_r1i1p1f1: 1
-      MPI-ESM1-2-LR_r1i1p1f1: 1
-      MRI-ESM2-0_r1i1p1f1: 1
-      NESM3_r1i1p1f1: 1
-      NorESM2-LM_r1i1p1f1: 3
-      NorESM2-MM_r1i1p1f1: 3
-      SAM0-UNICON_r1i1p1f1: 0
-      TaiESM1_r1i1p1f1: 1
-      UKESM1-0-LL_r1i1p1f2: 2
+  doi: 10.1175/JCLI-D-19-0928.1
+  metric: *stormtrack
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: JJA
+  period:
+    reference: 1979-2014
+  plausible_values: *plausval
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 2
+    ACCESS-ESM1-5_r1i1p1f1: 3
+    AWI-ESM-1-1-LR_r1i1p1f1: 0
+    BCC-CSM2-MR_r1i1p1f1: 2
+    CMCC-CM2-HR4_r1i1p1f1: 1
+    CMCC-CM2-SR5_r1i1p1f1: 0
+    CNRM-CM6-1-HR_r1i1p1f2: 1
+    EC-Earth3_r1i1p1f1: 0
+    EC-Earth3-Veg-LR_r1i1p1f1: 0
+    EC-Earth3-Veg_r1i1p1f1: 1
+    EC-Earth3-AerChem_r1i1p1f1: 0
+    EC-Earth3-CC_r1i1p1f1: 0
+    FGOALS-f3-L_r1i1p1f1: 2
+    GFDL-CM4_r1i1p1f1: 1
+    GISS-E2-1-G_r1i1p1f1: 1
+    HadGEM3-GC31-LL_r1i1p1f1: 1
+    HadGEM3-GC31-MM_r1i1p1f1: 0
+    IPSL-CM6A-LR_r1i1p1f1: 2
+    KACE-1-0-G_r1i1p1f1: 1
+    KIOST-ESM_r1i1p1f1: 3
+    MIROC6_r1i1p1f1: 1
+    MIROC-ES2L_r1i1p1f2: 3
+    MPI-ESM-1-2-HAM_r1i1p1f1: 3
+    MPI-ESM1-2-HR_r1i1p1f1: 1
+    MPI-ESM1-2-LR_r1i1p1f1: 1
+    MRI-ESM2-0_r1i1p1f1: 1
+    NESM3_r1i1p1f1: 1
+    NorESM2-LM_r1i1p1f1: 3
+    NorESM2-MM_r1i1p1f1: 3
+    SAM0-UNICON_r1i1p1f1: 0
+    TaiESM1_r1i1p1f1: 1
+    UKESM1-0-LL_r1i1p1f2: 2
