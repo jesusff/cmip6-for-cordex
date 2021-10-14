@@ -137,6 +137,112 @@ None
 
 ```
 
+#### Dav20 blocking freq DJF
+
+Located in [CMIP6_studies/Div20.yaml](CMIP6_studies/Div20.yaml)
+
+Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric Blocking Simulation in Present and Future Climate, https://doi.org/10.1175%2Fjcli-d-19-0862.1
+
+```
+- key: Dav20 blocking freq DJF
+  doi: 10.1175/JCLI-D-19-0862.1
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJF
+  data_source: author
+  metric:
+    name: blocking
+    long_name: blocking frequency
+    units: categorical
+    variables: zg
+    comment:
+      Scoring of models on performance for blocking frequency. Blocking
+      frequency bias has been calculated by the method of Davini and D'Andrea
+      (2020). The individual CMIP6 models have then been clustered into
+      categories based on their RMSE, bias and correlation compared to multiple
+      reanalysis JRA-55, NCEP-NCAR, ERA-40, ERA-Interim. Data for individual
+      CMIP6 models and clustering of errors into categories are provided by the
+      author for Europe.  Based on the method of qualitative scoring in
+      McSweeney et al. (2015) and adapted for CMIP6. The scoring has been
+      changed from the traffic light coding to numbers for EURO-CORDEX.  Values
+      0 - Low errors over both local and remote regions.     Captures key
+      characteristics of the criteria spatially or temporarily, 1 - Some
+      substantial errors present but not widespread or not present in     the
+      local region of interest. Location of larger remote errors are not
+      known to have a downstream impact in the local region of interest.
+      Captures key characteristics of the criteria spatially or temporarily, 2 -
+      Substantial errors in remote regions where downstream effects could     be
+      expected to impact on the reliability of regional information     and/or
+      present in the local region of interest, 3 - Large widespread errors to
+      the extent that the model is unable to     represent the present-day
+      climatology in a useful way and future     projections by the model cannot
+      be interpreted in a meaningful way.
+    best: 0
+    worst: 3
+  period:
+    reference: 1961-2000
+  plausible_values:
+  - min: 0
+    max: 2
+    source: author
+    comment:
+      Large widespread errors (value 3) lead to consider the model unplausible.
+
+```
+
+#### Dav20 blocking freq JJA
+
+Located in [CMIP6_studies/Div20.yaml](CMIP6_studies/Div20.yaml)
+
+Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric Blocking Simulation in Present and Future Climate, https://doi.org/10.1175%2Fjcli-d-19-0862.1
+
+```
+- key: Dav20 blocking freq JJA
+  doi: 10.1175/JCLI-D-19-0862.1
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: JJA
+  data_source: author
+  metric:
+    name: blocking
+    long_name: blocking frequency
+    units: categorical
+    variables: zg
+    comment:
+      Scoring of models on performance for blocking frequency. Blocking
+      frequency bias has been calculated by the method of Davini and D'Andrea
+      (2020). The individual CMIP6 models have then been clustered into
+      categories based on their RMSE, bias and correlation compared to multiple
+      reanalysis JRA-55, NCEP-NCAR, ERA-40, ERA-Interim. Data for individual
+      CMIP6 models and clustering of errors into categories are provided by the
+      author for Europe.  Based on the method of qualitative scoring in
+      McSweeney et al. (2015) and adapted for CMIP6. The scoring has been
+      changed from the traffic light coding to numbers for EURO-CORDEX.  Values
+      0 - Low errors over both local and remote regions.     Captures key
+      characteristics of the criteria spatially or temporarily, 1 - Some
+      substantial errors present but not widespread or not present in     the
+      local region of interest. Location of larger remote errors are not
+      known to have a downstream impact in the local region of interest.
+      Captures key characteristics of the criteria spatially or temporarily, 2 -
+      Substantial errors in remote regions where downstream effects could     be
+      expected to impact on the reliability of regional information     and/or
+      present in the local region of interest, 3 - Large widespread errors to
+      the extent that the model is unable to     represent the present-day
+      climatology in a useful way and future     projections by the model cannot
+      be interpreted in a meaningful way.
+    best: 0
+    worst: 3
+  period:
+    reference: 1961-2000
+  plausible_values:
+  - min: 0
+    max: 2
+    source: author
+    comment:
+      Large widespread errors (value 3) lead to consider the model unplausible.
+
+```
+
 #### Pri20 storm track DJF
 
 Located in [CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
@@ -153,7 +259,7 @@ Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tra
   metric:
     name: storm_track
     long_name: zonal mean North Atlantic storm track
-    units: rank
+    units: categorical
     variables: ua850 va850 MSLP 850 relative vorticity
     comment:
       Scoring of models on performance for the North Atlantic storm track. Based
@@ -185,7 +291,6 @@ Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tra
     source: author
     comment:
       Large widespread errors (value 3) lead to consider the model unplausible.
-      The data has been taken from the first realisation.
 
 ```
 
@@ -205,7 +310,7 @@ Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tra
   metric:
     name: storm_track
     long_name: zonal mean North Atlantic storm track
-    units: rank
+    units: categorical
     variables: ua850 va850 MSLP 850 relative vorticity
     comment:
       Scoring of models on performance for the North Atlantic storm track. Based
@@ -237,7 +342,6 @@ Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tra
     source: author
     comment:
       Large widespread errors (value 3) lead to consider the model unplausible.
-      The data has been taken from the first realisation.
 
 ```
 
@@ -407,6 +511,100 @@ Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
   plausible_values:
   - min: 1
     max: 1
+    source: author
+
+```
+
+#### McSw15 circ DJF
+
+Located in [CMIP6_studies/McSw15.yaml](CMIP6_studies/McSw15.yaml)
+
+C. F. McSweeney et al. (2014) Selecting CMIP5 GCMs for downscaling over multiple regions, https://doi.org/10.1007%2Fs00382-014-2418-8
+
+```
+- key: McSw15 circ DJF
+  doi: 10.1007/s00382-014-2418-8
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJF
+  data_source: author
+  metric:
+    name: circulation
+    long_name: Large scale atmospheric circulation pattern
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6. The scoring has been changed from the
+      traffic light coding to numbers for EURO-CORDEX.        Values       0 -
+      Low errors over both local and remote regions.           Captures key
+      characteristics of the criteria spatially or temporarily,       1 - Some
+      substantial errors present but not widespread or not present in
+      the local region of interest. Location of larger remote errors are not
+      known to have a downstream impact in the local region of interest.
+      Captures key characteristics of the criteria spatially or temporarily,
+      2 - Substantial errors in remote regions where downstream effects could
+      be expected to impact on the reliability of regional information
+      and/or present in the local region of interest,       3 - Large widespread
+      errors to the extent that the model is unable to           represent the
+      present-day climatology in a useful way and future           projections
+      by the model cannot be interpreted in a meaningful way.
+    best: 0
+    worst: 3
+  period:
+    reference: 1995-2014
+  plausible_values:
+  - min: 0
+    max: 2
+    source: author
+
+```
+
+#### McSw15 circ JJA
+
+Located in [CMIP6_studies/McSw15.yaml](CMIP6_studies/McSw15.yaml)
+
+C. F. McSweeney et al. (2014) Selecting CMIP5 GCMs for downscaling over multiple regions, https://doi.org/10.1007%2Fs00382-014-2418-8
+
+```
+- key: McSw15 circ JJA
+  doi: 10.1007/s00382-014-2418-8
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: JJA
+  data_source: author
+  metric:
+    name: circulation
+    long_name: Large scale atmospheric circulation pattern
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6. The scoring has been changed from the
+      traffic light coding to numbers for EURO-CORDEX.        Values       0 -
+      Low errors over both local and remote regions.           Captures key
+      characteristics of the criteria spatially or temporarily,       1 - Some
+      substantial errors present but not widespread or not present in
+      the local region of interest. Location of larger remote errors are not
+      known to have a downstream impact in the local region of interest.
+      Captures key characteristics of the criteria spatially or temporarily,
+      2 - Substantial errors in remote regions where downstream effects could
+      be expected to impact on the reliability of regional information
+      and/or present in the local region of interest,       3 - Large widespread
+      errors to the extent that the model is unable to           represent the
+      present-day climatology in a useful way and future           projections
+      by the model cannot be interpreted in a meaningful way.
+    best: 0
+    worst: 3
+  period:
+    reference: 1995-2014
+  plausible_values:
+  - min: 0
+    max: 2
     source: author
 
 ```
