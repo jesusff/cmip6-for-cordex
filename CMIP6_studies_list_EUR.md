@@ -137,6 +137,110 @@ None
 
 ```
 
+#### Pri20 storm track DJF
+
+Located in [CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
+
+Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tracks in CMIP6 Historical Simulations, https://doi.org/10.1175%2Fjcli-d-19-0928.1
+
+```
+- key: Pri20 storm track DJF
+  doi: 10.1175/JCLI-D-19-0928.1
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJF
+  data_source: author
+  metric:
+    name: storm_track
+    long_name: zonal mean North Atlantic storm track
+    units: rank
+    variables: ua850 va850 MSLP 850 relative vorticity
+    comment:
+      Scoring of models on performance for the North Atlantic storm track. Based
+      on RMSE of the zonal mean track profile between 25-80N compared to ERA5
+      and qualitative assessment of the trimodal structure of the storm track.
+      Storm track calculated by method in Priestly et al. (2020), data and
+      scores provided by author. Based on the method of qualitative scoring in
+      McSweeney et al. (2015) and adapted for CMIP6. The scoring has been
+      changed from the traffic light coding to numbers for EURO-CORDEX.  Values
+      0 - Low errors over both local and remote regions.     Captures key
+      characteristics of the criteria spatially or temporarily, 1 - Some
+      substantial errors present but not widespread or not present in     the
+      local region of interest. Location of larger remote errors are not
+      known to have a downstream impact in the local region of interest.
+      Captures key characteristics of the criteria spatially or temporarily, 2 -
+      Substantial errors in remote regions where downstream effects could     be
+      expected to impact on the reliability of regional information     and/or
+      present in the local region of interest, 3 - Large widespread errors to
+      the extent that the model is unable to     represent the present-day
+      climatology in a useful way and future     projections by the model cannot
+      be interpreted in a meaningful way.
+    best: 0
+    worst: 3
+  period:
+    reference: 1979-2014
+  plausible_values:
+  - min: 0
+    max: 2
+    source: author
+    comment:
+      Large widespread errors (value 3) lead to consider the model unplausible.
+      The data has been taken from the first realisation.
+
+```
+
+#### Pri20 storm track JJA
+
+Located in [CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
+
+Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tracks in CMIP6 Historical Simulations, https://doi.org/10.1175%2Fjcli-d-19-0928.1
+
+```
+- key: Pri20 storm track JJA
+  doi: 10.1175/JCLI-D-19-0928.1
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: JJA
+  data_source: author
+  metric:
+    name: storm_track
+    long_name: zonal mean North Atlantic storm track
+    units: rank
+    variables: ua850 va850 MSLP 850 relative vorticity
+    comment:
+      Scoring of models on performance for the North Atlantic storm track. Based
+      on RMSE of the zonal mean track profile between 25-80N compared to ERA5
+      and qualitative assessment of the trimodal structure of the storm track.
+      Storm track calculated by method in Priestly et al. (2020), data and
+      scores provided by author. Based on the method of qualitative scoring in
+      McSweeney et al. (2015) and adapted for CMIP6. The scoring has been
+      changed from the traffic light coding to numbers for EURO-CORDEX.  Values
+      0 - Low errors over both local and remote regions.     Captures key
+      characteristics of the criteria spatially or temporarily, 1 - Some
+      substantial errors present but not widespread or not present in     the
+      local region of interest. Location of larger remote errors are not
+      known to have a downstream impact in the local region of interest.
+      Captures key characteristics of the criteria spatially or temporarily, 2 -
+      Substantial errors in remote regions where downstream effects could     be
+      expected to impact on the reliability of regional information     and/or
+      present in the local region of interest, 3 - Large widespread errors to
+      the extent that the model is unable to     represent the present-day
+      climatology in a useful way and future     projections by the model cannot
+      be interpreted in a meaningful way.
+    best: 0
+    worst: 3
+  period:
+    reference: 1979-2014
+  plausible_values:
+  - min: 0
+    max: 2
+    source: author
+    comment:
+      Large widespread errors (value 3) lead to consider the model unplausible.
+      The data has been taken from the first realisation.
+
+```
+
 #### Oud20 jetpos
 
 Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
