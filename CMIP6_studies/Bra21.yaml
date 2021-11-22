@@ -65,13 +65,16 @@
     CNRM-ESM2-1_r1i1p1f2: 0.7558
     EC-Earth3_r1i1p1f1: 0.331
     EC-Earth3-Veg_r1i1p1f1: 0.3898
+    EC-Earth3-Veg_r6i1p1f1: 0.3575 #check whether this run belongs to "data" or "data_other"
     EC-Earth3-Veg-LR_r1i1p1f1: 0.4122
     EC-Earth3-AerChem_r1i1p1f1: 0.4026
     EC-Earth3-CC_r1i1p1f1: 0.3264
     GFDL-CM4_r1i1p1f1: 0.6426
+    GFDL-ESM4_r1i1p1f1: 0.7445 #check whether this run belongs to "data" or "data_other"
     GISS-E2-1-G_r1i1p1f1: 0.7064
     IPSL-CM6A-LR_r1i1p1f1: 0.7877
     IPSL-CM6A-LR_r14i1p1f1: 0.6758
+    MIROC6_r1i1p1f1: 0.8341 #check whether this run belongs to "data" or "data_other"
     MIROC6_r3i1p1f1: 0.8931
     MIROC-ES2L_r1i1p1f2: 1.1954
     MIROC-ES2L_r5i1p1f2: 1.1494
@@ -177,41 +180,47 @@
         0 - not considered
         1 - prescribed
         2 - interactive component
-      in the following order Atm-Lnd-Ocn-SI-Aer-Chem-Tbgc-Obgc-Veg-Gla
+      in the following order Atm-Lnd-Ocn-SI-Veg-Tbgc-Aer-Chem-Obgc-Gla
   type: other
   spatial_scope: special
   temporal_scope: Annual
   plausible_values:
-      min: 2222100000
+      min: 2222000000
       max: 2222222222
       source: eurocordex_gcm_selection_team
       comment: >
         At least coupled Atm-Lnd-Ocn-SI with some form of aerosol consideration
   data_source: reference
   data:
-    #                           ALOIACtoVG
-    ACCESS-CM2_r1i1p1f1:        2222200000
-    ACCESS-ESM1-5_r1i1p1f1:     2222202200
-    AWI-ESM-1-1-LR_r1i1p1f1:    2222100000
-    BCC-CSM2-MR_r1i1p1f1:       2222100000
-    CNRM-CM6-1_r1i1p1f2:        2222120000
-    CNRM-CM6-1-HR_r1i1p1f2:     2222120000
-    CNRM-ESM2-1_r1i1p1f2:       2222222200
-    EC-Earth3_r1i1p1f1:         2222100000
-    EC-Earth3-Veg_r1i1p1f1:     2222102000
-    EC-Earth3-Veg-LR_r1i1p1f1:  2222102000
-    EC-Earth3-AerChem_r1i1p1f1: 2222220000
-    GFDL-CM4_r1i1p1f1:          2222222200
-    GISS-E2-1-G_r1i1p1f1:       2222100000
-    HadGEM3-GC31-MM_r1i1p1f3:   2222222000
-    IPSL-CM6A-LR_r1i1p1f1:      2222102200
-    MIROC6_r3i1p1f1:            2222200000
-    MIROC-ES2L_r5i1p1f2:        2222202200
-    MPI-ESM1-2-LR_r1i1p1f1:     2222102200
-    MPI-ESM1-2-HR_r1i1p1f1:     2222102200
-    MPI-ESM-1-2-HAM_r1i1p1f1:   2222222200
-    MRI-ESM2-0_r1i1p1f1:        2222222200
-    NESM3_r1i1p1f1:             2222100000
-    NorESM2-LM_r1i1p1f1:        2222222202
-    NorESM2-MM_r1i1p1f1:        2222222202
-    SAM0-UNICON_r1i1p1f1:       2222200000 
+    #                           ALOIVtACoG
+    ACCESS-CM2_r1i1p1f1:        2222002000 #confirmed by Dave Bi, Tilo Ziehn and Matt Woodhouse
+    ACCESS-ESM1-5_r1i1p1f1:     2222122020 #confirmed by Dave Bi, Tilo Ziehn and Matt Woodhouse
+    AWI-ESM-1-1-LR_r1i1p1f1:    2222220100 #confirmed by Christopher Danek
+    BCC-CSM2-MR_r1i1p1f1:       2222221120 #confirmed by Tongwen Wu and Laurent Li
+    CanESM5_r1i1p1f1:           2222222121 #confirmed by Neil Swart
+    CNRM-CM6-1_r1i1p1f2:        2222101100 #confirmed by Aurore Voldoire
+    CNRM-CM6-1-HR_r1i1p1f2:     2222101100 #confirmed by Aurore Voldoire 
+    CNRM-ESM2-1_r1i1p1f2:       2222222220 #confirmed by Aurore Voldoire under the assumption that interactive stratospheric chemistry only (i.e. tropospheric chemistriy is not interactive) merits a 2
+    EC-Earth3_r1i1p1f1:         2222101000 #confirmed by Ralf Döscher and Klaus Wyser
+    EC-Earth3-Veg_r1i1p1f1:     2222221000 #confirmed by Ralf Döscher and Klaus Wyser
+    EC-Earth3-Veg-LR_r1i1p1f1:  2222221000 #confirmed by Ralf Döscher and Klaus Wyser
+    EC-Earth3-AerChem_r1i1p1f1: 2222102000 #confirmed by Ralf Döscher and Klaus Wyser
+    EC-Earth3-CC_r1i1p1f1:      2222221020 #confirmed by Ralf Döscher and Klaus Wyser
+    GFDL-CM4_r1i1p1f1:          2222212110 #best guess from doi 10.1029/2019MS001829 and 10.1029/2019MS002015; still needs to be confirmed by GFDL staff
+    GFDL-ESM4_r1i1p1f1:         2222222220 #best guess from doi 10.1029/2019MS001829 and 10.1029/2019MS002015; still needs to be confirmed by GFDL staff
+    GISS-E2-1-G_r1i1p1f1:       2222101100 #confirmed by Gavin A. Schmidt
+    HadGEM3-GC31-MM_r1i1p1f3:   2222002000 #confirmed by Gill Martin    
+    IITM-ESM_r1i1p1f1:          2222101020 #provided by Panickal Swapna
+    IPSL-CM6A-LR_r1i1p1f1:      2222221121 #best guess from doi 10.1029/2019MS002010; commented by Olivier Boucher but not yet definetely confirmed
+    KIOST-ESM_r1i1p1f1:         2222221120 #confirmed by YoungHo Kim
+    MIROC6_r3i1p1f1:            2222102000 #confirmed by Hiroaki Tatebe
+    MIROC-ES2L_r5i1p1f2:        2222022020 #confirmed by Hiroaki Tatebe
+    MPI-ESM1-2-LR_r1i1p1f1:     2222221020 #confirmed by Thorsten Mauritsen
+    MPI-ESM1-2-HR_r1i1p1f1:     2222221020 #confirmed by Thorsten Mauritsen 
+    MPI-ESM-1-2-HAM_r1i1p1f1:   2222222120 #confirmed by Ina Tegen
+    MRI-ESM2-0_r1i1p1f1:        2222112210 #with 2222122220 for r1i2p1f1, confirmed by Seiji Yukimoto
+    NESM3_r1i1p1f1:             2222221000 #confirmed by Jian Cao
+    NorESM2-LM_r1i1p1f1:        2222122120 #confirmed by Øyvind Seland
+    NorESM2-MM_r1i1p1f1:        2222122120 #confirmed by Øyvind Seland
+    SAM0-UNICON_r1i1p1f1:       2222222000 #buest guess from doi 10.1175/JCLI-D-18-0796.1; yet needs to be confirmed
+    TaiESM_r1i1p1f1:            2222222000 #confirmed by Wei-Liang Lee
