@@ -1202,9 +1202,9 @@ Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and
     comment:
       Model complexity from Table 1 is coded with ternary values   0 - not
       considered   1 - prescribed   2 - interactive component in the following
-      order Atm-Lnd-Ocn-SI-Aer-Chem-Tbgc-Obgc-Veg-Gla
+      order Atm-Lnd-Ocn-SI-Veg-Tbgc-Aer-Chem-Obgc-Gla
   plausible_values:
-  - min: 2222100000
+  - min: 2222000000
     max: 2222222222
     source: eurocordex_gcm_selection_team
     comment:
