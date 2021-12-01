@@ -191,7 +191,8 @@ filter_plausible = synthesis(tablefull[(main_headers[1], 'Synthesis')], test = T
 filter_avail_and_plausible = filter_avail & filter_plausible
 filter_all = filter_avail.copy()
 filter_all.iloc[:] = True
-selected = pd.read_csv('CMIP6_downscaling_commitments.csv').query(f'domain.str.startswith("{CORDEX_DOMAIN}")')
+commitments = pd.read_csv('CMIP6_downscaling_commitments.csv')
+selected = commitments[commitments['domain'].str.startswith(CORDEX_DOMAIN)]
 filter_selected = filter_all.copy()
 filter_selected.iloc[:] = filter_selected.index.isin(set(zip(selected['model'],selected['run'])))
 filter_single_member = ~filter_all.copy()
