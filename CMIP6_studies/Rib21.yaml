@@ -14,6 +14,10 @@
       The values of the GCM TCR  can be found in Suppl. Mat Table S1. Some model
       TCR are missing. This study is based on multi-member for each model, not
       on only one member.
+  disabled: 
+    cause: preferred_source
+    preferred: AR6 TCR very likely range
+    comment: IPCC-endorsed estimate
   type: performance
   spatial_scope: Global
   temporal_scope: Annual
