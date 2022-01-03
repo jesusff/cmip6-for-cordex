@@ -4,6 +4,7 @@
  * [Beo21](CMIP6_studies/Beo21.yaml)
 ## Disabled entries
 
+ · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
  · [Fas20](CMIP6_studies/Fas20.yaml)
  · [Atlas Dtas WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
@@ -30,17 +31,17 @@
  · [Dobler SST rmse MED](CMIP6_studies/Dobler.yaml)
 ## Available entries (EUR scope)
 ### Plausibility
-#### Rib21 Constrained TCR
+#### AR6 TCR very likely range
 
-Located in [CMIP6_studies/Rib21.yaml](CMIP6_studies/Rib21.yaml)
+Located in [CMIP6_studies/AR6.yaml](CMIP6_studies/AR6.yaml)
 
-Preferred to [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
+Preferred to [CMIP6_studies/Rib21.yaml](CMIP6_studies/Rib21.yaml)
 
-Aur\'elien Ribes et al. (2021) Making climate projections conditional on historical observations, https://doi.org/10.1126%2Fsciadv.abc0671
+None
 
 ```
-- key: Rib21 Constrained TCR
-  doi: 10.1126/sciadv.abc0671
+- key: AR6 TCR very likely range
+  doi: None
   type: performance
   spatial_scope: Global
   temporal_scope: Annual
@@ -51,24 +52,20 @@ Aur\'elien Ribes et al. (2021) Making climate projections conditional on histori
     units: K
     variables: tas
     comment:
-      TCR is calculated from the CO2-only simulation, where the atmospheric CO2
-      concentration increases at a rate of 1% per year, centered on the time of
-      doubling of the atmospheric CO2, which occurs during simulation year 70
-      (we use the mean of the years 61 to 80). The values of the GCM TCR  can be
-      found in Suppl. Mat Table S1. Some model TCR are missing. This study is
-      based on multi-member for each model, not on only one member.
-  period:
-    reference: 1850-2019
-    comment:
-      This is not the period for the metric values (these are model years at the
-      time of doubling CO2), but the one used in the observational constraint.
+      TCR as provided by th IPCC WGI AR6 on Table 7.SM.5 (https://www.ipcc.ch/re
+      port/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter_07_Supplementary_Materi
+      al.pdf).
   plausible_values:
-  - min: 1.33
-    max: 2.36
+  - min: 1.2
+    max: 2.4
     source: reference
     comment:
-      This is a 90% likely range (5-95%) for the TCR. HadCRUT4-CW (Cowtan & Way,
-      2014) used as observational reference.
+      This is a 90% (very likely) range for the TCR according to AR6 Technical
+      Summary: Based on  process understanding, warming over the instrumental
+      record, and emergent constraints, the best estimate of TCR is 1.8 degC,
+      the likely range is 1.4 to 2.2 degC and the very likely range is 1.2 to
+      2.4 DegC. There is a high level of agreement among the different lines of
+      evidence (Figure TS.16c) (high confidence). {7.5.5}
 
 ```
 
