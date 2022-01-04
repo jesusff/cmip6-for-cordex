@@ -191,9 +191,10 @@ filter_plausible = synthesis(tablefull[(main_headers[1], 'Synthesis')], test = T
 filter_avail_and_plausible = filter_avail & filter_plausible
 filter_all = filter_avail.copy()
 filter_all.iloc[:] = True
-selected = pd.read_csv('CMIP6_downscaling_commitments.csv').query(f'domain.str.startswith("{CORDEX_DOMAIN}")')
+plans = pd.read_csv('CMIP6_downscaling_plans.csv')
+selected = plans[plans['domain'].str.startswith(CORDEX_DOMAIN)]
 filter_selected = filter_all.copy()
-filter_selected.iloc[:] = filter_selected.index.isin(set(zip(selected['model'],selected['run'])))
+filter_selected.iloc[:] = filter_selected.index.isin(set(zip(selected['driving_model'],selected['ensemble'])))
 filter_single_member = ~filter_all.copy()
 best_member = ( # the one with the smallest amount of missing evaluation metrics
   np.sum(np.isnan(tablefull[main_headers[1]].iloc[:,1:]), axis=1)
@@ -251,11 +252,11 @@ headers = [
   'Filter: available (single member)', 
   'Filter: plausible (single member)', 
   'All members with 2 or more scenarios and/or some metric available',
-  'Selected GCMs + institutional commitments'
+  'Selected GCMs + institutional plans'
 ]
 text = [
   '', '', '', '', 
-  'See institutional commitments at <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_commitments.csv" target="_blank">CMIP6_downscaling_commitments.csv</a><br>'
+  'See institutional plans at <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv" target="_blank">CMIP6_downscaling_plans.csv</a><br>'
 ]
 ids = ['avail-and-plausible', 'available', 'plausible', 'all', 'selected']
 f.write('\n'.join([f'\n<li><a href="#{ids[k]}">{header}</a></li>' for k,header in enumerate(headers)]))
