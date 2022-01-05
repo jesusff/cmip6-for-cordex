@@ -25,7 +25,6 @@
  · [Pri20 storm track JJA](CMIP6_studies/Pri20.yaml)
  · [Beo21](CMIP6_studies/Beo21.yaml)
  · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
- · [Tok20 TCR as spread](CMIP6_studies/Tok20.yaml)
  · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
  · [Dobler SICE rmse NAtl](CMIP6_studies/Dobler.yaml)
  · [Dobler SST rmse NAtl](CMIP6_studies/Dobler.yaml)
@@ -105,28 +104,28 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
 
 ```
 
-#### Qas21 Constrained Dtas ssp245
+#### Qasmi Constr Global Dtas ssp245 2050
 
 Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
 
 None
 
 ```
-- key: Qas21 Constrained Dtas ssp245
+- key: Qasmi Constr Global Dtas ssp245 2050
   doi: None
   type: performance
   spatial_scope: Global
   temporal_scope: Annual
   data_source: author
   metric:
-    name: TCRbin
-    long_name: Transient Climate Response
+    name: Constrained-Dtas
+    long_name: Observationally-contrained future climate change
     units: binary
     variables: tas
     comment:
       Constrained global annual temperature future climate change range,
       2041-2060 vs 1850-1900, SSP245 (adapted from Ribes et al. 2021 by S.
-      Qasmi)
+      Qasmi). In particular by adding recently available CMIP6 GCM, now 40 GCMs.
   period:
     reference: 1850-1900
     target: 2041-2060
@@ -134,6 +133,13 @@ None
   - min: 1
     max: 1
     source: author
+    comment:
+      models lying outside the observationally-constrained 90% interval obtained
+      by the method are considered as implausible. The 90% interval is [1.5 ;
+      2.1]degC for the period 2041-2060 vs 1850-1900, SSP245. Multi-member
+      ensemble mean is used in this study for every model. Note that this
+      criteria is very strict and can potentially eliminate a large number of
+      GCMs.
 
 ```
 
@@ -585,14 +591,14 @@ Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
       For the performance criteria, we compute the spatial RMSE on the 12-month
       bias maps over the period 1985-2014. It means that we first compute the
       temporal average to obtain a mean seasonal cycle - 12maps- of the bias
-      maps and then we compute the spatio-temporal RMSE). All the models are
+      maps and then we compute the spatio-temporal RMSE. All the models are
       interpolated on the grid of the refererence dataset, and then a mask of
-      the Mediterranean Sea is applied (no Black Sea).  The reference dataset is
+      the Mediterranean Sea is applied (no Black Sea). The reference dataset is
       a specific CMEMS product developed for the Mediterranean Sea,
       GOS-L4_GHRSST-SSTfnd-OISST_HR_REP-MED-v02.0-fv02.0 data (Pisano et al.
       2016, doi:10.1016/j.rse.2016.01.019, Casey et al. 2010,
       doi:10.1007/978-90-481-8681-5_16 . Generated/provided by Copernicus Marine
-      Service and CNR - ISMAR ROME.
+      Service and CNR - ISMAR ROME).
     best: 0
     worst: inf
   plausible_values:
@@ -851,8 +857,6 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 Located in [CMIP6_studies/AR6.yaml](CMIP6_studies/AR6.yaml)
 
-Preferred to [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
-
 None
 
 ```
@@ -936,49 +940,49 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
 
 ```
 
-#### Qasmi tas warming class
+#### Qasmi Constr EUR Dtas ssp245 2050 JJA
 
 Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
 
 ['pers_comm', 'S. Qasmi']
 
 ```
-- key: Qasmi tas warming class
+- key: Qasmi Constr EUR Dtas ssp245 2050 JJA
   doi: ['pers_comm', 'S. Qasmi']
   type: future_spread
   spatial_scope: MED+NEU+CEU
-  temporal_scope: DJF+JJA
+  temporal_scope: JJA
   data_source: author
   metric:
     name: deltatas_class
-    long_name: Warming classes according to future surface air temperature change
+    long_name: Warming classes according to Observationally-constrained Summer European future surface air temperature change in 2041-2060 in Summer
     units: categorical
     variables: tas
     comment:
       Regional tas change in Europe MED, NEU, CEU, MED+NEU+CEU, DJF, JJA,
-      2041-2060 vs 1850-1900, SSP245. S. Qasmi, numerical values available soon.
-      Only warming classes for now.
+      2041-2060 vs 1850-1900, SSP245. Values are given only for land points. S.
+      Qasmi, numerical values available soon. Only warming classes for now. We
+      report here only warming classes for JJA and for the joined MED+NEU+CEU
+      domain
   period:
     reference: 1850-1900
     target: 2041-2060
   classes:
-  - limits: [-0.5, 0.5, 1.5, 2.5, 3.5]
-    labels: ['implausible', 'weak warming', 'medium warming', 'strong warming']
+  - limits: [0.5, 1.5, 2.5, 3.5, 4.5, 5.5]
+    labels: ['implausible cold', 'weak warming', 'medium warming', 'strong warming', 'implausible warm']
     source: author
     comment:
-      From Google sheet [Sam] Class 2 lies in the interquartile (Q25-Q75) of the
-      constrained range, class 1 is between Q5 and Q25 and classe 3 is between
-      Q75 and Q95 of the constrained range. Class 0 means eliminated by the
-      plausibility criteria. [Chus] The elimination by plausibility criteria can
-      be automatically marked by the greyed out number (it is active now). In
-      this way, we can assess whether they also misbehave in the future spread.
-      Also, the data are available in case thresholds are adjusted and a model
-      comes back to the plausible range. [Sam] agreed. I will modify this when I
-      have the numerical values from Said Qasmi. But I guess that it is a
-      duplication of your atlas values, except for the fact that it uses pre-
-      indust as a reference what is interesting for GWL-based study TO-DO decide
-      on the source for these deltas and use classes to assign warming levels.
-      Atlas data can be used to generate deltas for any period/region/scenario
+      Warming classes are determined wrt an observationally-constrained range
+      for the future regional warming based on Ribes et al. 2021, Qasmi et al.
+      (in rev). The observational constraint is a global constraint on the GMST
+      but it allows to constraint the regional climate warming. The 90% interval
+      of future warming plausible range is [2.3 ; 3.3]degC The 50% interval of
+      future warming plausible range is [2.5 ; 3.0]degC The best estimate is a
+      warming of 2.8 degC Category definition (new since 5 jan 2022): Categories
+      1 and 5 are considered as implausible by S. Qasmi. Category 2, 3, 4 are
+      plausible. Class 1 is below the Q5 of the constrained range. Class 2 is
+      between Q5 and Q25 Class 3 is between Q25 and Q75 Class 4 is between Q75
+      and Q95 Class 5 is above Q95
 
 ```
 
