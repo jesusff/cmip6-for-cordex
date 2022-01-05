@@ -86,6 +86,10 @@
       concentration increases at a rate of 1% per year, centered on the time of
       doubling of the atmospheric CO2, which occurs during simulation year 70
       (we use the mean of the years 61 to 80).
+  disabled: 
+    cause: preferred_source
+    preferred: AR6 TCR as spread
+    comment: More complete data set
   type: future_spread
   spatial_scope: Global
   temporal_scope: Annual

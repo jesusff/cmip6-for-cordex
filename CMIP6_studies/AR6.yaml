@@ -1,6 +1,6 @@
 - key: AR6 TCR very likely range
   doi:
-  metric:
+  metric: &ar6tcr
     name: TCR
     long_name: Transient Climate Response
     units: K
@@ -21,7 +21,7 @@
       range is 1.2 to 2.4 DegC. There is a high level of agreement among the different lines of
       evidence (Figure TS.16c) (high confidence). {7.5.5}
   data_source: reference
-  data:
+  data: &ar6tcrdata
     ACCESS-CM2_r1i1p1f1: 2.10
     ACCESS-ESM1-5_r1i1p1f1: 1.95
     AWI-CM-1-1-MR_r1i1p1f1: 2.06
@@ -71,3 +71,18 @@
     SAM0-UNICON_r1i1p1f1: 2.27
     TaiESM1_r1i1p1f1: 2.34
     UKESM1-0-LL_r1-3i1p1f2: 2.79
+
+- key: AR6 TCR as spread
+  doi: 
+  metric: *ar6tcr
+  type: future_spread
+  spatial_scope: Global
+  temporal_scope: Annual
+  classes:
+    limits: [-10, 1.5, 2, 2.5, 10]
+    labels: [low, moderate, high, very high]
+    source: eurocordex_gcm_selection_team
+    comment: >
+      Test values
+  data_source: reference
+  data: *ar6tcrdata

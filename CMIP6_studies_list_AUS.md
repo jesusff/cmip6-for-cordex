@@ -12,6 +12,7 @@
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Beo21](CMIP6_studies/Beo21.yaml)
  · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
+ · [Tok20 TCR as spread](CMIP6_studies/Tok20.yaml)
 ## Available entries (AUS scope)
 ### Plausibility
 #### AR6 TCR very likely range
@@ -120,6 +121,39 @@ None
 ```
 
 ### Spread of future outcomes
+#### AR6 TCR as spread
+
+Located in [CMIP6_studies/AR6.yaml](CMIP6_studies/AR6.yaml)
+
+Preferred to [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
+
+None
+
+```
+- key: AR6 TCR as spread
+  doi: None
+  type: future_spread
+  spatial_scope: Global
+  temporal_scope: Annual
+  data_source: reference
+  metric:
+    name: TCR
+    long_name: Transient Climate Response
+    units: K
+    variables: tas
+    comment:
+      TCR as provided by th IPCC WGI AR6 on Table 7.SM.5 (https://www.ipcc.ch/re
+      port/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter_07_Supplementary_Materi
+      al.pdf).
+  classes:
+  - limits: [-10, 1.5, 2, 2.5, 10]
+    labels: ['low', 'moderate', 'high', 'very high']
+    source: eurocordex_gcm_selection_team
+    comment:
+      Test values
+
+```
+
 #### Sch20 ECS
 
 Located in [CMIP6_studies/Sch20.yaml](CMIP6_studies/Sch20.yaml)
@@ -142,38 +176,6 @@ Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensit
       ECS is calculated with ESMValTool (Gregory method). CMIP5 range is [2.08,
       4.67]. Ensemble member added to make it comparable to scenarioMIP runs,
       although ECS is derived from 4xCO2 runs, unrelated to scenarioMIP.
-
-```
-
-#### Tok20 TCR as spread
-
-Located in [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
-
-None
-
-```
-- key: Tok20 TCR as spread
-  doi: None
-  type: future_spread
-  spatial_scope: Global
-  temporal_scope: Annual
-  data_source: reference
-  metric:
-    name: TCR
-    long_name: Transient Climate Response
-    units: K
-    variables: tas
-    comment:
-      TCR is calculated from the CO2-only simulation, where the atmospheric CO2
-      concentration increases at a rate of 1% per year, centered on the time of
-      doubling of the atmospheric CO2, which occurs during simulation year 70
-      (we use the mean of the years 61 to 80).
-  classes:
-  - limits: [-10, 1.5, 2, 2.5, 10]
-    labels: ['low', 'moderate', 'high', 'very high']
-    source: eurocordex_gcm_selection_team
-    comment:
-      Test values
 
 ```
 
