@@ -6,14 +6,7 @@
     units: K
     variables: tas
     comment: >
-      TCR is calculated from the CO2-only simulation, where the atmospheric CO2
-      concentration increases at a rate of 1% per year, centered on the time of
-      doubling of the atmospheric CO2, which occurs during simulation year 70
-      (we use the mean of the years 61 to 80).
-
-      The values of the GCM TCR  can be found in Suppl. Mat Table S1. Some model
-      TCR are missing. This study is based on multi-member for each model, not
-      on only one member.
+      For the TCR values of the individual GCM, we do not use the values proposed initially in Ribes et al. 2021 but the values provided by th IPCC WGI AR6 on Table 7.SM.5 (https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter_07_Supplementary_Material.pdf), completed by some values from the original article
   disabled: 
     cause: preferred_source
     preferred: AR6 TCR very likely range
@@ -24,8 +17,7 @@
   period:
     reference: 1850-2019
     comment: >
-      This is not the period for the metric values (these are model years at
-      the time of doubling CO2), but the one used in the observational constraint.
+      This reference period indicate the observational period used to compute the observational constraint.
   plausible_values:
     min: 1.33
     max: 2.36
@@ -35,22 +27,52 @@
       HadCRUT4-CW (Cowtan & Way, 2014) used as observational reference.
   data_source: reference
   data:
-    BCC-CSM2-MR_r1i1p1f1: 1.6
-    CanESM5_r1-3i1p2f1: 2.75
-    CESM2_r2i1p1f1: 1.99
-    CNRM-CM6-1_r1i1p1f2: 2.23
-    CNRM-CM6-1-HR_r1i1p1f2: 2.47
-    CNRM-ESM2-1_r1i1p1f2: 1.82
-    EC-Earth3_r1i1p1f1: 2.32
-    EC-Earth3-Veg_r1-3i1p1f1: 2.76
-    GFDL-ESM4_r1i1p1f1: 1.61
-    INM-CM5-0_r1i1p1f1: 1.39
-    IPSL-CM6A-LR_r1-6i1p1f1: 2.39
-    IPSL-CM6A-LR_r14i1p1f1: 2.39
-    MIROC6_r1i1p1f1: 1.58
-    MPI-ESM1-2-HR_r1i1p1f1: 1.57
-    MRI-ESM2-0_r1i1p1f1: 1.67
-    NESM3_r1i1p1f1: 2.79
+    ACCESS-CM2_r1i1p1f1: 2.10
+    ACCESS-ESM1-5_r1i1p1f1: 1.95
+    AWI-CM-1-1-MR_r1i1p1f1: 2.06
+    BCC-CSM2-MR_r1i1p1f1: 1.72
+    BCC-ESM1_r1i1p1f1: 1.77
+    CAMS-CSM1-0_r1i1p1f1: 1.73
+    CAS-ESM2-0_r1i1p1f1: 2.04
+    CESM2_r2i1p1f1: 2.06
+    CESM2-FV2_r1i1p1f1: 2.05
+    CESM2-WACCM_r1i1p1f1: 1.98
+    CESM2-WACCM-FV2_r1i1p1f1: 2.01
+    CIESM_r1i1p1f1: 2.39
+    CMCC-CM2-SR5_r1i1p1f1: 2.09
+    CNRM-CM6-1_r1i1p1f2: 2.14
+    CNRM-CM6-1-HR_r1i1p1f2: 2.48
+    CNRM-ESM2-1_r1i1p1f2: 1.86
+    CanESM5_r1-3i1p2f1: 2.74
+    E3SM-1-0_r1i1p1f1: 2.99
+    EC-Earth3_r1i1p1f1: 2.30
+    EC-Earth3-Veg_r1-3i1p1f1: 2.62
+    FGOALS-f3-L_r1i1p1f1: 1.94
+    FGOALS-g3_r1i1p1f1: 1.54
+    FIO-ESM-2-0_r1i1p1f1: 2.22
+    GFDL-ESM4_r1i1p1f1: 1.61 # Missing in AR6 (this is from Ribes et al., 2021)
+    GISS-E2-1-G_r1i1p1f1: 1.80
+    GISS-E2-1-H_r1i1p1f1: 1.93
+    GISS-E2-2-G_r1i1p1f1: 1.71
+    HadGEM3-GC31-LL_r1i1p1f1: 2.55
+    HadGEM3-GC31-MM_r1i1p1f1: 2.58
+    IITM-ESM_r1i1p1f1: 1.71
+    INM-CM4-8_r1i1p1f1: 1.33
+    INM-CM5-0_r1i1p1f1: 1.39 # Missing in AR6 (this is from Ribes et al., 2021)
+    IPSL-CM6A-LR_r1-6i1p1f1: 2.32
+    IPSL-CM6A-LR_r14i1p1f1: 2.32
+    KACE-1-0-G_r1i1p1f1: 1.41
+    MCM-UA-1-0_r1i1p1f1: 1.94
+    MIROC-ES2L_r1i1p1f1: 1.55
+    MIROC6_r1i1p1f1: 1.55
+    MPI-ESM-1-2-HAM_r1i1p1f1: 1.80
+    MPI-ESM1-2-HR_r1i1p1f1: 1.66
+    MPI-ESM1-2-LR_r1i1p1f1: 1.84
+    MRI-ESM2-0_r1i1p1f1: 1.64
+    NESM3_r1i1p1f1: 2.72
+    NorCPM1_r1i1p1f1: 1.56
     NorESM2-LM_r1i1p1f1: 1.48
-    NorESM2-MM_r1i1p1f1: 1.48
+    NorESM2-MM_r1i1p1f1: 1.33
+    SAM0-UNICON_r1i1p1f1: 2.27
+    TaiESM1_r1i1p1f1: 2.34
     UKESM1-0-LL_r1-3i1p1f2: 2.79
