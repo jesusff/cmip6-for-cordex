@@ -10,7 +10,6 @@
       the bias is estimated by subtracting the ONDJFM mean eddy-driven jet
       position over the period 1979-2018 in ERA5 to each model mean eddy-driven
       jet position over the same period.
-
     best: 0
     worst: [+90, -90]
   comment: >
@@ -40,25 +39,32 @@
         sources.
     - min: -3
       max: 3
-      source: reference
+      source: author
   data_source: author
   data:
+    BCC-CSM2-MR_r1i1p1f1: -1.49
+    CAMS-CSM1-0_r1i1p1f1: -1.91
+    CESM2_r2i1p1f1: 1.42
+    CESM2-WACCM_r1i1p1f1: 0.28
     CNRM-CM6-1_r1i1p1f2: -2.79
-    UKESM1-0-LL_r1i1p1f2: -0.43
-    EC-Earth3_r1i1p1f1: -0.26
-    IPSL-CM6A-LR_r1i1p1f1: -1.53
-    GFDL-ESM4_r1i1p1f1: -3.4
-    MIROC6_r1i1p1f1: -3.31
+    CNRM-ESM2-1_r1i1p1f2: -3.02
     CanESM5_r1i1p1f1: 0.9
+    EC-Earth3_r1i1p1f1: -0.26
     EC-Earth3-Veg_r1i1p1f1: -0.69
+    FGOALS-g3_r1i1p1f1: -0.43
+    GFDL-CM4_r1i1p1f1: -2.1
+    GFDL-ESM4_r1i1p1f1: -3.4
+    INM-CM4-8_r1i1p1f1: 1.01
+    INM-CM5-0_r1i1p1f1: 0.03
+    IPSL-CM6A-LR_r1i1p1f1: -1.53
+    MCM-UA-1-0_r1i1p1f1: -0.39
+    UKESM1-0-LL_r1i1p1f2: -0.43
+    MIROC6_r1i1p1f1: -3.31
+    MIROC-ES2L_r1i1p1f1: -6.97
     MPI-ESM1-2-HR_r1i1p1f1: -3.1
     MRI-ESM2-0_r1i1p1f1: -2.66
-    CNRM-ESM2-1_r1i1p1f2: -3.02
     NESM3_r1i1p1f1: -2.03
-    FGOALS-g3_r1i1p1f1: -0.43
-    BCC-CSM2-MR_r1i1p1f1: -1.49
-    CESM2_r2i1p1f1: 1.42
-    INM-CM5-0_r1i1p1f1: 0.03
+    UKESM1-0-LL_r1i1p1f1: -0.43
 
 - key: Oud20 jetposdelta
   doi: 10.1029/2019GL086695
@@ -69,7 +75,7 @@
     variables: ua850
     comment: >
       Jet position delta change estimated by subtracting the ONDJFM mean eddy-driven jet
-      position over the period 2080-2099 w.r.t. preindustrial 1860-1900
+      position over the period 2080-2099 (ssp585) w.r.t. preindustrial 1860-1900
   type: future_spread
   spatial_scope: EUR
   temporal_scope: ONDJFM
@@ -79,19 +85,25 @@
   classes:
     limits: [-90, -0.5, 0.5, 90]
     labels: [strong south change, weak change, strong north change]
-    source: eurocordex_gcm_selection_team
+    source: author
   data:
     ssp585:
+      AWI-CM-1-1-MR_r1i1p1f1: 0.94
       BCC-CSM2-MR_r1i1p1f1: 1.33
-      CanESM5_r1i1p1f1: 0.98
+      CAMS-CSM1-0_r1i1p1f1: -0.4
       CESM2_r2i1p1f1: -1.53
+      CESM2-WACCM_r1i1p1f1: 0.11
       CNRM-CM6-1_r1i1p1f2: 0.84
       CNRM-ESM2-1_r1i1p1f2: 0
+      CanESM5_r1i1p1f1: 0.98
       EC-Earth3_r1i1p1f1: -0.06
       EC-Earth3-Veg_r1i1p1f1: -0.12
       FGOALS-g3_r1i1p1f1: 0.8
+      GFDL-CM4_r1i1p1f1: 1.3
       GFDL-ESM4_r1i1p1f1: 0.32
       IPSL-CM6A-LR_r1i1p1f1: 2.17
+      MCM-UA-1-0_r1i1p1f1: 0.69
+      MIROC-ES2L_r1i1p1f1: 0.34
       MIROC6_r1i1p1f1: -0.24
       MPI-ESM1-2-HR_r1i1p1f1: 0.92
       MRI-ESM2-0_r1i1p1f1: -0.05
