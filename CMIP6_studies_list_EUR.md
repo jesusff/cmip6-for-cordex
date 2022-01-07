@@ -442,34 +442,77 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 ```
 
-#### P. Nabat EUR AOD
+#### Nabat EUR AOD
 
 Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
 
 ['pers_comm', 'Pierre Nabat']
 
 ```
-- key: P. Nabat EUR AOD
+- key: Nabat EUR AOD
   doi: ['pers_comm', 'Pierre Nabat']
   type: performance
   spatial_scope: EUR
   temporal_scope: Annual
   data_source: author
   metric:
-    name: aod_rmse_bin
-    long_name: plausibillity of RMSE of the Aerosol Optical Depth
-    units: binary
+    name: aod_rmse
+    long_name: plausibillity of RMSE of the European Aerosol Optical Depth
+    units: aod
     variables: aod550
     comment:
-      Numerical values of the RMSE over Europe can be provided later. Only the
-      GISS models are eliminated on this criteria (RMSE>0.7 whereas all other
-      GCMs are below 0.2)  TO-DO Reference data set and period?
-    best: 1
-    worst: 0
+      Aerosol Optical Depth (AOD) spatial RMSE, annual mean, satellite reference
+      dataset (MACv2, 2000-2014)
+    best: 0
+    worst: +inf
   plausible_values:
-  - min: 1
-    max: 1
+  - min: 0
+    max: 0.2
     source: author
+    comment:
+      Plausibility threshold is set at 0.2. All models are below 0.2 except for
+      2 GCMs from the same institute that are above 0.7
+
+```
+
+#### Nabat EUR AOD hist trend
+
+Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
+
+['pers_comm', 'Pierre Nabat']
+
+```
+- key: Nabat EUR AOD hist trend
+  doi: ['pers_comm', 'Pierre Nabat']
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: aod_histtrend
+    long_name: plausibillity of past trend of the European Aerosol Optical Depth
+    units: aod
+    variables: aod550
+    comment:
+      Change in Aerosol Optical Depth (AOD) between 2 sub-periods of the
+      historical run, annual mean Difference in AOD is computed between
+      2000-2014 and 1976-1990.  This period corresponds to the well-known
+      brightening period in Europe during which it is virtual certain that AOD
+      has decreased over Europe This metrics is inspired by Nabat et al. 2014,
+      doi:10.1002/2014GL060798 The MACv2 dataset can be used to obtain a low-
+      confidence estimate of the real value.  MACv2 shows a AOD decrease of
+      -0.0315 between 1976-1990 and 2000-2014. Any GCM having a trend more than
+      2 times MACv2 (<-0.08) can be considered as showing a strong AOD past
+      trend that will contribute to re-inforce the historical warming in the RCM
+    best: 0
+    worst: +inf
+  plausible_values:
+  - min: -999
+    max: 0
+    source: author
+    comment:
+      Plausibility threshold is set at 0, meaning that any postive value
+      (increase in AOD over the period) is considered as implausible.
 
 ```
 
@@ -937,6 +980,40 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
   - limits: [-90, -0.5, 0.5, 90]
     labels: ['strong south change', 'weak change', 'strong north change']
     source: author
+
+```
+
+#### Nabat EUR AOD future change
+
+Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
+
+['pers_comm', 'Pierre Nabat']
+
+```
+- key: Nabat EUR AOD future change
+  doi: ['pers_comm', 'Pierre Nabat']
+  type: future_spread
+  spatial_scope: EUR
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: aod_futurechange
+    long_name: Future evolution of the European Aerosol Optical Depth
+    units: aod
+    variables: aod550
+    comment:
+      Change in Aerosol Optical Depth (AOD) between periods over Europe, annual
+      mean Difference in AOD is computed between 2086-2100 (SSP585) and
+      2000-2014 (HIST)
+  period:
+    reference: 2000-2014
+    target: 2086-2100
+  classes:
+  - limits: [-99, -10, -0.04, 0, 10, 99]
+    labels: ['implausible decrease', 'strong decrease', 'decrease', 'increase', 'implausible increase']
+    source: author
+    comment:
+
 
 ```
 
