@@ -12,7 +12,6 @@
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Beo21](CMIP6_studies/Beo21.yaml)
  · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
- · [Tok20 TCR as spread](CMIP6_studies/Tok20.yaml)
 ## Available entries (AUS scope)
 ### Plausibility
 #### AR6 TCR very likely range
@@ -71,45 +70,46 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
     units: None
     variables: ['tas', 'psl']
     comment:
-      Evaluation of the model using global criteria (past trends + spatial
-      pattern) and independence criteria. Model with performance scores below
-      0.006 are considered as irrealistic. This study is based on multi-member
-      for each model, not on only one member. Here only the performance criteria
-      and not the combined criteria that takes also into account the
-      independence.
+      Evaluation of the model using global criteria performance criteria (past
+      trends + spatial pattern) Model with performance scores below 0.006 are
+      considered as irrealistic.  This study is based on multi-member for each
+      model, not on only one member. Wrt to the original article, we consider
+      here only the performance criteria and not the combined criteria that
+      takes also into account the independence.
   period:
     reference: 1980-2014
   plausible_values:
   - min: 0.006
     max: 0.2
-    source: reference
+    source: author
     comment:
-      author provided? to be checked
+      The 0.006 threshold has been provided by the author (expert judgment)
+      after email exchanges with S. Somot
 
 ```
 
-#### Qas21 Constrained Dtas ssp245
+#### Qasmi Constr Global Dtas ssp245 2050
 
 Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
 
 None
 
 ```
-- key: Qas21 Constrained Dtas ssp245
+- key: Qasmi Constr Global Dtas ssp245 2050
   doi: None
   type: performance
   spatial_scope: Global
   temporal_scope: Annual
   data_source: author
   metric:
-    name: TCRbin
-    long_name: Transient Climate Response
+    name: Constrained-Dtas
+    long_name: Observationally-contrained future climate change
     units: binary
     variables: tas
     comment:
       Constrained global annual temperature future climate change range,
       2041-2060 vs 1850-1900, SSP245 (adapted from Ribes et al. 2021 by S.
-      Qasmi)
+      Qasmi). In particular by adding recently available CMIP6 GCM, now 40 GCMs.
   period:
     reference: 1850-1900
     target: 2041-2060
@@ -117,6 +117,13 @@ None
   - min: 1
     max: 1
     source: author
+    comment:
+      models lying outside the observationally-constrained 90% interval obtained
+      by the method are considered as implausible. The 90% interval is [1.5 ;
+      2.1]degC for the period 2041-2060 vs 1850-1900, SSP245. Multi-member
+      ensemble mean is used in this study for every model. Note that this
+      criteria is very strict and can potentially eliminate a large number of
+      GCMs.
 
 ```
 
@@ -124,8 +131,6 @@ None
 #### AR6 TCR as spread
 
 Located in [CMIP6_studies/AR6.yaml](CMIP6_studies/AR6.yaml)
-
-Preferred to [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
 
 None
 
@@ -205,8 +210,14 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
       in the period from 1980 to 2014. Labels with the same color indicate
       models with obvious dependencies, such as shared components or the same
       origin, whereas models with no clear dependencies are labeled in black.
-      Strangely, ACCESS-CM2 is in the same family as UKESM and HadGEM3, but not
-      ACCESS-ESM1-5.
+      Using this figure 5, we have put in the same family, the GCM lines that
+      merge before the dashed line, that correponds to the independence shape
+      parameter. We have given family names only to families with at least 2
+      members. Note that we are not using the Figure 5 color code to determine
+      the family. This leads to some surprise such as  Strangely, ACCESS-CM2 is
+      in the same family as UKESM and HadGEM3, but not ACCESS-ESM1-5. This was
+      confirmed as ok by the Australian group. Also the two FGOALS model are not
+      belonging to the same family with this criteria.
   period:
     reference: 1980-2014
 
