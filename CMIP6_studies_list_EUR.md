@@ -87,20 +87,21 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
     units: None
     variables: ['tas', 'psl']
     comment:
-      Evaluation of the model using global criteria (past trends + spatial
-      pattern) and independence criteria. Model with performance scores below
-      0.006 are considered as irrealistic. This study is based on multi-member
-      for each model, not on only one member. Here only the performance criteria
-      and not the combined criteria that takes also into account the
-      independence.
+      Evaluation of the model using global criteria performance criteria (past
+      trends + spatial pattern) Model with performance scores below 0.006 are
+      considered as irrealistic.  This study is based on multi-member for each
+      model, not on only one member. Wrt to the original article, we consider
+      here only the performance criteria and not the combined criteria that
+      takes also into account the independence.
   period:
     reference: 1980-2014
   plausible_values:
   - min: 0.006
     max: 0.2
-    source: reference
+    source: author
     comment:
-      author provided? to be checked
+      The 0.006 threshold has been provided by the author (expert judgment)
+      after email exchanges with S. Somot
 
 ```
 
@@ -1009,8 +1010,8 @@ Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
     reference: 2000-2014
     target: 2086-2100
   classes:
-  - limits: [-99, -10, -0.04, 0, 10, 99]
-    labels: ['implausible decrease', 'strong decrease', 'decrease', 'increase', 'implausible increase']
+  - limits: [-99, -0.04, 0, 99]
+    labels: ['strong decrease', 'decrease', 'increase']
     source: author
     comment:
 
@@ -1176,8 +1177,14 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
       in the period from 1980 to 2014. Labels with the same color indicate
       models with obvious dependencies, such as shared components or the same
       origin, whereas models with no clear dependencies are labeled in black.
-      Strangely, ACCESS-CM2 is in the same family as UKESM and HadGEM3, but not
-      ACCESS-ESM1-5.
+      Using this figure 5, we have put in the same family, the GCM lines that
+      merge before the dashed line, that correponds to the independence shape
+      parameter. We have given family names only to families with at least 2
+      members. Note that we are not using the Figure 5 color code to determine
+      the family. This leads to some surprise such as  Strangely, ACCESS-CM2 is
+      in the same family as UKESM and HadGEM3, but not ACCESS-ESM1-5. This was
+      confirmed as ok by the Australian group. Also the two FGOALS model are not
+      belonging to the same family with this criteria.
   period:
     reference: 1980-2014
 
