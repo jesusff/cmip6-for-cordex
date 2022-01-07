@@ -1,3 +1,4 @@
+import datetime
 import natsort as ns
 import numpy as np
 import pandas as pd
@@ -227,6 +228,7 @@ a:active {{ text-decoration: underline;}}
 </style>
 </head><body>
 <h1> CMIP6 for CORDEX summary tables (domain {CORDEX_DOMAIN})</h1>
+<p style="font-size: smaller; text-align: right;">(Version: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})</p>
 <p style="font-size: smaller; text-align: justify;">
 Summary of CMIP6 ScenarioMIP simulation (1) availability, (2) plausibility, (3) spread of future outcomes and (4) other criteria relevant for GCM selection for downscaling in the context of the CORDEX {CORDEX_DOMAIN} domain.
 <b>Availability</b> is labeled according to the variables and frequency available:
