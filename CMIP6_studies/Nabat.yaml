@@ -153,8 +153,8 @@
     reference: 2000-2014
     target: 2086-2100
   classes:
-    limits: [-99, -10, -0.04, 0, +10, +99]
-    labels: [implausible decrease, strong decrease, decrease, increase, implausible increase]
+    limits: [-99, -0.04, 0, +99]
+    labels: [strong decrease, decrease, increase]
     source: author
     comment: >
   data_source: author
