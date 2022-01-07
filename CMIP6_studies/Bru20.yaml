@@ -42,7 +42,7 @@
     CNRM-ESM2-1_r1-5i1p1f2: CNRM           
     CanESM5-CanOE_r1-3i1p1f1: CanESM         
     CanESM5_r1-50i1p1f1: CanESM              
-    EC-Earth3-Veg_r1-3i1p1f1: EC-Earth         
+    EC-Earth3-Veg_r1-6i1p1f1: EC-Earth         
     EC-Earth3_r1-7i1p1f1: EC-Earth             
 #    FGOALS-f3-L_r1i1p1f1:    
 #    FGOALS-g3_r1i1p1f1:       
@@ -91,18 +91,21 @@
   data_source: reference
   data:
     ACCESS-CM2_r1i1p1f1:         0.070
+    ACCESS-CM2_r4-5i1p1f1:       0.070
     ACCESS-ESM1-5_r1-3i1p1f1:    0.035       
     AWI-CM-1-1-MR_r1i1p1f1:      0.061
     BCC-CSM2-MR_r1i1p1f1:        0.020
     CAMS-CSM1-0_r1-2i1p1f1:      0.057       
     CESM2-WACCM_r1i1p1f1:        0.015
     CESM2_r1-2i1p1f1:            0.019       
+    CESM2_r11i1p1f1:             0.019       
     CNRM-CM6-1-HR_r1i1p1f2:      0.017
     CNRM-CM6-1_r1-6i1p1f2:       0.019       
     CNRM-ESM2-1_r1-5i1p1f2:      0.022       
     CanESM5-CanOE_r1-3i1p1f1:    0.002       
     CanESM5_r1-50i1p2f1:         0.001       
     EC-Earth3-Veg_r1-3i1p1f1:    0.011       
+    EC-Earth3-Veg_r6i1p1f1:      0.011       
     EC-Earth3_r1-7i1p1f1:        0.009       
     FGOALS-f3-L_r1i1p1f1:        0.032
     FGOALS-g3_r1i1p1f1:          0.003
@@ -113,6 +116,7 @@
     INM-CM4-8_r1i1p1f1:          0.011
     INM-CM5-0_r1i1p1f1:          0.037
     IPSL-CM6A-LR_r1-6i1p1f1:     0.016       
+    IPSL-CM6A-LR_r14i1p1f1:      0.016       
     KACE-1-0-G_r1i1p1f1:         0.047
     MCM-UA-1-0_r1i1p1f2:         0.017
     MIROC6_r1-3i1p1f1:           0.016       
@@ -122,4 +126,4 @@
     MRI-ESM2-0_r1i1p1f1:         0.016
     NESM3_r1-2i1p1f1:            0.009       
     NorESM2-MM_r1i1p1f1:         0.032
-    UKESM1-0-LL_r1-5i1p1f1:      0.006
+    UKESM1-0-LL_r1-5i1p1f2:      0.006

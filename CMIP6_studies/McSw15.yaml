@@ -40,7 +40,7 @@
   data:
     ACCESS-CM2_r1i1p1f1: 1
     ACCESS-ESM1-5_r1i1p1f1: 2
-    BCC-CM2-MR_r1i1p1f1: 1
+    BCC-CSM2-MR_r1i1p1f1: 1
     BCC-ESM1_r1i1p1f1: 2
     CAMS-CSM1-0_r1i1p1f2: 1
     CESM2-WACCM-FV2_r1i1p1f1: 2
@@ -89,7 +89,7 @@
   data:
     ACCESS-CM2_r1i1p1f1: 0
     ACCESS-ESM1-5_r1i1p1f1: 2
-    BCC-CM2-MR_r1i1p1f1: 1
+    BCC-CSM2-MR_r1i1p1f1: 1
     BCC-ESM1_r1i1p1f1: 2
     CAMS-CSM1-0_r1i1p1f2: 0
     CESM2-WACCM-FV2_r1i1p1f1: 3

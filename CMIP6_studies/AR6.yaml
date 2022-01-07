@@ -23,6 +23,7 @@
   data_source: reference
   data: &ar6tcrdata
     ACCESS-CM2_r1i1p1f1: 2.10
+    ACCESS-CM2_r4-5i1p1f1: 2.10
     ACCESS-ESM1-5_r1i1p1f1: 1.95
     AWI-CM-1-1-MR_r1i1p1f1: 2.06
     BCC-CSM2-MR_r1i1p1f1: 1.72
@@ -30,6 +31,7 @@
     CAMS-CSM1-0_r1i1p1f1: 1.73
     CAS-ESM2-0_r1i1p1f1: 2.04
     CESM2_r2i1p1f1: 2.06
+    CESM2_r11i1p1f1: 2.06
     CESM2-FV2_r1i1p1f1: 2.05
     CESM2-WACCM_r1i1p1f1: 1.98
     CESM2-WACCM-FV2_r1i1p1f1: 2.01
@@ -42,6 +44,7 @@
     E3SM-1-0_r1i1p1f1: 2.99
     EC-Earth3_r1i1p1f1: 2.30
     EC-Earth3-Veg_r1-3i1p1f1: 2.62
+    EC-Earth3-Veg_r6i1p1f1: 2.62
     FGOALS-f3-L_r1i1p1f1: 1.94
     FGOALS-g3_r1i1p1f1: 1.54
     FIO-ESM-2-0_r1i1p1f1: 2.22
@@ -58,11 +61,11 @@
     IPSL-CM6A-LR_r14i1p1f1: 2.32
     KACE-1-0-G_r1i1p1f1: 1.41
     MCM-UA-1-0_r1i1p1f1: 1.94
-    MIROC-ES2L_r1i1p1f1: 1.55
+    MIROC-ES2L_r1i1p1f2: 1.55
     MIROC6_r1i1p1f1: 1.55
     MPI-ESM-1-2-HAM_r1i1p1f1: 1.80
-    MPI-ESM1-2-HR_r1i1p1f1: 1.66
-    MPI-ESM1-2-LR_r1i1p1f1: 1.84
+    MPI-ESM1-2-HR_r1-2i1p1f1: 1.66
+    MPI-ESM1-2-LR_r1-10i1p1f1: 1.84
     MRI-ESM2-0_r1i1p1f1: 1.64
     NESM3_r1i1p1f1: 2.72
     NorCPM1_r1i1p1f1: 1.56
