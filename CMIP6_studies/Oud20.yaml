@@ -27,16 +27,6 @@
   period:
     reference: 1979-2018
   plausible_values:
-    - min: -4
-      max: 4
-      source: eurocordex_gcm_selection_team
-      comment: > 
-        Decided on meeting 2021-06-25 to enlarge the strict range provided in
-        the reference. Just a mock up to illustrate this comment and the
-        possibility to have plausible values from different sources. We can
-        decide e.g. that the one applied by default is the first in the list.
-        Or we can always check how it looks if we apply any priority to the
-        sources.
     - min: -3
       max: 3
       source: author

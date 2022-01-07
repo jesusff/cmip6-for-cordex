@@ -36,12 +36,13 @@
 #    BCC-CSM2-MR_r1i1p1f1:     
 #    CAMS-CSM1-0_r1-2i1p1f1:            
     CESM2-WACCM_r1i1p1f1: CESM    
-    CESM2_r2i1p1f1: CESM                 
+    CESM2_r1-2i1p1f1: CESM                 
     CNRM-CM6-1-HR_r1i1p1f2: CNRM  
     CNRM-CM6-1_r1-6i1p1f2: CNRM            
     CNRM-ESM2-1_r1-5i1p1f2: CNRM           
     CanESM5-CanOE_r1-3i1p1f1: CanESM         
-    CanESM5_r1-50i1p1f1: CanESM              
+    CanESM5_r1i1p1f1: CanESM              
+    CanESM5_r1-25i1p2f1: CanESM              
     EC-Earth3-Veg_r1-6i1p1f1: EC-Earth         
     EC-Earth3_r1-7i1p1f1: EC-Earth             
 #    FGOALS-f3-L_r1i1p1f1:    
