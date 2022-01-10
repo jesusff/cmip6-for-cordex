@@ -9,14 +9,14 @@
       For the performance criteria, we compute the spatial RMSE on the 12-month
       bias maps over the period 1985-2014. It means that we first compute the
       temporal average to obtain a mean seasonal cycle - 12maps- of the bias maps and
-      then we compute the spatio-temporal RMSE). All the models are interpolated on
+      then we compute the spatio-temporal RMSE. All the models are interpolated on
       the grid of the refererence dataset, and then a mask of the Mediterranean Sea
-      is applied (no Black Sea).  The reference dataset is a specific CMEMS product
+      is applied (no Black Sea). The reference dataset is a specific CMEMS product
       developed for the Mediterranean Sea,
       GOS-L4_GHRSST-SSTfnd-OISST_HR_REP-MED-v02.0-fv02.0 data (Pisano et al. 2016,
       doi:10.1016/j.rse.2016.01.019, Casey et al. 2010,
       doi:10.1007/978-90-481-8681-5_16 . Generated/provided by Copernicus Marine
-      Service and CNR - ISMAR ROME.
+      Service and CNR - ISMAR ROME).
     best: 0
     worst: inf
   type: performance
@@ -42,50 +42,50 @@
     CAS-ESM2-0_r1i1p1f1: 1.2
     CESM2-FV2_r1i1p1f1: 1.2
     CESM2_r1i1p1f1: 1.2
-    CESM2-WACCM-FV2_r1i1p1f1:   1.1
-    CESM2-WACCM_r1i1p1f1:       1.2 
-    CIESM_r1i1p1f1:             1.1
-    CMCC-CM2-HR4_r1i1p1f1:     0.8
-    CMCC-CM2-SR5_r1i1p1f1:      1.1
-    CNRM-CM6-1_r1i1p1f2: 1
+    CESM2-WACCM-FV2_r1i1p1f1: 1.1
+    CESM2-WACCM_r1i1p1f1: 1.2 
+    CIESM_r1i1p1f1: 1.1
+    CMCC-CM2-HR4_r1i1p1f1: 0.8
+    CMCC-CM2-SR5_r1i1p1f1: 1.1
+    CNRM-CM6-1_r1i1p1f2: 1.0
     CNRM-CM6-1-HR_r1i1p1f2: 1.1
     CNRM-ESM2-1_r1i1p1f2: 1.3
-    E3SM-1-0_r1i1p1f1:          2.2
-    E3SM-1-1-ECA_r1i1p1f1:      2.5
-    E3SM-1-1_r1i1p1f1:          2.5
+    E3SM-1-0_r1i1p1f1: 2.2
+    E3SM-1-1-ECA_r1i1p1f1: 2.5
+    E3SM-1-1_r1i1p1f1: 2.5
     EC-Earth3_r1i1p1f1: 0.8
     EC-Earth3-Veg_r1i1p1f1: 0.9
-    EC-Earth3-Veg-LR_r1i1p1f1:  1.0
-    FGOALS-f3-L_r1i1p1f1:       2.1
+    EC-Earth3-Veg-LR_r1i1p1f1: 1.0
+    FGOALS-f3-L_r1i1p1f1: 2.1
     FGOALS-g3_r1i1p1f1: 1.9
-    FIO-ESM-2-0_r1i1p1f1:      0.9
-    GFDL-CM4_r1i1p1f1:         0.9
+    FIO-ESM-2-0_r1i1p1f1: 1.0
+    GFDL-CM4_r1i1p1f1: 0.9
     GFDL-ESM4_r1i1p1f1: 0.8
-    GISS-E2-1-G-CC_r1i1p1f1:    1.1   
-    GISS-E2-1-G_r1i1p1f1:   1.1   
-    GISS-E2-1-H_r1i1p1f1:   1.2   
-    HadGEM3-GC31-LL_r1i1p1f1:   1.0   
-    HadGEM3-GC31-MM_r1i1p1f1:  0.7   
-    IITM-ESM_r1i1p1f1:          1.1
-    INM-CM4-8_r1i1p1f1:        1.0   
+    GISS-E2-1-G-CC_r1i1p1f1: 1.1   
+    GISS-E2-1-G_r1i1p1f1: 1.1   
+    GISS-E2-1-H_r1i1p1f1: 1.2   
+    HadGEM3-GC31-LL_r1i1p1f1: 1.0   
+    HadGEM3-GC31-MM_r1i1p1f1: 0.7   
+    IITM-ESM_r1i1p1f1: 1.1
+    INM-CM4-8_r1i1p1f1: 1.0   
     INM-CM5-0_r1i1p1f1: 0.8
-    IPSL-CM5A2-INCA_r1i1p1f1:   1.4
+    IPSL-CM5A2-INCA_r1i1p1f1: 1.4
     IPSL-CM6A-LR_r1i1p1f1: 1.2
-    KACE-1-0-G_r1i1p1f1:       0.8
-    KIOST-ESM_r1i1p1f1:         2.0 
-    MCM-UA-1-0_r1i1p1f1:  0.8    
+    KACE-1-0-G_r1i1p1f1: 0.8
+    KIOST-ESM_r1i1p1f1: 2.0 
+    MCM-UA-1-0_r1i1p1f1: 0.8    
     MIROC6_r1i1p1f1: 1.7
-    MIROC-ES2L_r1i1p1f2:        1.2
-    MPI-ESM-1-2-HAM_r1i1p1f1:   1.4
+    MIROC-ES2L_r1i1p1f2: 1.2
+    MPI-ESM-1-2-HAM_r1i1p1f1: 1.4
     MPI-ESM1-2-HR_r1i1p1f1: 0.7
     MPI-ESM1-2-LR_r1i1p1f1: 1.1
     MRI-ESM2-0_r1i1p1f1: 1.6
     NESM3_r1i1p1f1: 1.7
-    NorCPM1_r1i1p1f1:           1.6
+    NorCPM1_r1i1p1f1: 1.6
     NorESM2-LM_r1i1p1f1: 1.6
     NorESM2-MM_r1i1p1f1: 1.0
-    SAM0-UNICON_r1i1p1f1:       1.0 
-    TaiESM1_r1i1p1f1:          0.9
+    SAM0-UNICON_r1i1p1f1: 1.0 
+    TaiESM1_r1i1p1f1: 0.9
     UKESM1-0-LL_r1i1p1f2: 1.1
 
 - key: Sevault MED SST warming
@@ -111,36 +111,37 @@
     ssp585:
       ACCESS-CM2_r1i1p1f1: 4.2
       ACCESS-ESM1-5_r1i1p1f1: 4.0
-      AWI-CM-1-1-MR_r1i1p1f1:          3.4
+      AWI-CM-1-1-MR_r1i1p1f1: 3.4
       BCC-CSM2-MR_r1i1p1f1: 3.2
-      CAMS-CSM1-0_r1i1p1f1:        2.5    
-      CanESM5-CanOE_r1i1p1f1:          5.2  
+      CAMS-CSM1-0_r1i1p1f1: 2.5    
+      CanESM5-CanOE_r1i1p1f1: 5.2  
       CanESM5_r1i1p1f1: 5.1
       CESM2_r2i1p1f1: 3.8
-      CIESM_r1i1p1f1:                  4.0
-      CMCC-CM2-SR5_r1i1p1f1:           4.0
+      CESM2-WACCM_r1i1p1f1: 3.8
+      CIESM_r1i1p1f1: 4.0
+      CMCC-CM2-SR5_r1i1p1f1: 4.0
       CNRM-CM6-1_r1i1p1f2: 3.4
       CNRM-CM6-1-HR_r1i1p1f2: 3.8
       CNRM-ESM2-1_r1i1p1f2: 3.1
       EC-Earth3_r1i1p1f1: 4.3
       EC-Earth3-Veg_r1i1p1f1: 3.9
-      FGOALS-f3-L_r1i1p1f1:            2.8
+      FGOALS-f3-L_r1i1p1f1: 2.8
       FGOALS-g3_r1i1p1f1: 2.1
-      FIO-ESM-2-0_r1i1p1f1:            3.4 
-      GFDL-CM4_r1i1p1f1:               3.9
+      FIO-ESM-2-0_r1i1p1f1: 3.4 
+      GFDL-CM4_r1i1p1f1: 3.9
       GFDL-ESM4_r1i1p1f1: 2.7
-      GISS-E2-1-G_r1i1p1f1:        2.9
-      HadGEM3-GC31-LL_r1i1p1f1:    4.5
-      HadGEM3-GC31-MM_r1i1p1f1:        4.4
-      IITM-ESM_r1i1p1f1:               2.2    
-      INM-CM4-8_r1i1p1f1:              2.6    
+      GISS-E2-1-G_r1i1p1f1: 2.9
+      HadGEM3-GC31-LL_r1i1p1f1: 4.5
+      HadGEM3-GC31-MM_r1i1p1f1: 4.4
+      IITM-ESM_r1i1p1f1: 2.2    
+      INM-CM4-8_r1i1p1f1: 2.6    
       INM-CM5-0_r1i1p1f1: 2.7
       IPSL-CM6A-LR_r1i1p1f1: 4.1
-      KACE-1-0-G_r1i1p1f1:             3.9    
-      KIOST-ESM_r1i1p1f1:              2.6    
-      MCM-UA-1-0_r1i1p1f1:        3.0    
+      KACE-1-0-G_r1i1p1f1: 3.9    
+      KIOST-ESM_r1i1p1f1: 2.6    
+      MCM-UA-1-0_r1i1p1f1: 3.0    
       MIROC6_r1i1p1f1: 3.3
-      MIROC-ES2L_r1i1p1f2:             3.5 
+      MIROC-ES2L_r1i1p1f2: 3.5 
       MPI-ESM1-2-HR_r1i1p1f1: 2.8
       MPI-ESM1-2-LR_r1i1p1f1: 2.7
       MRI-ESM2-0_r1i1p1f1: 2.9

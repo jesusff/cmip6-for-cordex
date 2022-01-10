@@ -1,3 +1,4 @@
+import datetime
 import natsort as ns
 import numpy as np
 import pandas as pd
@@ -180,6 +181,16 @@ def get_cols_under(header, df, drop=''):
     values = values.drop(drop)
   return([(header,x) for x in values])
 
+def single_member(filt):
+  # Select the member with the smallest amount of missing evaluation metrics
+  filter_single_member = ~filter_all.copy()
+  perfscores = tablefull[main_headers[1]].iloc[:,1:]
+  # Avoid selecting members that would disappear when filt'ered
+  perfscores.loc[~filt] = np.nan
+  member = np.sum(np.isnan(perfscores), axis=1).groupby(level=0).idxmin()
+  filter_single_member.loc[member] = True
+  return( filt & filter_single_member )
+
 # Column subsets
 availcols = get_cols_under(main_headers[0], tablefull, drop = 'synthesis')
 perfcols = get_cols_under(main_headers[1], tablefull, drop = 'Synthesis')
@@ -194,17 +205,10 @@ filter_all.iloc[:] = True
 plans = pd.read_csv('CMIP6_downscaling_plans.csv')
 selected = plans[plans['domain'].str.startswith(CORDEX_DOMAIN)]
 filter_selected = filter_all.copy()
-filter_selected.iloc[:] = filter_selected.index.isin(set(zip(selected['driving_model'],selected['ensemble'])))
-filter_single_member = ~filter_all.copy()
-best_member = ( # the one with the smallest amount of missing evaluation metrics
-  np.sum(np.isnan(tablefull[main_headers[1]].iloc[:,1:]), axis=1)
-    .groupby(level=0)
-    .idxmin()
-)
-filter_single_member.loc[best_member] = True
-filter_avail = filter_avail & filter_single_member
-filter_avail_and_plausible = filter_avail_and_plausible & filter_single_member
-filter_plausible = filter_plausible & filter_single_member
+filter_selected.iloc[:] = filter_selected.index.isin(set(zip(selected['model'],selected['run'])))
+filter_avail = single_member(filter_avail)
+filter_avail_and_plausible = single_member(filter_avail_and_plausible)
+filter_plausible = single_member(filter_plausible)
 pd.set_option('precision', 2)
 d1 = dict(selector=".level0", props=[('min-width', '150px')])
 f = open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w')
@@ -223,6 +227,7 @@ a:active {{ text-decoration: underline;}}
 </style>
 </head><body>
 <h1> CMIP6 for CORDEX summary tables (domain {CORDEX_DOMAIN})</h1>
+<p style="font-size: smaller; text-align: right;">(Version: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})</p>
 <p style="font-size: smaller; text-align: justify;">
 Summary of CMIP6 ScenarioMIP simulation (1) availability, (2) plausibility, (3) spread of future outcomes and (4) other criteria relevant for GCM selection for downscaling in the context of the CORDEX {CORDEX_DOMAIN} domain.
 <b>Availability</b> is labeled according to the variables and frequency available:

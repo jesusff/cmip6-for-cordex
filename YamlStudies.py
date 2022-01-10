@@ -134,6 +134,8 @@ class MetricEntry:
         labels=self.classes[0]['labels'],
         ordered = True # TODO: could be made False if 'colors' are passed (e.g. to have ['unplausible', 'medium','unplausible'])
       )
+    elif self.metric.units == 'categorical':
+      rval = self.data.copy()
     else:
       rval = self.data.copy()
       try:

@@ -26,6 +26,7 @@
  · [Beo21](CMIP6_studies/Beo21.yaml)
  · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
  · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
+ · [Dobler SICE rmse BNS](CMIP6_studies/Dobler.yaml)
  · [Dobler SICE rmse NAtl](CMIP6_studies/Dobler.yaml)
  · [Dobler SST rmse NAtl](CMIP6_studies/Dobler.yaml)
  · [Dobler SST rmse MED](CMIP6_studies/Dobler.yaml)
@@ -87,45 +88,46 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
     units: None
     variables: ['tas', 'psl']
     comment:
-      Evaluation of the model using global criteria (past trends + spatial
-      pattern) and independence criteria. Model with performance scores below
-      0.006 are considered as irrealistic. This study is based on multi-member
-      for each model, not on only one member. Here only the performance criteria
-      and not the combined criteria that takes also into account the
-      independence.
+      Evaluation of the model using global criteria performance criteria (past
+      trends + spatial pattern) Model with performance scores below 0.006 are
+      considered as irrealistic.  This study is based on multi-member for each
+      model, not on only one member. Wrt to the original article, we consider
+      here only the performance criteria and not the combined criteria that
+      takes also into account the independence.
   period:
     reference: 1980-2014
   plausible_values:
   - min: 0.006
     max: 0.2
-    source: reference
+    source: author
     comment:
-      author provided? to be checked
+      The 0.006 threshold has been provided by the author (expert judgment)
+      after email exchanges with S. Somot
 
 ```
 
-#### Qas21 Constrained Dtas ssp245
+#### Qasmi Constr Global Dtas ssp245 2050
 
 Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
 
 None
 
 ```
-- key: Qas21 Constrained Dtas ssp245
+- key: Qasmi Constr Global Dtas ssp245 2050
   doi: None
   type: performance
   spatial_scope: Global
   temporal_scope: Annual
   data_source: author
   metric:
-    name: TCRbin
-    long_name: Transient Climate Response
+    name: Constrained-Dtas
+    long_name: Observationally-contrained future climate change
     units: binary
     variables: tas
     comment:
       Constrained global annual temperature future climate change range,
       2041-2060 vs 1850-1900, SSP245 (adapted from Ribes et al. 2021 by S.
-      Qasmi)
+      Qasmi). In particular by adding recently available CMIP6 GCM, now 40 GCMs.
   period:
     reference: 1850-1900
     target: 2041-2060
@@ -133,6 +135,13 @@ None
   - min: 1
     max: 1
     source: author
+    comment:
+      models lying outside the observationally-constrained 90% interval obtained
+      by the method are considered as implausible. The 90% interval is [1.5 ;
+      2.1]degC for the period 2041-2060 vs 1850-1900, SSP245. Multi-member
+      ensemble mean is used in this study for every model. Note that this
+      criteria is very strict and can potentially eliminate a large number of
+      GCMs.
 
 ```
 
@@ -324,18 +333,9 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
   period:
     reference: 1979-2018
   plausible_values:
-  - min: -4
-    max: 4
-    source: eurocordex_gcm_selection_team
-    comment:
-      Decided on meeting 2021-06-25 to enlarge the strict range provided in the
-      reference. Just a mock up to illustrate this comment and the possibility
-      to have plausible values from different sources. We can decide e.g. that
-      the one applied by default is the first in the list. Or we can always
-      check how it looks if we apply any priority to the sources.
   - min: -3
     max: 3
-    source: reference
+    source: author
 
 ```
 
@@ -428,41 +428,85 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 4
+    max: 3
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
-#### P. Nabat EUR AOD
+#### Nabat EUR AOD
 
 Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
 
 ['pers_comm', 'Pierre Nabat']
 
 ```
-- key: P. Nabat EUR AOD
+- key: Nabat EUR AOD
   doi: ['pers_comm', 'Pierre Nabat']
   type: performance
   spatial_scope: EUR
   temporal_scope: Annual
   data_source: author
   metric:
-    name: aod_rmse_bin
-    long_name: plausibillity of RMSE of the Aerosol Optical Depth
-    units: binary
+    name: aod_rmse
+    long_name: plausibillity of RMSE of the European Aerosol Optical Depth
+    units: aod
     variables: aod550
     comment:
-      Numerical values of the RMSE over Europe can be provided later. Only the
-      GISS models are eliminated on this criteria (RMSE>0.7 whereas all other
-      GCMs are below 0.2)  TO-DO Reference data set and period?
-    best: 1
-    worst: 0
+      Aerosol Optical Depth (AOD) spatial RMSE, annual mean, satellite reference
+      dataset (MACv2, 2000-2014)
+    best: 0
+    worst: +inf
   plausible_values:
-  - min: 1
-    max: 1
+  - min: 0
+    max: 0.2
     source: author
+    comment:
+      Plausibility threshold is set at 0.2. All models are below 0.2 except for
+      2 GCMs from the same institute that are above 0.7
+
+```
+
+#### Nabat EUR AOD hist trend
+
+Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
+
+['pers_comm', 'Pierre Nabat']
+
+```
+- key: Nabat EUR AOD hist trend
+  doi: ['pers_comm', 'Pierre Nabat']
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: aod_histtrend
+    long_name: plausibillity of past trend of the European Aerosol Optical Depth
+    units: aod
+    variables: aod550
+    comment:
+      Change in Aerosol Optical Depth (AOD) between 2 sub-periods of the
+      historical run, annual mean Difference in AOD is computed between
+      2000-2014 and 1976-1990.  This period corresponds to the well-known
+      brightening period in Europe during which it is virtual certain that AOD
+      has decreased over Europe This metrics is inspired by Nabat et al. 2014,
+      doi:10.1002/2014GL060798 The MACv2 dataset can be used to obtain a low-
+      confidence estimate of the real value.  MACv2 shows a AOD decrease of
+      -0.0315 between 1976-1990 and 2000-2014. Any GCM having a trend more than
+      2 times MACv2 (<-0.08) can be considered as showing a strong AOD past
+      trend that will contribute to re-inforce the historical warming in the RCM
+    best: 0
+    worst: +inf
+  plausible_values:
+  - min: -999
+    max: 0
+    source: author
+    comment:
+      Plausibility threshold is set at 0, meaning that any postive value
+      (increase in AOD over the period) is considered as implausible.
 
 ```
 
@@ -584,14 +628,14 @@ Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
       For the performance criteria, we compute the spatial RMSE on the 12-month
       bias maps over the period 1985-2014. It means that we first compute the
       temporal average to obtain a mean seasonal cycle - 12maps- of the bias
-      maps and then we compute the spatio-temporal RMSE). All the models are
+      maps and then we compute the spatio-temporal RMSE. All the models are
       interpolated on the grid of the refererence dataset, and then a mask of
-      the Mediterranean Sea is applied (no Black Sea).  The reference dataset is
+      the Mediterranean Sea is applied (no Black Sea). The reference dataset is
       a specific CMEMS product developed for the Mediterranean Sea,
       GOS-L4_GHRSST-SSTfnd-OISST_HR_REP-MED-v02.0-fv02.0 data (Pisano et al.
       2016, doi:10.1016/j.rse.2016.01.019, Casey et al. 2010,
       doi:10.1007/978-90-481-8681-5_16 . Generated/provided by Copernicus Marine
-      Service and CNR - ISMAR ROME.
+      Service and CNR - ISMAR ROME).
     best: 0
     worst: inf
   plausible_values:
@@ -645,10 +689,11 @@ Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 50
+    max: 33.5
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
@@ -695,16 +740,68 @@ Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 4
+    max: 4.5
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
+
+```
+
+#### Dobler SST rmse BNS
+
+Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+
+['pers. comm.', 'A. Dobler']
+
+```
+- key: Dobler SST rmse BNS
+  doi: ['pers. comm.', 'A. Dobler']
+  type: performance
+  spatial_scope: BNS
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: sstrmse
+    long_name: Sea Surface Temperature RMSE w.r.t. HadISST
+    units: K
+    variables: tos
+    comment:
+      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014: first the average monthly SST are
+      computed. Then, over all 12 maps of biases the RMSEs are calculated. All
+      the models are interpolated onto the grid of the refererence HadISST 1.1
+      monthly average sea surface temperature (Rayner et al. 2003,
+      DOI:10.1029/2002JD002670) Missing values due to non-existing sea areas (in
+      the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=0 Area definitions: BNS: Baltic and North
+      Sea NBS: Norwegian and Barents Sea NAtl: Nordic Atlantic (replaced by NBS)
+      SNA: (Southern) Nord Atlantic MED: Mediterranean (disabled, use Sevault
+      MED SST instead.  ) BLK: Black Sea EUR: Europe box Maps are provided in: h
+      ttps://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xG
+      AmnNSIiI/edit#gid=334563502 R-script reports (PDF files) used for the
+      calcualtions are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
+    best: 0
+    worst: +inf
+  period:
+    reference: 1985-2014
+  plausible_values:
+  - min: 0
+    max: 2.5
+    source: eurocordex_gcm_selection_team
+    comment:
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
 #### Dobler SICE rmse BAL
 
 Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+
+Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -742,10 +839,11 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 50
+    max: 17.5
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
@@ -790,10 +888,11 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 4
+    max: 2.5
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
@@ -838,14 +937,46 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 4
+    max: 2.5
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
 ### Spread of future outcomes
+#### AR6 TCR as spread
+
+Located in [CMIP6_studies/AR6.yaml](CMIP6_studies/AR6.yaml)
+
+None
+
+```
+- key: AR6 TCR as spread
+  doi: None
+  type: future_spread
+  spatial_scope: Global
+  temporal_scope: Annual
+  data_source: reference
+  metric:
+    name: TCR
+    long_name: Transient Climate Response
+    units: K
+    variables: tas
+    comment:
+      TCR as provided by th IPCC WGI AR6 on Table 7.SM.5 (https://www.ipcc.ch/re
+      port/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter_07_Supplementary_Materi
+      al.pdf).
+  classes:
+  - limits: [-10, 1.5, 2, 2.5, 10]
+    labels: ['low', 'moderate', 'high', 'very high']
+    source: eurocordex_gcm_selection_team
+    comment:
+      Test values
+
+```
+
 #### Sch20 ECS
 
 Located in [CMIP6_studies/Sch20.yaml](CMIP6_studies/Sch20.yaml)
@@ -871,38 +1002,6 @@ Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensit
 
 ```
 
-#### Tok20 TCR as spread
-
-Located in [CMIP6_studies/Tok20.yaml](CMIP6_studies/Tok20.yaml)
-
-None
-
-```
-- key: Tok20 TCR as spread
-  doi: None
-  type: future_spread
-  spatial_scope: Global
-  temporal_scope: Annual
-  data_source: reference
-  metric:
-    name: TCR
-    long_name: Transient Climate Response
-    units: K
-    variables: tas
-    comment:
-      TCR is calculated from the CO2-only simulation, where the atmospheric CO2
-      concentration increases at a rate of 1% per year, centered on the time of
-      doubling of the atmospheric CO2, which occurs during simulation year 70
-      (we use the mean of the years 61 to 80).
-  classes:
-  - limits: [-10, 1.5, 2, 2.5, 10]
-    labels: ['low', 'moderate', 'high', 'very high']
-    source: eurocordex_gcm_selection_team
-    comment:
-      Test values
-
-```
-
 #### Oud20 jetposdelta
 
 Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
@@ -922,61 +1021,95 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
     variables: ua850
     comment:
       Jet position delta change estimated by subtracting the ONDJFM mean eddy-
-      driven jet position over the period 2080-2099 w.r.t. preindustrial
-      1860-1900
+      driven jet position over the period 2080-2099 (ssp585) w.r.t.
+      preindustrial 1860-1900
   period:
     reference: 1860-1900
     target: 2080-2099
   classes:
   - limits: [-90, -0.5, 0.5, 90]
     labels: ['strong south change', 'weak change', 'strong north change']
-    source: eurocordex_gcm_selection_team
+    source: author
 
 ```
 
-#### Qasmi tas warming class
+#### Nabat EUR AOD future change
+
+Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
+
+['pers_comm', 'Pierre Nabat']
+
+```
+- key: Nabat EUR AOD future change
+  doi: ['pers_comm', 'Pierre Nabat']
+  type: future_spread
+  spatial_scope: EUR
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: aod_futurechange
+    long_name: Future evolution of the European Aerosol Optical Depth
+    units: aod
+    variables: aod550
+    comment:
+      Change in Aerosol Optical Depth (AOD) between periods over Europe, annual
+      mean Difference in AOD is computed between 2086-2100 (SSP585) and
+      2000-2014 (HIST)
+  period:
+    reference: 2000-2014
+    target: 2086-2100
+  classes:
+  - limits: [-99, -0.04, 0, 99]
+    labels: ['strong decrease', 'decrease', 'increase']
+    source: author
+    comment:
+
+
+```
+
+#### Qasmi Constr EUR Dtas ssp245 2050 JJA
 
 Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
 
 ['pers_comm', 'S. Qasmi']
 
 ```
-- key: Qasmi tas warming class
+- key: Qasmi Constr EUR Dtas ssp245 2050 JJA
   doi: ['pers_comm', 'S. Qasmi']
   type: future_spread
   spatial_scope: MED+NEU+CEU
-  temporal_scope: DJF+JJA
+  temporal_scope: JJA
   data_source: author
   metric:
     name: deltatas_class
-    long_name: Warming classes according to future surface air temperature change
+    long_name: Warming classes according to Observationally-constrained Summer European future surface air temperature change in 2041-2060 in Summer
     units: categorical
     variables: tas
     comment:
       Regional tas change in Europe MED, NEU, CEU, MED+NEU+CEU, DJF, JJA,
-      2041-2060 vs 1850-1900, SSP245. S. Qasmi, numerical values available soon.
-      Only warming classes for now.
+      2041-2060 vs 1850-1900, SSP245. Values are given only for land points. S.
+      Qasmi, numerical values available soon. Only warming classes for now. We
+      report here only warming classes for JJA and for the joined MED+NEU+CEU
+      domain
   period:
     reference: 1850-1900
     target: 2041-2060
   classes:
-  - limits: [-0.5, 0.5, 1.5, 2.5, 3.5]
-    labels: ['implausible', 'weak warming', 'medium warming', 'strong warming']
+  - limits: [0.5, 1.5, 2.5, 3.5, 4.5, 5.5]
+    labels: ['implausible cold', 'weak warming', 'medium warming', 'strong warming', 'implausible warm']
     source: author
     comment:
-      From Google sheet [Sam] Class 2 lies in the interquartile (Q25-Q75) of the
-      constrained range, class 1 is between Q5 and Q25 and classe 3 is between
-      Q75 and Q95 of the constrained range. Class 0 means eliminated by the
-      plausibility criteria. [Chus] The elimination by plausibility criteria can
-      be automatically marked by the greyed out number (it is active now). In
-      this way, we can assess whether they also misbehave in the future spread.
-      Also, the data are available in case thresholds are adjusted and a model
-      comes back to the plausible range. [Sam] agreed. I will modify this when I
-      have the numerical values from Said Qasmi. But I guess that it is a
-      duplication of your atlas values, except for the fact that it uses pre-
-      indust as a reference what is interesting for GWL-based study TO-DO decide
-      on the source for these deltas and use classes to assign warming levels.
-      Atlas data can be used to generate deltas for any period/region/scenario
+      Warming classes are determined wrt an observationally-constrained range
+      for the future regional warming based on Ribes et al. 2021, Qasmi et al.
+      (in rev). The observational constraint is a global constraint on the GMST
+      but it allows to constraint the regional climate warming. The 90% interval
+      of future warming plausible range is [2.3 ; 3.3]degC The 50% interval of
+      future warming plausible range is [2.5 ; 3.0]degC The best estimate is a
+      warming of 2.8 degC Category definition (new since 5 jan 2022): Categories
+      1 and 5 are considered as implausible by S. Qasmi. Category 2, 3, 4 are
+      plausible. Class 1 is below the Q5 of the constrained range. Class 2 is
+      between Q5 and Q25 Class 3 is between Q25 and Q75 Class 4 is between Q75
+      and Q95 Class 5 is above Q95
 
 ```
 
@@ -1093,8 +1226,14 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
       in the period from 1980 to 2014. Labels with the same color indicate
       models with obvious dependencies, such as shared components or the same
       origin, whereas models with no clear dependencies are labeled in black.
-      Strangely, ACCESS-CM2 is in the same family as UKESM and HadGEM3, but not
-      ACCESS-ESM1-5.
+      Using this figure 5, we have put in the same family, the GCM lines that
+      merge before the dashed line, that correponds to the independence shape
+      parameter. We have given family names only to families with at least 2
+      members. Note that we are not using the Figure 5 color code to determine
+      the family. This leads to some surprise such as  Strangely, ACCESS-CM2 is
+      in the same family as UKESM and HadGEM3, but not ACCESS-ESM1-5. This was
+      confirmed as ok by the Australian group. Also the two FGOALS model are not
+      belonging to the same family with this criteria.
   period:
     reference: 1980-2014
 

@@ -14,37 +14,56 @@
       indicate models with obvious dependencies, such as shared components
       or the same origin, whereas models with no clear dependencies are
       labeled in black.
-
+      Using this figure 5, we have put in the same family, the GCM lines that merge
+      before the dashed line, that correponds to the independence shape
+      parameter.
+      We have given family names only to families with at least 2 members.
+      Note that we are not using the Figure 5 color code to determine the
+      family. This leads to some surprise such as 
       Strangely, ACCESS-CM2 is in the same family as UKESM and HadGEM3, but
-      not ACCESS-ESM1-5.
+      not ACCESS-ESM1-5. This was confirmed as ok by the Australian group.
+      Also the two FGOALS model are not belonging to the same family with this
+      criteria.
   type: other
   spatial_scope: Global
   period:
     reference: 1980-2014
   data_source: reference
   data:
-    ACCESS-CM2_r1i1p1f1: HadGEM
-    ACCESS-ESM1-5_r1i1p1f1: ACCESS
-    BCC-CSM2-MR_r1i1p1f1: BCC
-    CanESM5_r1i1p1f1: CanESM
-    CESM2_r2i1p1f1: CESM
-    CNRM-CM6-1_r1i1p1f2: CNRM
-    CNRM-CM6-1-HR_r1i1p1f2: CNRM
-    CNRM-ESM2-1_r1i1p1f2: CNRM
-    EC-Earth3_r1i1p1f1: EC-Earth
-    EC-Earth3-Veg_r1i1p1f1: EC-Earth
-    FGOALS-g3_r1i1p1f1: FGOALS
-    GFDL-ESM4_r1i1p1f1: GFDL
-    INM-CM5-0_r1i1p1f1: INM
-    IPSL-CM6A-LR_r1i1p1f1: IPSL
-    MIROC6_r1i1p1f1: MIROC
-    MPI-ESM1-2-HR_r1i1p1f1: MPI
-    MPI-ESM1-2-LR_r1i1p1f1: MPI
-    MRI-ESM2-0_r1i1p1f1: MRI
-    NESM3_r1i1p1f1: NESM
-    NorESM2-LM_r1i1p1f1: CESM
-    NorESM2-MM_r1i1p1f1: CESM
-    UKESM1-0-LL_r1i1p1f2: HadGEM
+    ACCESS-CM2_r1i1p1f1: HadGEM          
+#    ACCESS-ESM1-5_r1-3i1p1f1:          
+#    AWI-CM-1-1-MR_r1i1p1f1:   
+#    BCC-CSM2-MR_r1i1p1f1:     
+#    CAMS-CSM1-0_r1-2i1p1f1:            
+    CESM2-WACCM_r1i1p1f1: CESM    
+    CESM2_r1-2i1p1f1: CESM                 
+    CNRM-CM6-1-HR_r1i1p1f2: CNRM  
+    CNRM-CM6-1_r1-6i1p1f2: CNRM            
+    CNRM-ESM2-1_r1-5i1p1f2: CNRM           
+    CanESM5-CanOE_r1-3i1p1f1: CanESM         
+    CanESM5_r1i1p1f1: CanESM              
+    CanESM5_r1-25i1p2f1: CanESM              
+    EC-Earth3-Veg_r1-6i1p1f1: EC-Earth         
+    EC-Earth3_r1-7i1p1f1: EC-Earth             
+#    FGOALS-f3-L_r1i1p1f1:    
+#    FGOALS-g3_r1i1p1f1:       
+#    FIO-ESM-2-0_r1-3i1p1f1:            
+#    GFDL-ESM4_r1i1p1f1:      
+#    GISS-E2-1-G_r1i1p3f1:     
+    HadGEM3-GC31-LL_r1i1p1f3: HadGEM 
+    INM-CM4-8_r1i1p1f1: INM      
+    INM-CM5-0_r1i1p1f1: INM      
+#    IPSL-CM6A-LR_r1-6i1p1f1:           
+    KACE-1-0-G_r1i1p1f1: HadGEM     
+#    MCM-UA-1-0_r1i1p1f2:      
+#    MIROC6_r1-3i1p1f1:                
+#    MIROC-ES2L_r1i1p1f2:     
+    MPI-ESM1-2-HR_r1-2i1p1f1: MPI          
+    MPI-ESM1-2-LR_r1-10i1p1f1: MPI    
+#    MRI-ESM2-0_r1i1p1f1:     
+#    NESM3_r1-2i1p1f1:                  
+    NorESM2-MM_r1i1p1f1: CESM     
+    UKESM1-0-LL_r1-5i1p1f1: HadGEM            
 
 - key: Bru20 perf
   doi: 10.5194/esd-11-995-2020
@@ -54,43 +73,58 @@
     units: 
     variables: [tas, psl]
     comment: >
-      Evaluation of the model using global criteria (past trends + spatial pattern)
-      and independence criteria. Model with performance scores below 0.006 are
-      considered as irrealistic. This study is based on multi-member for each model,
-      not on only one member.
-
-      Here only the performance criteria and not the combined criteria that takes
+      Evaluation of the model using global criteria performance criteria (past trends + spatial pattern)
+      Model with performance scores below 0.006 are considered as irrealistic. 
+      This study is based on multi-member for each model, not on only one member.
+      Wrt to the original article, we consider here only the performance criteria and not the combined criteria that takes
       also into account the independence.
   type: performance
   spatial_scope: Global
   plausible_values:
     min: 0.006
     max: 0.2
-    source: reference
+    source: author
     comment: >
-      author provided? to be checked
+      The 0.006 threshold has been provided by the author (expert judgment)
+      after email exchanges with S. Somot
   period:
     reference: 1980-2014
   data_source: reference
   data:
-    ACCESS-CM2_r1i1p1f1: 0.07
-    ACCESS-ESM1-5_r1i1p1f1: 0.035
-    BCC-CSM2-MR_r1i1p1f1: 0.02
-    CanESM5_r1i1p1f1: 0.001
-    CESM2_r2i1p1f1: 0.019
-    CNRM-CM6-1_r1i1p1f2: 0.019
-    CNRM-CM6-1-HR_r1i1p1f2: 0.017
-    CNRM-ESM2-1_r1i1p1f2: 0.022
-    EC-Earth3_r1i1p1f1: 0.009
-    EC-Earth3-Veg_r1i1p1f1: 0.011
-    FGOALS-g3_r1i1p1f1: 0.003
-    GFDL-ESM4_r1i1p1f1: 0.128
-    INM-CM5-0_r1i1p1f1: 0.037
-    IPSL-CM6A-LR_r1i1p1f1: 0.016
-    MIROC6_r1i1p1f1: 0.016
-    MPI-ESM1-2-HR_r1i1p1f1: 0.081
-    MPI-ESM1-2-LR_r1i1p1f1: 0.056
-    MRI-ESM2-0_r1i1p1f1: 0.016
-    NESM3_r1i1p1f1: 0.09
-    NorESM2-MM_r1i1p1f1: 0.032
-    UKESM1-0-LL_r1i1p1f2: 0.06
+    ACCESS-CM2_r1i1p1f1:         0.070
+    ACCESS-CM2_r4-5i1p1f1:       0.070
+    ACCESS-ESM1-5_r1-3i1p1f1:    0.035       
+    AWI-CM-1-1-MR_r1i1p1f1:      0.061
+    BCC-CSM2-MR_r1i1p1f1:        0.020
+    CAMS-CSM1-0_r1-2i1p1f1:      0.057       
+    CESM2-WACCM_r1i1p1f1:        0.015
+    CESM2_r1-2i1p1f1:            0.019       
+    CESM2_r11i1p1f1:             0.019       
+    CNRM-CM6-1-HR_r1i1p1f2:      0.017
+    CNRM-CM6-1_r1-6i1p1f2:       0.019       
+    CNRM-ESM2-1_r1-5i1p1f2:      0.022       
+    CanESM5-CanOE_r1-3i1p1f1:    0.002       
+    CanESM5_r1-50i1p2f1:         0.001       
+    EC-Earth3-Veg_r1-3i1p1f1:    0.011       
+    EC-Earth3-Veg_r6i1p1f1:      0.011       
+    EC-Earth3_r1-7i1p1f1:        0.009       
+    FGOALS-f3-L_r1i1p1f1:        0.032
+    FGOALS-g3_r1i1p1f1:          0.003
+    FIO-ESM-2-0_r1-3i1p1f1:      0.077       
+    GFDL-ESM4_r1i1p1f1:          0.128
+    GISS-E2-1-G_r1i1p3f1:        0.054
+    HadGEM3-GC31-LL_r1i1p1f3:    0.002
+    INM-CM4-8_r1i1p1f1:          0.011
+    INM-CM5-0_r1i1p1f1:          0.037
+    IPSL-CM6A-LR_r1-6i1p1f1:     0.016       
+    IPSL-CM6A-LR_r14i1p1f1:      0.016       
+    KACE-1-0-G_r1i1p1f1:         0.047
+    MCM-UA-1-0_r1i1p1f2:         0.017
+    MIROC6_r1-3i1p1f1:           0.016       
+    MIROC-ES2L_r1i1p1f2:         0.001
+    MPI-ESM1-2-HR_r1-2i1p1f1:    0.081       
+    MPI-ESM1-2-LR_r1-10i1p1f1:   0.056       
+    MRI-ESM2-0_r1i1p1f1:         0.016
+    NESM3_r1-2i1p1f1:            0.009       
+    NorESM2-MM_r1i1p1f1:         0.032
+    UKESM1-0-LL_r1-5i1p1f2:      0.006
