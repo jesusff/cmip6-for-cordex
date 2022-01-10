@@ -26,6 +26,7 @@
  · [Beo21](CMIP6_studies/Beo21.yaml)
  · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
  · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
+ · [Dobler SICE rmse BNS](CMIP6_studies/Dobler.yaml)
  · [Dobler SICE rmse NAtl](CMIP6_studies/Dobler.yaml)
  · [Dobler SST rmse NAtl](CMIP6_studies/Dobler.yaml)
  · [Dobler SST rmse MED](CMIP6_studies/Dobler.yaml)
@@ -332,15 +333,6 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
   period:
     reference: 1979-2018
   plausible_values:
-  - min: -4
-    max: 4
-    source: eurocordex_gcm_selection_team
-    comment:
-      Decided on meeting 2021-06-25 to enlarge the strict range provided in the
-      reference. Just a mock up to illustrate this comment and the possibility
-      to have plausible values from different sources. We can decide e.g. that
-      the one applied by default is the first in the list. Or we can always
-      check how it looks if we apply any priority to the sources.
   - min: -3
     max: 3
     source: author
@@ -436,10 +428,11 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 4
+    max: 3
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
@@ -696,10 +689,11 @@ Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 50
+    max: 33.5
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
@@ -746,16 +740,68 @@ Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 4
+    max: 4.5
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
+
+```
+
+#### Dobler SST rmse BNS
+
+Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+
+['pers. comm.', 'A. Dobler']
+
+```
+- key: Dobler SST rmse BNS
+  doi: ['pers. comm.', 'A. Dobler']
+  type: performance
+  spatial_scope: BNS
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: sstrmse
+    long_name: Sea Surface Temperature RMSE w.r.t. HadISST
+    units: K
+    variables: tos
+    comment:
+      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014: first the average monthly SST are
+      computed. Then, over all 12 maps of biases the RMSEs are calculated. All
+      the models are interpolated onto the grid of the refererence HadISST 1.1
+      monthly average sea surface temperature (Rayner et al. 2003,
+      DOI:10.1029/2002JD002670) Missing values due to non-existing sea areas (in
+      the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=0 Area definitions: BNS: Baltic and North
+      Sea NBS: Norwegian and Barents Sea NAtl: Nordic Atlantic (replaced by NBS)
+      SNA: (Southern) Nord Atlantic MED: Mediterranean (disabled, use Sevault
+      MED SST instead.  ) BLK: Black Sea EUR: Europe box Maps are provided in: h
+      ttps://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xG
+      AmnNSIiI/edit#gid=334563502 R-script reports (PDF files) used for the
+      calcualtions are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
+    best: 0
+    worst: +inf
+  period:
+    reference: 1985-2014
+  plausible_values:
+  - min: 0
+    max: 2.5
+    source: eurocordex_gcm_selection_team
+    comment:
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
 #### Dobler SICE rmse BAL
 
 Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+
+Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -793,10 +839,11 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 50
+    max: 17.5
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
@@ -841,10 +888,11 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 4
+    max: 2.5
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
@@ -889,10 +937,11 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     reference: 1985-2014
   plausible_values:
   - min: 0
-    max: 4
+    max: 2.5
     source: eurocordex_gcm_selection_team
     comment:
-      Just a test value
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
