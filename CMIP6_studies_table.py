@@ -181,6 +181,16 @@ def get_cols_under(header, df, drop=''):
     values = values.drop(drop)
   return([(header,x) for x in values])
 
+def single_member(filt):
+  # Select the member with the smallest amount of missing evaluation metrics
+  filter_single_member = ~filter_all.copy()
+  perfscores = tablefull[main_headers[1]].iloc[:,1:]
+  # Avoid selecting members that would disappear when filt'ered
+  perfscores.loc[~filt] = np.nan
+  member = np.sum(np.isnan(perfscores), axis=1).groupby(level=0).idxmin()
+  filter_single_member.loc[member] = True
+  return( filt & filter_single_member )
+
 # Column subsets
 availcols = get_cols_under(main_headers[0], tablefull, drop = 'synthesis')
 perfcols = get_cols_under(main_headers[1], tablefull, drop = 'Synthesis')
@@ -192,21 +202,10 @@ filter_plausible = synthesis(tablefull[(main_headers[1], 'Synthesis')], test = T
 filter_avail_and_plausible = filter_avail & filter_plausible
 filter_all = filter_avail.copy()
 filter_all.iloc[:] = True
-commitments = pd.read_csv('CMIP6_downscaling_commitments.csv')
-selected = commitments[commitments['domain'].str.startswith(CORDEX_DOMAIN)]
+plans = pd.read_csv('CMIP6_downscaling_plans.csv')
+selected = plans[plans['domain'].str.startswith(CORDEX_DOMAIN)]
 filter_selected = filter_all.copy()
 filter_selected.iloc[:] = filter_selected.index.isin(set(zip(selected['model'],selected['run'])))
-
-def single_member(filt):
-  # Select the member with the smallest amount of missing evaluation metrics
-  filter_single_member = ~filter_all.copy()
-  perfscores = tablefull[main_headers[1]].iloc[:,1:]
-  # Avoid selecting members that would disappear when filt'ered
-  perfscores.loc[~filt] = np.nan
-  member = np.sum(np.isnan(perfscores), axis=1).groupby(level=0).idxmin()
-  filter_single_member.loc[member] = True
-  return( filt & filter_single_member )
-
 filter_avail = single_member(filter_avail)
 filter_avail_and_plausible = single_member(filter_avail_and_plausible)
 filter_plausible = single_member(filter_plausible)
@@ -258,11 +257,11 @@ headers = [
   'Filter: available (single member)', 
   'Filter: plausible (single member)', 
   'All members with 2 or more scenarios and/or some metric available',
-  'Selected GCMs + institutional commitments'
+  'Selected GCMs + institutional plans'
 ]
 text = [
   '', '', '', '', 
-  'See institutional commitments at <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_commitments.csv" target="_blank">CMIP6_downscaling_commitments.csv</a><br>'
+  'See institutional plans at <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv" target="_blank">CMIP6_downscaling_plans.csv</a><br>'
 ]
 ids = ['avail-and-plausible', 'available', 'plausible', 'all', 'selected']
 f.write('\n'.join([f'\n<li><a href="#{ids[k]}">{header}</a></li>' for k,header in enumerate(headers)]))
