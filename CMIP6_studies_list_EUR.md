@@ -969,11 +969,12 @@ None
       port/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter_07_Supplementary_Materi
       al.pdf).
   classes:
-  - limits: [-10, 1.5, 2, 2.5, 10]
-    labels: ['low', 'moderate', 'high', 'very high']
+  - limits: [-10, 1.2, 1.6, 2.0, 2.4, 10]
+    labels: ['very low', 'low', 'moderate', 'high', 'very high']
     source: eurocordex_gcm_selection_team
     comment:
-      Test values
+      A proposal with 0.4 degree bins in the very likely range (1.2, 2.4)
+      provided by the IPCC AR6
 
 ```
 

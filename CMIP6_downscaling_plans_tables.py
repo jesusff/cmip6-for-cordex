@@ -34,7 +34,7 @@ Simulation status according to CORDEX-CMIP6 downscaling plans reported by the gr
 <span class="running">running</span>
 <span class="completed">completed</span>
 <span class="published">published</span>
-<p style="text-align:left">
+<p style="text-align:left"> Domains: |
 ''')
 [f.write(f'<a href="#{dom}">{dom}</a> | ') for dom in domains]
 d1 = dict(selector=".level0", props=[('min-width', '150px')])
