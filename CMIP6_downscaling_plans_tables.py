@@ -41,11 +41,11 @@ d1 = dict(selector=".level0", props=[('min-width', '150px')])
 for domain in domains:
   dom_plans = plans[(plans.domain == domain) & (plans.experiment.isin(['historical','ssp119','ssp126','ssp245','ssp370','ssp585']))]
   dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span class="' + dom_plans.status + '">' + dom_plans.experiment + '</span>', index=dom_plans.index))
-#  dom_plans['htmlstatus'] = ('<span class="' + dom_plans.status + '">' + dom_plans.experiment + '</span>').values
+  dom_plans = dom_plans.assign(model_id=pd.Series(dom_plans.institute + '-' + dom_plans.rcm_name, index=dom_plans.index))
   f.write(f'<h2 id="{domain}">{domain}</h2>')
   f.write(dom_plans.pivot_table(
     index = ('driving_model', 'ensemble'),
-    columns = 'rcm_name',
+    columns = 'model_id',
     values = 'htmlstatus',
     aggfunc = lambda x: ' '.join(x.dropna())
   ).style
