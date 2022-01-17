@@ -1,9 +1,7 @@
 import datetime
 import pandas as pd
-import seaborn as sns
-import sys
 
-plans = pd.read_csv('CMIP6_downscaling_plans.csv')
+plans = pd.read_csv('CMIP6_downscaling_plans.csv', na_filter=False)
 
 domains = sorted(list(set(plans.domain)))
 
@@ -39,16 +37,21 @@ Simulation status according to CORDEX-CMIP6 downscaling plans reported by the gr
 [f.write(f'<a href="#{dom}">{dom}</a> | ') for dom in domains]
 d1 = dict(selector=".level0", props=[('min-width', '150px')])
 for domain in domains:
-  dom_plans = plans[(plans.domain == domain) & (plans.experiment.isin(['historical','ssp119','ssp126','ssp245','ssp370','ssp585']))]
+  dom_plans = plans[plans.domain == domain]
   dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span class="' + dom_plans.status + '">' + dom_plans.experiment + '</span>', index=dom_plans.index))
   dom_plans = dom_plans.assign(model_id=pd.Series(dom_plans.institute + '-' + dom_plans.rcm_name, index=dom_plans.index))
-  f.write(f'<h2 id="{domain}">{domain}</h2>')
-  f.write(dom_plans.pivot_table(
+  dom_plans_matrix = dom_plans.pivot_table(
     index = ('driving_model', 'ensemble'),
     columns = 'model_id',
     values = 'htmlstatus',
     aggfunc = lambda x: ' '.join(x.dropna())
-  ).style
+  )
+  dom_plans_matrix = pd.concat([  # Bring ERA5 to the top
+    dom_plans_matrix.query("driving_model == 'ERA5'"),
+    dom_plans_matrix.drop(('ERA5',''), axis=0)
+  ], axis=0)
+  f.write(f'<h2 id="{domain}">{domain}</h2>')
+  f.write(dom_plans_matrix.style
      .set_properties(**{'font-size':'8pt', 'border':'1px lightgrey solid !important'})
      .set_table_styles([d1,{
         'selector': 'th',
