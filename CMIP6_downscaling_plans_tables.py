@@ -48,7 +48,7 @@ for domain in domains:
   )
   dom_plans_matrix = pd.concat([  # Bring ERA5 to the top
     dom_plans_matrix.query("driving_model == 'ERA5'"),
-    dom_plans_matrix.drop(('ERA5',''), axis=0)
+    dom_plans_matrix.drop(('ERA5',''), axis=0, errors='ignore')
   ], axis=0)
   f.write(f'<h2 id="{domain}">{domain}</h2>')
   f.write(dom_plans_matrix.style
