@@ -1,8 +1,9 @@
 import datetime
 import pandas as pd
 
-plans = pd.read_csv('CMIP6_downscaling_plans.csv', na_filter=False)
+collapse_institutions = False
 
+plans = pd.read_csv('CMIP6_downscaling_plans.csv', na_filter=False)
 domains = sorted(list(set(plans.domain)))
 
 f = open(f'CMIP6_downscaling_plans_tables.html','w')
@@ -13,10 +14,10 @@ body {{ padding-bottom: 600px; }}
 tr:hover {{background-color:#f5f5f5;}}
 th, td {{text-align: center; padding: 3px;}}
 table {{border-collapse: collapse;}}
-span.planned {{color: red}}
-span.running {{color: blue}}
-span.completed {{color: black}}
-span.published {{color: black; font-weight: bold}}
+span.planned {{color: #FF9999}}
+span.running {{color: #009900}}
+span.completed {{color: black; font-weight: bold}}
+span.published {{color: #3399FF; font-weight: bold}}
 a {{color: DodgerBlue}}
 a:link {{ text-decoration: none; }}
 a:visited {{ text-decoration: none; }}
@@ -40,9 +41,10 @@ for domain in domains:
   dom_plans = plans[plans.domain == domain]
   dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span class="' + dom_plans.status + '">' + dom_plans.experiment + '</span>', index=dom_plans.index))
   dom_plans = dom_plans.assign(model_id=pd.Series(dom_plans.institute + '-' + dom_plans.rcm_name, index=dom_plans.index))
+  column_id = 'rcm_name' if collapse_institutions else 'model_id'
   dom_plans_matrix = dom_plans.pivot_table(
     index = ('driving_model', 'ensemble'),
-    columns = 'model_id',
+    columns = column_id,
     values = 'htmlstatus',
     aggfunc = lambda x: ' '.join(x.dropna())
   )
@@ -59,6 +61,7 @@ for domain in domains:
       }])
      .render()
      .replace('nan','')
+     .replace('historical','hist')
  )
 f.write('</body></html>')
 f.close()
