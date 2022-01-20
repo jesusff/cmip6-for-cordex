@@ -126,20 +126,26 @@ EUR-11,CESAM,D. Carvalho,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,,
 EUR-11,CESAM,D. Carvalho,WRF,TBD,TBD,historical,planned,,
 EUR-11,CESAM,D. Carvalho,WRF,TBD,TBD,ssp126,planned,,
 EUR-11,CESAM,D. Carvalho,WRF,TBD,TBD,ssp370,planned,,
+EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TDB2,TBD,historical,planned,2023-12,Number of models and scenarios TBD
+EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TDB2,TBD,ssp126,planned,2023-12,Number of models and scenarios TBD
+EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TDB2,TBD,ssp370,planned,2023-12,Number of models and scenarios TBD
+EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TDB2,TBD,historical,planned,2023-12,Number of models and scenarios TBD
+EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TDB2,TBD,ssp126,planned,2023-12,Number of models and scenarios TBD
+EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TDB2,TBD,ssp370,planned,2023-12,Number of models and scenarios TBD
 EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,ERA5,,evaluation,running,2022-02,
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-05,
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,TBD,TBD,historical,planned,2023-12,
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,TBD,TBD,ssp370,planned,2023-12,
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-05,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,TBD,TBD,historical,planned,2023-12,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,TBD,TBD,ssp370,planned,2023-12,Part of the NUKLEUS consortium ensemble
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,ERA5,,evaluation,running,2022-02,
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-05,
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,TBD,TBD,historical,planned,2023-12,
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,TBD,TBD,ssp370,planned,2023-12,
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-05,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,TBD,TBD,historical,planned,2023-12,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,TBD,TBD,ssp370,planned,2023-12,Part of the NUKLEUS consortium ensemble
 EUR-11,CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,ERA5,,evaluation,planned,,RCM version TBD
 EUR-11,CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD,TBD,historical,planned,,
 EUR-11,CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD,TBD,ssp126,planned,,
@@ -157,12 +163,6 @@ EUR-11,IDL,P. Soares,WRF,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,,
 EUR-11,IDL,P. Soares,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,,
 EUR-11,IDL,P. Soares,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,,
 EUR-11,IDL,P. Soares,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,,
-EUR-11,NUKLEUS,,CCLM,EC-Earth3,r1i1p1f1,ssp370,planned,,
-EUR-11,NUKLEUS,,CCLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,,
-EUR-11,NUKLEUS,,ICON-CLM,EC-Earth3,r1i1p1f1,ssp370,planned,,
-EUR-11,NUKLEUS,,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,,
-EUR-11,NUKLEUS,,REMO,EC-Earth3,r1i1p1f1,ssp370,planned,,
-EUR-11,NUKLEUS,,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,,
 EUR-11,RMI-UGent,P. Termonia,ALARO-0,ERA5,,evaluation,planned,,
 EUR-11,RMI-UGent,P. Termonia,ALARO-0,CNRM-ESM2-1,r1i1p1f2,historical,planned,,
 EUR-11,RMI-UGent,P. Termonia,ALARO-0,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,,scenario TBD
