@@ -1,7 +1,7 @@
 import datetime
 import pandas as pd
 
-collapse_institutions = False
+collapse_institutions = True
 
 plans = pd.read_csv('CMIP6_downscaling_plans.csv', na_filter=False)
 domains = sorted(list(set(plans.domain)))
