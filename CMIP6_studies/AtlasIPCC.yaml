@@ -652,11 +652,6 @@
       Data derived from
       https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-aggregated-regionally
       using the tas_landsea dataset.
-  disabled:
-    cause: preferred_source
-    preferred: 
-    comment: >
-      Too many possibilities for regions/seasons/scenarios available.
   spatial_scope: NEU
   temporal_scope: JJA
   period:
@@ -664,7 +659,7 @@
     target: 2071-2100
   type: future_spread
   data_source: author_adapted
-  data:
+  data_other:
     ssp126:
       ACCESS-CM2_r1i1p1f1: 3.066755555555556
       ACCESS-ESM1-5_r1i1p1f1: 1.8491111111111085
@@ -766,7 +761,7 @@
       NorESM2-LM_r1i1p1f1: 2.0646888888888935
       NorESM2-MM_r1i1p1f1: 2.613544444444445
       UKESM1-0-LL_r1i1p1f2: 6.859733333333336
-
+  data:
     ssp585:
       ACCESS-CM2_r1i1p1f1: 6.248433333333335
       ACCESS-ESM1-5_r1i1p1f1: 4.381144444444443
@@ -814,11 +809,6 @@
       Data derived from
       https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-aggregated-regionally
       using the tas_landsea dataset.
-  disabled:
-    cause: preferred_source
-    preferred: 
-    comment: >
-      Too many possibilities for regions/seasons/scenarios available.
   spatial_scope: WCE
   temporal_scope: JJA
   period:
@@ -826,7 +816,7 @@
     target: 2071-2100
   type: future_spread
   data_source: author_adapted
-  data:
+  data_other:
     ssp126:
       ACCESS-CM2_r1i1p1f1: 3.3371888888888925
       ACCESS-ESM1-5_r1i1p1f1: 3.1410000000000053
@@ -928,7 +918,7 @@
       NorESM2-LM_r1i1p1f1: 4.450488888888888
       NorESM2-MM_r1i1p1f1: 4.758766666666666
       UKESM1-0-LL_r1i1p1f2: 7.881311111111113
-
+  data:
     ssp585:
       ACCESS-CM2_r1i1p1f1: 7.901466666666664
       ACCESS-ESM1-5_r1i1p1f1: 6.478488888888894
@@ -976,11 +966,6 @@
       Data derived from
       https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-aggregated-regionally
       using the tas_landsea dataset.
-  disabled:
-    cause: preferred_source
-    preferred: 
-    comment: >
-      Too many possibilities for regions/seasons/scenarios available.
   spatial_scope: MED
   temporal_scope: JJA
   period:
@@ -988,7 +973,7 @@
     target: 2071-2100
   type: future_spread
   data_source: author_adapted
-  data:
+  data_other:
     ssp126:
       ACCESS-CM2_r1i1p1f1: 2.8138111111111037
       ACCESS-ESM1-5_r1i1p1f1: 2.932388888888891
@@ -1090,7 +1075,7 @@
       NorESM2-LM_r1i1p1f1: 4.910400000000003
       NorESM2-MM_r1i1p1f1: 4.199722222222221
       UKESM1-0-LL_r1i1p1f2: 6.343355555555561
-
+  data:
     ssp585:
       ACCESS-CM2_r1i1p1f1: 6.366411111111098
       ACCESS-ESM1-5_r1i1p1f1: 5.708688888888901

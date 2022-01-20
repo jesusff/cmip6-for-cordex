@@ -9,9 +9,6 @@
  · [Atlas Dtas WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dtas NEU JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dtas WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dtas MED JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
@@ -1126,6 +1123,87 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
   type: future_spread
   spatial_scope: NEU
   temporal_scope: DJF
+  data_source: author_adapted
+  metric:
+    name: delta_tas
+    long_name: Near surface temperature delta change 2071-2100 w.r.t. 1981-2010
+    units: K
+    variables: tas
+    comment:
+      Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
+      aggregated-regionally using the tas_landsea dataset.
+  period:
+    reference: 1981-2010
+    target: 2071-2100
+
+```
+
+#### Atlas Dtas NEU JJA
+
+Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
+
+['Pers. Comm.', 'Jesus Fernandez']
+
+```
+- key: Atlas Dtas NEU JJA
+  doi: ['Pers. Comm.', 'Jesus Fernandez']
+  type: future_spread
+  spatial_scope: NEU
+  temporal_scope: JJA
+  data_source: author_adapted
+  metric:
+    name: delta_tas
+    long_name: Near surface temperature delta change 2071-2100 w.r.t. 1981-2010
+    units: K
+    variables: tas
+    comment:
+      Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
+      aggregated-regionally using the tas_landsea dataset.
+  period:
+    reference: 1981-2010
+    target: 2071-2100
+
+```
+
+#### Atlas Dtas WCE JJA
+
+Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
+
+['Pers. Comm.', 'Jesus Fernandez']
+
+```
+- key: Atlas Dtas WCE JJA
+  doi: ['Pers. Comm.', 'Jesus Fernandez']
+  type: future_spread
+  spatial_scope: WCE
+  temporal_scope: JJA
+  data_source: author_adapted
+  metric:
+    name: delta_tas
+    long_name: Near surface temperature delta change 2071-2100 w.r.t. 1981-2010
+    units: K
+    variables: tas
+    comment:
+      Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
+      aggregated-regionally using the tas_landsea dataset.
+  period:
+    reference: 1981-2010
+    target: 2071-2100
+
+```
+
+#### Atlas Dtas MED JJA
+
+Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
+
+['Pers. Comm.', 'Jesus Fernandez']
+
+```
+- key: Atlas Dtas MED JJA
+  doi: ['Pers. Comm.', 'Jesus Fernandez']
+  type: future_spread
+  spatial_scope: MED
+  temporal_scope: JJA
   data_source: author_adapted
   metric:
     name: delta_tas

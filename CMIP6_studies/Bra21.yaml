@@ -202,7 +202,8 @@
     CNRM-CM6-1-HR_r1i1p1f2:     2222101100 #confirmed by Aurore Voldoire 
     CNRM-ESM2-1_r1i1p1f2:       2222222220 #confirmed by Aurore Voldoire under the assumption that interactive stratospheric chemistry only (i.e. tropospheric chemistriy is not interactive) merits a 2
     EC-Earth3_r1i1p1f1:         2222101000 #confirmed by Ralf Döscher and Klaus Wyser
-    EC-Earth3-Veg_r1i1p1f1:     2222221000 #confirmed by Ralf Döscher and Klaus Wyser
+    EC-Earth3-Veg_r1-3i1p1f1:   2222221000 #confirmed by Ralf Döscher and Klaus Wyser
+    EC-Earth3-Veg_r6i1p1f1:     2222221000 #confirmed by Ralf Döscher and Klaus Wyser
     EC-Earth3-Veg-LR_r1i1p1f1:  2222221000 #confirmed by Ralf Döscher and Klaus Wyser
     EC-Earth3-AerChem_r1i1p1f1: 2222102000 #confirmed by Ralf Döscher and Klaus Wyser
     EC-Earth3-CC_r1i1p1f1:      2222221020 #confirmed by Ralf Döscher and Klaus Wyser
