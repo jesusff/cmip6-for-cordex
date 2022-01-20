@@ -28,11 +28,7 @@ a:active {{ text-decoration: underline;}}
 <h1> CORDEX-CMIP6 downscaling plans summary tables</h1>
 <p style="text-align: right;">(Version: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})</p>
 <p style="text-align: justify;">
-Simulation status according to CORDEX-CMIP6 downscaling plans reported by the groups and collected in <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details or to contribute/update simulations. Colours indicate status as:
-<span class="planned">planned</span>
-<span class="running">running</span>
-<span class="completed">completed</span>
-<span class="published">published</span>
+Simulation status according to CORDEX-CMIP6 downscaling plans reported by the groups and collected in <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details or to contribute/update simulations.
 <p style="text-align:left"> Domains: |
 ''')
 [f.write(f'<a href="#{dom}">{dom}</a> | ') for dom in domains]
@@ -52,7 +48,14 @@ for domain in domains:
     dom_plans_matrix.query("driving_model == 'ERA5'"),
     dom_plans_matrix.drop(('ERA5',''), axis=0, errors='ignore')
   ], axis=0)
-  f.write(f'<h2 id="{domain}">{domain}</h2>')
+  f.write(f'''<h2 id="{domain}">{domain}</h2>
+    <p style="font-size: smaller;"> Colour legend:
+      <span class="planned">planned</span>
+      <span class="running">running</span>
+      <span class="completed">completed</span>
+      <span class="published">published</span>
+    </p>
+  ''')
   f.write(dom_plans_matrix.style
      .set_properties(**{'font-size':'8pt', 'border':'1px lightgrey solid !important'})
      .set_table_styles([d1,{
