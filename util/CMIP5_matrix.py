@@ -48,7 +48,9 @@ for domain in domains:
     values = 'htmlstatus',
     aggfunc = lambda x: ' '.join(x.dropna())
   )
+  # Drop evaluation runs and r0 members (coming from static variables)
   dom_plans_matrix.drop('ECMWF-ERAINT', level=0, axis=0, inplace=True)
+  dom_plans_matrix.drop('r0i0p0', level=1, axis=0, inplace=True)
   f.write(f'''<h2 id="{domain}">{domain}</h2>
     <p style="font-size: smaller;"> Colour legend:
       <span class="planned">planned</span>
