@@ -7,7 +7,11 @@ url = 'https://raw.githubusercontent.com/euro-cordex/esgf-table/master/euro-cord
 plans = pd.read_csv(url, na_filter=False)
 domains = sorted(list(set(plans.domain)))
 plans = plans.assign(status='published') # This file contains only ESGF published data
-plans.drop_duplicates(subset=['institute', 'driving_model_id', 'experiment_id', 'member', 'model_id',], inplace=True)
+plans.drop_duplicates(
+  subset=['institute', 'driving_model_id', 'experiment_id', 'member', 'model_id',],
+  inplace=True
+)
+plans.sort_values('experiment_id', inplace=True)
 
 f = open(f'CMIP5_matrix.html','w')
 f.write(f'''<!DOCTYPE html>
