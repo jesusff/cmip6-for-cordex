@@ -12,6 +12,7 @@ plans.drop_duplicates(
   inplace=True
 )
 plans.sort_values('experiment_id', inplace=True)
+plans['model_id'].replace({'REMO2009': 'REMO', 'REMO2015': 'REMO'}, inplace=True)
 
 f = open(f'CMIP5_matrix.html','w')
 f.write(f'''<!DOCTYPE html>
@@ -40,8 +41,9 @@ Currently only from EURO-CORDEX EUR-11 ...
 <p style="text-align:left"> Domains: |
 ''')
 [f.write(f'<a href="#{dom}">{dom}</a> | ') for dom in domains]
-d1 = dict(selector=".level0", props=[('min-width', '150px')])
+d1 = dict(selector=".level0", props=[('min-width', '100px')])
 for domain in domains:
+  f.write(f'''<h2 id="{domain}">{domain}</h2>''')
   for exp in ['rcp26', 'rcp45', 'rcp85']:
     dom_plans = plans[(plans.domain == domain) & (plans.experiment_id == exp)]
     dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span class="' + dom_plans.status + '">' + dom_plans.experiment_id + '</span>', index=dom_plans.index))
@@ -56,7 +58,7 @@ for domain in domains:
     # Drop evaluation runs and r0 members (coming from static variables)
     dom_plans_matrix.drop('ECMWF-ERAINT', level=0, axis=0, inplace=True, errors='ignore')
     dom_plans_matrix.drop('r0i0p0', level=1, axis=0, inplace=True)
-    f.write(f'''<h2 id="{domain}">{domain}</h2><h3>{exp}</h3>
+    f.write(f'''<h3>{exp}</h3>
       <p style="font-size: smaller;"> Colour legend:
         <span class="planned">planned</span>
         <span class="running">running</span>
