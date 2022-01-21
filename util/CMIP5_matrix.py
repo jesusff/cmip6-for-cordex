@@ -45,8 +45,8 @@ for domain in domains:
   for exp in ['rcp26', 'rcp45', 'rcp85']:
     dom_plans = plans[(plans.domain == domain) & (plans.experiment_id == exp)]
     dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span class="' + dom_plans.status + '">' + dom_plans.experiment_id + '</span>', index=dom_plans.index))
-    dom_plans = dom_plans.assign(model_id=pd.Series(dom_plans.institute + '-' + dom_plans.model_id, index=dom_plans.index))
-    column_id = 'model_id' if collapse_institutions else 'model_id'
+    dom_plans = dom_plans.assign(instmodel=pd.Series(dom_plans.institute + '-' + dom_plans.model_id, index=dom_plans.index))
+    column_id = 'model_id' if collapse_institutions else 'instmodel'
     dom_plans_matrix = dom_plans.pivot_table(
       index = ('driving_model_id', 'member'),
       columns = column_id,
