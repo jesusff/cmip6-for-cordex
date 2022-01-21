@@ -42,36 +42,37 @@ Currently only from EURO-CORDEX EUR-11 ...
 [f.write(f'<a href="#{dom}">{dom}</a> | ') for dom in domains]
 d1 = dict(selector=".level0", props=[('min-width', '150px')])
 for domain in domains:
-  dom_plans = plans[plans.domain == domain]
-  dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span class="' + dom_plans.status + '">' + dom_plans.experiment_id + '</span>', index=dom_plans.index))
-  dom_plans = dom_plans.assign(model_id=pd.Series(dom_plans.institute + '-' + dom_plans.model_id, index=dom_plans.index))
-  column_id = 'model_id' if collapse_institutions else 'model_id'
-  dom_plans_matrix = dom_plans.pivot_table(
-    index = ('driving_model_id', 'member'),
-    columns = column_id,
-    values = 'htmlstatus',
-    aggfunc = lambda x: ' '.join(x.dropna())
-  )
-  # Drop evaluation runs and r0 members (coming from static variables)
-  dom_plans_matrix.drop('ECMWF-ERAINT', level=0, axis=0, inplace=True)
-  dom_plans_matrix.drop('r0i0p0', level=1, axis=0, inplace=True)
-  f.write(f'''<h2 id="{domain}">{domain}</h2>
-    <p style="font-size: smaller;"> Colour legend:
-      <span class="planned">planned</span>
-      <span class="running">running</span>
-      <span class="completed">completed</span>
-      <span class="published">published</span>
-    </p>
-  ''')
-  f.write(dom_plans_matrix.style
-     .set_properties(**{'font-size':'8pt', 'border':'1px lightgrey solid !important'})
-     .set_table_styles([d1,{
-        'selector': 'th',
-        'props': [('font-size', '8pt'),('border-style','solid'),('border-width','1px')]
-      }])
-     .render()
-     .replace('nan','')
-     .replace('historical','hist')
- )
+  for exp in ['rcp26', 'rcp45', 'rcp85']:
+    dom_plans = plans[(plans.domain == domain) & (plans.experiment_id == exp)]
+    dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span class="' + dom_plans.status + '">' + dom_plans.experiment_id + '</span>', index=dom_plans.index))
+    dom_plans = dom_plans.assign(model_id=pd.Series(dom_plans.institute + '-' + dom_plans.model_id, index=dom_plans.index))
+    column_id = 'model_id' if collapse_institutions else 'model_id'
+    dom_plans_matrix = dom_plans.pivot_table(
+      index = ('driving_model_id', 'member'),
+      columns = column_id,
+      values = 'htmlstatus',
+      aggfunc = lambda x: ' '.join(x.dropna())
+    )
+    # Drop evaluation runs and r0 members (coming from static variables)
+    dom_plans_matrix.drop('ECMWF-ERAINT', level=0, axis=0, inplace=True, errors='ignore')
+    dom_plans_matrix.drop('r0i0p0', level=1, axis=0, inplace=True)
+    f.write(f'''<h2 id="{domain}">{domain}</h2><h3>{exp}</h3>
+      <p style="font-size: smaller;"> Colour legend:
+        <span class="planned">planned</span>
+        <span class="running">running</span>
+        <span class="completed">completed</span>
+        <span class="published">published</span>
+      </p>
+    ''')
+    f.write(dom_plans_matrix.style
+       .set_properties(**{'font-size':'8pt', 'border':'1px lightgrey solid !important'})
+       .set_table_styles([d1,{
+          'selector': 'th',
+          'props': [('font-size', '8pt'),('border-style','solid'),('border-width','1px')]
+        }])
+       .render()
+       .replace('nan','')
+       .replace('historical','hist')
+    )
 f.write('</body></html>')
 f.close()
