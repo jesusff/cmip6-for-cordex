@@ -216,7 +216,7 @@ f = open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w')
 f.write(f'''<!DOCTYPE html>
 <html><head>
 <style>
-body {{ padding-bottom: 600px; }}
+body {{ }}
 tr:hover {{background-color:#f5f5f5;}}
 th, td {{text-align: center; padding: 3px;}}
 table {{border-collapse: collapse;}}
@@ -257,17 +257,18 @@ headers = [
   'Filter: available and plausible (single member)', 
   'Filter: available (single member)', 
   'Filter: plausible (single member)', 
-  'All members with 2 or more scenarios and/or some metric available',
-  'Selected GCMs + institutional plans'
+  'Selected GCMs + institutional plans',
+  'All members with 2 or more scenarios and/or some metric available'
 ]
 text = [
-  '', '', '', '', 
-  'See institutional plans at <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv" target="_blank">CMIP6_downscaling_plans.csv</a><br>'
+  '', '', '', 
+  'See institutional plans at <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv" target="_blank">CMIP6_downscaling_plans.csv</a><br>',
+  ''
 ]
-ids = ['avail-and-plausible', 'available', 'plausible', 'all', 'selected']
+ids = ['avail-and-plausible', 'available', 'plausible', 'selected', 'all']
 f.write('\n'.join([f'\n<li><a href="#{ids[k]}">{header}</a></li>' for k,header in enumerate(headers)]))
 f.write('</ul>')
-for item,filter_rows in enumerate([filter_avail_and_plausible, filter_avail, filter_plausible, filter_all, filter_selected]):
+for item,filter_rows in enumerate([filter_avail_and_plausible, filter_avail, filter_plausible, filter_selected, filter_all]):
   if ~filter_rows.any(): # Skip empty tables
     continue
   filter_rows.iloc[0:2] = True # keep plausible value rows
