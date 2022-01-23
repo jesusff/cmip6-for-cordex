@@ -14,3 +14,6 @@ AUS:
 EUR:
 	python3 CMIP6_studies_table.py EUR
 	python3 CMIP6_studies_list.py EUR > CMIP6_studies_list_EUR.md
+SEA:
+	python3 CMIP6_studies_table.py SEA
+	python3 CMIP6_studies_list.py SEA > CMIP6_studies_list_SEA.md

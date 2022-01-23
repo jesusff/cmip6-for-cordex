@@ -119,7 +119,7 @@ CanESM5-CanOE,r3i1p1f1,,,,,,,,1,,0.00,,,,CanESM,,
 E3SM-1-0,r1i1p1f1,0.00,Basic,,,,,,1,2.99,,,2.99,5.32,,100.00,
 E3SM-1-1,r1i1p1f1,0.00,-,,,-,,-,,,,,,,,100.00,
 E3SM-1-1-ECA,r1i1p1f1,0.00,-,,,,,,,,,,,,,100.00,
-EC-Earth3,r1i1p1f1,0.00,ESD,,ESD,ESD,ESD,ESD,1,2.30,0.01,0.00,2.30,,EC-Earth,100.00,2222101000.00
+EC-Earth3,r1i1p1f1,1.00,RCM,,RCM,RCM,RCM,RCM,1,2.30,0.01,0.00,2.30,,EC-Earth,100.00,2222101000.00
 EC-Earth3,r2i1p1f1,0.00,Basic,,,Basic,,,1,,0.01,0.00,,,EC-Earth,,
 EC-Earth3,r3i1p1f1,0.00,ESD,,ESD,ESD,ESD,ESD,1,,0.01,0.00,,,EC-Earth,,
 EC-Earth3,r4i1p1f1,0.00,ESD,ESD,ESD,ESD,ESD,ESD,1,,0.01,0.00,,,EC-Earth,,
@@ -129,11 +129,11 @@ EC-Earth3,r7i1p1f1,0.00,Basic,,,Basic,,,1,,0.01,0.00,,,EC-Earth,,
 EC-Earth3-AerChem,r1i1p1f1,0.00,Basic,,,,ESD,,,,,,,,,100.00,2222102000.00
 EC-Earth3-CC,r1i1p1f1,0.00,Basic,,,ESD,,ESD,,,,,,,,100.00,2222221020.00
 EC-Earth3-Veg,r1i1p1f1,1.00,RCM,RCM,RCM,RCM,RCM,RCM,2,2.62,0.01,0.00,2.62,4.31,EC-Earth,100.00,2222221000.00
-EC-Earth3-Veg,r2i1p1f1,1.00,RCM,RCM,RCM,RCM,RCM,RCM,2,2.62,0.01,0.00,2.62,,EC-Earth,100.00,
-EC-Earth3-Veg,r3i1p1f1,1.00,RCM,RCM,RCM,RCM,RCM,RCM,2,2.62,0.01,0.00,2.62,,EC-Earth,100.00,
-EC-Earth3-Veg,r4i1p1f1,0.00,Basic,,ESD,ESD,ESD,ESD,,,,,,,EC-Earth,,
-EC-Earth3-Veg,r5i1p1f1,0.00,Basic,,,Basic,,,,,,,,,EC-Earth,,
-EC-Earth3-Veg,r6i1p1f1,0.00,Basic,,ESD,ESD,,ESD,2,2.62,0.01,0.00,2.62,,EC-Earth,100.00,
+EC-Earth3-Veg,r2i1p1f1,1.00,RCM,RCM,RCM,RCM,RCM,RCM,2,2.62,0.01,0.00,2.62,4.31,EC-Earth,100.00,2222221000.00
+EC-Earth3-Veg,r3i1p1f1,1.00,RCM,RCM,RCM,RCM,RCM,RCM,2,2.62,0.01,0.00,2.62,4.31,EC-Earth,100.00,2222221000.00
+EC-Earth3-Veg,r4i1p1f1,0.00,Basic,,ESD,ESD,ESD,ESD,,,,,,4.31,EC-Earth,,
+EC-Earth3-Veg,r5i1p1f1,0.00,Basic,,,Basic,,,,,,,,4.31,EC-Earth,,
+EC-Earth3-Veg,r6i1p1f1,0.00,RCM,,RCM,RCM,,RCM,2,2.62,0.01,0.00,2.62,4.31,EC-Earth,100.00,2222221000.00
 EC-Earth3-Veg-LR,r1i1p1f1,0.00,Basic,ESD,ESD,ESD,ESD,ESD,,,,,,,,250.00,2222221000.00
 FGOALS-f3-L,r1i1p1f1,0.00,3Dml,,-,-,-,-,1,1.94,0.03,0.00,1.94,3.00,,100.00,
 FGOALS-g3,r1i1p1f1,0.00,3Dml,3Dml,3Dml,ESD,3Dml,ESD,1,1.54,0.00,1.00,1.54,2.88,,250.00,

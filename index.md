@@ -2,8 +2,9 @@
 
 CMIP6 GCM boundary conditions availability, performance and spread tables for different CORDEX domains.
 
-* [AUS](CMIP6_studies_table_AUS.html) (currently valid for any non-EUR domain)
+* [AUS](CMIP6_studies_table_AUS.html)
 * [EUR](CMIP6_studies_table_EUR.html)
+* [SEA](CMIP6_studies_table_SEA.html)
 
 The information behind the tables is collected from published sources and all background information is [publicly collected here](https://github.com/jesusff/cmip6-for-cordex/tree/main/CMIP6_studies). You can contribute to this effort in several ways:
 
