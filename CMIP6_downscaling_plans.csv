@@ -170,6 +170,10 @@ EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,historical,planned,2023-12,
 EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp126,planned,2023-12,
 EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp370,planned,2023-12,
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,ERA5,,evaluation,planned,2022-12,
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,Part of the NUKLEUS consortium ensemble
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,Part of the NUKLEUS consortium ensemble
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,historical,planned,2023-12,Part of the NUKLEUS consortium ensemble
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2023-12,Part of the NUKLEUS consortium ensemble
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,historical,planned,2022-12,
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,ssp126,planned,2022-12,
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,ssp370,planned,2022-12,
@@ -179,9 +183,6 @@ EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,ssp370,planned,2023-12,
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD3,TBD,historical,planned,2023-12,
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD3,TBD,ssp126,planned,2023-12,
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD3,TBD,ssp370,planned,2023-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD4,TBD,historical,planned,2023-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD4,TBD,ssp126,planned,2023-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD4,TBD,ssp370,planned,2023-12,
 EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,ERA5,,evaluation,planned,2023-12,
 EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,historical,planned,2023-12,
 EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp119,planned,2023-12,
