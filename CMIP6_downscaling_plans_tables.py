@@ -33,7 +33,7 @@ To contribute/update simulations use this <a href="https://docs.google.com/docum
 <p style="text-align:left"> Domains: |
 ''')
 [f.write(f'<a href="#{dom}">{dom}</a> | ') for dom in domains]
-d1 = dict(selector=".level0", props=[('min-width', '150px')])
+d1 = dict(selector=".level0", props=[('min-width', '130px')])
 for domain in domains:
   dom_plans = plans[plans.domain == domain]
   dom_plans = dom_plans.assign(htmlstatus=pd.Series('<span class="' + dom_plans.status + '">' + dom_plans.experiment + '</span>', index=dom_plans.index))
@@ -49,6 +49,17 @@ for domain in domains:
     dom_plans_matrix.query("driving_model == 'ERA5'"),
     dom_plans_matrix.drop(('ERA5',''), axis=0, errors='ignore')
   ], axis=0)
+  if collapse_institutions:
+    inst = dom_plans.drop_duplicates(subset=['institute','rcm_name']).pivot_table(
+      index = ('driving_model', 'ensemble'),
+      columns = 'rcm_name',
+      values = 'institute',
+      aggfunc = lambda x: ', '.join(x.dropna())
+    ).agg(lambda x: ', '.join(x.dropna()))
+    inst.name = ('','Institutes')
+    dom_plans_matrix = dom_plans_matrix.append(inst)
+    dom_plans_matrix = dom_plans_matrix.T.set_index([('','Institutes'),dom_plans_matrix.columns]).T
+    dom_plans_matrix.columns.names = ['Institution(s)','RCM']
   f.write(f'''<h2 id="{domain}">{domain}</h2>
     <p style="font-size: smaller;"> Colour legend:
       <span class="planned">planned</span>
