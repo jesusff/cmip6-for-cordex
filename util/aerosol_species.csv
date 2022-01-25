@@ -1,0 +1,293 @@
+model,run,historical,ssp119,ssp126,ssp245,ssp370,ssp585
+AWI-ESM-1-1-LR,r1i1p1f1,aerasymbnd aeroptbnd aerssabnd,,,,,
+BCC-ESM1,r1i1p1f1,od550dust od550so4 od550ss,,,,od550dust od550so4 od550ss,
+BCC-ESM1,r2i1p1f1,,,,,od550dust od550so4 od550ss,
+BCC-ESM1,r3i1p1f1,,,,,od550dust od550so4 od550ss,
+CESM2,r1i1p1f1,od550bc od550dust od550oa od550so4,,od550dust od550so4,,od550bc od550dust od550oa od550so4,od550dust od550so4
+CESM2,r2i1p1f1,od550bc od550dust od550oa od550so4,,od550dust od550so4,,od550bc od550dust od550oa od550so4 od550ss,od550dust od550so4
+CESM2,r3i1p1f1,od550bc od550dust od550oa od550so4,,,,od550bc od550dust od550oa od550so4,
+CESM2,r4i1p1f1,od550bc od550dust od550oa od550so4,,od550dust od550so4,,od550bc od550dust od550oa od550so4,od550dust od550so4
+CESM2,r5i1p1f1,od550bc od550dust od550oa od550so4,,,,od550bc od550dust od550oa od550so4,
+CESM2,r6i1p1f1,od550bc od550dust od550oa od550so4,,,,od550bc od550dust od550oa od550so4,
+CESM2,r7i1p1f1,od550bc od550dust od550oa od550so4,,,,,
+CESM2,r8i1p1f1,od550bc od550dust od550oa od550so4,,,,,
+CESM2,r9i1p1f1,od550bc od550dust od550oa od550so4,,,,,
+CESM2,r10i1p1f1,od550bc od550dust od550oa od550so4,,od550dust od550so4,,od550bc od550dust od550oa od550so4,od550dust od550so4
+CESM2,r11i1p1f1,od550bc od550dust od550oa od550so4,,od550dust od550so4,,od550bc od550dust od550oa od550so4,od550dust od550so4
+CESM2-FV2,r1i1p1f1,od550bc od550dust od550oa od550so4,,,,,
+CESM2-FV2,r2i1p1f1,od550bc od550dust od550oa od550so4,,,,,
+CESM2-FV2,r3i1p1f1,od550bc od550dust od550oa od550so4,,,,,
+CESM2-WACCM,r1i1p1f1,od550bc od550dust od550oa od550so4,,od550dust od550so4,,od550bc od550dust od550oa od550so4,od550dust od550so4
+CESM2-WACCM,r2i1p1f1,od550bc od550dust od550oa od550so4,,,,od550bc od550dust od550oa od550so4,od550dust od550so4
+CESM2-WACCM,r3i1p1f1,od550bc od550dust od550oa od550so4,,,,od550bc od550dust od550oa od550so4,od550dust od550so4
+CESM2-WACCM,r4i1p1f1,,,,,,od550dust od550so4
+CESM2-WACCM,r5i1p1f1,,,,,,od550dust od550so4
+CESM2-WACCM-FV2,r1i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CESM2-WACCM-FV2,r2i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CESM2-WACCM-FV2,r3i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r1i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,od550dust od550so4,,od550bc od550dust od550oa od550so4 od550ss,od550dust od550so4
+CNRM-CM6-1,r2i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,od550bc od550dust od550oa od550so4 od550ss,
+CNRM-CM6-1,r3i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,od550bc od550dust od550oa od550so4 od550ss,
+CNRM-CM6-1,r4i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r5i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r6i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r11i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r12i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r13i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r14i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r15i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r16i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r17i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r18i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r19i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r20i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r21i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r22i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r23i1p1f2,od550bc od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r24i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r25i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r26i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r27i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r28i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r29i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-CM6-1,r30i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CNRM-ESM2-1,r1i1p1f2,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+CNRM-ESM2-1,r2i1p1f2,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+CNRM-ESM2-1,r3i1p1f2,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+CNRM-ESM2-1,r4i1p1f2,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+CNRM-ESM2-1,r5i1p1f2,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+CNRM-ESM2-1,r6i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+CNRM-ESM2-1,r7i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+CNRM-ESM2-1,r8i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,od550bc od550dust od550oa od550so4 od550ss,,
+CNRM-ESM2-1,r9i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,od550bc od550dust od550oa od550so4 od550ss,,
+CNRM-ESM2-1,r10i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,od550bc od550dust od550oa od550so4 od550ss,,
+CNRM-ESM2-1,r11i1p1f2,od550bc od550dust od550oa od550so4 od550ss,,,,,
+CanESM5,r1i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r1i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r2i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r2i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r3i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r3i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r4i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r4i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r5i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r5i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r6i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r6i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r7i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r7i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r8i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r8i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r9i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r9i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r10i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r10i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r11i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r11i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r12i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r12i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r13i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r13i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r14i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r14i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r15i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r15i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r16i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r16i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r17i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r17i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r18i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r18i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r19i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r19i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r20i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r20i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r21i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r21i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r22i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r22i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r23i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r23i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r24i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r24i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r25i1p1f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5,r25i1p2f1,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5-CanOE,r1i1p2f1,od550dust od550ss,,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5-CanOE,r2i1p2f1,od550dust od550ss,,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+CanESM5-CanOE,r3i1p2f1,od550dust od550ss,,od550dust od550ss,od550dust od550ss,od550dust od550ss,od550dust od550ss
+EC-Earth3-AerChem,r1i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,od550bc od550dust od550no3 od550oa od550so4 od550ss,
+EC-Earth3-AerChem,r4i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,od550bc od550dust od550no3 od550oa od550so4 od550ss,
+GFDL-CM4,r1i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+GFDL-ESM4,r1i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss
+GISS-E2-1-G,r1i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss
+GISS-E2-1-G,r1i1p3f2,,,,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,
+GISS-E2-1-G,r2i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss
+GISS-E2-1-G,r2i1p3f2,,,,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,
+GISS-E2-1-G,r3i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss
+GISS-E2-1-G,r3i1p3f2,,,,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,
+GISS-E2-1-G,r4i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss
+GISS-E2-1-G,r5i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss
+GISS-E2-1-G,r6i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,,
+GISS-E2-1-G,r7i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,,
+GISS-E2-1-G,r8i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,,
+GISS-E2-1-G,r9i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,,
+GISS-E2-1-G,r10i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,,
+GISS-E2-1-H,r1i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,
+GISS-E2-1-H,r2i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,
+GISS-E2-1-H,r3i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,
+GISS-E2-1-H,r4i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,
+GISS-E2-1-H,r5i1p3f1,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,,od550bb od550bc od550dust od550no3 od550oa od550so4 od550ss,,
+HadGEM3-GC31-LL,r1i1p1f3,od550dust,,od550dust,od550dust,,od550dust
+HadGEM3-GC31-LL,r2i1p1f3,od550dust,,,,,od550dust
+HadGEM3-GC31-LL,r3i1p1f3,od550dust,,,,,od550dust
+HadGEM3-GC31-LL,r4i1p1f3,od550dust,,,,,od550dust
+HadGEM3-GC31-LL,r5i1p1f3,od550dust,,,,,
+HadGEM3-GC31-MM,r1i1p1f3,od550dust,,od550dust,,,od550dust
+HadGEM3-GC31-MM,r2i1p1f3,od550dust,,,,,od550dust
+HadGEM3-GC31-MM,r3i1p1f3,od550dust,,,,,od550dust
+HadGEM3-GC31-MM,r4i1p1f3,od550dust,,,,,od550dust
+INM-CM4-8,r1i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+INM-CM5-0,r1i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+INM-CM5-0,r2i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,od550bc od550dust od550oa od550so4 od550ss,
+INM-CM5-0,r3i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,od550bc od550dust od550oa od550so4 od550ss,
+INM-CM5-0,r4i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,od550bc od550dust od550oa od550so4 od550ss,
+INM-CM5-0,r5i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,od550bc od550dust od550oa od550so4 od550ss,
+INM-CM5-0,r6i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+INM-CM5-0,r7i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+INM-CM5-0,r8i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+INM-CM5-0,r9i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+INM-CM5-0,r10i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM5A2-INCA,r1i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,od550bc od550dust od550oa od550so4 od550ss,,od550bc od550dust od550no3 od550oa od550so4 od550ss,
+IPSL-CM6A-LR,r1i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss
+IPSL-CM6A-LR,r2i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+IPSL-CM6A-LR,r3i1p1f1,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+IPSL-CM6A-LR,r4i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+IPSL-CM6A-LR,r5i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,
+IPSL-CM6A-LR,r6i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+IPSL-CM6A-LR,r7i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,od550bc od550dust od550no3 od550oa od550so4 od550ss,
+IPSL-CM6A-LR,r8i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,od550bc od550dust od550no3 od550oa od550so4 od550ss,
+IPSL-CM6A-LR,r9i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,od550bc od550dust od550no3 od550oa od550so4 od550ss,
+IPSL-CM6A-LR,r10i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,
+IPSL-CM6A-LR,r11i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,,od550bc od550dust od550no3 od550oa od550so4 od550ss,,
+IPSL-CM6A-LR,r12i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r13i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r14i1p1f1,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550no3 od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+IPSL-CM6A-LR,r15i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r16i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r17i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r18i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r19i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r20i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r21i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r22i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,od550bc od550dust od550oa od550so4 od550ss,,
+IPSL-CM6A-LR,r23i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r24i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r25i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,od550bc od550dust od550oa od550so4 od550ss,,
+IPSL-CM6A-LR,r26i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r27i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r28i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r29i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r30i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r31i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r32i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,,
+IPSL-CM6A-LR,r33i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,,od550bc od550dust od550oa od550so4 od550ss
+IPSL-CM6A-LR-INCA,r1i1p1f1,od550bc od550dust od550no3 od550oa od550so4 od550ss,,,,,
+MIROC6,r1i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+MIROC6,r2i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+MIROC6,r3i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+MIROC6,r4i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MIROC6,r5i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MIROC6,r6i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MIROC6,r7i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MIROC6,r8i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MIROC6,r9i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MIROC6,r10i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MIROC-ES2L,r1i1p1f2,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4
+MIROC-ES2L,r1i1000p1f2,od550dust od550oa od550so4,,,,,
+MIROC-ES2L,r2i1p1f2,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4
+MIROC-ES2L,r3i1p1f2,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4
+MIROC-ES2L,r4i1p1f2,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4
+MIROC-ES2L,r5i1p1f2,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4
+MIROC-ES2L,r6i1p1f2,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4
+MIROC-ES2L,r7i1p1f2,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4
+MIROC-ES2L,r8i1p1f2,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4
+MIROC-ES2L,r9i1p1f2,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4
+MIROC-ES2L,r10i1p1f2,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4,od550dust od550oa od550so4
+MIROC-ES2L,r11i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r12i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r13i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r14i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r15i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r16i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r17i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r18i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r19i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r20i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r21i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r22i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r23i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r24i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r25i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r26i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r27i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r28i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r29i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MIROC-ES2L,r30i1p1f2,od550dust od550oa od550so4,,,od550dust od550oa od550so4,,
+MPI-ESM-1-2-HAM,r1i1p1f1,od550bb od550bc od550dust od550oa od550so4 od550ss,,,,od550bb,
+MPI-ESM-1-2-HAM,r2i1p1f1,od550bb od550bc od550dust od550oa od550so4 od550ss,,,,od550bb,
+MPI-ESM-1-2-HAM,r3i1p1f1,od550bb od550bc od550dust od550oa od550so4 od550ss,,,,od550bb od550bc od550dust od550oa od550so4 od550ss,
+MRI-ESM2-0,r1i1p1f1,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+MRI-ESM2-0,r1i2p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,od550bc od550dust od550oa od550so4 od550ss
+MRI-ESM2-0,r1i3p1f1,,,,od550bc od550dust od550oa od550so4 od550ss,,
+MRI-ESM2-0,r1i1000p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MRI-ESM2-0,r2i1p1f1,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+MRI-ESM2-0,r2i3p1f1,,,,od550bc od550dust od550oa od550so4 od550ss,,
+MRI-ESM2-0,r3i1p1f1,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+MRI-ESM2-0,r3i3p1f1,,,,od550bc od550dust od550oa od550so4 od550ss,,
+MRI-ESM2-0,r4i1p1f1,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+MRI-ESM2-0,r4i3p1f1,,,,od550bc od550dust od550oa od550so4 od550ss,,
+MRI-ESM2-0,r5i1p1f1,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+MRI-ESM2-0,r5i3p1f1,,,,od550bc od550dust od550oa od550so4 od550ss,,
+MRI-ESM2-0,r6i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MRI-ESM2-0,r7i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MRI-ESM2-0,r8i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MRI-ESM2-0,r9i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+MRI-ESM2-0,r10i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,,,,
+NorESM2-LM,r1i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+NorESM2-LM,r1i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+NorESM2-LM,r2i1p1f1,,,,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,
+NorESM2-LM,r2i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+NorESM2-LM,r3i1p1f1,,,,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss,
+NorESM2-LM,r3i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+NorESM2-LM,r4i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+NorESM2-LM,r5i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+NorESM2-LM,r6i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+NorESM2-LM,r7i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+NorESM2-LM,r8i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+NorESM2-LM,r9i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+NorESM2-LM,r10i1p1f2,,,,od550bc od550dust od550oa od550so4 od550ss,,
+NorESM2-MM,r1i1p1f1,od550bc od550dust od550oa od550so4 od550ss,,od550bc od550dust od550oa od550so4 od550ss,,od550bc od550dust od550oa od550so4 od550ss,od550bc od550dust od550oa od550so4 od550ss
+TaiESM1,r1i1p1f1,od550dust,,od550dust,od550dust,od550dust,od550dust
+TaiESM1,r2i1p1f1,od550dust,,,,,
+UKESM1-0-LL,r1i1p1f2,od550dust,,od550dust,od550dust,od550dust,od550dust
+UKESM1-0-LL,r2i1p1f2,od550dust,,od550dust,od550dust,od550dust,od550dust
+UKESM1-0-LL,r3i1p1f2,od550dust,,od550dust,od550dust,od550dust,od550dust
+UKESM1-0-LL,r4i1p1f2,od550dust,,od550dust,od550dust,od550dust,od550dust
+UKESM1-0-LL,r5i1p1f2,,,od550dust,,od550dust,
+UKESM1-0-LL,r5i1p1f3,od550dust,,,,,
+UKESM1-0-LL,r6i1p1f2,,,od550dust,,od550dust,
+UKESM1-0-LL,r6i1p1f3,od550dust,,,,,
+UKESM1-0-LL,r7i1p1f2,,,od550dust,,od550dust,
+UKESM1-0-LL,r7i1p1f3,od550dust,,,,,
+UKESM1-0-LL,r8i1p1f2,od550dust,,od550dust,od550dust,od550dust,od550dust
+UKESM1-0-LL,r9i1p1f2,od550dust,,od550dust,,od550dust,
+UKESM1-0-LL,r10i1p1f2,od550dust,,od550dust,,od550dust,
+UKESM1-0-LL,r11i1p1f2,od550dust,,od550dust,,od550dust,
+UKESM1-0-LL,r12i1p1f2,od550dust,,od550dust,,od550dust,
+UKESM1-0-LL,r13i1p1f2,od550dust,,od550dust,,od550dust,od550dust
+UKESM1-0-LL,r14i1p1f2,od550dust,,od550dust,,od550dust,od550dust
+UKESM1-0-LL,r15i1p1f2,od550dust,,od550dust,,od550dust,od550dust
+UKESM1-0-LL,r16i1p1f2,od550dust,,od550dust,,od550dust,
+UKESM1-0-LL,r17i1p1f2,od550dust,,od550dust,,od550dust,
+UKESM1-0-LL,r18i1p1f2,od550dust,,od550dust,,od550dust,
+UKESM1-0-LL,r19i1p1f2,od550dust,,od550dust,,od550dust,
