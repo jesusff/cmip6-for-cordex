@@ -135,8 +135,8 @@ EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,histo
 EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,Part of the NUKLEUS consortium ensemble
 EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,Part of the NUKLEUS consortium ensemble
 EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,TBD,TBD,historical,planned,2023-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,TBD,TBD,ssp370,planned,2023-12,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MIROC6,r1i1p1f1,historical,planned,2023-12,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MIROC6,r1i1p1f1,ssp370,planned,2023-12,Part of the NUKLEUS consortium ensemble
 EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,ERA5,,evaluation,planned,,RCM version TBD
 EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD3,TBD,historical,planned,,
 EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD3,TBD,ssp126,planned,,
@@ -150,8 +150,8 @@ EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,Part of the NUKLEUS consortium ensemble
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,Part of the NUKLEUS consortium ensemble
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,TBD,TBD,historical,planned,2023-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,TBD,TBD,ssp370,planned,2023-12,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,historical,planned,2023-12,Part of the NUKLEUS consortium ensemble
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,ssp370,planned,2023-12,Part of the NUKLEUS consortium ensemble
 EUR-11,CNRM,S. Somot,ALADIN6x,ERA5,,evaluation,planned,2022-12,Version to be defined later in 2022
 EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,
 EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,
@@ -178,15 +178,14 @@ EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,historical,pla
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,Part of the NUKLEUS consortium ensemble
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,historical,planned,2023-12,Part of the NUKLEUS consortium ensemble
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2023-12,Part of the NUKLEUS consortium ensemble
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,historical,planned,2023-12,Part of the NUKLEUS consortium ensemble
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,ssp370,planned,2023-12,Part of the NUKLEUS consortium ensemble
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,historical,planned,2022-12,
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,ssp126,planned,2022-12,
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,ssp370,planned,2022-12,
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,historical,planned,2023-12,
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,ssp126,planned,2023-12,
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,ssp370,planned,2023-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD3,TBD,historical,planned,2023-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD3,TBD,ssp126,planned,2023-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD3,TBD,ssp370,planned,2023-12,
 EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,
 EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,
 EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r2i1p1f1,historical,planned,2022-12,
