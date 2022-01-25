@@ -1318,6 +1318,32 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
 
 ```
 
+#### Aer. species
+
+Located in [CMIP6_studies/Aerosol.yaml](CMIP6_studies/Aerosol.yaml)
+
+['pers. comm.', 'Jesus Fernandez']
+
+```
+- key: Aer. species
+  doi: ['pers. comm.', 'Jesus Fernandez']
+  type: other
+  spatial_scope: special
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: aer_species
+    long_name: Aerosol species for which AOD available at ESGF
+    units: categorical
+    variables: od550bb, od550bc, od550dust, od550no3, od550oa, od550so4, od550ss, od550so4so, aerasymbnd, aeroptbnd, aerssabnd
+    comment:
+      Data extracted from ESGF using  https://github.com/jesusff/cmip6-for-
+      cordex/blob/main/util/aerosol_species.py which feeds from
+      https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_for_CORDEX.py
+    best: bb, bc, dust, no3, oa, so4, ss, so4so, aerasymbnd, aeroptbnd, aerssabnd
+
+```
+
 #### atm. res. km
 
 Located in [CMIP6_studies/Resolution.yaml](CMIP6_studies/Resolution.yaml)
