@@ -2,6 +2,17 @@ spatial_scope_filter:
   #
   # Filter and sort the metrics according to CORDEX domain
   #
+  AUS:
+    - Global
+    - SH
+    - AUS
+    - NAU
+    - CAU
+    - SAU
+    - EAU
+    - NZ
+    - special
+
   EUR:
     - Global
     - NH
@@ -19,16 +30,10 @@ spatial_scope_filter:
     - SNA # (Southern) North Atlantic
     - special # especial scope (e.g. for resolution or complexity) last
 
-  AUS:
+  MED:
     - Global
-    - SH
-    - AUS
-    - NAU
-    - CAU
-    - SAU
-    - EAU
-    - NZ
-    - special
+    - NH
+    - MED
 
   SEA:
     - Global

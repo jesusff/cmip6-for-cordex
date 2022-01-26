@@ -6,7 +6,7 @@ update: update-esgf update-tables
 update-esgf:
 	python3 CMIP6_for_CORDEX.py
 
-update-tables: AUS EUR
+update-tables: AUS EUR MED SEA
 
 AUS:
 	python3 CMIP6_studies_table.py AUS
@@ -15,6 +15,9 @@ EUR:
 	python3 CMIP6_studies_table.py EUR
 	python3 util/row_tooltips.py
 	python3 CMIP6_studies_list.py EUR > CMIP6_studies_list_EUR.md
+MED:
+	python3 CMIP6_studies_table.py MED
+	python3 CMIP6_studies_list.py MED > CMIP6_studies_list_MED.md
 SEA:
 	python3 CMIP6_studies_table.py SEA
 	python3 CMIP6_studies_list.py SEA > CMIP6_studies_list_SEA.md
