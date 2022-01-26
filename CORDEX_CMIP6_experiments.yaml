@@ -1,0 +1,23 @@
+EUR-11:
+
+  EURbalanced:
+    title: EUR-11 balanced matrix experiment
+    description: >
+      The EURO-CORDEX balanced matrix experiment comprises simulations filling a
+      GCM-RCM-SSP combination matrix with a fractional factorial design.
+      
+  NUKLEUS:
+    title: NUKLEUS project
+    description: >
+      NUKLEUS as a joint project within the major project RegIKlim is primarily
+      concerned with the provision of useful, usable and high-resolution climate
+      information for Germany - on a previously unattained scale.
+    url: https://www.dkrz.de/en/projects-and-partners/projects-1/regiklim-nukleus-anais
+
+  LUCAS:
+    title: CORDEX FPS LUCAS
+    description: >
+      LUCAS (Land Use and Climate Across Scales) is a new initiative on coordinated
+      regional climate model experiments for Europe including land use change
+      forcing.
+    url: https://ms.hereon.de/cordex_fps_lucas

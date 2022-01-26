@@ -110,157 +110,157 @@ EAS-22,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp126,comple
 EAS-22,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp245,planned,2022-12,
 EAS-22,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp370,planned,2022-12,
 EAS-22,UNIST,D.-H. Cha / S.-W. Shin,RegCM4-6,UKESM1-0-LL,r15i1p1f2,ssp585,completed,,
-EUR-11,AUTH,E. Katragkou / V. Pavlidis,WRF,ERA5,,evaluation,planned,2022-12,
-EUR-11,AUTH,E. Katragkou / V. Pavlidis,WRF,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,Split of scenarios TBD among AUTH CESAM and IDL
-EUR-11,AUTH,E. Katragkou / V. Pavlidis,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,Split of scenarios TBD among AUTH CESAM and IDL
-EUR-11,BCCR,S. Sobolowski / T. Lorenz,WRF,ERA5,,evaluation,planned,2022-12,
-EUR-11,BCCR,S. Sobolowski / T. Lorenz,WRF,TBD,TBD,historical,planned,2022-12,
-EUR-11,BCCR,S. Sobolowski / T. Lorenz,WRF,TBD,TBD,ssp126,planned,2022-12,
-EUR-11,BCCR,S. Sobolowski / T. Lorenz,WRF,TBD,TBD,ssp370,planned,2022-12,
-EUR-11,CESAM,D. Carvalho,WRF,ERA5,,evaluation,planned,,
-EUR-11,CESAM,D. Carvalho,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,,Split of scenarios TBD among AUTH CESAM and IDL
-EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,historical,planned,,
-EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp126,planned,,
-EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp245,planned,,
-EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp370,planned,,
-EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp585,planned,,
-EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TBD2,TBD,historical,planned,2023-12,Number of models and scenarios TBD
-EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TBD2,TBD,ssp126,planned,2023-12,Number of models and scenarios TBD
-EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TBD2,TBD,ssp370,planned,2023-12,Number of models and scenarios TBD
-EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TBD2,TBD,historical,planned,2023-12,Number of models and scenarios TBD
-EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TBD2,TBD,ssp126,planned,2023-12,Number of models and scenarios TBD
-EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TBD2,TBD,ssp370,planned,2023-12,Number of models and scenarios TBD
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,ERA5,,evaluation,running,2022-02,
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-05,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MIROC6,r1i1p1f1,historical,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MIROC6,r1i1p1f1,ssp370,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,ERA5,,evaluation,planned,,RCM version TBD
-EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD3,TBD,historical,planned,,
-EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD3,TBD,ssp126,planned,,
-EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD3,TBD,ssp370,planned,,
-EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,ERA5,,evaluation,completed,,COSMO-CLM + Community Land Model + ParFlow hydrological model. There aree currently 2 runs: 3D subsurface hydrodynmics and one with 3D subsurface hydrodynamics and human water use; a run with 1D subsurface hydrodynamics might be added
-EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,
-EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,
-EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,ERA5,,evaluation,running,2022-02,
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-05,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,historical,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,ssp370,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,CNRM,S. Somot,ALADIN6x,ERA5,,evaluation,planned,2022-12,Version to be defined later in 2022
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,,planned,2023-12, Considering ssp245 / 585
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD,TBD,historical,planned,2023-12,3-4 GCMs depending on the number of SSP requested for each of them
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD,TBD,ssp126,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD,TBD,ssp370,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,historical,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,ssp126,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,ssp370,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD3,TBD,historical,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD3,TBD,ssp126,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD3,TBD,ssp370,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,historical,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp126,planned,2023-12,
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp370,planned,2023-12,
-EUR-11,CUNI,M. Belda,RegCM,ERA5,,evaluation,planned,2022-12,
-EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,
-EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,
-EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,ERA5,,evaluation,planned,2022-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,historical,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,ssp370,planned,2022-12,Part of the NUKLEUS consortium ensemble
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,historical,planned,2022-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,ssp126,planned,2022-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,ssp370,planned,2022-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,historical,planned,2023-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,ssp126,planned,2023-12,
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,ssp370,planned,2023-12,
-EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,
-EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,
-EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r2i1p1f1,historical,planned,2022-12,
-EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r2i1p1f1,ssp126,planned,2022-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,ERA5,,evaluation,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,historical,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp119,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp245,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,historical,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,ssp119,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,ssp126,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,ssp245,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,ssp370,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,ssp585,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,historical,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,ssp119,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,ssp126,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,ssp245,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,ssp370,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,ssp585,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD,TBD,historical,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD,TBD,ssp126,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD,TBD,ssp370,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD2,TBD,historical,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD2,TBD,ssp126,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD2,TBD,ssp370,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD3,TBD,historical,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD3,TBD,ssp126,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD3,TBD,ssp370,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD4,TBD,historical,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD4,TBD,ssp126,planned,2023-12,
-EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD4,TBD,ssp370,planned,2023-12,
-EUR-11,HCLIM-METNO,A. Dobler,ALADIN-43,NorESM2-MM,r1i1p1f1,historical,planned,2022-12,
-EUR-11,HCLIM-METNO,A. Dobler,ALADIN-43,NorESM2-MM,r1i1p1f1,ssp370,planned,2022-12,
-EUR-11,HCLIM-METNO,A. Dobler,ALADIN-43,NorESM2-MM,r1i1p1f1,ssp126,planned,2023-12,
-EUR-11,HCLIM-METNO,A. Dobler,ALADIN-43,NorESM2-MM,r1i1p1f1,ssp585,planned,2023-12,
-EUR-11,ICTP,E. Coppola,RegCM,ERA5,,evaluation,planned,2022-12,
-EUR-11,ICTP,E. Coppola,RegCM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,
-EUR-11,ICTP,E. Coppola,RegCM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,
-EUR-11,ICTP,E. Coppola,RegCM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,
-EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3,r1i1p1f1,historical,planned,2022-12,
-EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3,r1i1p1f1,ssp126,planned,2022-12,
-EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3,r1i1p1f1,ssp370,planned,2022-12,
-EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,historical,planned,,
-EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,ssp126,planned,,
-EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,ssp245,planned,,
-EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,ssp585,planned,,
-EUR-11,IDL,P. Soares,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,,Split of scenarios TBD among AUTH CESAM and IDL
-EUR-11,IDL,P. Soares,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,,Split of scenarios TBD among AUTH CESAM and IDL
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,ERA5,,evaluation,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,historical,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,ssp126,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,ssp245,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,ssp370,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,ssp585,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD,TBD,historical,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD,TBD,ssp126,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD,TBD,ssp370,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD2,TBD,historical,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD2,TBD,ssp126,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD2,TBD,ssp370,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD3,TBD,historical,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD3,TBD,ssp126,planned,2023-12,
-EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD3,TBD,ssp370,planned,2023-12,
-EUR-11,RMI-UGent,P. Termonia,ALARO-0,ERA5,,evaluation,planned,,
-EUR-11,RMI-UGent,P. Termonia,ALARO-0,CNRM-ESM2-1,r1i1p1f2,historical,planned,,
-EUR-11,RMI-UGent,P. Termonia,ALARO-0,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,,scenario TBD
-EUR-11,RMI-UGent,P. Termonia,ALARO-0,CNRM-ESM2-1,r1i1p1f2,ssp585,planned,,scenario TBD
-EUR-11,UCAN,J. Fernandez,WRF,ERA5,,evaluation,planned,2022-09,
-EUR-11,UCAN,J. Fernandez,WRF,TBD2,TBD,historical,planned,2023-06,
-EUR-11,UCAN,J. Fernandez,WRF,TBD2,TBD,ssp126,planned,2023-06,
-EUR-11,UCAN,J. Fernandez,WRF,TBD2,TBD,ssp370,planned,2023-06,
+EUR-11,AUTH,E. Katragkou / V. Pavlidis,WRF,ERA5,,evaluation,planned,2022-12,#EURbalanced
+EUR-11,AUTH,E. Katragkou / V. Pavlidis,WRF,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURbalanced Split of scenarios TBD among AUTH CESAM and IDL
+EUR-11,AUTH,E. Katragkou / V. Pavlidis,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURbalanced Split of scenarios TBD among AUTH CESAM and IDL
+EUR-11,BCCR,S. Sobolowski / T. Lorenz,WRF,ERA5,,evaluation,planned,2022-12,#EURbalanced
+EUR-11,BCCR,S. Sobolowski / T. Lorenz,WRF,TBD,TBD,historical,planned,2022-12,#EURbalanced
+EUR-11,BCCR,S. Sobolowski / T. Lorenz,WRF,TBD,TBD,ssp126,planned,2022-12,#EURbalanced
+EUR-11,BCCR,S. Sobolowski / T. Lorenz,WRF,TBD,TBD,ssp370,planned,2022-12,#EURbalanced
+EUR-11,CESAM,D. Carvalho,WRF,ERA5,,evaluation,planned,,#EURbalanced
+EUR-11,CESAM,D. Carvalho,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,,#EURbalanced Split of scenarios TBD among AUTH CESAM and IDL
+EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,historical,planned,,#EURbalanced
+EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp126,planned,,#EURbalanced
+EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp245,planned,,#EURbalanced
+EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp370,planned,,#EURbalanced
+EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp585,planned,,#EURbalanced
+EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TBD2,TBD,historical,planned,2023-12,#EURbalanced Number of models and scenarios TBD
+EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced Number of models and scenarios TBD
+EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced Number of models and scenarios TBD
+EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TBD2,TBD,historical,planned,2023-12,#EURbalanced Number of models and scenarios TBD
+EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced Number of models and scenarios TBD
+EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced Number of models and scenarios TBD
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,ERA5,,evaluation,running,2022-02,#EURbalanced #NUKLEUS
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-05,#EURbalanced #NUKLEUS
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,#EURbalanced #NUKLEUS
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MIROC6,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MIROC6,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,ERA5,,evaluation,planned,,#EURbalanced RCM version TBD
+EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD3,TBD,historical,planned,,#EURbalanced
+EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD3,TBD,ssp126,planned,,#EURbalanced
+EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD3,TBD,ssp370,planned,,#EURbalanced
+EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,ERA5,,evaluation,completed,,#EURcoupled COSMO-CLM + Community Land Model + ParFlow hydrological model. There aree currently 2 runs: 3D subsurface hydrodynmics and one with 3D subsurface hydrodynamics and human water use; a run with 1D subsurface hydrodynamics might be added
+EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURcoupled
+EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURcoupled
+EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,#EURcoupled
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,ERA5,,evaluation,running,2022-02,#EURbalanced #EURcoupled #NUKLEUS
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-05,#EURbalanced #EURcoupled #NUKLEUS
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,#EURbalanced #EURcoupled #NUKLEUS
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MIROC6,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,CNRM,S. Somot,ALADIN6x,ERA5,,evaluation,planned,2022-12,#EURbalanced Version to be defined later in 2022
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,,planned,2023-12,#EURbalanced  Considering ssp245 / 585
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD,TBD,historical,planned,2023-12,#EURbalanced 3-4 GCMs depending on the number of SSP requested for each of them
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,historical,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD3,TBD,historical,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD3,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD3,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,historical,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,CUNI,M. Belda,RegCM,ERA5,,evaluation,planned,2022-12,#EURbalanced
+EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,#EURbalanced
+EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,#EURbalanced
+EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,#EURbalanced
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,ERA5,,evaluation,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,historical,planned,2022-12,#EURbalanced
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,ssp126,planned,2022-12,#EURbalanced
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,ssp370,planned,2022-12,#EURbalanced
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,historical,planned,2023-12,#EURbalanced
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURbalanced #EURintvar #LUCAS
+EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURbalanced #EURintvar #LUCAS
+EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r2i1p1f1,historical,planned,2022-12,#LUCAS
+EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r2i1p1f1,ssp126,planned,2022-12,#LUCAS
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,ERA5,,evaluation,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,historical,planned,2023-12,#EURbalanced #EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp119,planned,2023-12,#EURbalanced #EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced #EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp245,planned,2023-12,#EURbalanced #EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced #EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp585,planned,2023-12,#EURbalanced #EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,historical,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,ssp119,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,ssp126,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,ssp245,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,ssp370,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r2i1p1f1,ssp585,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,historical,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,ssp119,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,ssp126,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,ssp245,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,ssp370,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r3i1p1f1,ssp585,planned,2023-12,#EURintvar
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD,TBD,historical,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD2,TBD,historical,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD3,TBD,historical,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD3,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD3,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD4,TBD,historical,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD4,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,TBD4,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-METNO,A. Dobler,ALADIN-43,NorESM2-MM,r1i1p1f1,historical,planned,2022-12,#EURbalanced
+EUR-11,HCLIM-METNO,A. Dobler,ALADIN-43,NorESM2-MM,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced
+EUR-11,HCLIM-METNO,A. Dobler,ALADIN-43,NorESM2-MM,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
+EUR-11,HCLIM-METNO,A. Dobler,ALADIN-43,NorESM2-MM,r1i1p1f1,ssp585,planned,2023-12,#EURbalanced
+EUR-11,ICTP,E. Coppola,RegCM,ERA5,,evaluation,planned,2022-12,#EURbalanced
+EUR-11,ICTP,E. Coppola,RegCM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURbalanced
+EUR-11,ICTP,E. Coppola,RegCM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURbalanced
+EUR-11,ICTP,E. Coppola,RegCM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced
+EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3,r1i1p1f1,historical,planned,2022-12,#EURbalanced
+EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3,r1i1p1f1,ssp126,planned,2022-12,#EURbalanced
+EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced
+EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,historical,planned,,#EURintvar
+EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,ssp126,planned,,#EURintvar
+EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,ssp245,planned,,#EURintvar
+EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,ssp585,planned,,#EURintvar
+EUR-11,IDL,P. Soares,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,,#EURbalanced Split of scenarios TBD among AUTH CESAM and IDL
+EUR-11,IDL,P. Soares,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,,#EURbalanced Split of scenarios TBD among AUTH CESAM and IDL
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,ERA5,,evaluation,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,historical,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,ssp245,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,ssp585,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD,TBD,historical,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD2,TBD,historical,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD3,TBD,historical,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD3,TBD,ssp126,planned,2023-12,#EURbalanced
+EUR-11,KNMI,E. van Meijgaard,RACMO23E,TBD3,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,RMI-UGent,P. Termonia,ALARO-0,ERA5,,evaluation,planned,,#EURbalanced
+EUR-11,RMI-UGent,P. Termonia,ALARO-0,CNRM-ESM2-1,r1i1p1f2,historical,planned,,#EURbalanced
+EUR-11,RMI-UGent,P. Termonia,ALARO-0,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,,#EURbalanced scenario TBD
+EUR-11,RMI-UGent,P. Termonia,ALARO-0,CNRM-ESM2-1,r1i1p1f2,ssp585,planned,,#EURbalanced scenario TBD
+EUR-11,UCAN,J. Fernandez,WRF,ERA5,,evaluation,planned,2022-09,#EURbalanced
+EUR-11,UCAN,J. Fernandez,WRF,TBD2,TBD,historical,planned,2023-06,#EURbalanced
+EUR-11,UCAN,J. Fernandez,WRF,TBD2,TBD,ssp126,planned,2023-06,#EURbalanced
+EUR-11,UCAN,J. Fernandez,WRF,TBD2,TBD,ssp370,planned,2023-06,#EURbalanced
 MED-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,historical,running,2022-04,
 MED-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp585,running,2022-04,
 MED-11,CNRM,S. Somot,RCSM6,ERA5,,evaluation,planned,2022-12,
