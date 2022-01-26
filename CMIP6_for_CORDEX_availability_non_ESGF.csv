@@ -1,9 +1,9 @@
 model,run,historical,ssp119,ssp126,ssp245,ssp370,ssp585,updated,comment
 ACCESS-ESM1-5,r1i1p1f1,RCM,,RCM,RCM,RCM,RCM,2021-06-10,
 EC-Earth3,r1i1p1f1,RCM,,RCM,RCM,RCM,RCM,2022-01-23,KNMI (T. Reerink) run. To be published soon via SMHI ESGF data node (E. van Meijgaard pers. comm.)
-EC-Earth3,r5i1p1f1,RCM,RCM,RCM,RCM,RCM,RCM,2022-01-26,Resources allocated to be published on NSC/LIU node, Sweden (S. Yang pers. comm.)
-EC-Earth3,r11i1p1f1,RCM,,RCM,RCM,RCM,RCM,2022-01-26,Resources allocated to be published on NSC/LIU node, Sweden (S. Yang pers. comm.)
+EC-Earth3,r5i1p1f1,RCM,RCM,RCM,RCM,RCM,RCM,2022-01-26,Resources allocated to be published on NSC/LIU node in Sweden (S. Yang pers. comm.)
+EC-Earth3,r11i1p1f1,RCM,,RCM,RCM,RCM,RCM,2022-01-26,Resources allocated to be published on NSC/LIU node in Sweden (S. Yang pers. comm.)
 EC-Earth3-Veg,r1i1p1f1,RCM,RCM,RCM,RCM,RCM,RCM,2019-01-26,currently already available on a ftp server at SMHI (request access to Klaus Wyser at smhi se)
-EC-Earth3-Veg,r2i1p1f1,RCM,RCM,RCM,RCM,RCM,RCM,2019-01-26,Resources allocated to be published on NSC/LIU node, Sweden (S. Yang pers. comm.)
-EC-Earth3-Veg,r3i1p1f1,RCM,RCM,RCM,RCM,RCM,RCM,2019-01-26,Resources allocated to be published on NSC/LIU node, Sweden (S. Yang pers. comm.)
+EC-Earth3-Veg,r2i1p1f1,RCM,RCM,RCM,RCM,RCM,RCM,2019-01-26,Resources allocated to be published on NSC/LIU node in Sweden (S. Yang pers. comm.)
+EC-Earth3-Veg,r3i1p1f1,RCM,RCM,RCM,RCM,RCM,RCM,2019-01-26,Resources allocated to be published on NSC/LIU node in Sweden (S. Yang pers. comm.)
 EC-Earth3-Veg,r6i1p1f1,RCM,,RCM,RCM,,RCM,2022-01-23,IDL run. To be published on ESGF if the run is finally used as driving model (P. Soares pers. comm.)
