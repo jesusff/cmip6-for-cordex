@@ -1,0 +1,167 @@
+- key: Aer. species
+  doi: [pers. comm., Jesus Fernandez]
+  metric:
+    name: aer_species
+    long_name: Aerosol species for which AOD available at ESGF
+    units: categorical
+    variables: od550bb, od550bc, od550dust, od550no3, od550oa, od550so4, od550ss, od550so4so, aerasymbnd, aeroptbnd, aerssabnd
+    comment: >
+      Data extracted from ESGF using 
+      https://github.com/jesusff/cmip6-for-cordex/blob/main/util/aerosol_species.py
+      which feeds from
+      https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_for_CORDEX.py
+    best: bb, bc, dust, no3, oa, so4, ss, so4so, aerasymbnd, aeroptbnd, aerssabnd
+  type: other
+  spatial_scope: special
+  temporal_scope: Annual
+  data_source: author
+  data:
+    BCC-ESM1_r1i1p1f1: dust so4 ss
+    BCC-ESM1_r2i1p1f1: dust so4 ss
+    BCC-ESM1_r3i1p1f1: dust so4 ss
+    CESM2_r1i1p1f1: bc dust oa so4
+    CESM2_r2i1p1f1: bc dust oa so4 ss
+    CESM2_r3i1p1f1: bc dust oa so4
+    CESM2_r4i1p1f1: bc dust oa so4
+    CESM2_r5i1p1f1: bc dust oa so4
+    CESM2_r6i1p1f1: bc dust oa so4
+    CESM2_r10i1p1f1: bc dust oa so4
+    CESM2_r11i1p1f1: bc dust oa so4
+    CESM2-WACCM_r1i1p1f1: bc dust oa so4
+    CESM2-WACCM_r2i1p1f1: bc dust oa so4
+    CESM2-WACCM_r3i1p1f1: bc dust oa so4
+    CNRM-CM6-1_r1i1p1f2: bc dust oa so4 ss
+    CNRM-CM6-1_r2i1p1f2: bc dust oa so4 ss
+    CNRM-CM6-1_r3i1p1f2: bc dust oa so4 ss
+    CNRM-ESM2-1_r1i1p1f2: bc dust oa so4 ss
+    CNRM-ESM2-1_r2i1p1f2: bc dust oa so4 ss
+    CNRM-ESM2-1_r3i1p1f2: bc dust oa so4 ss
+    CNRM-ESM2-1_r4i1p1f2: bc dust oa so4 ss
+    CNRM-ESM2-1_r5i1p1f2: bc dust oa so4 ss
+    CanESM5_r1i1p1f1: dust ss
+    CanESM5_r1i1p2f1: dust ss
+    CanESM5_r2i1p1f1: dust ss
+    CanESM5_r2i1p2f1: dust ss
+    CanESM5_r3i1p1f1: dust ss
+    CanESM5_r3i1p2f1: dust ss
+    CanESM5_r4i1p1f1: dust ss
+    CanESM5_r4i1p2f1: dust ss
+    CanESM5_r5i1p1f1: dust ss
+    CanESM5_r5i1p2f1: dust ss
+    CanESM5_r6i1p1f1: dust ss
+    CanESM5_r6i1p2f1: dust ss
+    CanESM5_r7i1p1f1: dust ss
+    CanESM5_r7i1p2f1: dust ss
+    CanESM5_r8i1p1f1: dust ss
+    CanESM5_r8i1p2f1: dust ss
+    CanESM5_r9i1p1f1: dust ss
+    CanESM5_r9i1p2f1: dust ss
+    CanESM5_r10i1p1f1: dust ss
+    CanESM5_r10i1p2f1: dust ss
+    CanESM5_r11i1p1f1: dust ss
+    CanESM5_r11i1p2f1: dust ss
+    CanESM5_r12i1p1f1: dust ss
+    CanESM5_r12i1p2f1: dust ss
+    CanESM5_r13i1p1f1: dust ss
+    CanESM5_r13i1p2f1: dust ss
+    CanESM5_r14i1p1f1: dust ss
+    CanESM5_r14i1p2f1: dust ss
+    CanESM5_r15i1p1f1: dust ss
+    CanESM5_r15i1p2f1: dust ss
+    CanESM5_r16i1p1f1: dust ss
+    CanESM5_r16i1p2f1: dust ss
+    CanESM5_r17i1p1f1: dust ss
+    CanESM5_r17i1p2f1: dust ss
+    CanESM5_r18i1p1f1: dust ss
+    CanESM5_r18i1p2f1: dust ss
+    CanESM5_r19i1p1f1: dust ss
+    CanESM5_r19i1p2f1: dust ss
+    CanESM5_r20i1p1f1: dust ss
+    CanESM5_r20i1p2f1: dust ss
+    CanESM5_r21i1p1f1: dust ss
+    CanESM5_r21i1p2f1: dust ss
+    CanESM5_r22i1p1f1: dust ss
+    CanESM5_r22i1p2f1: dust ss
+    CanESM5_r23i1p1f1: dust ss
+    CanESM5_r23i1p2f1: dust ss
+    CanESM5_r24i1p1f1: dust ss
+    CanESM5_r24i1p2f1: dust ss
+    CanESM5_r25i1p1f1: dust ss
+    CanESM5_r25i1p2f1: dust ss
+    CanESM5-CanOE_r1i1p2f1: dust ss
+    CanESM5-CanOE_r2i1p2f1: dust ss
+    CanESM5-CanOE_r3i1p2f1: dust ss
+    EC-Earth3-AerChem_r1i1p1f1: bc dust no3 oa so4 ss
+    EC-Earth3-AerChem_r4i1p1f1: bc dust no3 oa so4 ss
+    GFDL-ESM4_r1i1p1f1: bc dust no3 oa so4 ss
+    GISS-E2-1-G_r1i1p3f1: bb bc dust no3 oa so4 ss
+    GISS-E2-1-G_r1i1p3f2: bb bc dust no3 oa so4 ss
+    GISS-E2-1-G_r2i1p3f1: bb bc dust no3 oa so4 ss
+    GISS-E2-1-G_r2i1p3f2: bb bc dust no3 oa so4 ss
+    GISS-E2-1-G_r3i1p3f1: bb bc dust no3 oa so4 ss
+    GISS-E2-1-G_r3i1p3f2: bb bc dust no3 oa so4 ss
+    GISS-E2-1-G_r4i1p3f1: bb bc dust no3 oa so4 ss
+    GISS-E2-1-H_r1i1p3f1: bb bc dust no3 oa so4 ss
+    INM-CM4-8_r1i1p1f1: bc dust oa so4 ss
+    INM-CM5-0_r1i1p1f1: bc dust oa so4 ss
+    INM-CM5-0_r2i1p1f1: bc dust oa so4 ss
+    INM-CM5-0_r3i1p1f1: bc dust oa so4 ss
+    INM-CM5-0_r4i1p1f1: bc dust oa so4 ss
+    INM-CM5-0_r5i1p1f1: bc dust oa so4 ss
+    IPSL-CM5A2-INCA_r1i1p1f1: bc dust no3 oa so4 ss
+    IPSL-CM6A-LR_r1i1p1f1: bc dust no3 oa so4 ss
+    IPSL-CM6A-LR_r2i1p1f1: bc dust no3 oa so4 ss
+    IPSL-CM6A-LR_r3i1p1f1: bc dust no3 oa so4 ss
+    IPSL-CM6A-LR_r4i1p1f1: bc dust no3 oa so4 ss
+    IPSL-CM6A-LR_r5i1p1f1: bc dust no3 oa so4 ss
+    IPSL-CM6A-LR_r6i1p1f1: bc dust no3 oa so4 ss
+    IPSL-CM6A-LR_r7i1p1f1: bc dust no3 oa so4 ss
+    IPSL-CM6A-LR_r8i1p1f1: bc dust no3 oa so4 ss
+    IPSL-CM6A-LR_r9i1p1f1: bc dust no3 oa so4 ss
+    IPSL-CM6A-LR_r10i1p1f1: bc dust no3 oa so4 ss
+    IPSL-CM6A-LR_r14i1p1f1: bc dust no3 oa so4 ss
+    MIROC6_r1i1p1f1: bc dust oa so4 ss
+    MIROC6_r2i1p1f1: bc dust oa so4 ss
+    MIROC6_r3i1p1f1: bc dust oa so4 ss
+    MIROC-ES2L_r1i1p1f2: dust oa so4
+    MIROC-ES2L_r2i1p1f2: dust oa so4
+    MIROC-ES2L_r3i1p1f2: dust oa so4
+    MIROC-ES2L_r4i1p1f2: dust oa so4
+    MIROC-ES2L_r5i1p1f2: dust oa so4
+    MIROC-ES2L_r6i1p1f2: dust oa so4
+    MIROC-ES2L_r7i1p1f2: dust oa so4
+    MIROC-ES2L_r8i1p1f2: dust oa so4
+    MIROC-ES2L_r9i1p1f2: dust oa so4
+    MIROC-ES2L_r10i1p1f2: dust oa so4
+    MPI-ESM-1-2-HAM_r1i1p1f1: bb
+    MPI-ESM-1-2-HAM_r2i1p1f1: bb
+    MPI-ESM-1-2-HAM_r3i1p1f1: bb bc dust oa so4 ss
+    MRI-ESM2-0_r1i1p1f1: bc dust oa so4 ss
+    MRI-ESM2-0_r2i1p1f1: bc dust oa so4 ss
+    MRI-ESM2-0_r3i1p1f1: bc dust oa so4 ss
+    MRI-ESM2-0_r4i1p1f1: bc dust oa so4 ss
+    MRI-ESM2-0_r5i1p1f1: bc dust oa so4 ss
+    NorESM2-LM_r1i1p1f1: bc dust oa so4 ss
+    NorESM2-LM_r2i1p1f1: bc dust oa so4 ss
+    NorESM2-LM_r3i1p1f1: bc dust oa so4 ss
+    NorESM2-MM_r1i1p1f1: bc dust oa so4 ss
+    TaiESM1_r1i1p1f1: dust
+    UKESM1-0-LL_r1i1p1f2: dust
+    UKESM1-0-LL_r2i1p1f2: dust
+    UKESM1-0-LL_r3i1p1f2: dust
+    UKESM1-0-LL_r4i1p1f2: dust
+    UKESM1-0-LL_r5i1p1f2: dust
+    UKESM1-0-LL_r6i1p1f2: dust
+    UKESM1-0-LL_r7i1p1f2: dust
+    UKESM1-0-LL_r8i1p1f2: dust
+    UKESM1-0-LL_r9i1p1f2: dust
+    UKESM1-0-LL_r10i1p1f2: dust
+    UKESM1-0-LL_r11i1p1f2: dust
+    UKESM1-0-LL_r12i1p1f2: dust
+    UKESM1-0-LL_r13i1p1f2: dust
+    UKESM1-0-LL_r14i1p1f2: dust
+    UKESM1-0-LL_r15i1p1f2: dust
+    UKESM1-0-LL_r16i1p1f2: dust
+    UKESM1-0-LL_r17i1p1f2: dust
+    UKESM1-0-LL_r18i1p1f2: dust
+    UKESM1-0-LL_r19i1p1f2: dust
