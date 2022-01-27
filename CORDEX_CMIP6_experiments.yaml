@@ -17,6 +17,12 @@ EUR-11:
 
   EURintvar:
     title: Internal variability
+
+  ManyGCM:
+    title: Many-GCM experiment
+    description: >
+      This experiment explores driving multi-model uncertainty by downscaling a large
+      set of GCMs by the same RCM.
       
   NUKLEUS:
     title: NUKLEUS project
