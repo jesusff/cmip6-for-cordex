@@ -5,6 +5,18 @@ EUR-11:
     description: >
       The EURO-CORDEX balanced matrix experiment comprises simulations filling a
       GCM-RCM-SSP combination matrix with a fractional factorial design.
+  
+  EURexpress:
+    title: EUR-11 balanced "express" stream (ECD by 2022-12)
+    condition:
+      - tag:EURbalanced
+      - estimated_completion_date <= '2022-12'
+
+  EURcoupled:
+    title: Coupled simulations
+
+  EURintvar:
+    title: Internal variability
       
   NUKLEUS:
     title: NUKLEUS project

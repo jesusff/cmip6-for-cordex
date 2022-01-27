@@ -43,9 +43,17 @@ for domain in domains:
   if not tags:
     continue
   f.write(f'''<h2 id="{domain}">{domain}</h2>''')
-  for tag in tags:
-    tconf = dconf[tag[1:]] if tag[1:] in dconf else dict()
-    df = dom_plans[dom_plans.comments.str.contains(tag, case=False, na=False)]
+  for tag in dconf.keys():
+    tconf = dconf[tag]
+    if 'condition' in tconf:
+      df = dom_plans.copy()
+      for cond in tconf['condition']:
+        if cond.startswith('tag:'):
+          df = df[df.comments.str.contains('#'+cond[4:], case=False, na=False)]
+        else:
+          df = df.query(cond)
+    else:
+      df = dom_plans[dom_plans.comments.str.contains(tag, case=False, na=False)]
     df = df.assign(htmlstatus=pd.Series('<span class="' + df.status + '">' + df.experiment + '</span>', index=df.index))
     df = df.assign(model_id=pd.Series(df.institute + '-' + df.rcm_name, index=df.index))
     column_id = 'rcm_name' if collapse_institutions else 'model_id'
