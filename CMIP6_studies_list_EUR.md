@@ -1407,3 +1407,26 @@ Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and
 
 ```
 
+#### Calendar
+
+Located in [CMIP6_studies/Calendar.yaml](CMIP6_studies/Calendar.yaml)
+
+['pers. comm.', 'Andreas Dobler']
+
+```
+- key: Calendar
+  doi: ['pers. comm.', 'Andreas Dobler']
+  type: other
+  spatial_scope: special
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: calendar
+    long_name: Model calendar
+    units: categorical
+    variables: None
+    comment:
+      Data extracted from ESGF
+
+```
+
