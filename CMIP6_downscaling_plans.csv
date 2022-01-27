@@ -186,10 +186,10 @@ EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,ssp370,planned,2022-12,#EURba
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,historical,planned,2023-12,#EURbalanced
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced
-EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURbalanced #EURintvar #LUCAS
-EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURbalanced #EURintvar #LUCAS
-EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r2i1p1f1,historical,planned,2022-12,#LUCAS
-EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r2i1p1f1,ssp126,planned,2022-12,#LUCAS
+EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURcoupled #EURintvar #LUCAS
+EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURcoupled #EURintvar #LUCAS
+EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r2i1p1f1,historical,planned,2022-12,#LUCAS #EURintvar
+EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r2i1p1f1,ssp126,planned,2022-12,#LUCAS #EURintvar
 EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,ERA5,,evaluation,planned,2023-12,#EURbalanced
 EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,historical,planned,2023-12,#EURbalanced #EURintvar
 EUR-11,HCLIM-SMHI,G. Nikulin,ALADIN-43,EC-Earth3-Veg,r1i1p1f1,ssp119,planned,2023-12,#EURbalanced #EURintvar
