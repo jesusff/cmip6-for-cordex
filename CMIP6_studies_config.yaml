@@ -2,6 +2,17 @@ spatial_scope_filter:
   #
   # Filter and sort the metrics according to CORDEX domain
   #
+  AUS:
+    - Global
+    - SH
+    - AUS
+    - NAU
+    - CAU
+    - SAU
+    - EAU
+    - NZ
+    - special
+
   EUR:
     - Global
     - NH
@@ -19,21 +30,19 @@ spatial_scope_filter:
     - SNA # (Southern) North Atlantic
     - special # especial scope (e.g. for resolution or complexity) last
 
-  AUS:
+  MED:
     - Global
-    - SH
-    - AUS
-    - NAU
-    - CAU
-    - SAU
-    - EAU
-    - NZ
+    - NH
+    - EUR
+    - MED+NEU+CEU
+    - MED
     - special
 
   SEA:
     - Global
     - Tropics
     - SEA
+    - special
 
 preferred: # Not implemented
   plausible_values_source: eurocordex_gcm_selection_team

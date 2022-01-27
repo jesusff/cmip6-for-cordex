@@ -1,0 +1,59 @@
+- key: Calendar
+  doi: [pers. comm., Andreas Dobler]
+  metric:
+    name: calendar
+    long_name: Model calendar
+    units: categorical
+    variables: 
+    comment: >
+      Data extracted from ESGF 
+  type: other
+  spatial_scope: special
+  temporal_scope: Annual
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: gregorian
+    ACCESS-ESM1-5_r1i1p1f1: gregorian
+    AWI-CM-1-1-MR_r1i1p1f1: gregorian
+    BCC-CSM2-MR_r1i1p1f1: 365_day
+    CAMS-CSM1-0_r1i1p1f1: 365_day
+    CanESM5_r1i1p2f1: 365_day
+    CanESM5-CanOE_r1i1p1f1: 365_day
+    CAS-ESM2-0_r1i1p1f1: 365_day
+    CESM2_r2i1p1f1: 365_day
+    CESM2-WACCM_r1i1p1f1: 365_day
+    CIESM_r1i1p1f1: 365_day
+    CMCC-CM2-SR5_r1i1p1f1: 365_day
+    CMCC-ESM2_r1i1p1f1: 365_day
+    CNRM-CM6-1_r1i1p1f1: gregorian
+    CNRM-CM6-1-HR_r1i1p1f1: gregorian
+    CNRM-ESM2-1_r1i1p1f2: gregorian
+    E3SM-1-1_r1i1p1f1: 365_day
+    EC-Earth3_r1i1p1f1: gregorian
+    EC-Earth3-CC_r1i1p1f1: gregorian
+    EC-Earth3-Veg_r1-6i1p1f1: gregorian
+    EC-Earth3-Veg-LR_r1i1p1f1: gregorian
+    FGOALS-f3-L_r1i1p1f1: 365_day
+    FGOALS-g3_r1i1p1f1: 365_day
+    FIO-ESM-2-0_r1i1p1f1: 365_day
+    GISS-E2-1-G_r1i1p1f1: 365_day
+    GISS-E2-1-H_r1i1p1f1: 365_day
+    HadGEM3-GC31-LL_r1i1p1f1: 360_day
+    HadGEM3-GC31-MM_r1i1p1f1: 360_day
+    IITM-ESM_r1i1p1f1: standard
+    INM-CM4-8_r1i1p1f1: 365_day
+    INM-CM5-0_r1i1p1f1: 365_day
+    IPSL-CM6A-LR_r1i1p1f1: gregorian
+    KACE-1-0-G_r1i1p1f1: 360_day
+    KIOST-ESM_r1i1p1f1: 365_day
+    MCM-UA-1-0_r1i1p1f1: 365_day
+    MIROC-ES2L_r1i1p1f2: gregorian
+    MIROC6_r1i1p1f1: gregorian
+    MPI-ESM1-2-HR_r1-2i1p1f1: gregorian
+    MPI-ESM1-2-LR_r1i1p1f1: gregorian
+    MRI-ESM2-0_r1i1p1f1: gregorian
+    NESM3_r1i1p1f1: standard
+    NorESM2-LM_r1i1p1f1: 365_day
+    NorESM2-MM_r1i1p1f1: 365_day
+    TaiESM1_r1i1p1f1: 365_day
+    UKESM1-0-LL_r1i1p1f2: 360_day
