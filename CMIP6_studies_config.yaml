@@ -33,12 +33,16 @@ spatial_scope_filter:
   MED:
     - Global
     - NH
+    - EUR
+    - MED+NEU+CEU
     - MED
+    - special
 
   SEA:
     - Global
     - Tropics
     - SEA
+    - special
 
 preferred: # Not implemented
   plausible_values_source: eurocordex_gcm_selection_team
