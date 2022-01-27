@@ -229,15 +229,21 @@ EUR-11,ICTP,E. Coppola,RegCM,ERA5,,evaluation,planned,2022-12,
 EUR-11,ICTP,E. Coppola,RegCM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,
 EUR-11,ICTP,E. Coppola,RegCM,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,
 EUR-11,ICTP,E. Coppola,RegCM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,
-EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3,r1i1p1f1,historical,planned,2022-12,
-EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3,r1i1p1f1,ssp126,planned,2022-12,
-EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3,r1i1p1f1,ssp370,planned,2022-12,
-EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,historical,planned,,
-EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,ssp126,planned,,
-EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,ssp245,planned,,
-EUR-11,IDL,P. Soares,WRF,EC-Earth3-Veg,r6i1p1f1,ssp585,planned,,
-EUR-11,IDL,P. Soares,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,,Split of scenarios TBD among AUTH CESAM and IDL
-EUR-11,IDL,P. Soares,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,,Split of scenarios TBD among AUTH CESAM and IDL
+EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,
+EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2022-12,
+EUR-11,ICTP,E. Coppola,RegCM,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,
+EUR-11,ICTP,E. Coppola,RegCM,NorESM2-MM,r1i1p1f1,historical,planned,2022-12,
+EUR-11,ICTP,E. Coppola,RegCM,NorESM2-MM,r1i1p1f1,ssp126,planned,2022-12,
+EUR-11,ICTP,E. Coppola,RegCM,NorESM2-MM,r1i1p1f1,ssp370,planned,2022-12,
+EUR-11,IDL,P. Soares / R. M. Cardoso,WRF,ERA5,,evaluation,planned,2022-08,
+EUR-11,IDL,P. Soares / R. M. Cardoso,WRF,EC-Earth3-Veg,r6i1p1f1,historical,planned,,
+EUR-11,IDL,P. Soares / R. M. Cardoso,WRF,EC-Earth3-Veg,r6i1p1f1,ssp126,planned,,
+EUR-11,IDL,P. Soares / R. M. Cardoso,WRF,EC-Earth3-Veg,r6i1p1f1,ssp245,planned,,
+EUR-11,IDL,P. Soares / R. M. Cardoso,WRF,EC-Earth3-Veg,r6i1p1f1,ssp585,planned,,
+EUR-11,IDL,P. Soares / R. M. Cardoso,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,Split of scenarios TBD among AUTH CESAM and IDL
+EUR-11,IDL,P. Soares / R. M. Cardoso,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp245,planned,2022-12,Split of scenarios TBD among AUTH CESAM and IDL
+EUR-11,IDL,P. Soares / R. M. Cardoso,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,Split of scenarios TBD among AUTH CESAM and IDL
+EUR-11,IDL,P. Soares / R. M. Cardoso,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2022-12,Split of scenarios TBD among AUTH CESAM and IDL
 EUR-11,KNMI,E. van Meijgaard,RACMO23E,ERA5,,evaluation,planned,2023-12,
 EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,historical,planned,2023-12,
 EUR-11,KNMI,E. van Meijgaard,RACMO23E,EC-Earth3,r1i1p1f1,ssp126,planned,2023-12,
