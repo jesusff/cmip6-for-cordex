@@ -39,3 +39,9 @@ EUR-11:
       regional climate model experiments for Europe including land use change
       forcing.
     url: https://ms.hereon.de/cordex_fps_lucas
+
+  eWRFcom:
+    title: EURO-CORDEX WRF community
+    condition:
+      - rcm_name == 'WRF'
+    collapse_institutions: False

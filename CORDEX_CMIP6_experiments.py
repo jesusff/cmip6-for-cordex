@@ -54,6 +54,7 @@ for domain in domains:
           df = df.query(cond)
     else:
       df = dom_plans[dom_plans.comments.str.contains(tag, case=False, na=False)]
+    collapse_institutions = tconf['collapse_institutions'] if 'collapse_institutions' in tconf else collapse_institutions
     df = df.assign(htmlstatus=pd.Series('<span class="' + df.status + '">' + df.experiment + '</span>', index=df.index))
     df = df.assign(model_id=pd.Series(df.institute + '-' + df.rcm_name, index=df.index))
     column_id = 'rcm_name' if collapse_institutions else 'model_id'
@@ -78,9 +79,9 @@ for domain in domains:
       dom_plans_matrix = dom_plans_matrix.append(inst)
       dom_plans_matrix = dom_plans_matrix.T.set_index([('','Institutes'),dom_plans_matrix.columns]).T
       dom_plans_matrix.columns.names = ['Institution(s)','RCM']
-      title = tconf['title'] if 'title' in tconf else tag
-      descr = tconf['description'] if 'description' in tconf else ''
-      url = f'<p>URL: <a href="{tconf["url"]}">{tconf["url"]}</a>' if 'url' in tconf else ''
+    title = tconf['title'] if 'title' in tconf else tag
+    descr = tconf['description'] if 'description' in tconf else ''
+    url = f'<p>URL: <a href="{tconf["url"]}">{tconf["url"]}</a>' if 'url' in tconf else ''
     f.write(f'''<h3 id="{title}">{title}</h3>
       <p> {descr}
       {url}
@@ -101,5 +102,6 @@ for domain in domains:
        .replace('nan','')
        .replace('historical','hist')
     )
+    collapse_institutions = True
 f.write('</body></html>')
 f.close()
