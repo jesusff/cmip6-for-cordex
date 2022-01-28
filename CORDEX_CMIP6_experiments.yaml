@@ -10,6 +10,7 @@ EUR-11:
     title: EUR-11 balanced "express" stream (ECD by 2022-12)
     condition:
       - tag:EURbalanced
+      - experiment != 'evaluation'
       - estimated_completion_date <= '2022-12'
 
   EURcoupled:
