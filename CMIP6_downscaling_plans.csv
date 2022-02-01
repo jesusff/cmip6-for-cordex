@@ -316,6 +316,32 @@ MENA-22,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,TBD,TBD,ssp585,planned,2023-12,
 SAM-22,CIMA,L. Fita,RegIPSL,ERA5,,evaluation,completed,2022-01,20-km resolution
 SAM-22,CIMA,L. Fita,RegIPSL,TBD,TBD,historical,planned,,
 SAM-22,CIMA,L. Fita,RegIPSL,TBD,TBD,ssp370,planned,,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,ERA5,,evaluation,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,TBD,historical,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,TBD,ssp119,planned,2023-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,TBD,ssp126,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,TBD,ssp370,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,CNRM-ESM2-1,TBD,,planned,2023-12,Considering ssp245 and/or ssp585
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,EC-Earth3-Veg,TBD,historical,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,EC-Earth3-Veg,TBD,ssp119,planned,2023-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,EC-Earth3-Veg,TBD,ssp126,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,EC-Earth3-Veg,TBD,ssp370,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,EC-Earth3-Veg,TBD,,planned,2023-12,Considering ssp245 and/or ssp585
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,HadGEM3-GC31-MM,TBD,historical,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,HadGEM3-GC31-MM,TBD,ssp119,planned,2023-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,HadGEM3-GC31-MM,TBD,ssp126,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,HadGEM3-GC31-MM,TBD,ssp370,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,HadGEM3-GC31-MM,TBD,,planned,2023-12,Considering ssp245 and/or ssp585
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,MPI-ESM1-2-HR,TBD,historical,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,MPI-ESM1-2-HR,TBD,ssp119,planned,2023-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,MPI-ESM1-2-HR,TBD,ssp126,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,MPI-ESM1-2-HR,TBD,ssp370,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,MPI-ESM1-2-HR,TBD,,planned,2023-12,Considering ssp245 and/or ssp585
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,TBD,historical,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,TBD,ssp119,planned,2023-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,TBD,ssp126,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,TBD,ssp370,planned,2022-12,
+SEA-22,MET-Malaysia,M. F. Ammar,WRF,NorESM2-MM,TBD,,planned,2023-12,Considering ssp245 and/or ssp585
 SEA-22,MO-BMKG,F. Cruz,RegCM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,
 SEA-22,MO-BMKG,F. Cruz,RegCM,EC-Earth3-Veg,r1i1p1f1,ssp119,planned,2023-12,
 SEA-22,MO-BMKG,F. Cruz,RegCM,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2022-12,
