@@ -179,9 +179,9 @@ EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,historical,planned,2023-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp126,planned,2023-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp370,planned,2023-12,#EURbalanced
 EUR-11,CUNI,M. Belda,RegCM,ERA5,,evaluation,planned,2022-12,#EURbalanced
-EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,#EURbalanced
-EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,#EURbalanced
-EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,#EURbalanced
+EUR-11,CUNI,M. Belda,RegCM,TBD,TBD,historical,planned,2023-12,#EURbalanced Likely CNRM-CM6 due to national project commitment
+EUR-11,CUNI,M. Belda,RegCM,TBD,TBD,ssp126,planned,2023-12,#EURbalanced Likely CNRM-CM6 due to national project commitment
+EUR-11,CUNI,M. Belda,RegCM,TBD,TBD,ssp370,planned,2023-12,#EURbalanced Likely CNRM-CM6 due to national project commitment
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,ERA5,,evaluation,planned,2022-12,#EURbalanced #NUKLEUS
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
