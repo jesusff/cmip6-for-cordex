@@ -63,7 +63,7 @@
 #    MRI-ESM2-0_r1i1p1f1:     
 #    NESM3_r1-2i1p1f1:                  
     NorESM2-MM_r1i1p1f1: CESM     
-    UKESM1-0-LL_r1-5i1p1f1: HadGEM            
+    UKESM1-0-LL_r1-19i1p1f2: HadGEM            
 
 - key: Bru20 perf
   doi: 10.5194/esd-11-995-2020

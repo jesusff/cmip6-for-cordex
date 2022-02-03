@@ -50,11 +50,11 @@
     MCM-UA-1-0_r1i1p1f1: -0.39
     UKESM1-0-LL_r1i1p1f2: -0.43
     MIROC6_r1i1p1f1: -3.31
-    MIROC-ES2L_r1i1p1f1: -6.97
+    MIROC-ES2L_r1i1p1f2: -6.97
     MPI-ESM1-2-HR_r1-2i1p1f1: -3.1
     MRI-ESM2-0_r1i1p1f1: -2.66
     NESM3_r1i1p1f1: -2.03
-    UKESM1-0-LL_r1i1p1f1: -0.43
+    UKESM1-0-LL_r1i1p1f2: -0.43
 
 - key: Oud20 jetposdelta
   doi: 10.1029/2019GL086695
@@ -93,7 +93,7 @@
       GFDL-ESM4_r1i1p1f1: 0.32
       IPSL-CM6A-LR_r1i1p1f1: 2.17
       MCM-UA-1-0_r1i1p1f1: 0.69
-      MIROC-ES2L_r1i1p1f1: 0.34
+      MIROC-ES2L_r1i1p1f2: 0.34
       MIROC6_r1i1p1f1: -0.24
       MPI-ESM1-2-HR_r1-2i1p1f1: 0.92
       MRI-ESM2-0_r1i1p1f1: -0.05
