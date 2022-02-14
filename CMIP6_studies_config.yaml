@@ -45,6 +45,11 @@ spatial_scope_filter:
     - SEA
     - special
 
+  SWIO: # Southwestern Indian Ocean
+    - Global
+    - Tropics
+    - special
+
 preferred: # Not implemented
   plausible_values_source: eurocordex_gcm_selection_team
   classes_source: eurocordex_gcm_selection_team
