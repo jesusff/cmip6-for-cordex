@@ -2,7 +2,7 @@ import glob
 import pandas as pd
 import yaml
 
-var = 'pr'
+var = 'tas'
 longname = dict(
   pr = 'Precipitation relative delta change',
   tas = 'Near surface temperature delta change'
@@ -10,12 +10,12 @@ longname = dict(
 units = dict(pr='percent', tas='K')
 dataset = dict(pr='pr_land', tas='tas_landsea')
 basedir = f'/home/chus/zzgit/IPCC-WG1/Atlas/datasets-aggregated-regionally/data/CMIP6/CMIP6_{dataset[var]}'
-scenarios = ['ssp126', 'ssp245','ssp370','ssp585']
+scenarios = ['ssp585']
 period_scen = slice('2071','2100')
 period_hist = slice('1981','2010')
-regions = ['NEU','WCE','MED','world']
+regions = ['MDG','SIO']
 #seasons = ['DJF', 'MAM', 'JJA', 'SON', 'Annual']
-seasons = ['DJF', 'JJA']
+seasons = ['Annual']
 months = dict(DJF=[1,2,12], MAM=[3,4,5], JJA=[6,7,8], SON=[9,10,11], Annual=range(1,13))
 
 def get_average(csv, period, region = 'world', season = 'Annual'):
@@ -61,11 +61,6 @@ for season in seasons:
       Data derived from
       https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-aggregated-regionally
       using the {dataset[var]} dataset.
-  disabled:
-    cause: preferred_source
-    preferred: 
-    comment: >
-      Too many possibilities for regions/seasons/scenarios available.
   spatial_scope: {'Global' if region=='world' else region}
   temporal_scope: {season}
   period:

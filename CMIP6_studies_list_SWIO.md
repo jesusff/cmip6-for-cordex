@@ -230,6 +230,60 @@ Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensit
 
 ```
 
+#### Atlas Dtas SIO Annual
+
+Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
+
+['Pers. Comm.', 'Jesus Fernandez']
+
+```
+- key: Atlas Dtas SIO Annual
+  doi: ['Pers. Comm.', 'Jesus Fernandez']
+  type: future_spread
+  spatial_scope: SIO
+  temporal_scope: Annual
+  data_source: author_adapted
+  metric:
+    name: delta_tas
+    long_name: Near surface temperature delta change 2071-2100 w.r.t. 1981-2010
+    units: K
+    variables: tas
+    comment:
+      Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
+      aggregated-regionally using the tas_landsea dataset.
+  period:
+    reference: 1981-2010
+    target: 2071-2100
+
+```
+
+#### Atlas Dtas MDG Annual
+
+Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
+
+['Pers. Comm.', 'Jesus Fernandez']
+
+```
+- key: Atlas Dtas MDG Annual
+  doi: ['Pers. Comm.', 'Jesus Fernandez']
+  type: future_spread
+  spatial_scope: MDG
+  temporal_scope: Annual
+  data_source: author_adapted
+  metric:
+    name: delta_tas
+    long_name: Near surface temperature delta change 2071-2100 w.r.t. 1981-2010
+    units: K
+    variables: tas
+    comment:
+      Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
+      aggregated-regionally using the tas_landsea dataset.
+  period:
+    reference: 1981-2010
+    target: 2071-2100
+
+```
+
 ### Other criteria
 #### Bru20 mfamily
 

@@ -48,6 +48,8 @@ spatial_scope_filter:
   SWIO: # Southwestern Indian Ocean
     - Global
     - Tropics
+    - SIO
+    - MDG
     - special
 
 preferred: # Not implemented
