@@ -294,7 +294,7 @@ f.write('</body></html>')
 f.close()
 
 # Headers as links (dirty stuff...)
-baseurl = f'https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_studies_list_{CORDEX_DOMAIN}.md'
+baseurl = f'https://github.com/jesusff/cmip6-for-cordex/blob/swio-region/CMIP6_studies_list_{CORDEX_DOMAIN}.md'
 with open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','r') as f:
   fulltext = f.read()
 
