@@ -67,8 +67,8 @@
     KIOST-ESM_r1i1p1f1: 1
     MCM-UA-1-0_r1i1p1f1: 1
     MIROC6_r1i1p1f1: 1
-    MIROC6-ES2L_r1-3i1p1f2: 1
-    MIROC6-ES2L_r5i1p1f1: 1
+    MIROC-ES2L_r1-3i1p1f2: 1
+    MIROC-ES2L_r5i1p1f2: 1
     MPI-ESM1-2-HR_r1-2i1p1f1: 1
     MPI-ESM1-2-LR_r1-10i1p1f1: 1
     MRI-ESM2-0_r1i1p1f1: 1
@@ -153,7 +153,7 @@
       KIOST-ESM_r1i1p1f1: 3
       MCM-UA-1-0_r1i1p1f1: 2
       MIROC6_r1i1p1f1: 2
-      MIROC6-ES2L_r1i1p1f2: 3
+      MIROC-ES2L_r1i1p1f2: 3
       MPI-ESM1-2-HR_r1-2i1p1f1: 3
       MPI-ESM1-2-LR_r1-10i1p1f1: 3
       MRI-ESM2-0_r1i1p1f1: 2

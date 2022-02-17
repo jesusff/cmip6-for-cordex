@@ -1340,6 +1340,8 @@ Located in [CMIP6_studies/Aerosol.yaml](CMIP6_studies/Aerosol.yaml)
       Data extracted from ESGF using  https://github.com/jesusff/cmip6-for-
       cordex/blob/main/util/aerosol_species.py which feeds from
       https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_for_CORDEX.py
+      Also, some pers. comm. for certain models that do not provide AOD by
+      aerosol species. S. Yang for the EC-Earth consortium models.
     best: bb, bc, dust, no3, oa, so4, ss, so4so, aerasymbnd, aeroptbnd, aerssabnd
 
 ```

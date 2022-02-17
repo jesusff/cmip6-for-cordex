@@ -10,6 +10,8 @@
       https://github.com/jesusff/cmip6-for-cordex/blob/main/util/aerosol_species.py
       which feeds from
       https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_for_CORDEX.py
+      Also, some pers. comm. for certain models that do not provide AOD by aerosol species.
+      S. Yang for the EC-Earth consortium models.
     best: bb, bc, dust, no3, oa, so4, ss, so4so, aerasymbnd, aeroptbnd, aerssabnd
   type: other
   spatial_scope: special
@@ -91,6 +93,9 @@
     CanESM5-CanOE_r1i1p2f1: dust ss
     CanESM5-CanOE_r2i1p2f1: dust ss
     CanESM5-CanOE_r3i1p2f1: dust ss
+    EC-Earth3_r1i1p1f1: MACv2-SP approach
+    EC-Earth3-Veg_r1-3i1p1f1: MACv2-SP approach
+    EC-Earth3-Veg_r6i1p1f1: MACv2-SP approach
     EC-Earth3-AerChem_r1i1p1f1: bc dust no3 oa so4 ss
     EC-Earth3-AerChem_r4i1p1f1: bc dust no3 oa so4 ss
     GFDL-ESM4_r1i1p1f1: bc dust no3 oa so4 ss

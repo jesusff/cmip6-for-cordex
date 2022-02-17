@@ -1,0 +1,7 @@
+- key: Cob21
+  doi: 10.1175/JCLI-D-21-0359.1
+  disabled:
+    cause: incomplete
+    comment: >
+      this paper could be used for regional performance metrics in several CORDEX domains
+  spatial_scope: Global

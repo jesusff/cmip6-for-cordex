@@ -1,0 +1,58 @@
+- key: Dalelane MNQS
+  doi: [pers. comm., C. Dalelane, DWD]
+  metric:
+    name: MNQS 
+    long_name: Multivariate Network Quality Score for Global Teleconnections
+    units: 1
+    variables: tos, z500
+    comment: >
+      Data is converted to seasonal anomalies, detrended with season-reliant trend-EOFs. 
+      Seasonal variances normalized. 
+      Adjacency-matrix between all pairs of grid cell with Spearman's rank correlation. 
+      Maximal domains in tos (z500) with average pairwise rank correlation>0.95(0.93)-
+      quantile of all pairwise correlations are found. All pairwise links between domains 
+      (area weighted average time series) calculated with Distance correlation in tos, 
+      z500 and cross-links between tos and z500. Tested to level 0.05 with control of 
+      False Discovery Rate=0.05. New adjacency matrices constructed based on domain links.
+      Adjacency matrices compared to references with Structural Similarity Index (SSIM).      
+      Exponential transform wrt. value 1 for all 3 variables (individual Network Quality 
+      Score-NQS). Geometric mean of NQSs over variables (Multivariate Network Quality Score,
+      MNQS). Average of MNQSs over references. 
+    best: 1
+    worst: 0
+  type: performance
+  spatial_scope: Global
+  temporal_scope: Annual
+  plausible_values:
+    min: 0
+    max: 1
+    source: author
+    comment: the higher the better, MNQS between references in the table for comparison
+  data_source: author 
+  data: 
+    ACCESS-CM2_r1i1p1f1: 0.790270
+    ACCESS-ESM1-5_r1i1p1f1: 0.765972
+    CESM2_r2i1p1f1: 0.752480
+    CMCC-CM2-SR5_r1i1p1f1: 0.748260
+    CMCC-ESM2_r1i1p1f2: 0.745913
+    CNRM-ESM2-1_r1i1p1f2: 0.753409
+    CanESM5_r1i1p2f1: 0.815094
+    EC-Earth3_r1i1p1f1: 0.818007
+    EC-Earth3-Veg_r1i1p1f1: 0.800464
+    IPSL-CM6A-LR_r1i1p1f1: 0.827832
+    MIROC6_r1i1p1f1: 0.797103
+    MIROC-ES2L_r1i1p1f2: 0.773061
+    MPI-ESM1-2-HR_r1i1p1f1: 0.840370
+    MPI-ESM1-2-LR_r1i1p1f1: 0.818414
+    NorESM2-LM_r1i1p1f1: 0.787007
+    NorESM2-MM_r1i1p1f1: 0.751460
+    TaiESM1_r1i1p1f1: 0.751145
+    UKESM1-0-LL_r1i1p1f2: 0.845081
+    MRI-ESM2-0_r1i1p1f1: 0.772159
+    CESM2_r1i1p1f1: 0.785879
+    HadGEM3-GC31-LL_r1i1p1f3: 0.821355
+    BCC-CSM2-MR_r1i1p1f1: 0.782083
+    CNRM-CM6-1_r1i1p1f1: 0.792255
+    CanESM5_r1i1p1f1: 0.779562
+  data_other:
+    Reanalyses: 0.883043 # CERA-20C and 20CRv3

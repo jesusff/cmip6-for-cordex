@@ -41,6 +41,7 @@ spatial_scope_filter:
   SEA:
     - Global
     - Tropics
+    - Asia
     - SEA
     - special
 
