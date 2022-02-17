@@ -6,6 +6,11 @@ update: update-esgf update-tables
 update-esgf:
 	python3 CMIP6_for_CORDEX.py
 
+update-plans:
+	python3 CMIP6_downscaling_plans_tables.py
+	python3 CORDEX_CMIP6_experiments.py
+	cd util; python3 CMIP6_matrix.py
+
 update-tables: AUS EUR MED SEA
 
 AUS:
