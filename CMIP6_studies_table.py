@@ -211,6 +211,10 @@ filter_avail = single_member(filter_avail)
 filter_avail_and_plausible = single_member(filter_avail_and_plausible)
 filter_plausible = single_member(filter_plausible)
 pd.set_option('precision', 2)
+format_dict = { # Format exceptions
+                         ('2. Plausibility', 'Nabat EUR AOD hist trend'): '{:.3f}',
+  ('3. Spread of future outcomes', 'Nabat EUR AOD future change ssp585'): '{:.3f}'
+}
 d1 = dict(selector=".level0", props=[('min-width', '150px')])
 f = open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w')
 f.write(f'''<!DOCTYPE html>
@@ -277,6 +281,7 @@ for item,filter_rows in enumerate([filter_avail_and_plausible, filter_avail, fil
     .loc[filter_rows]
     .convert_dtypes(convert_string = False, convert_boolean = False)
     .style
+      .format(format_dict)
       .set_properties(**{'font-size':'8pt', 'border':'1px lightgrey solid !important'})
       .set_table_styles([d1,{
         'selector': 'th',
