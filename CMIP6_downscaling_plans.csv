@@ -49,9 +49,9 @@ AUS-17,BoM,A. Dowdy,BARPA,MRI-ESM2-0,r1i1p1f1,ssp370,planned,,
 AUS-17,BoM,A. Dowdy,BARPA,NorESM2-MM,r1i1p1f1,historical,planned,,
 AUS-17,BoM,A. Dowdy,BARPA,NorESM2-MM,r1i1p1f1,ssp126,planned,,
 AUS-17,BoM,A. Dowdy,BARPA,NorESM2-MM,r1i1p1f1,ssp370,planned,,
-AUS-17,DPE,G. di Virgilio,NARCliM-DPE,TBD,r1i1p1f1,historical,planned,,
-AUS-17,DPE,G. di Virgilio,NARCliM-DPE,TBD,r1i1p1f1,ssp126,planned,,
-AUS-17,DPE,G. di Virgilio,NARCliM-DPE,TBD,r1i1p1f1,ssp370,planned,,
+AUS-17,NARCliM-DPE,G. di Virgilio,WRF,TBD,r1i1p1f1,historical,planned,,
+AUS-17,NARCliM-DPE,G. di Virgilio,WRF,TBD,r1i1p1f1,ssp126,planned,,
+AUS-17,NARCliM-DPE,G. di Virgilio,WRF,TBD,r1i1p1f1,ssp370,planned,,
 CAM-11,UCR,H. Hidalgo,ESD-BCSD/delta,ERA5,,evaluation,planned,,Method: BCSD (Wood et al. 2004) or delta (Navarro-Racines et al. 2020)
 CAM-11,UCR,H. Hidalgo,ESD-BCSD/delta,ACCESS-CM2,r1i1p1f1,historical,planned,,
 CAM-11,UCR,H. Hidalgo,ESD-BCSD/delta,ACCESS-CM2,r1i1p1f1,ssp126,planned,,
@@ -138,7 +138,7 @@ EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TBD2,TBD,ssp370,planned,2023-1
 EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TBD2,TBD,historical,planned,2023-12,#EURbalanced Number of models and scenarios TBD #ManyGCM
 EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced Number of models and scenarios TBD #ManyGCM
 EUR-11,CLMcom,clm coordination at dwd de,COSMO-CLM,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced Number of models and scenarios TBD #ManyGCM
-EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,ERA5,,evaluation,running,2022-02,#EURbalanced #NUKLEUS
+EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,ERA5,,evaluation,completed,2022-02,#EURbalanced #NUKLEUS
 EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-05,#EURbalanced #NUKLEUS
 EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,#EURbalanced #NUKLEUS
 EUR-11,CLMcom-BTU,K. Keuler / N. Samtleben,ICON-CLM,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
@@ -149,10 +149,10 @@ EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,ERA5,,evaluation,planned,,#E
 EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD3,TBD,historical,planned,,#EURbalanced #ManyGCM
 EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD3,TBD,ssp126,planned,,#EURbalanced #ManyGCM
 EUR-11,CLMcom-CMCC,M. Raffa / M. Adinolfi,COSMO-CLM,TBD3,TBD,ssp370,planned,,#EURbalanced #ManyGCM
-EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,ERA5,,evaluation,completed,,#EURcoupled COSMO-CLM + Community Land Model + ParFlow hydrological model. There aree currently 2 runs: 3D subsurface hydrodynmics and one with 3D subsurface hydrodynamics and human water use; a run with 1D subsurface hydrodynamics might be added
-EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURcoupled
-EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURcoupled
-EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-0-1-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,#EURcoupled
+EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-01-CLM3-5-0-ParFlow3-9-0,ERA5,,evaluation,completed,,#EURcoupled COSMO-CLM + Community Land Model + ParFlow hydrological model. There aree currently 2 runs: 3D subsurface hydrodynmics and one with 3D subsurface hydrodynamics and human water use; a run with 1D subsurface hydrodynamics might be added
+EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURcoupled
+EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURcoupled
+EUR-11,CLMcom-FZJ,K. Goergen,COSMO-CLM5-01-CLM3-5-0-ParFlow3-9-0,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,#EURcoupled
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,ERA5,,evaluation,running,2022-02,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-05,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
 EUR-11,CLMcom-Hereon-KIT,R. Petrik / H. Feldmann,COSMO-CLM,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-08,#EURbalanced #EURcoupled #NUKLEUS #ManyGCM
@@ -319,13 +319,11 @@ MED-11,ENEA,G. Sannino,WRF-MITgcm,NorESM2-MM,r1i1p1f1,ssp245,planned,2022-12,
 MED-11,ENEA,G. Sannino,WRF-MITgcm,NorESM2-MM,r1i1p1f1,ssp585,planned,2022-12,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,ERA5,,evaluation,completed,2022-12,Two members with perturbed initial conditions
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,historical,completed,2022-01,
-NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,ssp126,planned,2022-12,
-NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,ssp370,planned,2022-12,
-NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,,planned,2022-12,Considering ssp245 and/or ssp585
+NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,ssp126,running,2022-12,
+NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,ssp370,running,2022-12,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,MPI-ESM1-2-HR,r1i1p1f1,historical,running,2022-12,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,
-NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,MPI-ESM1-2-HR,r1i1p1f1,,planned,2022-12,Considering ssp245 and/or ssp585
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CNRM-ESM2-1,r1i1p1f2,historical,running,2022-12,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2022-12,
 MENA-22,DGM-UIZ,K. El Rhaz / M. Rachid,WRF,ERA5,,evaluation,completed,2022-01,
