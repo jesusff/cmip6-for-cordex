@@ -39,35 +39,36 @@
         and an alternative reanalysis (NCAR-NCEP1) is in the table for comparison.
   data_source: author 
   data: 
-    ACCESS-CM2_r1i1p1f1: 0.82
-    AWI-ESM-1-1-LR_r1i1p1f1: 0.77
-    BCC-CSM2-MR_r1i1p1f1: 0.82
-    BCC-ESM1_r1i1p1f1: 0.83
-    CanESM5_r1i1p1f1: 0.80
-    CESM2_r1i1p1f1: 0.81
-    CESM2-FV2_r1i1p1f1: 0.80
-    CESM2-WACCM-FV2_r1i1p1f1: 0.79
-    CNRM-CM6-1_r1i1p1f2: 0.76
-    EC-Earth3_r1i1p1f1: 0.80
-    FGOALS-f3-L_r1i1p1f1: 0.77
-    FGOALS-g3_r1i1p1f1: 0.78
-    GISS-E2-1-G_r1i1p1f1: 0.77
-    HadGEM3-GC31-LL_r1i1p1f3: 0.81
-    HadGEM3-GC31-MM_r1i1p1f3: 0.82
-    INM-CM4-8_r1i1p1f1: 0.79
-    INM-CM5-0_r1i1p1f1: 0.82
-    IPSL-CM6A-LR_r1i1p1f1: 0.77
-    IPSL-CM6A-LR-INCA_r1i1p1f1: 0.73
-    KACE-1-0-G_r1i1p1f1: 0.83
-    MIROC6_r1i1p1f1: 0.79
-    MPI-ESM-1-2-HAM_r1i1p1f1: 0.82
-    MPI-ESM1-2-HR_r1i1p1f1: 0.85
-    MPI-ESM1-2-LR_r1i1p1f1: 0.80
-    MRI-ESM2-0_r1i1p1f1: 0.83
-    NorESM2-LM_r1i1p1f1: 0.77
-    NorESM2-MM_r1i1p1f1: 0.82
-    TaiESM1_r1i1p1f1: 0.82
-    UKESM1-0-LL_r1i1p1f2: 0.81
+    ACCESS-CM2_r1i1p1f1: 0.84
+    AWI-ESM-1-1-LR_r1i1p1f1: 0.79
+    BCC-CSM2-MR_r1i1p1f1: 0.83
+    BCC-ESM1_r1i1p1f1: 0.84
+    CanESM5_r1i1p1f1: 0.82
+    CESM2_r1i1p1f1: 0.83
+    CESM2-FV2_r1i1p1f1: 0.82
+    CESM2-WACCM-FV2_r1i1p1f1: 0.81
+    CNRM-CM6-1_r1i1p1f2: 0.79
+    CNRM-ESM2-1_r1i1p1f2: 0.79
+    EC-Earth3_r1i1p1f1: 0.82
+    FGOALS-f3-L_r1i1p1f1: 0.79
+    FGOALS-g3_r1i1p1f1: 0.80
+    GISS-E2-1-G_r1i1p1f1: 0.79
+    HadGEM3-GC31-LL_r1i1p1f3: 0.83
+    HadGEM3-GC31-MM_r1i1p1f3: 0.84
+    INM-CM4-8_r1i1p1f1: 0.81
+    INM-CM5-0_r1i1p1f1: 0.84
+    IPSL-CM6A-LR_r1i1p1f1: 0.79
+    IPSL-CM6A-LR-INCA_r1i1p1f1: 0.76
+    KACE-1-0-G_r1i1p1f1: 0.85
+    MIROC6_r1i1p1f1: 0.81
+    MPI-ESM-1-2-HAM_r1i1p1f1: 0.83
+    MPI-ESM1-2-HR_r1i1p1f1: 0.87
+    MPI-ESM1-2-LR_r1i1p1f1: 0.82
+    MRI-ESM2-0_r1i1p1f1: 0.85
+    NorESM2-LM_r1i1p1f1: 0.80
+    NorESM2-MM_r1i1p1f1: 0.84
+    TaiESM1_r1i1p1f1: 0.83
+    UKESM1-0-LL_r1i1p1f2: 0.83
   data_other: 
     ERA-Interim: 1.00 # reference reanalysis
-    NCAR-NCEP1: 0.89
+    NCAR-NCEP1: 0.90
