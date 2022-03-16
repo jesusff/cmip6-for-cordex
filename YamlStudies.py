@@ -216,7 +216,7 @@ class SubKeys:
 
 def load_from_files(pattern, skip_disabled = False, skip_cause = '', resolve_doi = False):
   alldata = []
-  for fname in glob.glob(pattern):
+  for fname in sorted(glob.glob(pattern)):
     with open(fname) as fp:
       entrylist = yaml.load(fp, Loader=yaml.FullLoader)
       for x in entrylist: x['file'] = fname
