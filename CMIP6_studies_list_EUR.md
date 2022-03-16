@@ -1,9 +1,11 @@
 ## Incomplete entries
 
+ * [Cob21](CMIP6_studies/Cob21.yaml)
  * [Fas20](CMIP6_studies/Fas20.yaml)
  * [Beo21](CMIP6_studies/Beo21.yaml)
 ## Disabled entries
 
+ · [Cob21](CMIP6_studies/Cob21.yaml)
  · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
  · [Fas20](CMIP6_studies/Fas20.yaml)
  · [Atlas Dtas WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
@@ -103,6 +105,49 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
 
 ```
 
+#### Dalelane MNQS
+
+Located in [CMIP6_studies/Dalelane.yaml](CMIP6_studies/Dalelane.yaml)
+
+['pers. comm.', 'C. Dalelane', 'DWD']
+
+```
+- key: Dalelane MNQS
+  doi: ['pers. comm.', 'C. Dalelane', 'DWD']
+  type: performance
+  spatial_scope: Global
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: MNQS
+    long_name: Multivariate Network Quality Score for Global Teleconnections
+    units: 1
+    variables: tos, z500
+    comment:
+      Data is converted to seasonal anomalies, detrended with season-reliant
+      trend-EOFs.  Seasonal variances normalized.  Adjacency-matrix between all
+      pairs of grid cell with Spearman's rank correlation.  Maximal domains in
+      tos (z500) with average pairwise rank correlation>0.95(0.93)- quantile of
+      all pairwise correlations are found. All pairwise links between domains
+      (area weighted average time series) calculated with Distance correlation
+      in tos,  z500 and cross-links between tos and z500. Tested to level 0.05
+      with control of  False Discovery Rate=0.05. New adjacency matrices
+      constructed based on domain links. Adjacency matrices compared to
+      references with Structural Similarity Index (SSIM).       Exponential
+      transform wrt. value 1 for all 3 variables (individual Network Quality
+      Score-NQS). Geometric mean of NQSs over variables (Multivariate Network
+      Quality Score, MNQS). Average of MNQSs over references.
+    best: 1
+    worst: 0
+  plausible_values:
+  - min: 0
+    max: 1
+    source: author
+    comment:
+      the higher the better, MNQS between references in the table for comparison
+
+```
+
 #### Qasmi Constr Global Dtas ssp245 2050
 
 Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
@@ -139,6 +184,54 @@ None
       ensemble mean is used in this study for every model. Note that this
       criteria is very strict and can potentially eliminate a large number of
       GCMs.
+
+```
+
+#### Bra21 Lamb EUR
+
+Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
+
+Preferred to [CMIP6_studies/Can20.yaml](CMIP6_studies/Can20.yaml)
+[CMIP6_studies/Fer21.yaml](CMIP6_studies/Fer21.yaml)
+
+Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
+
+```
+- key: Bra21 Lamb EUR
+  doi: 10.5194/gmd-2020-418
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  data_source: author_adapted
+  metric:
+    name: lwtmae
+    long_name: MAE of 27 Lamb Weather Type relative frequencies
+    units: percent
+    variables: psl
+    comment:
+      Mean absolute error (MAE) of the simulated vs. quasi-observed (reanalysis)
+      relative frequencies for the 27 Lamb Weather Types representing recurrent
+      regional atmospheric circulation patterns. The MAE was calculated
+      separately for each grid box of a regular 2.5 deg lat-lon mesh extending
+      from 22.5W to 42.5E and 30N to 70N. The spatial median MAE is provided
+      here. Reference dataset to compute the metric is ERA-Interim. As
+      reference, the value for the JRA-55 reanalysis (EUR) is 0.0956
+    best: 0
+    worst: 100
+  period:
+    reference: 1979-2005
+  plausible_values:
+  - min: 0
+    max: 1
+    source: eurocordex_gcm_selection_team
+    comment:
+      Test value
+  - min: 0
+    max: 5
+    source: author
+    comment:
+      The range of plausible values is directly obtained from the reference, the
+      maximum MAE obtained there is here rounded to the next integer.
 
 ```
 
@@ -248,142 +341,6 @@ Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric 
 
 ```
 
-#### Pri20 storm track
-
-Located in [CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
-
-Preferred to [CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
-[CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
-
-Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tracks in CMIP6 Historical Simulations, https://doi.org/10.1175%2Fjcli-d-19-0928.1
-
-```
-- key: Pri20 storm track
-  doi: 10.1175/JCLI-D-19-0928.1
-  type: performance
-  spatial_scope: EUR
-  temporal_scope: DJF+JJA
-  data_source: author
-  metric:
-    name: storm_track
-    long_name: zonal mean North Atlantic storm track
-    units: categorical
-    variables: ua850 va850 MSLP 850 relative vorticity
-    comment:
-      Scoring of models on performance for the North Atlantic storm track. Based
-      on RMSE of the zonal mean track profile between 25-80N compared to ERA5
-      and qualitative assessment of the trimodal structure of the storm track.
-      Storm track calculated by method in Priestly et al. (2020), data and
-      scores provided by author. Based on the method of qualitative scoring in
-      McSweeney et al. (2015) and adapted for CMIP6. The scoring has been
-      changed from the traffic light coding to numbers for EURO-CORDEX.  Values
-      0 - Low errors over both local and remote regions.     Captures key
-      characteristics of the criteria spatially or temporarily, 1 - Some
-      substantial errors present but not widespread or not present in     the
-      local region of interest. Location of larger remote errors are not
-      known to have a downstream impact in the local region of interest.
-      Captures key characteristics of the criteria spatially or temporarily, 2 -
-      Substantial errors in remote regions where downstream effects could     be
-      expected to impact on the reliability of regional information     and/or
-      present in the local region of interest, 3 - Large widespread errors to
-      the extent that the model is unable to     represent the present-day
-      climatology in a useful way and future     projections by the model cannot
-      be interpreted in a meaningful way.
-    best: 0
-    worst: 3
-  period:
-    reference: 1979-2014
-  plausible_values:
-  - min: 0
-    max: 2
-    source: author
-    comment:
-      Large widespread errors (value 3) lead to consider the model unplausible.
-
-```
-
-#### Oud20 jetpos
-
-Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
-
-Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet Change in CMIP5 and CMIP6 Models, https://doi.org/10.1029%2F2019gl086695
-
-```
-- key: Oud20 jetpos
-  doi: 10.1029/2019GL086695
-  type: performance
-  spatial_scope: EUR
-  temporal_scope: ONDJFM
-  data_source: author
-  metric:
-    name: jetpos
-    long_name: Jet Stream North-South relative position
-    units: degrees_north
-    variables: ua850
-    comment:
-      Jet position bias against ERA5 in the Central Atlantic region. Note that
-      the bias is estimated by subtracting the ONDJFM mean eddy-driven jet
-      position over the period 1979-2018 in ERA5 to each model mean eddy-driven
-      jet position over the same period.
-    best: 0
-    worst: [90, -90]
-  period:
-    reference: 1979-2018
-  plausible_values:
-  - min: -3
-    max: 3
-    source: author
-
-```
-
-#### Bra21 Lamb EUR
-
-Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
-
-Preferred to [CMIP6_studies/Can20.yaml](CMIP6_studies/Can20.yaml)
-[CMIP6_studies/Fer21.yaml](CMIP6_studies/Fer21.yaml)
-
-Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
-
-```
-- key: Bra21 Lamb EUR
-  doi: 10.5194/gmd-2020-418
-  type: performance
-  spatial_scope: EUR
-  temporal_scope: Annual
-  data_source: author_adapted
-  metric:
-    name: lwtmae
-    long_name: MAE of 27 Lamb Weather Type relative frequencies
-    units: percent
-    variables: psl
-    comment:
-      Mean absolute error (MAE) of the simulated vs. quasi-observed (reanalysis)
-      relative frequencies for the 27 Lamb Weather Types representing recurrent
-      regional atmospheric circulation patterns. The MAE was calculated
-      separately for each grid box of a regular 2.5 deg lat-lon mesh extending
-      from 22.5W to 42.5E and 30N to 70N. The spatial median MAE is provided
-      here. Reference dataset to compute the metric is ERA-Interim. As
-      reference, the value for the JRA-55 reanalysis (EUR) is 0.0956
-    best: 0
-    worst: 100
-  period:
-    reference: 1979-2005
-  plausible_values:
-  - min: 0
-    max: 1
-    source: eurocordex_gcm_selection_team
-    comment:
-      Test value
-  - min: 0
-    max: 5
-    source: author
-    comment:
-      The range of plausible values is directly obtained from the reference, the
-      maximum MAE obtained there is here rounded to the next integer.
-
-```
-
 #### Dobler SST rmse EUR
 
 Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
@@ -430,80 +387,6 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
     comment:
       Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
       next half integer.
-
-```
-
-#### Nabat EUR AOD
-
-Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
-
-['pers_comm', 'Pierre Nabat']
-
-```
-- key: Nabat EUR AOD
-  doi: ['pers_comm', 'Pierre Nabat']
-  type: performance
-  spatial_scope: EUR
-  temporal_scope: Annual
-  data_source: author
-  metric:
-    name: aod_rmse
-    long_name: plausibillity of RMSE of the European Aerosol Optical Depth
-    units: aod
-    variables: aod550
-    comment:
-      Aerosol Optical Depth (AOD) spatial RMSE, annual mean, satellite reference
-      dataset (MACv2, 2000-2014)
-    best: 0
-    worst: +inf
-  plausible_values:
-  - min: 0
-    max: 0.2
-    source: author
-    comment:
-      Plausibility threshold is set at 0.2. All models are below 0.2 except for
-      2 GCMs from the same institute that are above 0.7
-
-```
-
-#### Nabat EUR AOD hist trend
-
-Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
-
-['pers_comm', 'Pierre Nabat']
-
-```
-- key: Nabat EUR AOD hist trend
-  doi: ['pers_comm', 'Pierre Nabat']
-  type: performance
-  spatial_scope: EUR
-  temporal_scope: Annual
-  data_source: author
-  metric:
-    name: aod_histtrend
-    long_name: plausibillity of past trend of the European Aerosol Optical Depth
-    units: aod
-    variables: aod550
-    comment:
-      Change in Aerosol Optical Depth (AOD) between 2 sub-periods of the
-      historical run, annual mean Difference in AOD is computed between
-      2000-2014 and 1976-1990.  This period corresponds to the well-known
-      brightening period in Europe during which it is virtual certain that AOD
-      has decreased over Europe This metrics is inspired by Nabat et al. 2014,
-      doi:10.1002/2014GL060798 The MACv2 dataset can be used to obtain a low-
-      confidence estimate of the real value.  MACv2 shows a AOD decrease of
-      -0.0315 between 1976-1990 and 2000-2014. Any GCM having a trend more than
-      2 times MACv2 (<-0.08) can be considered as showing a strong AOD past
-      trend that will contribute to re-inforce the historical warming in the RCM
-    best: 0
-    worst: +inf
-  plausible_values:
-  - min: -999
-    max: 0
-    source: author
-    comment:
-      Plausibility threshold is set at 0, meaning that any postive value
-      (increase in AOD over the period) is considered as implausible.
 
 ```
 
@@ -598,6 +481,213 @@ C. F. McSweeney et al. (2014) Selecting CMIP5 GCMs for downscaling over multiple
   - min: 0
     max: 2
     source: author
+
+```
+
+#### Nabat EUR AOD
+
+Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
+
+['pers_comm', 'Pierre Nabat']
+
+```
+- key: Nabat EUR AOD
+  doi: ['pers_comm', 'Pierre Nabat']
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: aod_rmse
+    long_name: plausibillity of RMSE of the European Aerosol Optical Depth
+    units: aod
+    variables: aod550
+    comment:
+      Aerosol Optical Depth (AOD) spatial RMSE, annual mean, satellite reference
+      dataset (MACv2, 2000-2014)
+    best: 0
+    worst: +inf
+  plausible_values:
+  - min: 0
+    max: 0.2
+    source: author
+    comment:
+      Plausibility threshold is set at 0.2. All models are below 0.2 except for
+      2 GCMs from the same institute that are above 0.7
+
+```
+
+#### Nabat EUR AOD hist trend
+
+Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
+
+['pers_comm', 'Pierre Nabat']
+
+```
+- key: Nabat EUR AOD hist trend
+  doi: ['pers_comm', 'Pierre Nabat']
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: aod_histtrend
+    long_name: plausibillity of past trend of the European Aerosol Optical Depth
+    units: aod
+    variables: aod550
+    comment:
+      Change in Aerosol Optical Depth (AOD) between 2 sub-periods of the
+      historical run, annual mean Difference in AOD is computed between
+      2000-2014 and 1976-1990.  This period corresponds to the well-known
+      brightening period in Europe during which it is virtual certain that AOD
+      has decreased over Europe This metrics is inspired by Nabat et al. 2014,
+      doi:10.1002/2014GL060798 The MACv2 dataset can be used to obtain a low-
+      confidence estimate of the real value.  MACv2 shows a AOD decrease of
+      -0.0315 between 1976-1990 and 2000-2014. Any GCM having a trend more than
+      2 times MACv2 (<-0.08) can be considered as showing a strong AOD past
+      trend that will contribute to re-inforce the historical warming in the RCM
+    best: 0
+    worst: +inf
+  plausible_values:
+  - min: -999
+    max: 0
+    source: author
+    comment:
+      Plausibility threshold is set at 0, meaning that any postive value
+      (increase in AOD over the period) is considered as implausible.
+
+```
+
+#### Oud20 jetpos
+
+Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
+
+Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet Change in CMIP5 and CMIP6 Models, https://doi.org/10.1029%2F2019gl086695
+
+```
+- key: Oud20 jetpos
+  doi: 10.1029/2019GL086695
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: ONDJFM
+  data_source: author
+  metric:
+    name: jetpos
+    long_name: Jet Stream North-South relative position
+    units: degrees_north
+    variables: ua850
+    comment:
+      Jet position bias against ERA5 in the Central Atlantic region. Note that
+      the bias is estimated by subtracting the ONDJFM mean eddy-driven jet
+      position over the period 1979-2018 in ERA5 to each model mean eddy-driven
+      jet position over the same period.
+    best: 0
+    worst: [90, -90]
+  period:
+    reference: 1979-2018
+  plausible_values:
+  - min: -3
+    max: 3
+    source: author
+
+```
+
+#### Pri20 storm track
+
+Located in [CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
+
+Preferred to [CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
+[CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
+
+Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tracks in CMIP6 Historical Simulations, https://doi.org/10.1175%2Fjcli-d-19-0928.1
+
+```
+- key: Pri20 storm track
+  doi: 10.1175/JCLI-D-19-0928.1
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJF+JJA
+  data_source: author
+  metric:
+    name: storm_track
+    long_name: zonal mean North Atlantic storm track
+    units: categorical
+    variables: ua850 va850 MSLP 850 relative vorticity
+    comment:
+      Scoring of models on performance for the North Atlantic storm track. Based
+      on RMSE of the zonal mean track profile between 25-80N compared to ERA5
+      and qualitative assessment of the trimodal structure of the storm track.
+      Storm track calculated by method in Priestly et al. (2020), data and
+      scores provided by author. Based on the method of qualitative scoring in
+      McSweeney et al. (2015) and adapted for CMIP6. The scoring has been
+      changed from the traffic light coding to numbers for EURO-CORDEX.  Values
+      0 - Low errors over both local and remote regions.     Captures key
+      characteristics of the criteria spatially or temporarily, 1 - Some
+      substantial errors present but not widespread or not present in     the
+      local region of interest. Location of larger remote errors are not
+      known to have a downstream impact in the local region of interest.
+      Captures key characteristics of the criteria spatially or temporarily, 2 -
+      Substantial errors in remote regions where downstream effects could     be
+      expected to impact on the reliability of regional information     and/or
+      present in the local region of interest, 3 - Large widespread errors to
+      the extent that the model is unable to     represent the present-day
+      climatology in a useful way and future     projections by the model cannot
+      be interpreted in a meaningful way.
+    best: 0
+    worst: 3
+  period:
+    reference: 1979-2014
+  plausible_values:
+  - min: 0
+    max: 2
+    source: author
+    comment:
+      Large widespread errors (value 3) lead to consider the model unplausible.
+
+```
+
+#### Winderlich SCQS
+
+Located in [CMIP6_studies/Winderlich.yaml](CMIP6_studies/Winderlich.yaml)
+
+['pers_comm', 'K. Winderlich', 'DWD']
+
+```
+- key: Winderlich SCQS
+  doi: ['pers_comm', 'K. Winderlich', 'DWD']
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: SCQS
+    long_name: Synoptic Circulation Quality Score
+    units: 1
+    variables: z500
+    comment:
+      Domain is CORDEX-EUR. Data z500 is converted to daily anomalies and
+      normalized by daily standard deviation. Data are then attributed to
+      previously obtained Synoptic Circulation (SP) classes. Number of Synoptic
+      Circulation classes is 43 (derived on daily ERA-Interim data, 1979-2018).
+      For each model, 7 variables are computed from the attributed daily data.
+      1) HIST - frequency of each SP-class (year through) 2) HIST_JFD -
+      frequency of each SP-class (winter) 3) HIST_MAM - frequency of each SP-
+      class (spring) 4) HIST_JJA - frequency of each SP-class (summer) 5)
+      HIST_SON - frequency of each SP-class (autumn) 6) SEQUENCE - matrix of
+      frequencies for the subsequent occurrence               of the pair of two
+      synoptic patterns SPi?SPj. 7) PERSISTENCE - matrix of frequency for
+      persistence of each                  SP-class for 1,2,3,.. N days in a
+      row.   The SCQS is computed as the mean of 7 individual Quality Scores
+      computed on each of these variables.
+    best: 1
+    worst: 0
+  plausible_values:
+  - min: 0
+    max: 1
+    source: author
+    comment:
+      The higher the better, SCQS between reference reanalysis (ERA-Interim) and
+      an alternative reanalysis (NCAR-NCEP1) is in the table for comparison.
 
 ```
 
@@ -1000,37 +1090,6 @@ Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensit
 
 ```
 
-#### Oud20 jetposdelta
-
-Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
-
-Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet Change in CMIP5 and CMIP6 Models, https://doi.org/10.1029%2F2019gl086695
-
-```
-- key: Oud20 jetposdelta
-  doi: 10.1029/2019GL086695
-  type: future_spread
-  spatial_scope: EUR
-  temporal_scope: ONDJFM
-  metric:
-    name: jetposdelta
-    long_name: Jet Stream North-South position delta change
-    units: degrees_north
-    variables: ua850
-    comment:
-      Jet position delta change estimated by subtracting the ONDJFM mean eddy-
-      driven jet position over the period 2080-2099 (ssp585) w.r.t.
-      preindustrial 1860-1900
-  period:
-    reference: 1860-1900
-    target: 2080-2099
-  classes:
-  - limits: [-90, -0.5, 0.5, 90]
-    labels: ['strong south change', 'weak change', 'strong north change']
-    source: author
-
-```
-
 #### Nabat EUR AOD future change
 
 Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
@@ -1062,6 +1121,37 @@ Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
     source: author
     comment:
 
+
+```
+
+#### Oud20 jetposdelta
+
+Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
+
+Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet Change in CMIP5 and CMIP6 Models, https://doi.org/10.1029%2F2019gl086695
+
+```
+- key: Oud20 jetposdelta
+  doi: 10.1029/2019GL086695
+  type: future_spread
+  spatial_scope: EUR
+  temporal_scope: ONDJFM
+  metric:
+    name: jetposdelta
+    long_name: Jet Stream North-South position delta change
+    units: degrees_north
+    variables: ua850
+    comment:
+      Jet position delta change estimated by subtracting the ONDJFM mean eddy-
+      driven jet position over the period 2080-2099 (ssp585) w.r.t.
+      preindustrial 1860-1900
+  period:
+    reference: 1860-1900
+    target: 2080-2099
+  classes:
+  - limits: [-90, -0.5, 0.5, 90]
+    labels: ['strong south change', 'weak change', 'strong north change']
+    source: author
 
 ```
 
@@ -1346,38 +1436,6 @@ Located in [CMIP6_studies/Aerosol.yaml](CMIP6_studies/Aerosol.yaml)
 
 ```
 
-#### atm. res. km
-
-Located in [CMIP6_studies/Resolution.yaml](CMIP6_studies/Resolution.yaml)
-
-None
-
-```
-- key: atm. res. km
-  doi: None
-  type: other
-  spatial_scope: special
-  temporal_scope: Annual
-  data_source: author
-  metric:
-    name: resolution
-    long_name: Nominal resolution of the atmospheric component
-    units: km
-    variables: None
-    comment:
-      Data extracted from the CMIP github https://github.com/WCRP-
-      CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json using
-      util/resolution_to_yaml.py Manually edited to include appropriate runs.
-    best: 0
-  plausible_values:
-  - min: 0
-    max: 300
-    source: eurocordex_gcm_selection_team
-    comment:
-      Test value
-
-```
-
 #### Bra21 complexity
 
 Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
@@ -1429,6 +1487,38 @@ Located in [CMIP6_studies/Calendar.yaml](CMIP6_studies/Calendar.yaml)
     variables: None
     comment:
       Data extracted from ESGF
+
+```
+
+#### atm. res. km
+
+Located in [CMIP6_studies/Resolution.yaml](CMIP6_studies/Resolution.yaml)
+
+None
+
+```
+- key: atm. res. km
+  doi: None
+  type: other
+  spatial_scope: special
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: resolution
+    long_name: Nominal resolution of the atmospheric component
+    units: km
+    variables: None
+    comment:
+      Data extracted from the CMIP github https://github.com/WCRP-
+      CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json using
+      util/resolution_to_yaml.py Manually edited to include appropriate runs.
+    best: 0
+  plausible_values:
+  - min: 0
+    max: 300
+    source: eurocordex_gcm_selection_team
+    comment:
+      Test value
 
 ```
 
