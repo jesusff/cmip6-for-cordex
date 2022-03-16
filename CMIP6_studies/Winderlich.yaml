@@ -1,58 +1,73 @@
-- key:  Synoptic Circulation Quality Score
+- key: Winderlich SCQS
   doi: [pers_comm, K. Winderlich, DWD]
   metric:
     name: SCQS 
-    long_name: Synoptic Circulations Quality Score 
-    units: 
+    long_name: Synoptic Circulation Quality Score 
+    units: 1
     variables: z500
-    comment: Domain is CORDEX-EU. Data z500 is converted to daily anomalies and normalized by daily standard deviation.
-             Data are than attributed to previously obtained Synoptic Circulation (SP) classes. 
-             Number of Synoptic Circulation classes: 43 (derived on daily ERA-Interim data, 1979-2018).
-             For each model 7 variables are computed from the attributed daily data:              
-             1) HIST - frequency of each SP-class (year through)
-             2) HIST_JFD - frequency of each SP-class (winter)
-             3) HIST_MAM - frequency of each SP-class (spring)
-             4) HIST_JJA - frequency of each SP-class (summer)
-             5) HIST_SON - frequency of each SP-class (autumn)
-             6) SEQUENCE – matrix of frequencies for the subsequent occurrence of the pair of two synoptic patterns SPi?SPj.
-             7) PERSISTENCE – matrix of frequency for persistence of each SP-class for 1,2,3,.. N days in a row. 
-             The SCQS is computed as the mean of 7 individual Quality Scores computed on each of these variables.              
-     best: 1
-     worst: 0
+    comment: |
+      Domain is CORDEX-EUR. Data z500 is converted to daily anomalies and
+      normalized by daily standard deviation. Data are then attributed to
+      previously obtained Synoptic Circulation (SP) classes. Number of
+      Synoptic Circulation classes is 43 (derived on daily ERA-Interim data,
+      1979-2018). For each model, 7 variables are computed from the
+      attributed daily data.
+
+      1) HIST - frequency of each SP-class (year through)
+      2) HIST_JFD - frequency of each SP-class (winter)
+      3) HIST_MAM - frequency of each SP-class (spring)
+      4) HIST_JJA - frequency of each SP-class (summer)
+      5) HIST_SON - frequency of each SP-class (autumn)
+      6) SEQUENCE - matrix of frequencies for the subsequent occurrence
+                    of the pair of two synoptic patterns SPi?SPj.
+      7) PERSISTENCE - matrix of frequency for persistence of each
+                       SP-class for 1,2,3,.. N days in a row. 
+
+      The SCQS is computed as the mean of 7 individual Quality Scores
+      computed on each of these variables.              
+    best: 1
+    worst: 0
   type: performance
-  spatial_scope: Regional
-  temporal_scope: Daily, Seasonal
-  plausible_values: the higher the better, SCQS between reference reanalysis (ERA-Interim) and an alternative reanalysis (NCAR-NCEP1) is in the table for comparison.
+  spatial_scope: EUR
+  temporal_scope: Annual
+  plausible_values:
+    - min: 0
+      max: 1
+      source: author
+      comment: >
+        The higher the better, SCQS between reference reanalysis (ERA-Interim)
+        and an alternative reanalysis (NCAR-NCEP1) is in the table for comparison.
   data_source: author 
   data: 
-    ERA-Interim		reference reanalysis	1.00
-    NCAR-NCEP1		alternative reanalysis	0.89
-    ACCESS-CM2		r1i1p1f1		0.82
-    AWI-ESM-1-1-LR	r1i1p1f1		0.77
-    BCC-CSM2-MR		r1i1p1f1		0.82
-    BCC-ESM1		r1i1p1f1		0.83
-    CanESM5		r1i1p1f1		0.80
-    CESM2		r1i1p1f1		0.81
-    CESM2-FV2		r1i1p1f1		0.80
-    CESM2-WACCM-FV2	r1i1p1f1		0.79
-    CNRM-CM6-1		r1i1p1f2		0.76
-    EC-Earth3		r1i1p1f1		0.80
-    FGOALS-f3-L		r1i1p1f1		0.77
-    FGOALS-g3		r1i1p1f1		0.78
-    GISS-E2-1-G		r1i1p1f1		0.77
-    HadGEM3-GC31-LL	r1i1p1f3		0.81
-    HadGEM3-GC31-MM	r1i1p1f3		0.82
-    INM-CM4-8		r1i1p1f1		0.79
-    INM-CM5-0		r1i1p1f1		0.82
-    IPSL-CM6A-LR	r1i1p1f1		0.77
-    IPSL-CM6A-LR-INCA	r1i1p1f1		0.73
-    KACE-1-0-G		r1i1p1f1		0.83
-    MIROC6		r1i1p1f1		0.79
-    MPI-ESM-1-2-HAM	r1i1p1f1		0.82
-    MPI-ESM1-2-HR	r1i1p1f1		0.85
-    MPI-ESM1-2-LR	r1i1p1f1		0.80
-    MRI-ESM2-0		r1i1p1f1		0.83
-    NorESM2-LM		r1i1p1f1		0.77
-    NorESM2-MM		r1i1p1f1		0.82
-    TaiESM1		r1i1p1f1		0.82
-    UKESM1-0-LL		r1i1p1f2		0.81
+    ACCESS-CM2_r1i1p1f1: 0.82
+    AWI-ESM-1-1-LR_r1i1p1f1: 0.77
+    BCC-CSM2-MR_r1i1p1f1: 0.82
+    BCC-ESM1_r1i1p1f1: 0.83
+    CanESM5_r1i1p1f1: 0.80
+    CESM2_r1i1p1f1: 0.81
+    CESM2-FV2_r1i1p1f1: 0.80
+    CESM2-WACCM-FV2_r1i1p1f1: 0.79
+    CNRM-CM6-1_r1i1p1f2: 0.76
+    EC-Earth3_r1i1p1f1: 0.80
+    FGOALS-f3-L_r1i1p1f1: 0.77
+    FGOALS-g3_r1i1p1f1: 0.78
+    GISS-E2-1-G_r1i1p1f1: 0.77
+    HadGEM3-GC31-LL_r1i1p1f3: 0.81
+    HadGEM3-GC31-MM_r1i1p1f3: 0.82
+    INM-CM4-8_r1i1p1f1: 0.79
+    INM-CM5-0_r1i1p1f1: 0.82
+    IPSL-CM6A-LR_r1i1p1f1: 0.77
+    IPSL-CM6A-LR-INCA_r1i1p1f1: 0.73
+    KACE-1-0-G_r1i1p1f1: 0.83
+    MIROC6_r1i1p1f1: 0.79
+    MPI-ESM-1-2-HAM_r1i1p1f1: 0.82
+    MPI-ESM1-2-HR_r1i1p1f1: 0.85
+    MPI-ESM1-2-LR_r1i1p1f1: 0.80
+    MRI-ESM2-0_r1i1p1f1: 0.83
+    NorESM2-LM_r1i1p1f1: 0.77
+    NorESM2-MM_r1i1p1f1: 0.82
+    TaiESM1_r1i1p1f1: 0.82
+    UKESM1-0-LL_r1i1p1f2: 0.81
+  data_other: 
+    ERA-Interim: 1.00 # reference reanalysis
+    NCAR-NCEP1: 0.89
