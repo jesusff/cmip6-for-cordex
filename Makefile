@@ -18,10 +18,11 @@ AUS:
 	python3 CMIP6_studies_list.py AUS > CMIP6_studies_list_AUS.md
 EUR:
 	python3 CMIP6_studies_table.py EUR
-	python3 util/row_tooltips.py
+	python3 util/row_tooltips.py EUR
 	python3 CMIP6_studies_list.py EUR > CMIP6_studies_list_EUR.md
 MED:
 	python3 CMIP6_studies_table.py MED
+	python3 util/row_tooltips.py MED
 	python3 CMIP6_studies_list.py MED > CMIP6_studies_list_MED.md
 SEA:
 	python3 CMIP6_studies_table.py SEA
