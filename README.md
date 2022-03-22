@@ -1,7 +1,7 @@
 [![Visit website view](https://img.shields.io/badge/www-Website%20view-f39f37)](https://jesusff.github.io/cmip6-for-cordex)
 [![EUR table](https://img.shields.io/badge/table-EUR-4078c0)](https://jesusff.github.io/cmip6-for-cordex/CMIP6_studies_table_EUR.html)
-[![AUS table](https://img.shields.io/badge/table-Other-4078c0)](https://jesusff.github.io/cmip6-for-cordex/CMIP6_studies_table_AUS.html)
-[<img align="right" width="200" src="https://github.com/jesusff/test/blob/master/micin-aei-cordys_en.png?raw=true">](https://meteo.unican.es/en/cordys)
+[![AUS table](https://img.shields.io/badge/launch-MyBinder-33cc33)](https://mybinder.org/v2/gh/jesusff/pyclimenv/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fjesusff%252Fcmip6-for-cordex%26urlpath%3Dlab%252Ftree%252Fcmip6-for-cordex%252F%26branch%3Dmain)
+[<img align="right" width="250" src="https://github.com/jesusff/test/blob/master/micin-aei-cordys_en.png?raw=true">](https://meteo.unican.es/en/cordys)
 
 CMIP6 input data for CORDEX
 ===========================
