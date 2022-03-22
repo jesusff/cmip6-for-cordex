@@ -1,9 +1,11 @@
 ## Incomplete entries
 
+ * [Cob21](CMIP6_studies/Cob21.yaml)
  * [Fas20](CMIP6_studies/Fas20.yaml)
  * [Beo21](CMIP6_studies/Beo21.yaml)
 ## Disabled entries
 
+ · [Cob21](CMIP6_studies/Cob21.yaml)
  · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
  · [Fas20](CMIP6_studies/Fas20.yaml)
  · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
@@ -85,6 +87,49 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
     comment:
       The 0.006 threshold has been provided by the author (expert judgment)
       after email exchanges with S. Somot
+
+```
+
+#### Dalelane MNQS
+
+Located in [CMIP6_studies/Dalelane.yaml](CMIP6_studies/Dalelane.yaml)
+
+['pers. comm.', 'C. Dalelane', 'DWD']
+
+```
+- key: Dalelane MNQS
+  doi: ['pers. comm.', 'C. Dalelane', 'DWD']
+  type: performance
+  spatial_scope: Global
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: MNQS
+    long_name: Multivariate Network Quality Score for Global Teleconnections
+    units: 1
+    variables: tos, z500
+    comment:
+      Data is converted to seasonal anomalies, detrended with season-reliant
+      trend-EOFs.  Seasonal variances normalized.  Adjacency-matrix between all
+      pairs of grid cell with Spearman's rank correlation.  Maximal domains in
+      tos (z500) with average pairwise rank correlation>0.95(0.93)- quantile of
+      all pairwise correlations are found. All pairwise links between domains
+      (area weighted average time series) calculated with Distance correlation
+      in tos,  z500 and cross-links between tos and z500. Tested to level 0.05
+      with control of  False Discovery Rate=0.05. New adjacency matrices
+      constructed based on domain links. Adjacency matrices compared to
+      references with Structural Similarity Index (SSIM).       Exponential
+      transform wrt. value 1 for all 3 variables (individual Network Quality
+      Score-NQS). Geometric mean of NQSs over variables (Multivariate Network
+      Quality Score, MNQS). Average of MNQSs over references.
+    best: 1
+    worst: 0
+  plausible_values:
+  - min: 0
+    max: 1
+    source: author
+    comment:
+      the higher the better, MNQS between references in the table for comparison
 
 ```
 
@@ -366,39 +411,9 @@ Located in [CMIP6_studies/Aerosol.yaml](CMIP6_studies/Aerosol.yaml)
       Data extracted from ESGF using  https://github.com/jesusff/cmip6-for-
       cordex/blob/main/util/aerosol_species.py which feeds from
       https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_for_CORDEX.py
+      Also, some pers. comm. for certain models that do not provide AOD by
+      aerosol species. S. Yang for the EC-Earth consortium models.
     best: bb, bc, dust, no3, oa, so4, ss, so4so, aerasymbnd, aeroptbnd, aerssabnd
-
-```
-
-#### atm. res. km
-
-Located in [CMIP6_studies/Resolution.yaml](CMIP6_studies/Resolution.yaml)
-
-None
-
-```
-- key: atm. res. km
-  doi: None
-  type: other
-  spatial_scope: special
-  temporal_scope: Annual
-  data_source: author
-  metric:
-    name: resolution
-    long_name: Nominal resolution of the atmospheric component
-    units: km
-    variables: None
-    comment:
-      Data extracted from the CMIP github https://github.com/WCRP-
-      CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json using
-      util/resolution_to_yaml.py Manually edited to include appropriate runs.
-    best: 0
-  plausible_values:
-  - min: 0
-    max: 300
-    source: eurocordex_gcm_selection_team
-    comment:
-      Test value
 
 ```
 
@@ -453,6 +468,38 @@ Located in [CMIP6_studies/Calendar.yaml](CMIP6_studies/Calendar.yaml)
     variables: None
     comment:
       Data extracted from ESGF
+
+```
+
+#### atm. res. km
+
+Located in [CMIP6_studies/Resolution.yaml](CMIP6_studies/Resolution.yaml)
+
+None
+
+```
+- key: atm. res. km
+  doi: None
+  type: other
+  spatial_scope: special
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: resolution
+    long_name: Nominal resolution of the atmospheric component
+    units: km
+    variables: None
+    comment:
+      Data extracted from the CMIP github https://github.com/WCRP-
+      CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json using
+      util/resolution_to_yaml.py Manually edited to include appropriate runs.
+    best: 0
+  plausible_values:
+  - min: 0
+    max: 300
+    source: eurocordex_gcm_selection_team
+    comment:
+      Test value
 
 ```
 
