@@ -1,12 +1,22 @@
 ## Incomplete entries
 
  * [Cob21](CMIP6_studies/Cob21.yaml)
- * [Fas20](CMIP6_studies/Fas20.yaml)
  * [Beo21](CMIP6_studies/Beo21.yaml)
+ * [Fas20](CMIP6_studies/Fas20.yaml)
 ## Disabled entries
 
+ · [Dobler SICE rmse BNS](CMIP6_studies/Dobler.yaml)
+ · [Dobler SICE rmse NAtl](CMIP6_studies/Dobler.yaml)
+ · [Dobler SST rmse NAtl](CMIP6_studies/Dobler.yaml)
+ · [Dobler SST rmse MED](CMIP6_studies/Dobler.yaml)
  · [Cob21](CMIP6_studies/Cob21.yaml)
  · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
+ · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
+ · [Pri20 storm track DJF](CMIP6_studies/Pri20.yaml)
+ · [Pri20 storm track JJA](CMIP6_studies/Pri20.yaml)
+ · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
+ · [Can20 marle](CMIP6_studies/Can20.yaml)
+ · [Beo21](CMIP6_studies/Beo21.yaml)
  · [Fas20](CMIP6_studies/Fas20.yaml)
  · [Atlas Dtas WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
@@ -19,16 +29,6 @@
  · [Atlas Dpr NEU JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Can20 marle](CMIP6_studies/Can20.yaml)
- · [Pri20 storm track DJF](CMIP6_studies/Pri20.yaml)
- · [Pri20 storm track JJA](CMIP6_studies/Pri20.yaml)
- · [Beo21](CMIP6_studies/Beo21.yaml)
- · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
- · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
- · [Dobler SICE rmse BNS](CMIP6_studies/Dobler.yaml)
- · [Dobler SICE rmse NAtl](CMIP6_studies/Dobler.yaml)
- · [Dobler SST rmse NAtl](CMIP6_studies/Dobler.yaml)
- · [Dobler SST rmse MED](CMIP6_studies/Dobler.yaml)
 ## Available entries (EUR scope)
 ### Plausibility
 #### AR6 TCR very likely range
@@ -191,8 +191,8 @@ None
 
 Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
 
-Preferred to [CMIP6_studies/Can20.yaml](CMIP6_studies/Can20.yaml)
-[CMIP6_studies/Fer21.yaml](CMIP6_studies/Fer21.yaml)
+Preferred to [CMIP6_studies/Fer21.yaml](CMIP6_studies/Fer21.yaml)
+[CMIP6_studies/Can20.yaml](CMIP6_studies/Can20.yaml)
 
 Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
 
