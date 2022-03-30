@@ -1,0 +1,13 @@
+name: base
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - natsort ==7.0.1
+  - pandas ==1.2.4
+  - seaborn ==0.11.2
+  - xarray ==0.15.1
+  - pip:
+    - doi2bib ==0.4.0
+    - esgf-pyclient ==0.3.1
