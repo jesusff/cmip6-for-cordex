@@ -306,8 +306,9 @@ MED-11,CLMcom-GUF,M. Hamouda,CCLM5-0-9-NEMOMED12-3-6,EC-Earth3-Veg,r12i1p1f1,ssp
 MED-11,CNRM,S. Somot,RCSM6,ERA5,,evaluation,planned,2022-12,
 MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,historical,completed,2021-12,
 MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,
+MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,ssp245,planned,2023-12,
+MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,
 MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,ssp585,completed,2021-12,
-MED-11,CNRM,S. Somot,RCSM6,CNRM-ESM2-1,r1i1p1f2,,planned,2023-12,Considering ssp245 and/or ssp370
 MED-11,ENEA,G. Sannino,WRF-MITgcm,ERA5,,evaluation,running,2022-12,
 MED-11,ENEA,G. Sannino,WRF-MITgcm,CESM2,r1i1p1f1,historical,planned,2022-12,
 MED-11,ENEA,G. Sannino,WRF-MITgcm,CESM2,r1i1p1f1,ssp126,planned,2022-12,
