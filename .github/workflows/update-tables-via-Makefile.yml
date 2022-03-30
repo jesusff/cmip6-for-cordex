@@ -33,3 +33,9 @@ jobs:
     - name: Make
       run: |
         make ${{ github.event.inputs.target }}
+    - name: Commit
+      run: |
+        git config --global user.name 'Actions'
+        git config --global user.email 'jesusff@users.noreply.github.com'
+        git commit -am "[Actions] ${{ github.event.inputs.target }}"
+        git push
