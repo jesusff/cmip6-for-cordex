@@ -163,13 +163,16 @@ EUR-11,CLMcom-WEGC,H. Truhetz,ICON-CLM,TBD,TBD,historical,planned,2023-05,#EURba
 EUR-11,CLMcom-WEGC,H. Truhetz,ICON-CLM,TBD,TBD,ssp126,planned,2023-05,#EURbalanced #ManyGCM
 EUR-11,CLMcom-WEGC,H. Truhetz,ICON-CLM,TBD,TBD,ssp370,planned,2023-05,#EURbalanced #ManyGCM
 EUR-11,CNRM,S. Somot,ALADIN6x,ERA5,,evaluation,planned,2022-12,#EURbalanced Version to be defined later in 2022
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,,planned,2023-12,#EURbalanced  Considering ssp245 / 585
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD,TBD,historical,planned,2023-12,#EURbalanced 3-4 GCMs depending on the number of SSP requested for each of them
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD,TBD,ssp126,planned,2023-12,#EURbalanced
-EUR-11,CNRM,S. Somot,ALADIN6x,TBD,TBD,ssp370,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,historical,planned,2022-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2022-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2022-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CNRM-ESM2-1,r1i1p1f2,,planned,2023-12,#ManySSP  Considering ssp245 / 585
+EUR-11,CNRM,S. Somot,ALADIN6x,CMCC-CM2-SR5,r1i1p1f1,historical,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CMCC-CM2-SR5,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,CMCC-CM2-SR5,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,NorESM2-MM,r1i1p1f1,historical,planned,2024-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,NorESM2-MM,r1i1p1f1,ssp126,planned,2024-12,#EURbalanced
+EUR-11,CNRM,S. Somot,ALADIN6x,NorESM2-MM,r1i1p1f1,ssp370,planned,2024-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,historical,planned,2023-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced
@@ -180,22 +183,19 @@ EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,historical,planned,2023-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp126,planned,2023-12,#EURbalanced
 EUR-11,CNRM,S. Somot,ALADIN6x,TBD4,TBD,ssp370,planned,2023-12,#EURbalanced
 EUR-11,CUNI,M. Belda,RegCM,ERA5,,evaluation,planned,2022-12,#EURbalanced
-EUR-11,CUNI,M. Belda,RegCM,TBD,TBD,historical,planned,2023-12,#EURbalanced Likely CNRM-CM6 due to national project commitment
-EUR-11,CUNI,M. Belda,RegCM,TBD,TBD,ssp126,planned,2023-12,#EURbalanced Likely CNRM-CM6 due to national project commitment
-EUR-11,CUNI,M. Belda,RegCM,TBD,TBD,ssp370,planned,2023-12,#EURbalanced Likely CNRM-CM6 due to national project commitment
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,ERA5,,evaluation,planned,2022-12,#EURbalanced #NUKLEUS
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,historical,planned,2023-12,#EURbalanced
+EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,ssp126,planned,2023-12,#EURbalanced
+EUR-11,CUNI,M. Belda,RegCM,CNRM-ESM2-1,r1i1p1f2,ssp370,planned,2023-12,#EURbalanced
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,ERA5,,evaluation,running,2022-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,historical,planned,2023-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,ssp126,planned,2023-12,#EURbalanced
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,EC-Earth3-Veg,r1i1p1f1,ssp370,planned,2023-12,#EURbalanced #NUKLEUS
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,historical,planned,2022-12,#EURbalanced #NUKLEUS
+EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,ssp126,planned,2022-12,#EURbalanced
 EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,MIROC6,r1i1p1f1,ssp370,planned,2022-12,#EURbalanced #NUKLEUS
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,historical,planned,2022-12,#EURbalanced
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,ssp126,planned,2022-12,#EURbalanced
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD,TBD,ssp370,planned,2022-12,#EURbalanced
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,historical,planned,2023-12,#EURbalanced
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced
-EUR-11,GERICS,K. Sieck / C. Teichmann,REMO,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced
 EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2022-12,#EURcoupled #EURintvar #LUCAS
 EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2022-12,#EURcoupled #EURintvar #LUCAS
 EUR-11,GERICS,D. Rechid / P. Hoffmann,REMO-iMOVE,MPI-ESM1-2-HR,r2i1p1f1,historical,planned,2022-12,#LUCAS #EURintvar
@@ -322,6 +322,9 @@ MED-11,ENEA,G. Sannino,WRF-MITgcm,NorESM2-MM,r1i1p1f1,historical,planned,2022-12
 MED-11,ENEA,G. Sannino,WRF-MITgcm,NorESM2-MM,r1i1p1f1,ssp126,planned,2022-12,
 MED-11,ENEA,G. Sannino,WRF-MITgcm,NorESM2-MM,r1i1p1f1,ssp245,planned,2022-12,
 MED-11,ENEA,G. Sannino,WRF-MITgcm,NorESM2-MM,r1i1p1f1,ssp585,planned,2022-12,
+MED-11,ICTP,E. Coppola,RegCM5-MITgcm,MPI-ESM1-2-HR,r1i1p1f1,historical,planned,2023-12,
+MED-11,ICTP,E. Coppola,RegCM5-MITgcm,MPI-ESM1-2-HR,r1i1p1f1,ssp126,planned,2023-12,
+MED-11,ICTP,E. Coppola,RegCM5-MITgcm,MPI-ESM1-2-HR,r1i1p1f1,ssp370,planned,2023-12,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,ERA5,,evaluation,completed,2022-12,Two members with perturbed initial conditions
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,historical,completed,2022-01,
 NAM-11,Ouranos,D. Paquin / C. McCray,CRCM5,CanESM5,r1i1p2f1,ssp126,running,2022-12,
