@@ -82,7 +82,7 @@ tableavail = pd.read_csv('CMIP6_for_CORDEX_availability_ESGF.csv').set_index(['m
 non_esgf = pd.read_csv('CMIP6_for_CORDEX_availability_non_ESGF.csv').set_index(['model', 'run'])
 tableavail.update(non_esgf)
 # - update synthesis column
-mandatory_scenarios = ['ssp126', 'ssp370']
+mandatory_scenarios = ['historical','ssp126', 'ssp370']
 tableavail.loc[:,'synthesis'] = np.logical_and.reduce(
   tableavail.loc[:,mandatory_scenarios] == 'RCM', axis=1
 ) * 1
