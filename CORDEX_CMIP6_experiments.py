@@ -5,10 +5,11 @@ import yaml
 collapse_institutions = True
 
 plans = pd.read_csv('CMIP6_downscaling_plans.csv', na_filter=False)
-domains = sorted(list(set(plans.domain)))
 
 with open('CORDEX_CMIP6_experiments.yaml') as fp:
   config = yaml.load(fp, Loader=yaml.FullLoader)
+
+domains = config.keys()
 
 f = open(f'CORDEX_CMIP6_experiments.html','w')
 f.write(f'''<!DOCTYPE html>
@@ -27,14 +28,25 @@ a:link {{ text-decoration: none; }}
 a:visited {{ text-decoration: none; }}
 a:hover {{ text-decoration: underline; }}
 a:active {{ text-decoration: underline;}}
+ul.twocol {{ columns: 2; -webkit-columns: 2; -moz-columns: 2; }}
 </style>
 </head><body>
-<h1> CORDEX-CMIP6 experiment summary tables</h1>
-<p style="text-align: right;">(Version: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})</p>
+<h1 id="top"> CORDEX-CMIP6 experiment summary tables</h1>
+<p style="text-align: right;">(Version: {datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")})</p>
 <p style="text-align: justify;">
 Simulation status for different experiments within domains, as collected from the CORDEX-CMIP6 downscaling plans reported by the groups in <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details. Experiment descriptions are provided at <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CORDEX_CMIP6_experiments.yaml">CORDEX_CMIP6_experiments.yaml</a>.
 To contribute/update simulations use this <a href="https://docs.google.com/document/d/1Jy53yvB9SDOiWcwKRJc_HpWVgmjxZhy-qVviHl6ymDM/edit?usp=sharing">Google doc</a>.
+<p style="text-align: justify;">
+See also other views of this simulations as a single table <a href="https://jesusff.github.io/cmip6-for-cordex/CMIP6_downscaling_plans_tables.html">per domain</a> or <a href="https://jesusff.github.io/cmip6-for-cordex/util/CMIP6_matrix.html">per SSP</a>.
+<ul>
 ''')
+
+[f.write(f'<li><a href="#{i}">{i}</a></li>') for i in domains]
+
+f.write(f'''
+</ul>
+''')
+
 d1 = dict(selector=".level0", props=[('min-width', '130px')])
 for domain in domains:
   dom_plans = plans[plans.domain == domain]
@@ -42,7 +54,12 @@ for domain in domains:
   dconf = config[domain] if domain in config else dict()
   if not tags:
     continue
-  f.write(f'''<h2 id="{domain}">{domain}</h2>''')
+  f.write(f'''<h2 id="{domain}">{domain}<a href="#top">^</a></h2>
+    The following experiments contribute to CORDEX {domain} domain:
+    <ul class="twocol">'''
+  )
+  [f.write(f'<li><a href="#{i}">{dconf[i]["title"]}</a></li>') for i in dconf.keys()]
+  f.write('</ul>')
   for tag in dconf.keys():
     tconf = dconf[tag]
     if 'condition' in tconf:
@@ -54,6 +71,8 @@ for domain in domains:
           df = df.query(cond)
     else:
       df = dom_plans[dom_plans.comments.str.contains(tag, case=False, na=False)]
+    if df.empty:
+      continue
     collapse_institutions = tconf['collapse_institutions'] if 'collapse_institutions' in tconf else collapse_institutions
     df = df.assign(htmlstatus=pd.Series('<span class="' + df.status + '">' + df.experiment + '</span>', index=df.index))
     df = df.assign(model_id=pd.Series(df.institute + '-' + df.rcm_name, index=df.index))
@@ -82,7 +101,7 @@ for domain in domains:
     title = tconf['title'] if 'title' in tconf else tag
     descr = tconf['description'] if 'description' in tconf else ''
     url = f'<p>URL: <a href="{tconf["url"]}">{tconf["url"]}</a>' if 'url' in tconf else ''
-    f.write(f'''<h3 id="{title}">{title}</h3>
+    f.write(f'''<h3 id="{tag}">{title} <a href="#{domain}">^</a></h3>
       <p> {descr}
       {url}
       <p style="font-size: smaller;"> Colour legend:
