@@ -25,7 +25,7 @@ a:hover {{ text-decoration: underline; }}
 a:active {{ text-decoration: underline;}}
 </style>
 </head><body>
-<h1> CORDEX-CMIP6 downscaling plans summary tables</h1>
+<h1 id="top"> CORDEX-CMIP6 downscaling plans summary tables</h1>
 <p style="text-align: right;">(Version: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M")})</p>
 <p style="text-align: justify;">
 Simulation status according to CORDEX-CMIP6 downscaling plans reported by the groups and collected in <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv">CMIP6_downscaling_plans.csv</a>. Check that file for further details.
@@ -60,7 +60,7 @@ for domain in domains:
     dom_plans_matrix = dom_plans_matrix.append(inst)
     dom_plans_matrix = dom_plans_matrix.T.set_index([('','Institutes'),dom_plans_matrix.columns]).T
     dom_plans_matrix.columns.names = ['Institution(s)','RCM']
-  f.write(f'''<h2 id="{domain}">{domain}</h2>
+  f.write(f'''<h2 id="{domain}">{domain}<a href="#top">^</a></h2>
     <p style="font-size: smaller;"> Colour legend:
       <span class="planned">planned</span>
       <span class="running">running</span>
