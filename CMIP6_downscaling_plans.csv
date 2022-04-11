@@ -124,13 +124,13 @@ EUR-11,EURO-CORDEX,,. Comunity selected GCMs,MIROC6,r1i1p1f1,selected,published,
 EUR-11,EURO-CORDEX,,. Comunity selected GCMs,MPI-ESM1-2-HR,r1i1p1f1,selected,published,,Model selected in EURO-CORDEX GA 2022
 EUR-11,EURO-CORDEX,,. Comunity selected GCMs,NorESM2-MM,r1i1p1f1,selected,published,,Model selected in EURO-CORDEX GA 2022
 EUR-11,EURO-CORDEX,,. Comunity selected GCMs,UKESM1-0-LL,r1i1p1f2,selected,published,,Model selected in EURO-CORDEX GA 2022
-EUR-11,CESAM,D. Carvalho,WRF,ERA5,,evaluation,planned,,#EURbalanced
-EUR-11,CESAM,D. Carvalho,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,,#ManySSP Split of scenarios TBD among AUTH CESAM and IDL
-EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,historical,planned,,#EURbalanced
-EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp126,planned,,#EURbalanced #ManySSP
-EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp245,planned,,#ManySSP
-EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp370,planned,,#EURbalanced #ManySSP
-EUR-11,CESAM,D. Carvalho,WRF,TBD3,TBD,ssp585,planned,,#ManySSP
+EUR-11,CESAM,D. Carvalho,WRF,ERA5,,evaluation,planned,2023-12,#EURbalanced
+EUR-11,CESAM,D. Carvalho,WRF,MPI-ESM1-2-HR,r1i1p1f1,ssp585,planned,2023-12,#ManySSP Split of scenarios TBD among AUTH CESAM and IDL
+EUR-11,CESAM,D. Carvalho,WRF,TBD,TBD,historical,planned,2024-12,#EURbalanced
+EUR-11,CESAM,D. Carvalho,WRF,TBD,TBD,ssp126,planned,2024-12,#EURbalanced #ManySSP
+EUR-11,CESAM,D. Carvalho,WRF,TBD,TBD,ssp245,planned,2024-12,#ManySSP
+EUR-11,CESAM,D. Carvalho,WRF,TBD,TBD,ssp370,planned,2024-12,#EURbalanced #ManySSP
+EUR-11,CESAM,D. Carvalho,WRF,TBD,TBD,ssp585,planned,2024-12,#ManySSP
 EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TBD2,TBD,historical,planned,2023-12,#EURbalanced Number of models and scenarios TBD
 EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TBD2,TBD,ssp126,planned,2023-12,#EURbalanced Number of models and scenarios TBD
 EUR-11,CLMcom,clm coordination at dwd de,ICON-CLM,TBD2,TBD,ssp370,planned,2023-12,#EURbalanced Number of models and scenarios TBD
