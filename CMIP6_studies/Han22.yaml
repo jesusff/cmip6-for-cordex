@@ -1,0 +1,67 @@
+- key: Han22 TCgen MIEI NWP
+  doi: 10.1007/s00382-021-05986-4
+  metric:
+    name: TCgen_MIEI
+    long_name: Tropical Cyclone genesis and development multi-variable integrated evaluation index
+    units: 1
+    variables: uv200, uv850, ta200, ta850, hus600, sst, psl
+    comment: >
+      The evaluation focuses on seven variables. Namely, the vector winds and air
+      temperature at 200 and 850 hPa, 600-hPa specific humidity, SST, and SLP. These
+      variables are on the one hand closely related to the genesis and development of
+      TCs, but on the other hand they are also key variables driving RCMs as lateral
+      boundary conditions during dynamical downscaling-based simulations.
+
+      The multivariable integrated evaluation index (MIEI) measures the overall
+      performance of a climate model in simulating multiple fields, avoiding error
+      compensation across variables.
+
+      This is a sea-only metric over the NW Pacific, defined by the boundaries
+      105E-170W, 0-45N. The reference dataset is the average of ERA5 and JRA55.
+    best: 0
+    worst: 1 # check
+  type: performance
+  spatial_scope: NWP # NW Pacific
+  temporal_scope: JASO # NWP TC season
+  period:
+    reference: 1979-2013
+  plausible_values:
+    - min: 0
+      max: 0.25
+      source: other
+      comment: tentative value
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1: 0.236
+    ACCESS-ESM1-5_r1i1p1f1: 0.150
+    AWI-CM-1-1-MR_r1i1p1f1: 0.202
+    BCC-CSM2-MR_r1i1p1f1: 0.165
+    BCC-ESM1_r1i1p1f1: 0.214
+    CAMS-CSM1-0_r1i1p1f1: 0.250
+    CanESM5_r1i1p1f1: 0.240
+    CESM2_r1i1p1f1: 0.193
+    CESM2-FV2_r1i1p1f1: 0.215
+    CESM2-WACCM_r1i1p1f1: 0.205
+    CESM2-WACCM-FV2_r1i1p1f1: 0.191
+    CIESM_r1i1p1f1: 0.231
+    E3SM-1-0_r1i1p1f1: 0.148
+    EC-Earth3_r1i1p1f1: 0.207
+    FGOALS-g3_r1i1p1f1: 0.223
+    FIO-ESM-2-0_r1i1p1f1: 0.190
+    GISS-E2-1-G_r1i1p1f1: 0.277
+    GISS-E2-1-H_r1i1p1f1: 0.287
+    INM-CM4-8_r1i1p1f1: 0.377
+    INM-CM5-0_r1i1p1f1: 0.342
+    IPSL-CM6A-LR_r1i1p1f1: 0.204
+    KACE-1-0-G_r1i1p1f1: 0.208
+    MCM-UA-1-0_r1i1p1f1: 0.262
+    MIROC6_r1i1p1f1: 0.244
+    MPI-ESM-1-2-HAM_r1i1p1f1: 0.277
+    MPI-ESM1-2-HR_r1i1p1f1: 0.226
+    MPI-ESM1-2-LR_r1i1p1f1: 0.219
+    MRI-ESM2-0_r1i1p1f1: 0.237
+    NESM3_r1i1p1f1: 0.373
+    NorCPM1_r1i1p1f1: 0.265
+    NorESM2-LM_r1i1p1f1: 0.176
+    NorESM2-MM_r1i1p1f1: 0.186
+    SAM0-UNICON_r1i1p1f1: 0.176

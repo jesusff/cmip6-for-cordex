@@ -292,6 +292,48 @@ Lulei Bu et al. (2021) Evaluating boreal summer circulation patterns of CMIP6 cl
 
 ```
 
+#### Han22 TCgen MIEI NWP
+
+Located in [CMIP6_studies/Han22.yaml](CMIP6_studies/Han22.yaml)
+
+Ying Han et al. (2021) Assessing the performance of 33 CMIP6 models in simulating the large-scale environmental fields of tropical cyclones, https://doi.org/10.1007%2Fs00382-021-05986-4
+
+```
+- key: Han22 TCgen MIEI NWP
+  doi: 10.1007/s00382-021-05986-4
+  type: performance
+  spatial_scope: NWP
+  temporal_scope: JASO
+  data_source: author
+  metric:
+    name: TCgen_MIEI
+    long_name: Tropical Cyclone genesis and development multi-variable integrated evaluation index
+    units: 1
+    variables: uv200, uv850, ta200, ta850, hus600, sst, psl
+    comment:
+      The evaluation focuses on seven variables. Namely, the vector winds and
+      air temperature at 200 and 850 hPa, 600-hPa specific humidity, SST, and
+      SLP. These variables are on the one hand closely related to the genesis
+      and development of TCs, but on the other hand they are also key variables
+      driving RCMs as lateral boundary conditions during dynamical downscaling-
+      based simulations. The multivariable integrated evaluation index (MIEI)
+      measures the overall performance of a climate model in simulating multiple
+      fields, avoiding error compensation across variables. This is a sea-only
+      metric over the NW Pacific, defined by the boundaries 105E-170W, 0-45N.
+      The reference dataset is the average of ERA5 and JRA55.
+    best: 0
+    worst: 1
+  period:
+    reference: 1979-2013
+  plausible_values:
+  - min: 0
+    max: 0.25
+    source: other
+    comment:
+      tentative value
+
+```
+
 ### Spread of future outcomes
 #### AR6 TCR as spread
 
