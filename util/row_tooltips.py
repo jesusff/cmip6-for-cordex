@@ -9,7 +9,7 @@ def get_value(str):
   m = p.match(str)
   return(m.group(1) if m else [])
 
-with open(f'CMIP6_studies_table_{domain}.html','r') as f:
+with open(f'docs/CMIP6_studies_table_{domain}.html','r') as f:
   fulltext = f.readlines()
 
 model = ''
@@ -25,6 +25,6 @@ for i,line in enumerate(fulltext):
     if run.startswith('r'):
       fulltext[i] = f'            <tr title="{model} {run}">\n'
 
-with open(f'CMIP6_studies_table_{domain}.html','w') as f:
+with open(f'docs/CMIP6_studies_table_{domain}.html','w') as f:
   f.writelines(fulltext)
 
