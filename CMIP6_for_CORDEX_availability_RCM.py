@@ -69,7 +69,7 @@ The synthesis column indicates whether the CORDEX-CMIP6 protocol mandatory scena
 The table shows only those simulations with RCM LBC available for some future scenario (plus historical).
 </p>
 <p style="font-size: smaller; text-align: justify;">
-See <a href="http://jesusff.github.io/cmip6-for-cordex">http://jesusff.github.io/cmip6-for-cordex</a> for details. A machine-readable (CSV) file version of this table is available <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_for_CORDEX_availability_RCM.csv">here</a>.
+See <a href="http://wcrp-cordex.github.io/cmip6-for-cordex">http://wrcp-cordex.github.io/cmip6-for-cordex</a> for details. A machine-readable (CSV) file version of this table is available <a href="https://github.com/wcrp-cordex/cmip6-for-cordex/blob/main/docs/CMIP6_for_CORDEX_availability_RCM.csv">here</a>.
 </p>
 ''')
 f.write(tableavail
