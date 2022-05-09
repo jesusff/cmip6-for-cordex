@@ -1,19 +1,19 @@
 ## Incomplete entries
 
- * [Cob21](CMIP6_studies/Cob21.yaml)
  * [Fas20](CMIP6_studies/Fas20.yaml)
  * [Beo21](CMIP6_studies/Beo21.yaml)
+ * [Cob21](CMIP6_studies/Cob21.yaml)
 ## Disabled entries
 
- · [Cob21](CMIP6_studies/Cob21.yaml)
- · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
- · [Fas20](CMIP6_studies/Fas20.yaml)
  · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Beo21](CMIP6_studies/Beo21.yaml)
  · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
+ · [Fas20](CMIP6_studies/Fas20.yaml)
+ · [Beo21](CMIP6_studies/Beo21.yaml)
+ · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
+ · [Cob21](CMIP6_studies/Cob21.yaml)
 ## Available entries (SEA scope)
 ### Plausibility
 #### AR6 TCR very likely range

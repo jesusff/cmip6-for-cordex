@@ -19,7 +19,7 @@ CAMS-CSM1-0,r1i1p1f1,0.00,-,-,-,-,-,-,0,1.73,0.06,,,1.73,,,,,365_day,100.00
 CAMS-CSM1-0,r2i1p1f1,0.00,Basic,Basic,Basic,Basic,Basic,Basic,0,,0.06,,,,2.29,,,,,
 CAS-ESM2-0,r1i1p1f1,0.00,-,,-,-,-,-,0,2.04,,,1.00,2.04,3.51,,,,365_day,100.00
 CESM2,r1i1p1f1,0.00,ESD,,ESD,ESD,ESD,ESD,1,,0.02,0.79,0.00,,,CESM,bc dust oa so4,,,
-CESM2,r2i1p1f1,1.00,ESD,,RCM,RCM,RCM,RCM,1,2.06,0.02,0.75,0.00,2.06,5.16,CESM,bc dust oa so4 ss,,365_day,100.00
+CESM2,r2i1p1f1,0.00,ESD,,RCM,RCM,RCM,RCM,1,2.06,0.02,0.75,0.00,2.06,5.16,CESM,bc dust oa so4 ss,,365_day,100.00
 CESM2,r3i1p1f1,0.00,ESD,,,Basic,-,,,,,,,,,,bc dust oa so4,,,
 CESM2,r4i1p1f1,0.00,ESD,,ESD,ESD,ESD,ESD,1,,,,0.00,,,,bc dust oa so4,,,
 CESM2,r5i1p1f1,0.00,ESD,,,,-,,,,,,,,,,bc dust oa so4,,,
@@ -132,7 +132,7 @@ CanESM5-CanOE,r3i1p1f1,,,,,,,,1,,0.00,,,,,CanESM,,,,
 CanESM5-CanOE,r3i1p2f1,0.00,-,,-,-,-,-,,,,,,,,,dust ss,,,
 E3SM-1-0,r1i1p1f1,0.00,Basic,,,,,,1,2.99,,,,2.99,5.32,,,,,100.00
 E3SM-1-1,r1i1p1f1,0.00,-,,,-,,-,,,,,,,,,,,365_day,100.00
-E3SM-1-1-ECA,r1i1p1f1,0.00,-,,,,,,,,,,,,,,,,,100.00
+E3SM-1-1-ECA,r1i1p1f1,0.00,-,,,,,Basic,,,,,,,,,,,,100.00
 EC-Earth3,r1i1p1f1,1.00,RCM,,RCM,RCM,RCM,RCM,1,2.30,0.01,0.82,0.00,2.30,,EC-Earth,MACv2-SP approach,2222101000.00,gregorian,100.00
 EC-Earth3,r2i1p1f1,0.00,Basic,,,Basic,,,1,,0.01,,0.00,,,EC-Earth,,,,
 EC-Earth3,r3i1p1f1,0.00,ESD,,,,,ESD,1,,0.01,,0.00,,,EC-Earth,,,,
