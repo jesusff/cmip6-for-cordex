@@ -1,4 +1,4 @@
-- key: AR6 TCR very likely range
+- key: AR6 TCR
   doi:
   metric: &ar6tcr
     name: TCR

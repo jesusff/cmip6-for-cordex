@@ -31,16 +31,14 @@
  · [Dobler SST rmse MED](CMIP6_studies/Dobler.yaml)
 ## Available entries (EUR scope)
 ### Plausibility
-#### AR6 TCR very likely range
+#### AR6 TCR
 
-Located in [CMIP6_studies/AR6.yaml](CMIP6_studies/AR6.yaml)
-
-Preferred to [CMIP6_studies/Rib21.yaml](CMIP6_studies/Rib21.yaml)
+Located in [CMIP6_studies/AR6.yaml](../CMIP6_studies/AR6.yaml)
 
 None
 
 ```
-- key: AR6 TCR very likely range
+- key: AR6 TCR
   doi: None
   type: performance
   spatial_scope: Global
@@ -71,7 +69,7 @@ None
 
 #### Bru20 perf
 
-Located in [CMIP6_studies/Bru20.yaml](CMIP6_studies/Bru20.yaml)
+Located in [CMIP6_studies/Bru20.yaml](../CMIP6_studies/Bru20.yaml)
 
 Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when weighting models by performance and independence, https://doi.org/10.5194%2Fesd-11-995-2020
 
@@ -107,7 +105,7 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
 
 #### Dalelane MNQS
 
-Located in [CMIP6_studies/Dalelane.yaml](CMIP6_studies/Dalelane.yaml)
+Located in [CMIP6_studies/Dalelane.yaml](../CMIP6_studies/Dalelane.yaml)
 
 ['pers. comm.', 'C. Dalelane', 'DWD']
 
@@ -150,7 +148,7 @@ Located in [CMIP6_studies/Dalelane.yaml](CMIP6_studies/Dalelane.yaml)
 
 #### Qasmi Constr Global Dtas ssp245 2050
 
-Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
+Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
 
 None
 
@@ -189,10 +187,10 @@ None
 
 #### Bra21 Lamb EUR
 
-Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
+Located in [CMIP6_studies/Bra21.yaml](../CMIP6_studies/Bra21.yaml)
 
-Preferred to [CMIP6_studies/Fer21.yaml](CMIP6_studies/Fer21.yaml)
-[CMIP6_studies/Can20.yaml](CMIP6_studies/Can20.yaml)
+Preferred to [CMIP6_studies/Fer21.yaml](../CMIP6_studies/Fer21.yaml)
+[CMIP6_studies/Can20.yaml](../CMIP6_studies/Can20.yaml)
 
 Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
 
@@ -237,7 +235,7 @@ Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and
 
 #### Dav20 blocking freq DJF
 
-Located in [CMIP6_studies/Div20.yaml](CMIP6_studies/Div20.yaml)
+Located in [CMIP6_studies/Div20.yaml](../CMIP6_studies/Div20.yaml)
 
 Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric Blocking Simulation in Present and Future Climate, https://doi.org/10.1175%2Fjcli-d-19-0862.1
 
@@ -290,7 +288,7 @@ Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric 
 
 #### Dav20 blocking freq JJA
 
-Located in [CMIP6_studies/Div20.yaml](CMIP6_studies/Div20.yaml)
+Located in [CMIP6_studies/Div20.yaml](../CMIP6_studies/Div20.yaml)
 
 Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric Blocking Simulation in Present and Future Climate, https://doi.org/10.1175%2Fjcli-d-19-0862.1
 
@@ -343,7 +341,7 @@ Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric 
 
 #### Dobler SST rmse EUR
 
-Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -392,7 +390,7 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 #### McSw15 circ DJF
 
-Located in [CMIP6_studies/McSw15.yaml](CMIP6_studies/McSw15.yaml)
+Located in [CMIP6_studies/McSw15.yaml](../CMIP6_studies/McSw15.yaml)
 
 C. F. McSweeney et al. (2014) Selecting CMIP5 GCMs for downscaling over multiple regions, https://doi.org/10.1007%2Fs00382-014-2418-8
 
@@ -439,7 +437,7 @@ C. F. McSweeney et al. (2014) Selecting CMIP5 GCMs for downscaling over multiple
 
 #### McSw15 circ JJA
 
-Located in [CMIP6_studies/McSw15.yaml](CMIP6_studies/McSw15.yaml)
+Located in [CMIP6_studies/McSw15.yaml](../CMIP6_studies/McSw15.yaml)
 
 C. F. McSweeney et al. (2014) Selecting CMIP5 GCMs for downscaling over multiple regions, https://doi.org/10.1007%2Fs00382-014-2418-8
 
@@ -486,7 +484,7 @@ C. F. McSweeney et al. (2014) Selecting CMIP5 GCMs for downscaling over multiple
 
 #### Nabat EUR AOD
 
-Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
+Located in [CMIP6_studies/Nabat.yaml](../CMIP6_studies/Nabat.yaml)
 
 ['pers_comm', 'Pierre Nabat']
 
@@ -519,7 +517,7 @@ Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
 
 #### Nabat EUR AOD hist trend
 
-Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
+Located in [CMIP6_studies/Nabat.yaml](../CMIP6_studies/Nabat.yaml)
 
 ['pers_comm', 'Pierre Nabat']
 
@@ -560,7 +558,7 @@ Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
 
 #### Oud20 jetpos
 
-Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
+Located in [CMIP6_studies/Oud20.yaml](../CMIP6_studies/Oud20.yaml)
 
 Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet Change in CMIP5 and CMIP6 Models, https://doi.org/10.1029%2F2019gl086695
 
@@ -594,10 +592,10 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
 
 #### Pri20 storm track
 
-Located in [CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
+Located in [CMIP6_studies/Pri20.yaml](../CMIP6_studies/Pri20.yaml)
 
-Preferred to [CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
-[CMIP6_studies/Pri20.yaml](CMIP6_studies/Pri20.yaml)
+Preferred to [CMIP6_studies/Pri20.yaml](../CMIP6_studies/Pri20.yaml)
+[CMIP6_studies/Pri20.yaml](../CMIP6_studies/Pri20.yaml)
 
 Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tracks in CMIP6 Historical Simulations, https://doi.org/10.1175%2Fjcli-d-19-0928.1
 
@@ -648,7 +646,7 @@ Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tra
 
 #### Winderlich SCQS
 
-Located in [CMIP6_studies/Winderlich.yaml](CMIP6_studies/Winderlich.yaml)
+Located in [CMIP6_studies/Winderlich.yaml](../CMIP6_studies/Winderlich.yaml)
 
 ['pers_comm', 'K. Winderlich', 'DWD']
 
@@ -693,9 +691,9 @@ Located in [CMIP6_studies/Winderlich.yaml](CMIP6_studies/Winderlich.yaml)
 
 #### Sevault MED SST
 
-Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
+Located in [CMIP6_studies/Sevault.yaml](../CMIP6_studies/Sevault.yaml)
 
-Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
 ['pers_comm', 'F. Sevault', 'CNRM']
 
@@ -736,9 +734,9 @@ Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 #### Dobler SICE rmse NBS
 
-Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
-Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -786,9 +784,9 @@ Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 #### Dobler SST rmse NBS
 
-Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
-Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -837,7 +835,7 @@ Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 #### Dobler SST rmse BNS
 
-Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -886,9 +884,9 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 #### Dobler SICE rmse BAL
 
-Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
-Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -936,7 +934,7 @@ Preferred to [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 #### Dobler SST rmse BLK
 
-Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -985,7 +983,7 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 
 #### Dobler SST rmse SNA
 
-Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
+Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -1035,7 +1033,7 @@ Located in [CMIP6_studies/Dobler.yaml](CMIP6_studies/Dobler.yaml)
 ### Spread of future outcomes
 #### AR6 TCR as spread
 
-Located in [CMIP6_studies/AR6.yaml](CMIP6_studies/AR6.yaml)
+Located in [CMIP6_studies/AR6.yaml](../CMIP6_studies/AR6.yaml)
 
 None
 
@@ -1067,7 +1065,7 @@ None
 
 #### Sch20 ECS
 
-Located in [CMIP6_studies/Sch20.yaml](CMIP6_studies/Sch20.yaml)
+Located in [CMIP6_studies/Sch20.yaml](../CMIP6_studies/Sch20.yaml)
 
 Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensitivity in CMIP5: do they hold for CMIP6?, https://doi.org/10.5194%2Fesd-11-1233-2020
 
@@ -1092,7 +1090,7 @@ Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensit
 
 #### Nabat EUR AOD future change
 
-Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
+Located in [CMIP6_studies/Nabat.yaml](../CMIP6_studies/Nabat.yaml)
 
 ['pers_comm', 'Pierre Nabat']
 
@@ -1126,7 +1124,7 @@ Located in [CMIP6_studies/Nabat.yaml](CMIP6_studies/Nabat.yaml)
 
 #### Oud20 jetposdelta
 
-Located in [CMIP6_studies/Oud20.yaml](CMIP6_studies/Oud20.yaml)
+Located in [CMIP6_studies/Oud20.yaml](../CMIP6_studies/Oud20.yaml)
 
 Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet Change in CMIP5 and CMIP6 Models, https://doi.org/10.1029%2F2019gl086695
 
@@ -1157,7 +1155,7 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
 
 #### Qasmi Constr EUR Dtas ssp245 2050 JJA
 
-Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
+Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
 
 ['pers_comm', 'S. Qasmi']
 
@@ -1203,7 +1201,7 @@ Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
 
 #### Atlas Dtas NEU DJF
 
-Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
+Located in [CMIP6_studies/AtlasIPCC.yaml](../CMIP6_studies/AtlasIPCC.yaml)
 
 ['Pers. Comm.', 'Jesus Fernandez']
 
@@ -1230,7 +1228,7 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
 
 #### Atlas Dtas NEU JJA
 
-Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
+Located in [CMIP6_studies/AtlasIPCC.yaml](../CMIP6_studies/AtlasIPCC.yaml)
 
 ['Pers. Comm.', 'Jesus Fernandez']
 
@@ -1257,7 +1255,7 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
 
 #### Atlas Dtas WCE JJA
 
-Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
+Located in [CMIP6_studies/AtlasIPCC.yaml](../CMIP6_studies/AtlasIPCC.yaml)
 
 ['Pers. Comm.', 'Jesus Fernandez']
 
@@ -1284,7 +1282,7 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
 
 #### Atlas Dtas MED JJA
 
-Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
+Located in [CMIP6_studies/AtlasIPCC.yaml](../CMIP6_studies/AtlasIPCC.yaml)
 
 ['Pers. Comm.', 'Jesus Fernandez']
 
@@ -1311,7 +1309,7 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
 
 #### Atlas Dpr MED JJA
 
-Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
+Located in [CMIP6_studies/AtlasIPCC.yaml](../CMIP6_studies/AtlasIPCC.yaml)
 
 ['Pers. Comm.', 'Jesus Fernandez']
 
@@ -1338,7 +1336,7 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](CMIP6_studies/AtlasIPCC.yaml)
 
 #### Sevault MED SST warming
 
-Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
+Located in [CMIP6_studies/Sevault.yaml](../CMIP6_studies/Sevault.yaml)
 
 ['pers_comm', 'F. Sevault']
 
@@ -1372,7 +1370,7 @@ Located in [CMIP6_studies/Sevault.yaml](CMIP6_studies/Sevault.yaml)
 ### Other criteria
 #### Bru20 mfamily
 
-Located in [CMIP6_studies/Bru20.yaml](CMIP6_studies/Bru20.yaml)
+Located in [CMIP6_studies/Bru20.yaml](../CMIP6_studies/Bru20.yaml)
 
 Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when weighting models by performance and independence, https://doi.org/10.5194%2Fesd-11-995-2020
 
@@ -1410,7 +1408,7 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
 
 #### Aer. species
 
-Located in [CMIP6_studies/Aerosol.yaml](CMIP6_studies/Aerosol.yaml)
+Located in [CMIP6_studies/Aerosol.yaml](../CMIP6_studies/Aerosol.yaml)
 
 ['pers. comm.', 'Jesus Fernandez']
 
@@ -1438,7 +1436,7 @@ Located in [CMIP6_studies/Aerosol.yaml](CMIP6_studies/Aerosol.yaml)
 
 #### Bra21 complexity
 
-Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
+Located in [CMIP6_studies/Bra21.yaml](../CMIP6_studies/Bra21.yaml)
 
 Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
 
@@ -1469,7 +1467,7 @@ Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and
 
 #### Calendar
 
-Located in [CMIP6_studies/Calendar.yaml](CMIP6_studies/Calendar.yaml)
+Located in [CMIP6_studies/Calendar.yaml](../CMIP6_studies/Calendar.yaml)
 
 ['pers. comm.', 'Andreas Dobler']
 
@@ -1492,7 +1490,7 @@ Located in [CMIP6_studies/Calendar.yaml](CMIP6_studies/Calendar.yaml)
 
 #### atm. res. km
 
-Located in [CMIP6_studies/Resolution.yaml](CMIP6_studies/Resolution.yaml)
+Located in [CMIP6_studies/Resolution.yaml](../CMIP6_studies/Resolution.yaml)
 
 None
 

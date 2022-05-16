@@ -52,13 +52,13 @@ for t in typenames:
   for x in enabled_data:
     if x.type == t:
       print(f'#### {x.key}\n')
-      print(f'Located in [{x.file}]({x.file})\n')
+      print(f'Located in [{x.file}](../{x.file})\n')
       if x.key in preferred:
         pref_list = []
         for item in preferred[x.key]:
           pref_list.extend([x['file'] for x in alldata if x['key']==item])
         print(f'Preferred to ', end='')
-        [print(f'[{y}]({y})') for y in pref_list]
+        [print(f'[{y}](../{y})') for y in pref_list]
         print()
       print(f'{x.reference}\n')
       print(f'```\n{x.__str__()}\n```\n')
