@@ -3,7 +3,7 @@ import natsort as ns
 import numpy as np
 import pandas as pd
 
-tableavail = pd.read_csv('CMIP6_for_CORDEX_availability_ESGF.csv').set_index(['model', 'run'])
+tableavail = pd.read_csv('docs/CMIP6_for_CORDEX_availability_ESGF.csv').set_index(['model', 'run'])
 non_esgf = pd.read_csv('CMIP6_for_CORDEX_availability_non_ESGF.csv').set_index(['model', 'run'])
 tableavail.update(non_esgf)
 # - update synthesis column
@@ -26,7 +26,7 @@ row_filter = set(
 tableavail = tableavail.loc[row_filter]
 tableavail = tableavail.reindex(ns.natsorted(tableavail.index))
 
-csvout = 'CMIP6_for_CORDEX_availability_RCM.csv'
+csvout = 'docs/CMIP6_for_CORDEX_availability_RCM.csv'
 tableavail.to_csv(csvout, float_format = '%.2f', index_label = ['model', 'run'])
 
 def greyout_non_rcm(df):
@@ -38,7 +38,7 @@ def greyout_non_rcm(df):
   return(rval)
 
 d1 = dict(selector=".level0", props=[('min-width', '50px')])
-f = open(f'CMIP6_for_CORDEX_availability_RCM.html','w')
+f = open(f'docs/CMIP6_for_CORDEX_availability_RCM.html','w')
 f.write(f'''<!DOCTYPE html>
 <html><head>
 <style>

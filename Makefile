@@ -8,6 +8,7 @@ CMIP6_downscaling_plans.csv:
 
 update-esgf:
 	python3 CMIP6_for_CORDEX.py
+	python3 CMIP6_for_CORDEX_availability_RCM.py
 
 update-tables: AUS EUR MED SEA
 
