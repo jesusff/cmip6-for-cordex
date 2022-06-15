@@ -1,31 +1,29 @@
 ## Incomplete entries
 
- * [Cob21](CMIP6_studies/Cob21.yaml)
  * [Fas20](CMIP6_studies/Fas20.yaml)
  * [Beo21](CMIP6_studies/Beo21.yaml)
+ * [Cob21](CMIP6_studies/Cob21.yaml)
 ## Disabled entries
 
- · [Cob21](CMIP6_studies/Cob21.yaml)
- · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
- · [Fas20](CMIP6_studies/Fas20.yaml)
  · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Beo21](CMIP6_studies/Beo21.yaml)
  · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
+ · [Fas20](CMIP6_studies/Fas20.yaml)
+ · [Beo21](CMIP6_studies/Beo21.yaml)
+ · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
+ · [Cob21](CMIP6_studies/Cob21.yaml)
 ## Available entries (AUS scope)
 ### Plausibility
-#### AR6 TCR very likely range
+#### AR6 TCR
 
-Located in [CMIP6_studies/AR6.yaml](CMIP6_studies/AR6.yaml)
-
-Preferred to [CMIP6_studies/Rib21.yaml](CMIP6_studies/Rib21.yaml)
+Located in [CMIP6_studies/AR6.yaml](../CMIP6_studies/AR6.yaml)
 
 None
 
 ```
-- key: AR6 TCR very likely range
+- key: AR6 TCR
   doi: None
   type: performance
   spatial_scope: Global
@@ -56,7 +54,7 @@ None
 
 #### Bru20 perf
 
-Located in [CMIP6_studies/Bru20.yaml](CMIP6_studies/Bru20.yaml)
+Located in [CMIP6_studies/Bru20.yaml](../CMIP6_studies/Bru20.yaml)
 
 Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when weighting models by performance and independence, https://doi.org/10.5194%2Fesd-11-995-2020
 
@@ -92,7 +90,7 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
 
 #### Dalelane MNQS
 
-Located in [CMIP6_studies/Dalelane.yaml](CMIP6_studies/Dalelane.yaml)
+Located in [CMIP6_studies/Dalelane.yaml](../CMIP6_studies/Dalelane.yaml)
 
 ['pers. comm.', 'C. Dalelane', 'DWD']
 
@@ -135,7 +133,7 @@ Located in [CMIP6_studies/Dalelane.yaml](CMIP6_studies/Dalelane.yaml)
 
 #### Qasmi Constr Global Dtas ssp245 2050
 
-Located in [CMIP6_studies/Qasmi.yaml](CMIP6_studies/Qasmi.yaml)
+Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
 
 None
 
@@ -175,7 +173,7 @@ None
 ### Spread of future outcomes
 #### AR6 TCR as spread
 
-Located in [CMIP6_studies/AR6.yaml](CMIP6_studies/AR6.yaml)
+Located in [CMIP6_studies/AR6.yaml](../CMIP6_studies/AR6.yaml)
 
 None
 
@@ -207,7 +205,7 @@ None
 
 #### Sch20 ECS
 
-Located in [CMIP6_studies/Sch20.yaml](CMIP6_studies/Sch20.yaml)
+Located in [CMIP6_studies/Sch20.yaml](../CMIP6_studies/Sch20.yaml)
 
 Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensitivity in CMIP5: do they hold for CMIP6?, https://doi.org/10.5194%2Fesd-11-1233-2020
 
@@ -233,7 +231,7 @@ Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensit
 ### Other criteria
 #### Bru20 mfamily
 
-Located in [CMIP6_studies/Bru20.yaml](CMIP6_studies/Bru20.yaml)
+Located in [CMIP6_studies/Bru20.yaml](../CMIP6_studies/Bru20.yaml)
 
 Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when weighting models by performance and independence, https://doi.org/10.5194%2Fesd-11-995-2020
 
@@ -271,7 +269,7 @@ Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when w
 
 #### Aer. species
 
-Located in [CMIP6_studies/Aerosol.yaml](CMIP6_studies/Aerosol.yaml)
+Located in [CMIP6_studies/Aerosol.yaml](../CMIP6_studies/Aerosol.yaml)
 
 ['pers. comm.', 'Jesus Fernandez']
 
@@ -299,7 +297,7 @@ Located in [CMIP6_studies/Aerosol.yaml](CMIP6_studies/Aerosol.yaml)
 
 #### Bra21 complexity
 
-Located in [CMIP6_studies/Bra21.yaml](CMIP6_studies/Bra21.yaml)
+Located in [CMIP6_studies/Bra21.yaml](../CMIP6_studies/Bra21.yaml)
 
 Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
 
@@ -330,7 +328,7 @@ Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and
 
 #### Calendar
 
-Located in [CMIP6_studies/Calendar.yaml](CMIP6_studies/Calendar.yaml)
+Located in [CMIP6_studies/Calendar.yaml](../CMIP6_studies/Calendar.yaml)
 
 ['pers. comm.', 'Andreas Dobler']
 
@@ -353,7 +351,7 @@ Located in [CMIP6_studies/Calendar.yaml](CMIP6_studies/Calendar.yaml)
 
 #### atm. res. km
 
-Located in [CMIP6_studies/Resolution.yaml](CMIP6_studies/Resolution.yaml)
+Located in [CMIP6_studies/Resolution.yaml](../CMIP6_studies/Resolution.yaml)
 
 None
 

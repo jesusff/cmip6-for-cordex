@@ -1,7 +1,7 @@
 ,,1. Availability,1. Availability,1. Availability,1. Availability,1. Availability,1. Availability,1. Availability,2. Plausibility,2. Plausibility,2. Plausibility,2. Plausibility,2. Plausibility,3. Spread of future outcomes,3. Spread of future outcomes,4. Other criteria,4. Other criteria,4. Other criteria,4. Other criteria,4. Other criteria
 . Plausible values,max,,,,,,,,,2.40,0.20,1.00,1.00,,,,,,,
 . Plausible values,min,,,,,,,,,1.20,0.01,0.00,1.00,,,,,,,
-model,run,synthesis,historical,ssp119,ssp126,ssp245,ssp370,ssp585,Synthesis,AR6 TCR very likely range,Bru20 perf,Dalelane MNQS,Qasmi Constr Global Dtas ssp245 2050,AR6 TCR as spread,Sch20 ECS,Bru20 mfamily,Aer. species,Bra21 complexity,Calendar,atm. res. km
+model,run,synthesis,historical,ssp119,ssp126,ssp245,ssp370,ssp585,Synthesis,AR6 TCR,Bru20 perf,Dalelane MNQS,Qasmi Constr Global Dtas ssp245 2050,AR6 TCR as spread,Sch20 ECS,Bru20 mfamily,Aer. species,Bra21 complexity,Calendar,atm. res. km
 ACCESS-CM2,r1i1p1f1,1.00,RCM,,RCM,RCM,RCM,RCM,1,2.10,0.07,0.79,0.00,2.10,4.72,HadGEM,,2222002000.00,gregorian,250.00
 ACCESS-CM2,r4i1p1f1,1.00,RCM,,RCM,RCM,RCM,RCM,1,2.10,0.07,,0.00,2.10,,,,,,
 ACCESS-CM2,r5i1p1f1,1.00,RCM,,RCM,RCM,RCM,RCM,1,2.10,0.07,,0.00,2.10,,,,,,
@@ -19,7 +19,7 @@ CAMS-CSM1-0,r1i1p1f1,0.00,-,-,-,-,-,-,0,1.73,0.06,,,1.73,,,,,365_day,100.00
 CAMS-CSM1-0,r2i1p1f1,0.00,Basic,Basic,Basic,Basic,Basic,Basic,0,,0.06,,,,2.29,,,,,
 CAS-ESM2-0,r1i1p1f1,0.00,-,,-,-,-,-,0,2.04,,,1.00,2.04,3.51,,,,365_day,100.00
 CESM2,r1i1p1f1,0.00,ESD,,ESD,ESD,ESD,ESD,1,,0.02,0.79,0.00,,,CESM,bc dust oa so4,,,
-CESM2,r2i1p1f1,1.00,ESD,,RCM,RCM,RCM,RCM,1,2.06,0.02,0.75,0.00,2.06,5.16,CESM,bc dust oa so4 ss,,365_day,100.00
+CESM2,r2i1p1f1,0.00,ESD,,RCM,RCM,RCM,RCM,1,2.06,0.02,0.75,0.00,2.06,5.16,CESM,bc dust oa so4 ss,,365_day,100.00
 CESM2,r3i1p1f1,0.00,ESD,,,Basic,-,,,,,,,,,,bc dust oa so4,,,
 CESM2,r4i1p1f1,0.00,ESD,,ESD,ESD,ESD,ESD,1,,,,0.00,,,,bc dust oa so4,,,
 CESM2,r5i1p1f1,0.00,ESD,,,,-,,,,,,,,,,bc dust oa so4,,,
@@ -130,9 +130,9 @@ CanESM5-CanOE,r2i1p1f1,,,,,,,,1,,0.00,,,,,CanESM,,,,
 CanESM5-CanOE,r2i1p2f1,0.00,-,,-,-,-,-,,,,,,,,,dust ss,,,
 CanESM5-CanOE,r3i1p1f1,,,,,,,,1,,0.00,,,,,CanESM,,,,
 CanESM5-CanOE,r3i1p2f1,0.00,-,,-,-,-,-,,,,,,,,,dust ss,,,
-E3SM-1-0,r1i1p1f1,0.00,Basic,,,,,,1,2.99,,,,2.99,5.32,,,,,100.00
+E3SM-1-0,r1i1p1f1,0.00,Basic,,,,,-,1,2.99,,,,2.99,5.32,,,,,100.00
 E3SM-1-1,r1i1p1f1,0.00,-,,,-,,-,,,,,,,,,,,365_day,100.00
-E3SM-1-1-ECA,r1i1p1f1,0.00,-,,,,,,,,,,,,,,,,,100.00
+E3SM-1-1-ECA,r1i1p1f1,0.00,-,,,,,Basic,,,,,,,,,,,,100.00
 EC-Earth3,r1i1p1f1,1.00,RCM,,RCM,RCM,RCM,RCM,1,2.30,0.01,0.82,0.00,2.30,,EC-Earth,MACv2-SP approach,2222101000.00,gregorian,100.00
 EC-Earth3,r2i1p1f1,0.00,Basic,,,Basic,,,1,,0.01,,0.00,,,EC-Earth,,,,
 EC-Earth3,r3i1p1f1,0.00,ESD,,,,,ESD,1,,0.01,,0.00,,,EC-Earth,,,,
@@ -169,7 +169,7 @@ GISS-E2-1-G,r3i1p3f2,0.00,,,,,-,,,,,,,,,,bb bc dust no3 oa so4 ss,,,
 GISS-E2-1-G,r4i1p3f1,0.00,-,,-,-,-,-,,,,,,,,,bb bc dust no3 oa so4 ss,,,
 GISS-E2-1-H,r1i1p1f1,0.00,-,,,,,,0,1.93,,,,1.93,3.11,,,,365_day,250.00
 GISS-E2-1-H,r1i1p3f1,0.00,-,-,-,-,-,-,,,,,,,,,bb bc dust no3 oa so4 ss,,,
-GISS-E2-2-G,r1i1p1f1,,,,,,,,0,1.71,,,,1.71,,,,,,
+GISS-E2-2-G,r1i1p1f1,0.00,Basic,,,,,,0,1.71,,,,1.71,,,,,,
 HadGEM3-GC31-LL,r1i1p1f1,,,,,,,,2,2.55,,,0.00,2.55,,,,,360_day,
 HadGEM3-GC31-LL,r1i1p1f3,0.00,RCM,,RCM,RCM,,RCM,2,,0.00,0.82,0.00,,5.55,HadGEM,,,,
 HadGEM3-GC31-MM,r1i1p1f1,,,,,,,,1,2.58,,,,2.58,,,,,360_day,

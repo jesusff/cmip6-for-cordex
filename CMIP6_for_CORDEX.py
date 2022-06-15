@@ -127,7 +127,7 @@ varcount.insert(0, 'synthesis',
 #
 #   CSV output
 #
-varcount.to_csv('CMIP6_for_CORDEX_availability_ESGF.csv', float_format = '%g',
+varcount.to_csv('docs/CMIP6_for_CORDEX_availability_ESGF.csv', float_format = '%g',
   index_label = ['model', 'run']
 )
 #

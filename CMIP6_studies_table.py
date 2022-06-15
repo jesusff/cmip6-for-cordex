@@ -78,7 +78,7 @@ tableother = pd.concat(
 )
 
 # Availability
-tableavail = pd.read_csv('CMIP6_for_CORDEX_availability_ESGF.csv').set_index(['model', 'run'])
+tableavail = pd.read_csv('docs/CMIP6_for_CORDEX_availability_ESGF.csv').set_index(['model', 'run'])
 non_esgf = pd.read_csv('CMIP6_for_CORDEX_availability_non_ESGF.csv').set_index(['model', 'run'])
 tableavail.update(non_esgf)
 # - update synthesis column
@@ -105,7 +105,7 @@ tablefull = pd.concat(
 )
 tablefull = tablefull.reindex(ns.natsorted(tablefull.index))
 # Dump final CSV
-csvout = f'CMIP6_studies_table_{CORDEX_DOMAIN}.csv'
+csvout = f'docs/CMIP6_studies_table_{CORDEX_DOMAIN}.csv'
 tablefull.to_csv(csvout, float_format = '%.2f', index_label = ['model', 'run'])
 # Some fixes for Google Spreadsheet
 fp = open(csvout, 'r')
@@ -216,7 +216,7 @@ format_dict = { # Format exceptions
   ('3. Spread of future outcomes', 'Nabat EUR AOD future change ssp585'): '{:.3f}'
 }
 d1 = dict(selector=".level0", props=[('min-width', '150px')])
-f = open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w')
+f = open(f'docs/CMIP6_studies_table_{CORDEX_DOMAIN}.html','w')
 f.write(f'''<!DOCTYPE html>
 <html><head>
 <style>
@@ -244,7 +244,7 @@ A dash (-) indicates that the simulation exists in ESGF, but none of the conditi
 Empty cells represent unavailable simulations (either at ESGF or the producing center).
 The synthesis column indicates whether the CORDEX-CMIP6 protocol mandatory scenarios (SSP3-7.0 and SSP1-2.6) are available (1) or not (0).
 <b>Plausibility</b> is measured by different performance metrics (in columns), usually against reanalysis or other observational data.
-Additional metrics can be contributed at <a href="https://github.com/jesusff/cmip6-for-cordex/tree/main/CMIP6_studies">https://github.com/jesusff/cmip6-for-cordex/tree/main/CMIP6_studies</a>
+Additional metrics can be contributed at <a href="https://github.com/WCRP-CORDEX/cmip6-for-cordex/tree/main/CMIP6_studies">https://github.com/WCRP-CORDEX/cmip6-for-cordex/tree/main/CMIP6_studies</a>
 The range of plausible values (top two rows) determine the values of the metrics which are considered unplausible (these values are greyed out).
 Column headers are links to full details of the metric definitions, scope, plausible ranges and their origin.
 Columns are sorted according to the spatial scope of the metrics (global metrics to the left).
@@ -266,7 +266,7 @@ headers = [
 ]
 text = [
   '', '', '', 
-  'See institutional plans at <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_downscaling_plans.csv" target="_blank">CMIP6_downscaling_plans.csv</a><br>',
+  'See institutional plans at <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CMIP6_downscaling_plans.csv" target="_blank">CMIP6_downscaling_plans.csv</a><br>',
   ''
 ]
 ids = ['avail-and-plausible', 'available', 'plausible', 'selected', 'all']
@@ -299,8 +299,8 @@ f.write('</body></html>')
 f.close()
 
 # Headers as links (dirty stuff...)
-baseurl = f'https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_studies_list_{CORDEX_DOMAIN}.md'
-with open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','r') as f:
+baseurl = f'https://github.com/WCRP-CORDEX/cmip6-for-cordex/blob/main/docs/CMIP6_studies_list_{CORDEX_DOMAIN}.md'
+with open(f'docs/CMIP6_studies_table_{CORDEX_DOMAIN}.html','r') as f:
   fulltext = f.read()
 
 for head in [x[1] for x in spreadcols+perfcols+othercols]:
@@ -310,6 +310,6 @@ for head in [x[1] for x in spreadcols+perfcols+othercols]:
   anchor = anchor.replace('.', '')
   fulltext = fulltext.replace('>'+head+'<', f'><a href="{baseurl}#{anchor}" target="_blank">{head}</a><')
 
-with open(f'CMIP6_studies_table_{CORDEX_DOMAIN}.html','w') as f:
+with open(f'docs/CMIP6_studies_table_{CORDEX_DOMAIN}.html','w') as f:
   f.write(fulltext)
 

@@ -3,7 +3,7 @@ import natsort as ns
 import numpy as np
 import pandas as pd
 
-tableavail = pd.read_csv('CMIP6_for_CORDEX_availability_ESGF.csv').set_index(['model', 'run'])
+tableavail = pd.read_csv('docs/CMIP6_for_CORDEX_availability_ESGF.csv').set_index(['model', 'run'])
 non_esgf = pd.read_csv('CMIP6_for_CORDEX_availability_non_ESGF.csv').set_index(['model', 'run'])
 tableavail.update(non_esgf)
 # - update synthesis column
@@ -26,7 +26,7 @@ row_filter = set(
 tableavail = tableavail.loc[row_filter]
 tableavail = tableavail.reindex(ns.natsorted(tableavail.index))
 
-csvout = 'CMIP6_for_CORDEX_availability_RCM.csv'
+csvout = 'docs/CMIP6_for_CORDEX_availability_RCM.csv'
 tableavail.to_csv(csvout, float_format = '%.2f', index_label = ['model', 'run'])
 
 def greyout_non_rcm(df):
@@ -38,7 +38,7 @@ def greyout_non_rcm(df):
   return(rval)
 
 d1 = dict(selector=".level0", props=[('min-width', '50px')])
-f = open(f'CMIP6_for_CORDEX_availability_RCM.html','w')
+f = open(f'docs/CMIP6_for_CORDEX_availability_RCM.html','w')
 f.write(f'''<!DOCTYPE html>
 <html><head>
 <style>
@@ -69,7 +69,7 @@ The synthesis column indicates whether the CORDEX-CMIP6 protocol mandatory scena
 The table shows only those simulations with RCM LBC available for some future scenario (plus historical).
 </p>
 <p style="font-size: smaller; text-align: justify;">
-See <a href="http://jesusff.github.io/cmip6-for-cordex">http://jesusff.github.io/cmip6-for-cordex</a> for details. A machine-readable (CSV) file version of this table is available <a href="https://github.com/jesusff/cmip6-for-cordex/blob/main/CMIP6_for_CORDEX_availability_RCM.csv">here</a>.
+See <a href="http://wcrp-cordex.github.io/cmip6-for-cordex">http://wrcp-cordex.github.io/cmip6-for-cordex</a> for details. A machine-readable (CSV) file version of this table is available <a href="https://github.com/wcrp-cordex/cmip6-for-cordex/blob/main/docs/CMIP6_for_CORDEX_availability_RCM.csv">here</a>.
 </p>
 ''')
 f.write(tableavail
