@@ -6,10 +6,8 @@
 ## Disabled entries
 
  · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
- · [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dpr MED DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
@@ -893,6 +891,33 @@ Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
 
 ```
 
+#### Atlas Dtas MED DJF
+
+Located in [CMIP6_studies/AtlasIPCC.yaml](../CMIP6_studies/AtlasIPCC.yaml)
+
+['Pers. Comm.', 'Jesus Fernandez']
+
+```
+- key: Atlas Dtas MED DJF
+  doi: ['Pers. Comm.', 'Jesus Fernandez']
+  type: future_spread
+  spatial_scope: MED
+  temporal_scope: DJF
+  data_source: author_adapted
+  metric:
+    name: delta_tas
+    long_name: Near surface temperature delta change 2071-2100 w.r.t. 1981-2010
+    units: K
+    variables: tas
+    comment:
+      Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
+      aggregated-regionally using the tas_landsea dataset.
+  period:
+    reference: 1981-2010
+    target: 2071-2100
+
+```
+
 #### Atlas Dtas MED JJA
 
 Located in [CMIP6_studies/AtlasIPCC.yaml](../CMIP6_studies/AtlasIPCC.yaml)
@@ -914,6 +939,33 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](../CMIP6_studies/AtlasIPCC.yaml)
     comment:
       Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
       aggregated-regionally using the tas_landsea dataset.
+  period:
+    reference: 1981-2010
+    target: 2071-2100
+
+```
+
+#### Atlas Dpr MED DJF
+
+Located in [CMIP6_studies/AtlasIPCC.yaml](../CMIP6_studies/AtlasIPCC.yaml)
+
+['Pers. Comm.', 'Jesus Fernandez']
+
+```
+- key: Atlas Dpr MED DJF
+  doi: ['Pers. Comm.', 'Jesus Fernandez']
+  type: future_spread
+  spatial_scope: MED
+  temporal_scope: DJF
+  data_source: author_adapted
+  metric:
+    name: delta_pr
+    long_name: Precipitation relative delta change 2071-2100 w.r.t. 1981-2010
+    units: percent
+    variables: pr
+    comment:
+      Data derived from https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-
+      aggregated-regionally using the pr_land dataset.
   period:
     reference: 1981-2010
     target: 2071-2100
