@@ -19,6 +19,7 @@
  · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
  · [Cob21](CMIP6_studies/Cob21.yaml)
  · [Dobler SST rmse MED](CMIP6_studies/Dobler.yaml)
+ · [Dobler SST rmse EUR](CMIP6_studies/Dobler.yaml)
 ## Available entries (MED scope)
 ### Plausibility
 #### AR6 TCR
@@ -326,55 +327,6 @@ Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric 
     source: author
     comment:
       Large widespread errors (value 3) lead to consider the model unplausible.
-
-```
-
-#### Dobler SST rmse EUR
-
-Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
-
-['pers. comm.', 'A. Dobler']
-
-```
-- key: Dobler SST rmse EUR
-  doi: ['pers. comm.', 'A. Dobler']
-  type: performance
-  spatial_scope: EUR
-  temporal_scope: Annual
-  data_source: author
-  metric:
-    name: sstrmse
-    long_name: Sea Surface Temperature RMSE w.r.t. HadISST
-    units: K
-    variables: tos
-    comment:
-      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
-      bias maps over the period 1985-2014: first the average monthly SST are
-      computed. Then, over all 12 maps of biases the RMSEs are calculated. All
-      the models are interpolated onto the grid of the refererence HadISST 1.1
-      monthly average sea surface temperature (Rayner et al. 2003,
-      DOI:10.1029/2002JD002670) Missing values due to non-existing sea areas (in
-      the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
-      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
-      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=0 Area definitions: BNS: Baltic and North
-      Sea NBS: Norwegian and Barents Sea NAtl: Nordic Atlantic (replaced by NBS)
-      SNA: (Southern) Nord Atlantic MED: Mediterranean (disabled, use Sevault
-      MED SST instead.  ) BLK: Black Sea EUR: Europe box Maps are provided in: h
-      ttps://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xG
-      AmnNSIiI/edit#gid=334563502 R-script reports (PDF files) used for the
-      calcualtions are available at
-      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
-    best: 0
-    worst: +inf
-  period:
-    reference: 1985-2014
-  plausible_values:
-  - min: 0
-    max: 3
-    source: eurocordex_gcm_selection_team
-    comment:
-      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
-      next half integer.
 
 ```
 
@@ -719,6 +671,106 @@ Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
     source: author
     comment:
       The plausibility threshold is difficult to set.
+
+```
+
+#### Dobler SST rmse SNA
+
+Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
+
+Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
+
+['pers. comm.', 'A. Dobler']
+
+```
+- key: Dobler SST rmse SNA
+  doi: ['pers. comm.', 'A. Dobler']
+  type: performance
+  spatial_scope: SNA
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: sstrmse
+    long_name: Sea Surface Temperature RMSE w.r.t. HadISST
+    units: K
+    variables: tos
+    comment:
+      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014: first the average monthly SST are
+      computed. Then, over all 12 maps of biases the RMSEs are calculated. All
+      the models are interpolated onto the grid of the refererence HadISST 1.1
+      monthly average sea surface temperature (Rayner et al. 2003,
+      DOI:10.1029/2002JD002670) Missing values due to non-existing sea areas (in
+      the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=0 Area definitions: BNS: Baltic and North
+      Sea NBS: Norwegian and Barents Sea NAtl: Nordic Atlantic (replaced by NBS)
+      SNA: (Southern) Nord Atlantic MED: Mediterranean (disabled, use Sevault
+      MED SST instead.  ) BLK: Black Sea EUR: Europe box Maps are provided in: h
+      ttps://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xG
+      AmnNSIiI/edit#gid=334563502 R-script reports (PDF files) used for the
+      calcualtions are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
+    best: 0
+    worst: +inf
+  period:
+    reference: 1985-2014
+  plausible_values:
+  - min: 0
+    max: 2.5
+    source: eurocordex_gcm_selection_team
+    comment:
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
+
+```
+
+#### Dobler SST rmse BLK
+
+Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
+
+['pers. comm.', 'A. Dobler']
+
+```
+- key: Dobler SST rmse BLK
+  doi: ['pers. comm.', 'A. Dobler']
+  type: performance
+  spatial_scope: BLK
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: sstrmse
+    long_name: Sea Surface Temperature RMSE w.r.t. HadISST
+    units: K
+    variables: tos
+    comment:
+      Analogue to the MED SST RMSE, we compute the spatial RMSE on the 12-month
+      bias maps over the period 1985-2014: first the average monthly SST are
+      computed. Then, over all 12 maps of biases the RMSEs are calculated. All
+      the models are interpolated onto the grid of the refererence HadISST 1.1
+      monthly average sea surface temperature (Rayner et al. 2003,
+      DOI:10.1029/2002JD002670) Missing values due to non-existing sea areas (in
+      the GCM) are coded as -99 (RMSE is strictly positive). ----- Numbers are
+      provided in: https://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTB
+      z9ctgRrCHqw5xGAmnNSIiI/edit#gid=0 Area definitions: BNS: Baltic and North
+      Sea NBS: Norwegian and Barents Sea NAtl: Nordic Atlantic (replaced by NBS)
+      SNA: (Southern) Nord Atlantic MED: Mediterranean (disabled, use Sevault
+      MED SST instead.  ) BLK: Black Sea EUR: Europe box Maps are provided in: h
+      ttps://docs.google.com/spreadsheets/d/1xvqc2CtKmi1UOCftX5hTBz9ctgRrCHqw5xG
+      AmnNSIiI/edit#gid=334563502 R-script reports (PDF files) used for the
+      calcualtions are available at
+      https://drive.google.com/drive/folders/1MRNO_h6EGcyGs4d82vqtTLyTLtNxHaQ0
+    best: 0
+    worst: +inf
+  period:
+    reference: 1985-2014
+  plausible_values:
+  - min: 0
+    max: 2.5
+    source: eurocordex_gcm_selection_team
+    comment:
+      Upper limit: (Mean + 2*sd) of the RMSEs of 29 models, rounded up to the
+      next half integer.
 
 ```
 
