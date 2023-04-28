@@ -535,6 +535,11 @@
 - key: Dobler SST rmse EUR
   doi: [pers. comm., A. Dobler]
   metric: *sstrmse
+  disabled:
+    cause: preferred_source
+    preferred: Dobler SST rmse SNA
+    comment: >
+      Exclude the European domain from the evaluation as we have BLK, MED and SNA already
   type: performance
   spatial_scope: EUR
   temporal_scope: Annual
