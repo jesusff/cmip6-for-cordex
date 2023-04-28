@@ -36,6 +36,8 @@ spatial_scope_filter:
     - EUR
     - MED+NEU+CEU
     - MED
+    - SNA # (Southern) North Atlantic
+    - BLK # Black Sea
     - special
 
   SEA:
