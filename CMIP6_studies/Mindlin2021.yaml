@@ -8,6 +8,10 @@
     comment: >
       These metrics are inpired by the work done in Mindlin and Shepherd, 2020, Clim Dyn but for CMIP6 GCMs and in Mindlin et al. 2021, GRL. It includes 29 CMIP6 GCMs for SSP585 and extended to include 37 models
       Tropical  warming (TW), the latter evaluated as the long-term change in temperature (ta) at 250 hPa zonally averaged between 15°S and 15°N (ΔT trop ) divided by the global surface temperature change (ΔT). Here Δ indicates the difference between 2070–2099 in the SSP5-8.5 experiment and 1950–1979 in the historical experiment
+  disabled:
+    cause: incomplete
+    comment: >
+      There are some models with missing member information
   type: future_spread
   spatial_scope: Global
   temporal_scope: Annual
