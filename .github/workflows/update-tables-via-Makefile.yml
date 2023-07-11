@@ -12,10 +12,11 @@ on:
         # Input has to be provided for the workflow to run
         required: true
 jobs:
-  build-linux:
+  update-tables:
     runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 5
+    defaults:
+      run:
+        shell: bash -l {0}
 
     steps:
     - uses: actions/checkout@v3
@@ -39,3 +40,27 @@ jobs:
         git config --global user.email 'jesusff@users.noreply.github.com'
         git commit -am "[Actions] ${{ github.event.inputs.target }}"
         git push
+
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Setup mamba
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        environment-file: environment.yml
+        miniforge-version: latest
+        miniforge-variant: Mambaforge
+
+    - name: Make
+      run: |
+        make ${{ github.event.inputs.target }}
+       
+    - name: Commit
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        git commit -am "[Actions] ${{ github.event.inputs.target }} tables"
+        git push
+
