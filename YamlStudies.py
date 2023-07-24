@@ -110,7 +110,7 @@ class MetricEntry:
       try:
         model, member = key.split('_')
       except ValueError as e:
-        print(f'Malformed model_run string: {key}\n{e}')
+        print(f'Malformed model_run string when parsing {self.key}: {key}\n{e}')
         break
       ripf = parse_ripf(member)
       for item in ripf:
@@ -214,7 +214,7 @@ class SubKeys:
   def __getitem__(self, item):
     return(self.__dict__[item])
 
-def load_from_files(pattern, skip_disabled = False, skip_cause = '', resolve_doi = False):
+def load_from_files(pattern, skip_disabled = False, skip_cause = '', skip_disabled_domain = '', resolve_doi = False):
   alldata = []
   for fname in sorted(glob.glob(pattern)):
     with open(fname) as fp:
@@ -227,6 +227,8 @@ def load_from_files(pattern, skip_disabled = False, skip_cause = '', resolve_doi
     rval = [MetricEntry(x, resolve_doi = resolve_doi) for x in alldata if not ('disabled' in x and x['disabled']['cause'] == skip_cause)]
   else:
     rval = [MetricEntry(x, resolve_doi = resolve_doi) for x in alldata]
+  if skip_disabled_domain:
+    rval = [x for x in rval if not f'disabled_{skip_disabled_domain}' in x.__dict__]
   return(rval)
 
 if __name__ == '__main__':

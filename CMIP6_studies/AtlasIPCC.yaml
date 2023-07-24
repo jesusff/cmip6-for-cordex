@@ -86,7 +86,7 @@
       NorESM2-LM_r1i1p1f1: 1.3013555555555556
       NorESM2-MM_r1i1p1f1: 1.4224444444444444
       UKESM1-0-LL_r1i1p1f2: 5.335011111111111
-
+  data:
     ssp370:
       ACCESS-CM2_r1i1p1f1: 5.906055555555556
       ACCESS-ESM1-5_r1i1p1f1: 3.6326777777777783
@@ -118,7 +118,7 @@
       NorESM2-LM_r1i1p1f1: 1.8286555555555557
       NorESM2-MM_r1i1p1f1: 2.923988888888889
       UKESM1-0-LL_r1i1p1f2: 6.860911111111111
-  data:
+  data_ssp585:
     ssp585:
       ACCESS-CM2_r1i1p1f1: 6.896588888888888
       ACCESS-ESM1-5_r1i1p1f1: 4.565266666666667
@@ -328,7 +328,7 @@
       Data derived from
       https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-aggregated-regionally
       using the tas_landsea dataset.
-  disabled:
+  disabled_EUR:
     cause: preferred_source
     preferred: 
     comment: >
@@ -340,7 +340,7 @@
     target: 2071-2100
   type: future_spread
   data_source: author_adapted
-  data:
+  data_other:
     ssp126:
       ACCESS-CM2_r1i1p1f1: 2.0654111111111098
       ACCESS-ESM1-5_r1i1p1f1: 1.9939111111111139
@@ -410,7 +410,7 @@
       NorESM2-LM_r1i1p1f1: 1.8219000000000012
       NorESM2-MM_r1i1p1f1: 1.6317777777777778
       UKESM1-0-LL_r1i1p1f2: 3.6118555555555574
-
+  data:
     ssp370:
       ACCESS-CM2_r1i1p1f1: 4.249011111111112
       ACCESS-ESM1-5_r1i1p1f1: 3.4994444444444426
@@ -442,7 +442,7 @@
       NorESM2-LM_r1i1p1f1: 2.287477777777779
       NorESM2-MM_r1i1p1f1: 2.4256111111111096
       UKESM1-0-LL_r1i1p1f2: 4.876766666666667
-
+  data_ssp585:
     ssp585:
       ACCESS-CM2_r1i1p1f1: 4.510277777777778
       ACCESS-ESM1-5_r1i1p1f1: 4.2750666666666675
@@ -729,7 +729,7 @@
       NorESM2-LM_r1i1p1f1: 1.3457666666666661
       NorESM2-MM_r1i1p1f1: 1.6662444444444446
       UKESM1-0-LL_r1i1p1f2: 5.627377777777777
-
+  data:
     ssp370:
       ACCESS-CM2_r1i1p1f1: 5.191111111111113
       ACCESS-ESM1-5_r1i1p1f1: 3.450599999999998
@@ -761,7 +761,7 @@
       NorESM2-LM_r1i1p1f1: 2.0646888888888935
       NorESM2-MM_r1i1p1f1: 2.613544444444445
       UKESM1-0-LL_r1i1p1f2: 6.859733333333336
-  data:
+  data_ssp585:
     ssp585:
       ACCESS-CM2_r1i1p1f1: 6.248433333333335
       ACCESS-ESM1-5_r1i1p1f1: 4.381144444444443
@@ -886,7 +886,7 @@
       NorESM2-LM_r1i1p1f1: 3.369788888888891
       NorESM2-MM_r1i1p1f1: 3.5427
       UKESM1-0-LL_r1i1p1f2: 6.2534888888888815
-
+  data:
     ssp370:
       ACCESS-CM2_r1i1p1f1: 6.6399222222222285
       ACCESS-ESM1-5_r1i1p1f1: 5.435088888888888
@@ -918,7 +918,7 @@
       NorESM2-LM_r1i1p1f1: 4.450488888888888
       NorESM2-MM_r1i1p1f1: 4.758766666666666
       UKESM1-0-LL_r1i1p1f2: 7.881311111111113
-  data:
+  data_ssp585:
     ssp585:
       ACCESS-CM2_r1i1p1f1: 7.901466666666664
       ACCESS-ESM1-5_r1i1p1f1: 6.478488888888894
@@ -1043,7 +1043,7 @@
       NorESM2-LM_r1i1p1f1: 3.637066666666666
       NorESM2-MM_r1i1p1f1: 3.0517999999999965
       UKESM1-0-LL_r1i1p1f2: 4.793455555555564
-
+  data:
     ssp370:
       ACCESS-CM2_r1i1p1f1: 5.257288888888883
       ACCESS-ESM1-5_r1i1p1f1: 4.874488888888891
@@ -1075,7 +1075,7 @@
       NorESM2-LM_r1i1p1f1: 4.910400000000003
       NorESM2-MM_r1i1p1f1: 4.199722222222221
       UKESM1-0-LL_r1i1p1f2: 6.343355555555561
-  data:
+  data_ssp585:
     ssp585:
       ACCESS-CM2_r1i1p1f1: 6.366411111111098
       ACCESS-ESM1-5_r1i1p1f1: 5.708688888888901
@@ -1597,7 +1597,7 @@
       Data derived from
       https://github.com/IPCC-WG1/Atlas/tree/devel/datasets-aggregated-regionally
       using the pr_land dataset.
-  disabled:
+  disabled_EUR:
     cause: preferred_source
     preferred: 
     comment: >
@@ -1609,7 +1609,7 @@
     target: 2071-2100
   type: future_spread
   data_source: author_adapted
-  data:
+  data_other:
     ssp126:
       ACCESS-CM2_r1i1p1f1: -1.2705288584807803
       ACCESS-ESM1-5_r1i1p1f1: -3.905017140991444
@@ -1676,7 +1676,7 @@
       NorESM2-LM_r1i1p1f1: -14.219086072223709
       NorESM2-MM_r1i1p1f1: -1.7527491367830046
       UKESM1-0-LL_r1i1p1f2: 4.85618479880777
-
+  data:
     ssp370:
       ACCESS-CM2_r1i1p1f1: -1.405476161558936
       ACCESS-ESM1-5_r1i1p1f1: -3.756733960929417
@@ -1706,7 +1706,7 @@
       NorESM2-LM_r1i1p1f1: -17.508773253839482
       NorESM2-MM_r1i1p1f1: -10.730205816447775
       UKESM1-0-LL_r1i1p1f2: -1.6736214605067106
-
+  data_ssp585:
     ssp585:
       ACCESS-CM2_r1i1p1f1: -2.3366125527981487
       ACCESS-ESM1-5_r1i1p1f1: -4.72805681014311
@@ -2296,6 +2296,7 @@
       NorESM2-MM_r1i1p1f1: -13.0506557427165
       UKESM1-0-LL_r1i1p1f2: -32.67160666900314
 
+  data:
     ssp370:
       ACCESS-CM2_r1i1p1f1: -15.521915570747803
       ACCESS-ESM1-5_r1i1p1f1: -13.742911153119072
@@ -2325,7 +2326,8 @@
       NorESM2-LM_r1i1p1f1: -30.75158150054083
       NorESM2-MM_r1i1p1f1: -28.510287059398966
       UKESM1-0-LL_r1i1p1f2: -51.269213438141485
-  data:
+
+  data_ssp585:
     ssp585:
       ACCESS-CM2_r1i1p1f1: -14.525064408035439
       ACCESS-ESM1-5_r1i1p1f1: -25.483495710338804

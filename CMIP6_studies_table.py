@@ -33,7 +33,7 @@ synthesis = synthesis_sum_failures
 with open('CMIP6_studies_config.yaml') as fp:
   config = yaml.load(fp, Loader=yaml.FullLoader)
 
-alldata = ys.load_from_files('CMIP6_studies/*.yaml', skip_disabled = True)
+alldata = ys.load_from_files('CMIP6_studies/*.yaml', skip_disabled = True, skip_disabled_domain = CORDEX_DOMAIN)
 # filter and sort
 alldata = [x for x in alldata if x.spatial_scope in config['spatial_scope_filter'][CORDEX_DOMAIN]]
 alldata.sort(key=lambda x: config['spatial_scope_filter'][CORDEX_DOMAIN].index(x.spatial_scope))

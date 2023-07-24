@@ -1,5 +1,5 @@
 - key: Qasmi Constr Global Dtas ssp245 2050
-  doi:
+  doi: 10.1126/sciadv.abc0671
   metric:
     name: Constrained-Dtas
     long_name: Observationally-contrained future climate change
@@ -79,7 +79,7 @@
     UKESM1-0-LL_r1-3i1p1f2: 0
 
 - key: Qasmi Constr EUR Dtas ssp245 2050 JJA
-  doi: [pers_comm, S. Qasmi]
+  doi: 10.1126/sciadv.abo6872
   metric:
     name: deltatas_class
     long_name: Warming classes according to Observationally-constrained Summer European future surface air temperature change in 2041-2060 in Summer
@@ -88,7 +88,8 @@
     comment: >
       Regional tas change in Europe MED, NEU, CEU, MED+NEU+CEU, DJF, JJA, 2041-2060 vs
       1850-1900, SSP245. Values are given only for land points.
-      S. Qasmi, numerical values available soon. Only warming classes for now.
+      Adapted from Qasmi and Ribes 2022, Sci. Adv. by S. Qasmi following S. Somot's request
+      Numerical values available soon. Only warming classes for now.
       We report here only warming classes for JJA and for the joined MED+NEU+CEU domain
   type: future_spread
   spatial_scope: MED+NEU+CEU
