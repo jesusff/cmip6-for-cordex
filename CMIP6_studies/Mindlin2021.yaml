@@ -7,11 +7,8 @@
     variables: ta250
     comment: >
       These metrics are inpired by the work done in Mindlin and Shepherd, 2020, Clim Dyn but for CMIP6 GCMs and in Mindlin et al. 2021, GRL. It includes 29 CMIP6 GCMs for SSP585 and extended to include 37 models
-      Tropical  warming (TW), the latter evaluated as the long-term change in temperature (ta) at 250 hPa zonally averaged between 15°S and 15°N (ΔT trop ) divided by the global surface temperature change (ΔT). Here Δ indicates the difference between 2070–2099 in the SSP5-8.5 experiment and 1950–1979 in the historical experiment
-  disabled:
-    cause: incomplete
-    comment: >
-      There are some models with missing member information
+      Tropical warming (TW), the latter evaluated as the long-term change in temperature (ta) at 250 hPa zonally averaged between 15°S and 15°N (ΔT trop ) divided by the global surface temperature change (ΔT). Here Δ indicates the difference between 2070–2099 in the SSP5-8.5 experiment and 1950–1979 in the historical experiment
+      The limit between weak and strong tropical warming is not easy to set. We use the value of 1.7 K/K choosing to have only 2 categories
   type: future_spread
   spatial_scope: Global
   temporal_scope: Annual
@@ -19,7 +16,7 @@
     reference: 1950-1979 
     target: 2070-2099 
   classes:
-    limits: [1.48, 1.99] # we need to have here only one value that is the limit between both categories 
+    limits: [1.7] # we have one value that limits both categories 
     labels: [weak tropical warming, strong tropical warming] 
     source: author
   data:
@@ -35,16 +32,16 @@
       ACCESS-ESM1-5_r7i1p1f1:   1.7054595
       ACCESS-ESM1-5_r8i1p1f1:   1.7175564
       ACCESS-ESM1-5_r9i1p1f1:   1.7010742
-      BCC-CSM2-MR:              1.7127626
+      BCC-CSM2-MR__r1i1p1f1:    1.7127626
       CAMS-CSM1-0_r1i1p1f1:     1.8912907
       CAMS-CSM1-0_r2i1p1f1:     1.812156
       CAS-ESM2-0_r1i1p1f1:      1.6375381
       CAS-ESM2-0_r3i1p1f1:      1.6149029
-      CESM2:                    1.7351601
-      CESM2-WACCM:              1.7182906
-      CIESM:                    1.6889338
-      CMCC-CM2-SR5:             1.5782032
-      CMCC-ESM2:                1.6430275
+      CESM2_r1i1p1f1:           1.7351601
+      CESM2-WACCM_r1i1p1f1:     1.7182906
+      CIESM_r1i1p1f1:           1.6889338
+      CMCC-CM2-SR5_r1i1p1f1:    1.5782032
+      CMCC-ESM2_r1i1p1f1:       1.6430275
       CNRM-CM6-1_r1i1p1f2:      1.8162122
       CNRM-CM6-1_r2i1p1f2:      1.8191243
       CNRM-CM6-1_r3i1p1f2:      1.8092346
@@ -110,8 +107,8 @@
       E3SM-1-0_r2i1p1f1:        1.5048836
       E3SM-1-0_r3i1p1f1:        1.493614
       E3SM-1-0_r5i1p1f1:        1.4878063
-      EC-Earth3:                1.5854179
-      FGOALS-g3_r1i1p1f1:        1.855895
+      EC-Earth3_r1i1p1f1:       1.5854179
+      FGOALS-g3_r1i1p1f1:       1.855895
       FGOALS-g3_r2i1p1f1:       1.9395894
       FGOALS-g3_r3i1p1f1:       1.8384475
       FGOALS-g3_r4i1p1f1:       1.9640846
@@ -147,9 +144,9 @@
       HadGEM3-GC31-MM_r2i1p1f3: 1.5609766
       HadGEM3-GC31-MM_r3i1p1f3: 1.5878377
       HadGEM3-GC31-MM_r4i1p1f3: 1.5740598
-      IITM-ESM:                 1.7558936
-      INM-CM4-8:                1.6575668
-      INM-CM5-0:                1.4833797
+      IITM-ESM_r1i1p1f1:        1.7558936
+      INM-CM4-8_r1i1p1f1:       1.6575668
+      INM-CM5-0_r1i1p1f1:       1.4833797
       IPSL-CM6A-LR_r14i1p1f1:   1.8202742
       IPSL-CM6A-LR_r1i1p1f1:    1.8086752
       IPSL-CM6A-LR_r2i1p1f1:    1.8179002
@@ -160,7 +157,7 @@
       KACE-1-0-G_r1i1p1f1:      1.6337267
       KACE-1-0-G_r2i1p1f1:      1.6732575
       KACE-1-0-G_r3i1p1f1:      1.6729805
-      MCM-UA-1-0:               1.5353613
+      MCM-UA-1-0_r1i1p1f1:      1.5353613
       MIROC-ES2L_r10i1p1f2:     1.7653055
       MIROC-ES2L_r1i1p1f2:      1.7474787
       MIROC-ES2L_r2i1p1f2:      1.8129728
@@ -219,7 +216,7 @@
       MIROC6_r6i1p1f1:          1.613489
       MIROC6_r7i1p1f1:          1.630894
       MIROC6_r8i1p1f1:          1.5896612
-      MPI-ESM1-2-HR:            1.7820132
+      MPI-ESM1-2-HR_r1i1p1f1:   1.7820132
       MPI-ESM1-2-LR_r10i1p1f1:  1.795191
       MPI-ESM1-2-LR_r1i1p1f1:   1.7838804
       MPI-ESM1-2-LR_r2i1p1f1:   1.7602094
@@ -238,9 +235,9 @@
       MRI-ESM2-0_r5i1p1f1:      1.8165125
       NESM3_r1i1p1f1:           1.8213501
       NESM3_r2i1p1f1:           1.752306
-      NorESM2-LM:               1.6523553
-      NorESM2-MM:               1.7036786
-      TaiESM1:                  1.5757176
+      NorESM2-LM_r1i1p1f1:      1.6523553
+      NorESM2-MM_r1i1p1f1:      1.7036786
+      TaiESM1_r1i1p1f1:         1.5757176
       UKESM1-0-LL_r1i1p1f2:     1.5390458
       UKESM1-0-LL_r2i1p1f2:     1.5386627
       UKESM1-0-LL_r3i1p1f2:     1.5604147
