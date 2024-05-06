@@ -6,9 +6,21 @@
     units: K_K-1
     variables: ta250
     comment: >
-      These metrics are inpired by the work done in Mindlin and Shepherd, 2020, Clim Dyn but for CMIP6 GCMs and in Mindlin et al. 2021, GRL. It includes 29 CMIP6 GCMs for SSP585 and extended to include 37 models
-      Tropical warming (TW), the latter evaluated as the long-term change in temperature (ta) at 250 hPa zonally averaged between 15°S and 15°N (ΔT trop ) divided by the global surface temperature change (ΔT). Here Δ indicates the difference between 2070–2099 in the SSP5-8.5 experiment and 1950–1979 in the historical experiment
-      The limit between weak and strong tropical warming is not easy to set. We use the value of 1.7 K/K choosing to have only 2 categories
+      These metrics are inspired by the work done in Mindlin and Shepherd, 2020,
+      Clim Dyn but for CMIP6 GCMs and in Mindlin et al. 2021, GRL. It includes 29
+      CMIP6 GCMs for SSP585 and extended to include 37 models Tropical warming (TW),
+      the latter evaluated as the long-term change in temperature (ta) at 250 hPa
+      zonally averaged between 15°S and 15°N (ΔT trop ) divided by the global surface
+      temperature change (ΔT). Here Δ indicates the difference between 2070–2099 in
+      the SSP5-8.5 experiment and 1950–1979 in the historical experiment.
+
+      The limit between weak and strong tropical warming is not easy to set.
+      We use the value of 1.7 K/K, choosing to have only 2 categories
+  disabled_EUR:
+    cause: not_agreed
+    preferred:
+    comment: >
+      The inclusion of this metric has not been discussed yet within the EURO-CORDEX community
   type: future_spread
   spatial_scope: Global
   temporal_scope: Annual
@@ -16,7 +28,7 @@
     reference: 1950-1979 
     target: 2070-2099 
   classes:
-    limits: [1.7] # we have one value that limits both categories 
+    limits: [0, 1.7, 10] # one value limits both categories 
     labels: [weak tropical warming, strong tropical warming] 
     source: author
   data:
@@ -32,7 +44,7 @@
       ACCESS-ESM1-5_r7i1p1f1:   1.7054595
       ACCESS-ESM1-5_r8i1p1f1:   1.7175564
       ACCESS-ESM1-5_r9i1p1f1:   1.7010742
-      BCC-CSM2-MR__r1i1p1f1:    1.7127626
+      BCC-CSM2-MR_r1i1p1f1:     1.7127626
       CAMS-CSM1-0_r1i1p1f1:     1.8912907
       CAMS-CSM1-0_r2i1p1f1:     1.812156
       CAS-ESM2-0_r1i1p1f1:      1.6375381

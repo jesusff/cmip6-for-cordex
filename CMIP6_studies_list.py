@@ -44,7 +44,7 @@ for x in alldata:
     if x[f'disabled_{CORDEX_DOMAIN}']['cause'] == 'preferred_source' and x[f'disabled_{CORDEX_DOMAIN}']['preferred']:
       preferred.setdefault(x[f'disabled_{CORDEX_DOMAIN}']['preferred'], []).append(x['key'])
 
-enabled_data = ys.load_from_files('CMIP6_studies/*.yaml', resolve_doi = True, skip_disabled = True, skip_disabled_domain = CORDEX_DOMAIN)
+enabled_data = ys.load_from_files('CMIP6_studies/*.yaml', resolve_doi = False, skip_disabled = True, skip_disabled_domain = CORDEX_DOMAIN)
 # filter and sort
 enabled_data = [x for x in enabled_data if x.spatial_scope in config['spatial_scope_filter'][CORDEX_DOMAIN]]
 enabled_data.sort(key=lambda x: config['spatial_scope_filter'][CORDEX_DOMAIN].index(x.spatial_scope))
