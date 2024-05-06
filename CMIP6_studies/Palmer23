@@ -1,0 +1,113 @@
+- key: Palmer23 EUR Circ DJF
+  doi: 10.5194/esd-14-457-2023
+  metric:
+    name: circ_djf
+    long_name: plausibillity of the large-scale circulation for Europe in Winter
+    units: 
+    variables: 
+    comment: >
+      This criteria is an updated on the work by McSweeney et al. 2015 but for CMIP6
+    best: 0
+    worst: 3
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJF
+  plausible_values:
+    min: 0
+    max: 2
+    source: author
+    comment: >
+      Each model is ranked with a colored flag corresponding to a number
+      Red (3): Large widespread errors to the extent that the model is unable to represent the present-day climatology in a useful way and future projections by the model cannot be interpreted in a meaningful way.
+      Orange (2): Unsatisfactory, substantial errors in remote regions where downstream effects could be expected to impact on the reliability of regional information and/or present in the local region of interest.
+      Yellow (1): Satisfactory, some substantial errors present but not widespread or not present in the local region of interest. Location of larger remote errors are not known to have a downstream impact in the local region of interest. Captures key characteristics of the criteria spatially or temporarily.
+      White (0): : Low errors over both local and remote regions. Captures key characteristics of the criteria spatially or temporarily
+      Grey: Data/ analysis not available.
+      In agreement with the authors we decided to eliminate only models with the Red flag
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1:     1
+    ACCESS-ESM1-5_r1i1p1f1:  2
+    BCC-ESM1_r1i1p1f1:       1
+    CAMS-CSM1-0_r1i1p1f1:    1
+    CanESM5_r1i1p1f1:        3
+    CESM2_r1i1p1f1:          1
+    CESM2-WACCM_r1i1p1f1:    0
+    CNRM-CM6-1_r1i1p1f2:     0
+    CNRM-CM6-1-HR_r1i1p1f2:  1
+    CNRM-ESM2-1_r1i1p1f2:    1
+    EC-Earth3_r1i1p1f1:      1
+    EC-Earth3-Veg_r1i1p1f1:  1
+    FGOALS-f3-L_r1i1p1f1:    3
+    FGOALS-g3_r1i1p1f1:      3
+    GFDL-CM4_r1i1p1f1:       1
+    GFDL-ESM4_r1i1p1f1:      1
+    GISS-E2-1-G_r1i1p3f1:    3
+    HadGEM3-GC31-LL_r1i1p1f3: 0
+    HadGEM3-GC31-MM_r1i1p1f3: 0
+    INM-CM4-8_r1i1p1f1:      1
+    INM-CM5-0_r1i1p1f1:      1
+    IPSL-CM6A-LR_r1i1p1f1:   2
+    KACE-1-0-G_r1i1p1f1:     1
+    MIROC6_r1i1p1f1:         2
+    MIROC-ES2L_r1i1p1f2:     3
+    MPI-ESM1-2-HR_r1i1p1f1:  1
+    MRI-ESM2-0_r1i1p1f1:     1
+    NESM3_r1i1p1f1:          3
+    NorESM2-LM_r1i1p1f1:     3
+    TaiESM1_r1i1p1f1:        2
+    UKESM1-0-LL_r1i1p1f2:    1
+
+- key: Palmer23 Circ EUR Circ JJA
+  doi: 10.5194/esd-14-457-2023
+  metric:
+    name: circ_jja
+    long_name: plausibillity of the large-scale circulation for Europe in Summer
+    units: 
+    variables: 
+    comment: >
+      same as circ_djf
+    best: 0
+    worst: 3
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJF
+  plausible_values:
+    min: 0
+    max: 2
+    source: author
+    comment: >
+      same as circ_djf
+  data_source: author
+  data:
+    ACCESS-CM2_r1i1p1f1:     0
+    ACCESS-ESM1-5_r1i1p1f1:  3
+    BCC-ESM1_r1i1p1f1:       1
+    CAMS-CSM1-0_r1i1p1f1:    1
+    CanESM5_r1i1p1f1:        2
+    CESM2_r1i1p1f1:          2
+    CESM2-WACCM_r1i1p1f1:    1
+    CNRM-CM6-1_r1i1p1f2:     2
+    CNRM-CM6-1-HR_r1i1p1f2:  1
+    CNRM-ESM2-1_r1i1p1f2:    2
+    EC-Earth3_r1i1p1f1:      1
+    EC-Earth3-Veg_r1i1p1f1:  1
+    FGOALS-f3-L_r1i1p1f1:    1
+    FGOALS-g3_r1i1p1f1:      2
+    GFDL-CM4_r1i1p1f1:       1
+    GFDL-ESM4_r1i1p1f1:      0
+    GISS-E2-1-G_r1i1p3f1:    1
+    HadGEM3-GC31-LL_r1i1p1f3: 1
+    HadGEM3-GC31-MM_r1i1p1f3: 1
+    INM-CM4-8_r1i1p1f1:      3
+    INM-CM5-0_r1i1p1f1:      3
+    IPSL-CM6A-LR_r1i1p1f1:   1
+    KACE-1-0-G_r1i1p1f1:     1
+    MIROC6_r1i1p1f1:         1
+    MIROC-ES2L_r1i1p1f2:     2
+    MPI-ESM1-2-HR_r1i1p1f1:  0
+    MRI-ESM2-0_r1i1p1f1:     0
+    NESM3_r1i1p1f1:          2
+    NorESM2-LM_r1i1p1f1:     3
+    TaiESM1_r1i1p1f1:        1
+    UKESM1-0-LL_r1i1p1f2:    1
