@@ -27,6 +27,8 @@
                 projections by the model cannot be interpreted in a meaningful way.
     best: 0
     worst: 3
+  disabled_MED:
+      cause: replaced by Palmer et al. 2023 that is the published version of McSw15
   type: performance
   spatial_scope: EUR
   temporal_scope: DJF
@@ -79,6 +81,8 @@
 - key: McSw15 circ JJA
   doi: 10.1007/s00382-014-2418-8
   metric: *circ
+  disabled_MED:
+      cause: replaced by Palmer et al. 2023 that is the published version of McSw15
   type: performance
   spatial_scope: EUR
   temporal_scope: JJA
