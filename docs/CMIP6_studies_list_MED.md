@@ -1,25 +1,30 @@
 ## Incomplete entries
 
+ * [Cob21](CMIP6_studies/Cob21.yaml)
  * [Fas20](CMIP6_studies/Fas20.yaml)
  * [Beo21](CMIP6_studies/Beo21.yaml)
- * [Cob21](CMIP6_studies/Cob21.yaml)
-## Disabled entries
+## Globally disabled entries
 
- · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
+ · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
+ · [Pri20 storm track DJF](CMIP6_studies/Pri20.yaml)
+ · [Pri20 storm track JJA](CMIP6_studies/Pri20.yaml)
+ · [Cob21](CMIP6_studies/Cob21.yaml)
  · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
- · [Can20 marle](CMIP6_studies/Can20.yaml)
  · [Fas20](CMIP6_studies/Fas20.yaml)
- · [Pri20 storm track DJF](CMIP6_studies/Pri20.yaml)
- · [Pri20 storm track JJA](CMIP6_studies/Pri20.yaml)
- · [Beo21](CMIP6_studies/Beo21.yaml)
- · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
- · [Cob21](CMIP6_studies/Cob21.yaml)
  · [Dobler SST rmse MED](CMIP6_studies/Dobler.yaml)
+ · [Beo21](CMIP6_studies/Beo21.yaml)
+ · [Can20 marle](CMIP6_studies/Can20.yaml)
+ · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
+ · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
+## Entries disabled in MED
+
+ · [Sevault MED SST](CMIP6_studies/Sevault.yaml)
  · [Dobler SST rmse EUR](CMIP6_studies/Dobler.yaml)
+ · [McSw15 circ DJF](CMIP6_studies/McSw15.yaml)
+ · [McSw15 circ JJA](CMIP6_studies/McSw15.yaml)
 ## Available entries (MED scope)
 ### Plausibility
 #### AR6 TCR
@@ -62,7 +67,7 @@ None
 
 Located in [CMIP6_studies/Bru20.yaml](../CMIP6_studies/Bru20.yaml)
 
-Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when weighting models by performance and independence, https://doi.org/10.5194%2Fesd-11-995-2020
+10.5194/esd-11-995-2020
 
 ```
 - key: Bru20 perf
@@ -141,11 +146,11 @@ Located in [CMIP6_studies/Dalelane.yaml](../CMIP6_studies/Dalelane.yaml)
 
 Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
 
-None
+10.1126/sciadv.abc0671
 
 ```
 - key: Qasmi Constr Global Dtas ssp245 2050
-  doi: None
+  doi: 10.1126/sciadv.abc0671
   type: performance
   spatial_scope: Global
   temporal_scope: Annual
@@ -180,10 +185,7 @@ None
 
 Located in [CMIP6_studies/Bra21.yaml](../CMIP6_studies/Bra21.yaml)
 
-Preferred to [CMIP6_studies/Fer21.yaml](../CMIP6_studies/Fer21.yaml)
-[CMIP6_studies/Can20.yaml](../CMIP6_studies/Can20.yaml)
-
-Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
+10.5194/gmd-2020-418
 
 ```
 - key: Bra21 Lamb EUR
@@ -228,7 +230,7 @@ Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and
 
 Located in [CMIP6_studies/Div20.yaml](../CMIP6_studies/Div20.yaml)
 
-Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric Blocking Simulation in Present and Future Climate, https://doi.org/10.1175%2Fjcli-d-19-0862.1
+10.1175/JCLI-D-19-0862.1
 
 ```
 - key: Dav20 blocking freq DJF
@@ -281,7 +283,7 @@ Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric 
 
 Located in [CMIP6_studies/Div20.yaml](../CMIP6_studies/Div20.yaml)
 
-Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric Blocking Simulation in Present and Future Climate, https://doi.org/10.1175%2Fjcli-d-19-0862.1
+10.1175/JCLI-D-19-0862.1
 
 ```
 - key: Dav20 blocking freq JJA
@@ -327,100 +329,6 @@ Paolo Davini et al. (2020) From CMIP3 to CMIP6: Northern Hemisphere Atmospheric 
     source: author
     comment:
       Large widespread errors (value 3) lead to consider the model unplausible.
-
-```
-
-#### McSw15 circ DJF
-
-Located in [CMIP6_studies/McSw15.yaml](../CMIP6_studies/McSw15.yaml)
-
-C. F. McSweeney et al. (2014) Selecting CMIP5 GCMs for downscaling over multiple regions, https://doi.org/10.1007%2Fs00382-014-2418-8
-
-```
-- key: McSw15 circ DJF
-  doi: 10.1007/s00382-014-2418-8
-  type: performance
-  spatial_scope: EUR
-  temporal_scope: DJF
-  data_source: author
-  metric:
-    name: circulation
-    long_name: Large scale atmospheric circulation pattern
-    units: categorical
-    variables: ua850 va850
-    comment:
-      Qualitative large scale circulation pattern score based on overall
-      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
-      1995-2014. Based on the method of qualitative scoring in McSweeney et al.
-      (2015) and adapted for CMIP6. The scoring has been changed from the
-      traffic light coding to numbers for EURO-CORDEX.        Values       0 -
-      Low errors over both local and remote regions.           Captures key
-      characteristics of the criteria spatially or temporarily,       1 - Some
-      substantial errors present but not widespread or not present in
-      the local region of interest. Location of larger remote errors are not
-      known to have a downstream impact in the local region of interest.
-      Captures key characteristics of the criteria spatially or temporarily,
-      2 - Substantial errors in remote regions where downstream effects could
-      be expected to impact on the reliability of regional information
-      and/or present in the local region of interest,       3 - Large widespread
-      errors to the extent that the model is unable to           represent the
-      present-day climatology in a useful way and future           projections
-      by the model cannot be interpreted in a meaningful way.
-    best: 0
-    worst: 3
-  period:
-    reference: 1995-2014
-  plausible_values:
-  - min: 0
-    max: 2
-    source: author
-
-```
-
-#### McSw15 circ JJA
-
-Located in [CMIP6_studies/McSw15.yaml](../CMIP6_studies/McSw15.yaml)
-
-C. F. McSweeney et al. (2014) Selecting CMIP5 GCMs for downscaling over multiple regions, https://doi.org/10.1007%2Fs00382-014-2418-8
-
-```
-- key: McSw15 circ JJA
-  doi: 10.1007/s00382-014-2418-8
-  type: performance
-  spatial_scope: EUR
-  temporal_scope: JJA
-  data_source: author
-  metric:
-    name: circulation
-    long_name: Large scale atmospheric circulation pattern
-    units: categorical
-    variables: ua850 va850
-    comment:
-      Qualitative large scale circulation pattern score based on overall
-      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
-      1995-2014. Based on the method of qualitative scoring in McSweeney et al.
-      (2015) and adapted for CMIP6. The scoring has been changed from the
-      traffic light coding to numbers for EURO-CORDEX.        Values       0 -
-      Low errors over both local and remote regions.           Captures key
-      characteristics of the criteria spatially or temporarily,       1 - Some
-      substantial errors present but not widespread or not present in
-      the local region of interest. Location of larger remote errors are not
-      known to have a downstream impact in the local region of interest.
-      Captures key characteristics of the criteria spatially or temporarily,
-      2 - Substantial errors in remote regions where downstream effects could
-      be expected to impact on the reliability of regional information
-      and/or present in the local region of interest,       3 - Large widespread
-      errors to the extent that the model is unable to           represent the
-      present-day climatology in a useful way and future           projections
-      by the model cannot be interpreted in a meaningful way.
-    best: 0
-    worst: 3
-  period:
-    reference: 1995-2014
-  plausible_values:
-  - min: 0
-    max: 2
-    source: author
 
 ```
 
@@ -502,7 +410,7 @@ Located in [CMIP6_studies/Nabat.yaml](../CMIP6_studies/Nabat.yaml)
 
 Located in [CMIP6_studies/Oud20.yaml](../CMIP6_studies/Oud20.yaml)
 
-Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet Change in CMIP5 and CMIP6 Models, https://doi.org/10.1029%2F2019gl086695
+10.1029/2019GL086695
 
 ```
 - key: Oud20 jetpos
@@ -532,14 +440,111 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
 
 ```
 
+#### Palmer23 EUR Circ DJF
+
+Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
+
+10.5194/esd-14-457-2023
+
+```
+- key: Palmer23 EUR Circ DJF
+  doi: 10.5194/esd-14-457-2023
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJF
+  data_source: author
+  metric:
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation patter score based on overall pattern,
+      bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
+      for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6. The scoring has been changed from the
+      traffic light coding in the paper to numbers here 1 (white)  -
+      Satisfactory. It gathers two categories: Low errors over both local and
+      remote regions and Some substantial errors present but not widespread or
+      not present in the local region of interest.               Location of
+      larger remote errors are not known to have a downstream impact in the
+      local region of interest. Captures key characteristics of the criteria
+      spatially or temporarily. 2 (orange) - Unsatisfactory, substantial errors
+      in remote regions where downstream effects could be expected to impact on
+      the reliability of regional information and/or present in the local region
+      of interest. 3 (red)    - Inadequate. Large widespread errors to the
+      extent that the model is unable to represent the present-day climatology
+      in a useful way and future projections by the model cannot be interpreted
+      in a meaningful way.   (grey)   - Data/ analysis not available for a given
+      model. This category ha sno number here
+    best: 1
+    worst: 3
+  plausible_values:
+  - min: 1
+    max: 2
+    source: author
+    comment:
+      In agreement with the authors we decided to eliminate only models with the
+      Red flag (Inadequate, value = 3)
+
+```
+
+#### Palmer23 Circ EUR Circ JJA
+
+Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
+
+10.5194/esd-14-457-2023
+
+```
+- key: Palmer23 Circ EUR Circ JJA
+  doi: 10.5194/esd-14-457-2023
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJF
+  data_source: author
+  metric:
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation patter score based on overall pattern,
+      bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
+      for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6. The scoring has been changed from the
+      traffic light coding in the paper to numbers here 1 (white)  -
+      Satisfactory. It gathers two categories: Low errors over both local and
+      remote regions and Some substantial errors present but not widespread or
+      not present in the local region of interest.               Location of
+      larger remote errors are not known to have a downstream impact in the
+      local region of interest. Captures key characteristics of the criteria
+      spatially or temporarily. 2 (orange) - Unsatisfactory, substantial errors
+      in remote regions where downstream effects could be expected to impact on
+      the reliability of regional information and/or present in the local region
+      of interest. 3 (red)    - Inadequate. Large widespread errors to the
+      extent that the model is unable to represent the present-day climatology
+      in a useful way and future projections by the model cannot be interpreted
+      in a meaningful way.   (grey)   - Data/ analysis not available for a given
+      model. This category ha sno number here
+    best: 1
+    worst: 3
+  plausible_values:
+  - min: 1
+    max: 2
+    source: author
+    comment:
+      In agreement with the authors we decided to eliminate only models with the
+      Red flag (Inadequate, value = 3)
+
+```
+
 #### Pri20 storm track
 
 Located in [CMIP6_studies/Pri20.yaml](../CMIP6_studies/Pri20.yaml)
 
-Preferred to [CMIP6_studies/Pri20.yaml](../CMIP6_studies/Pri20.yaml)
-[CMIP6_studies/Pri20.yaml](../CMIP6_studies/Pri20.yaml)
-
-Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tracks in CMIP6 Historical Simulations, https://doi.org/10.1175%2Fjcli-d-19-0928.1
+10.1175/JCLI-D-19-0928.1
 
 ```
 - key: Pri20 storm track
@@ -628,49 +633,6 @@ Located in [CMIP6_studies/Winderlich.yaml](../CMIP6_studies/Winderlich.yaml)
     comment:
       The higher the better, SCQS between reference reanalysis (ERA-Interim) and
       an alternative reanalysis (NCAR-NCEP1) is in the table for comparison.
-
-```
-
-#### Sevault MED SST
-
-Located in [CMIP6_studies/Sevault.yaml](../CMIP6_studies/Sevault.yaml)
-
-Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
-
-['pers_comm', 'F. Sevault', 'CNRM']
-
-```
-- key: Sevault MED SST
-  doi: ['pers_comm', 'F. Sevault', 'CNRM']
-  type: performance
-  spatial_scope: MED
-  temporal_scope: Annual
-  data_source: author
-  metric:
-    name: sst_rmse
-    long_name: Sea surface temperature RMSE
-    units: K
-    variables: sst
-    comment:
-      For the performance criteria, we compute the spatial RMSE on the 12-month
-      bias maps over the period 1985-2014. It means that we first compute the
-      temporal average to obtain a mean seasonal cycle - 12maps- of the bias
-      maps and then we compute the spatio-temporal RMSE. All the models are
-      interpolated on the grid of the refererence dataset, and then a mask of
-      the Mediterranean Sea is applied (no Black Sea). The reference dataset is
-      a specific CMEMS product developed for the Mediterranean Sea,
-      GOS-L4_GHRSST-SSTfnd-OISST_HR_REP-MED-v02.0-fv02.0 data (Pisano et al.
-      2016, doi:10.1016/j.rse.2016.01.019, Casey et al. 2010,
-      doi:10.1007/978-90-481-8681-5_16 . Generated/provided by Copernicus Marine
-      Service and CNR - ISMAR ROME).
-    best: 0
-    worst: inf
-  plausible_values:
-  - min: 0
-    max: 2
-    source: author
-    comment:
-      The plausibility threshold is difficult to set.
 
 ```
 
@@ -807,11 +769,49 @@ None
 
 ```
 
+#### Mindlin21 tropampl
+
+Located in [CMIP6_studies/Mindlin2021.yaml](../CMIP6_studies/Mindlin2021.yaml)
+
+10.1029/2021GL092568
+
+```
+- key: Mindlin21 tropampl
+  doi: 10.1029/2021GL092568
+  type: future_spread
+  spatial_scope: Global
+  temporal_scope: Annual
+  metric:
+    name: tropampl
+    long_name: Tropical Amplification
+    units: K_K-1
+    variables: ta250
+    comment:
+      These metrics are inspired by the work done in Mindlin and Shepherd, 2020,
+      Clim Dyn but for CMIP6 GCMs and in Mindlin et al. 2021, GRL. It includes
+      29 CMIP6 GCMs for SSP585 and extended to include 37 models Tropical
+      warming (TW), the latter evaluated as the long-term change in temperature
+      (ta) at 250 hPa zonally averaged between 15°S and 15°N (ΔT trop ) divided
+      by the global surface temperature change (ΔT). Here Δ indicates the
+      difference between 2070–2099 in the SSP5-8.5 experiment and 1950–1979 in
+      the historical experiment. The limit between weak and strong tropical
+      warming is not easy to set. We use the value of 1.7 K/K, choosing to have
+      only 2 categories
+  period:
+    reference: 1950-1979
+    target: 2070-2099
+  classes:
+  - limits: [0, 1.7, 10]
+    labels: ['weak tropical warming', 'strong tropical warming']
+    source: author
+
+```
+
 #### Sch20 ECS
 
 Located in [CMIP6_studies/Sch20.yaml](../CMIP6_studies/Sch20.yaml)
 
-Manuel Schlund et al. (2020) Emergent constraints on equilibrium climate  sensitivity in CMIP5: do they hold for CMIP6?, https://doi.org/10.5194%2Fesd-11-1233-2020
+10.5194/esd-11-1233-2020
 
 ```
 - key: Sch20 ECS
@@ -870,7 +870,7 @@ Located in [CMIP6_studies/Nabat.yaml](../CMIP6_studies/Nabat.yaml)
 
 Located in [CMIP6_studies/Oud20.yaml](../CMIP6_studies/Oud20.yaml)
 
-Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet Change in CMIP5 and CMIP6 Models, https://doi.org/10.1029%2F2019gl086695
+10.1029/2019GL086695
 
 ```
 - key: Oud20 jetposdelta
@@ -901,11 +901,11 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
 
 Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
 
-['pers_comm', 'S. Qasmi']
+10.1126/sciadv.abo6872
 
 ```
 - key: Qasmi Constr EUR Dtas ssp245 2050 JJA
-  doi: ['pers_comm', 'S. Qasmi']
+  doi: 10.1126/sciadv.abo6872
   type: future_spread
   spatial_scope: MED+NEU+CEU
   temporal_scope: JJA
@@ -917,10 +917,11 @@ Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
     variables: tas
     comment:
       Regional tas change in Europe MED, NEU, CEU, MED+NEU+CEU, DJF, JJA,
-      2041-2060 vs 1850-1900, SSP245. Values are given only for land points. S.
-      Qasmi, numerical values available soon. Only warming classes for now. We
-      report here only warming classes for JJA and for the joined MED+NEU+CEU
-      domain
+      2041-2060 vs 1850-1900, SSP245. Values are given only for land points.
+      Adapted from Qasmi and Ribes 2022, Sci. Adv. by S. Qasmi following S.
+      Somot's request Numerical values available soon. Only warming classes for
+      now. We report here only warming classes for JJA and for the joined
+      MED+NEU+CEU domain
   period:
     reference: 1850-1900
     target: 2041-2060
@@ -1089,7 +1090,7 @@ Located in [CMIP6_studies/Sevault.yaml](../CMIP6_studies/Sevault.yaml)
 
 Located in [CMIP6_studies/Bru20.yaml](../CMIP6_studies/Bru20.yaml)
 
-Lukas Brunner et al. (2020) Reduced global warming from CMIP6 projections when weighting models by performance and independence, https://doi.org/10.5194%2Fesd-11-995-2020
+10.5194/esd-11-995-2020
 
 ```
 - key: Bru20 mfamily
@@ -1155,7 +1156,7 @@ Located in [CMIP6_studies/Aerosol.yaml](../CMIP6_studies/Aerosol.yaml)
 
 Located in [CMIP6_studies/Bra21.yaml](../CMIP6_studies/Bra21.yaml)
 
-Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
+10.5194/gmd-2020-418
 
 ```
 - key: Bra21 complexity
