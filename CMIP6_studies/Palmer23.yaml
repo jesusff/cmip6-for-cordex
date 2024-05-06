@@ -1,29 +1,33 @@
 - key: Palmer23 EUR Circ DJF
   doi: 10.5194/esd-14-457-2023
-  metric:
-    name: circ_djf
-    long_name: plausibillity of the large-scale circulation for Europe in Winter
-    units: 
-    variables: 
+  metric: &circ_djf
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
     comment: >
-      This criteria is an updated on the work by McSweeney et al. 2015 but for CMIP6
+      Qualitative large scale circulation patter score based on overall pattern, bias and RMSE.
+      Based on 20 year climatology comparison with ERA5 1995-2014.
+      criteria is an updated on the work by McSweeney et al. 2015 but for CMIP6
+      Based on the method of qualitative scoring in McSweeney et al. (2015) and
+      adapted for CMIP6. The scoring has been changed from the traffic light
+      coding to numbers here
+      White (0): : Low errors over both local and remote regions. Captures key characteristics of the criteria spatially or temporarily
+      Yellow (1): Satisfactory, some substantial errors present but not widespread or not present in the local region of interest. Location of larger remote errors are not known to have a downstream impact in the local region of interest. Captures key characteristics of the criteria spatially or temporarily.
+      Orange (2): Unsatisfactory, substantial errors in remote regions where downstream effects could be expected to impact on the reliability of regional information and/or present in the local region of interest.
+      Red (3): Large widespread errors to the extent that the model is unable to represent the present-day climatology in a useful way and future projections by the model cannot be interpreted in a meaningful way.
+      Grey: Data/ analysis not available for a given model.
     best: 0
     worst: 3
   type: performance
   spatial_scope: EUR
   temporal_scope: DJF
-  plausible_values:
+  plausible_values: &plausval_circ_djf
     min: 0
     max: 2
     source: author
     comment: >
-      Each model is ranked with a colored flag corresponding to a number
-      Red (3): Large widespread errors to the extent that the model is unable to represent the present-day climatology in a useful way and future projections by the model cannot be interpreted in a meaningful way.
-      Orange (2): Unsatisfactory, substantial errors in remote regions where downstream effects could be expected to impact on the reliability of regional information and/or present in the local region of interest.
-      Yellow (1): Satisfactory, some substantial errors present but not widespread or not present in the local region of interest. Location of larger remote errors are not known to have a downstream impact in the local region of interest. Captures key characteristics of the criteria spatially or temporarily.
-      White (0): : Low errors over both local and remote regions. Captures key characteristics of the criteria spatially or temporarily
-      Grey: Data/ analysis not available.
-      In agreement with the authors we decided to eliminate only models with the Red flag
+      In agreement with the authors we decided to eliminate only models with the Red flag (value = 3)
   data_source: author
   data:
     ACCESS-CM2_r1i1p1f1:     1
@@ -60,24 +64,11 @@
 
 - key: Palmer23 Circ EUR Circ JJA
   doi: 10.5194/esd-14-457-2023
-  metric:
-    name: circ_jja
-    long_name: plausibillity of the large-scale circulation for Europe in Summer
-    units: 
-    variables: 
-    comment: >
-      same as circ_djf
-    best: 0
-    worst: 3
+  metric: *circ_djf
   type: performance
   spatial_scope: EUR
   temporal_scope: DJF
-  plausible_values:
-    min: 0
-    max: 2
-    source: author
-    comment: >
-      same as circ_djf
+  plausible_values: *plausval_circ_djf
   data_source: author
   data:
     ACCESS-CM2_r1i1p1f1:     0
