@@ -463,26 +463,27 @@ Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
       pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
       1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
       for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
-      (2015) and adapted for CMIP6. The scoring has been changed from the
-      traffic light coding in the paper to numbers here 1 (white)  -
-      Satisfactory. It gathers two categories: Low errors over both local and
-      remote regions and Some substantial errors present but not widespread or
-      not present in the local region of interest.               Location of
-      larger remote errors are not known to have a downstream impact in the
-      local region of interest. Captures key characteristics of the criteria
-      spatially or temporarily. 2 (orange) - Unsatisfactory, substantial errors
-      in remote regions where downstream effects could be expected to impact on
-      the reliability of regional information and/or present in the local region
-      of interest. 3 (red)    - Inadequate. Large widespread errors to the
-      extent that the model is unable to represent the present-day climatology
-      in a useful way and future projections by the model cannot be interpreted
-      in a meaningful way.   (grey)   - Data/ analysis not available for a given
-      model. This category ha sno number here  The authors use only the first
-      realisation for each of the models in this assessment and assume that this
-      is generally representative of the model performance. In first
-      approximation, we consider HERE that the computed score for the r1 member
-      can be applied to any model member with the same physics (p) and same
-      forcing (f).
+      (2015) and adapted for CMIP6.  THE TEXT OF THE COMMENTS HAS TO BE ADAPTED
+      TO EACH SCORES EXTRACTED FROM Palmer et al. 2013 The scoring has been
+      changed from the traffic light coding in the paper to numbers here 1
+      (white)  - Satisfactory. It gathers two categories: Low errors over both
+      local and remote regions and Some substantial errors present but not
+      widespread or not present in the local region of interest.
+      Location of larger remote errors are not known to have a downstream impact
+      in the local region of interest. Captures key characteristics of the
+      criteria spatially or temporarily. 2 (orange) - Unsatisfactory,
+      substantial errors in remote regions where downstream effects could be
+      expected to impact on the reliability of regional information and/or
+      present in the local region of interest. 3 (red)    - Inadequate. Large
+      widespread errors to the extent that the model is unable to represent the
+      present-day climatology in a useful way and future projections by the
+      model cannot be interpreted in a meaningful way.   (grey)   - Data/
+      analysis not available for a given model. This category ha sno number here
+      The authors use only the first realisation for each of the models in this
+      assessment and assume that this is generally representative of the model
+      performance. In first approximation, we consider HERE that the computed
+      score for the r1 member can be applied to any model member with the same
+      physics (p) and same forcing (f).
     best: 1
     worst: 3
   plausible_values:
@@ -495,14 +496,182 @@ Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
 
 ```
 
-#### Palmer23 Circ EUR Circ JJA
+#### Palmer23 EUR Circ JJA
 
 Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
 
 10.5194/esd-14-457-2023
 
 ```
-- key: Palmer23 Circ EUR Circ JJA
+- key: Palmer23 EUR Circ JJA
+  doi: 10.5194/esd-14-457-2023
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: JJA
+  data_source: author
+  metric:
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
+      for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6.  THE TEXT OF THE COMMENTS HAS TO BE ADAPTED
+      TO EACH SCORES EXTRACTED FROM Palmer et al. 2013 The scoring has been
+      changed from the traffic light coding in the paper to numbers here 1
+      (white)  - Satisfactory. It gathers two categories: Low errors over both
+      local and remote regions and Some substantial errors present but not
+      widespread or not present in the local region of interest.
+      Location of larger remote errors are not known to have a downstream impact
+      in the local region of interest. Captures key characteristics of the
+      criteria spatially or temporarily. 2 (orange) - Unsatisfactory,
+      substantial errors in remote regions where downstream effects could be
+      expected to impact on the reliability of regional information and/or
+      present in the local region of interest. 3 (red)    - Inadequate. Large
+      widespread errors to the extent that the model is unable to represent the
+      present-day climatology in a useful way and future projections by the
+      model cannot be interpreted in a meaningful way.   (grey)   - Data/
+      analysis not available for a given model. This category ha sno number here
+      The authors use only the first realisation for each of the models in this
+      assessment and assume that this is generally representative of the model
+      performance. In first approximation, we consider HERE that the computed
+      score for the r1 member can be applied to any model member with the same
+      physics (p) and same forcing (f).
+    best: 1
+    worst: 3
+  plausible_values:
+  - min: 1
+    max: 2
+    source: author
+    comment:
+      In agreement with the authors we decided to eliminate only models with the
+      Red flag (Inadequate, value = 3)
+
+```
+
+#### Palmer23 EUR Blocking DJFM
+
+Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
+
+10.5194/esd-14-457-2023
+
+```
+- key: Palmer23 EUR Blocking DJFM
+  doi: 10.5194/esd-14-457-2023
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJFM
+  data_source: author
+  metric:
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
+      for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6.  THE TEXT OF THE COMMENTS HAS TO BE ADAPTED
+      TO EACH SCORES EXTRACTED FROM Palmer et al. 2013 The scoring has been
+      changed from the traffic light coding in the paper to numbers here 1
+      (white)  - Satisfactory. It gathers two categories: Low errors over both
+      local and remote regions and Some substantial errors present but not
+      widespread or not present in the local region of interest.
+      Location of larger remote errors are not known to have a downstream impact
+      in the local region of interest. Captures key characteristics of the
+      criteria spatially or temporarily. 2 (orange) - Unsatisfactory,
+      substantial errors in remote regions where downstream effects could be
+      expected to impact on the reliability of regional information and/or
+      present in the local region of interest. 3 (red)    - Inadequate. Large
+      widespread errors to the extent that the model is unable to represent the
+      present-day climatology in a useful way and future projections by the
+      model cannot be interpreted in a meaningful way.   (grey)   - Data/
+      analysis not available for a given model. This category ha sno number here
+      The authors use only the first realisation for each of the models in this
+      assessment and assume that this is generally representative of the model
+      performance. In first approximation, we consider HERE that the computed
+      score for the r1 member can be applied to any model member with the same
+      physics (p) and same forcing (f).
+    best: 1
+    worst: 3
+  plausible_values:
+  - min: 1
+    max: 2
+    source: author
+    comment:
+      In agreement with the authors we decided to eliminate only models with the
+      Red flag (Inadequate, value = 3)
+
+```
+
+#### Palmer23 EUR Blocking JJAS
+
+Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
+
+10.5194/esd-14-457-2023
+
+```
+- key: Palmer23 EUR Blocking JJAS
+  doi: 10.5194/esd-14-457-2023
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: JJAS
+  data_source: author
+  metric:
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
+      for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6.  THE TEXT OF THE COMMENTS HAS TO BE ADAPTED
+      TO EACH SCORES EXTRACTED FROM Palmer et al. 2013 The scoring has been
+      changed from the traffic light coding in the paper to numbers here 1
+      (white)  - Satisfactory. It gathers two categories: Low errors over both
+      local and remote regions and Some substantial errors present but not
+      widespread or not present in the local region of interest.
+      Location of larger remote errors are not known to have a downstream impact
+      in the local region of interest. Captures key characteristics of the
+      criteria spatially or temporarily. 2 (orange) - Unsatisfactory,
+      substantial errors in remote regions where downstream effects could be
+      expected to impact on the reliability of regional information and/or
+      present in the local region of interest. 3 (red)    - Inadequate. Large
+      widespread errors to the extent that the model is unable to represent the
+      present-day climatology in a useful way and future projections by the
+      model cannot be interpreted in a meaningful way.   (grey)   - Data/
+      analysis not available for a given model. This category ha sno number here
+      The authors use only the first realisation for each of the models in this
+      assessment and assume that this is generally representative of the model
+      performance. In first approximation, we consider HERE that the computed
+      score for the r1 member can be applied to any model member with the same
+      physics (p) and same forcing (f).
+    best: 1
+    worst: 3
+  plausible_values:
+  - min: 1
+    max: 2
+    source: author
+    comment:
+      In agreement with the authors we decided to eliminate only models with the
+      Red flag (Inadequate, value = 3)
+
+```
+
+#### Palmer23 EUR Storm Track DJF
+
+Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
+
+10.5194/esd-14-457-2023
+
+```
+- key: Palmer23 EUR Storm Track DJF
   doi: 10.5194/esd-14-457-2023
   type: performance
   spatial_scope: EUR
@@ -518,26 +687,139 @@ Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
       pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
       1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
       for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
-      (2015) and adapted for CMIP6. The scoring has been changed from the
-      traffic light coding in the paper to numbers here 1 (white)  -
-      Satisfactory. It gathers two categories: Low errors over both local and
-      remote regions and Some substantial errors present but not widespread or
-      not present in the local region of interest.               Location of
-      larger remote errors are not known to have a downstream impact in the
-      local region of interest. Captures key characteristics of the criteria
-      spatially or temporarily. 2 (orange) - Unsatisfactory, substantial errors
-      in remote regions where downstream effects could be expected to impact on
-      the reliability of regional information and/or present in the local region
-      of interest. 3 (red)    - Inadequate. Large widespread errors to the
-      extent that the model is unable to represent the present-day climatology
-      in a useful way and future projections by the model cannot be interpreted
-      in a meaningful way.   (grey)   - Data/ analysis not available for a given
-      model. This category ha sno number here  The authors use only the first
-      realisation for each of the models in this assessment and assume that this
-      is generally representative of the model performance. In first
-      approximation, we consider HERE that the computed score for the r1 member
-      can be applied to any model member with the same physics (p) and same
-      forcing (f).
+      (2015) and adapted for CMIP6.  THE TEXT OF THE COMMENTS HAS TO BE ADAPTED
+      TO EACH SCORES EXTRACTED FROM Palmer et al. 2013 The scoring has been
+      changed from the traffic light coding in the paper to numbers here 1
+      (white)  - Satisfactory. It gathers two categories: Low errors over both
+      local and remote regions and Some substantial errors present but not
+      widespread or not present in the local region of interest.
+      Location of larger remote errors are not known to have a downstream impact
+      in the local region of interest. Captures key characteristics of the
+      criteria spatially or temporarily. 2 (orange) - Unsatisfactory,
+      substantial errors in remote regions where downstream effects could be
+      expected to impact on the reliability of regional information and/or
+      present in the local region of interest. 3 (red)    - Inadequate. Large
+      widespread errors to the extent that the model is unable to represent the
+      present-day climatology in a useful way and future projections by the
+      model cannot be interpreted in a meaningful way.   (grey)   - Data/
+      analysis not available for a given model. This category ha sno number here
+      The authors use only the first realisation for each of the models in this
+      assessment and assume that this is generally representative of the model
+      performance. In first approximation, we consider HERE that the computed
+      score for the r1 member can be applied to any model member with the same
+      physics (p) and same forcing (f).
+    best: 1
+    worst: 3
+  plausible_values:
+  - min: 1
+    max: 2
+    source: author
+    comment:
+      In agreement with the authors we decided to eliminate only models with the
+      Red flag (Inadequate, value = 3)
+
+```
+
+#### Palmer23 EUR Storm Track JJA
+
+Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
+
+10.5194/esd-14-457-2023
+
+```
+- key: Palmer23 EUR Storm Track JJA
+  doi: 10.5194/esd-14-457-2023
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: JJA
+  data_source: author
+  metric:
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
+      for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6.  THE TEXT OF THE COMMENTS HAS TO BE ADAPTED
+      TO EACH SCORES EXTRACTED FROM Palmer et al. 2013 The scoring has been
+      changed from the traffic light coding in the paper to numbers here 1
+      (white)  - Satisfactory. It gathers two categories: Low errors over both
+      local and remote regions and Some substantial errors present but not
+      widespread or not present in the local region of interest.
+      Location of larger remote errors are not known to have a downstream impact
+      in the local region of interest. Captures key characteristics of the
+      criteria spatially or temporarily. 2 (orange) - Unsatisfactory,
+      substantial errors in remote regions where downstream effects could be
+      expected to impact on the reliability of regional information and/or
+      present in the local region of interest. 3 (red)    - Inadequate. Large
+      widespread errors to the extent that the model is unable to represent the
+      present-day climatology in a useful way and future projections by the
+      model cannot be interpreted in a meaningful way.   (grey)   - Data/
+      analysis not available for a given model. This category ha sno number here
+      The authors use only the first realisation for each of the models in this
+      assessment and assume that this is generally representative of the model
+      performance. In first approximation, we consider HERE that the computed
+      score for the r1 member can be applied to any model member with the same
+      physics (p) and same forcing (f).
+    best: 1
+    worst: 3
+  plausible_values:
+  - min: 1
+    max: 2
+    source: author
+    comment:
+      In agreement with the authors we decided to eliminate only models with the
+      Red flag (Inadequate, value = 3)
+
+```
+
+#### Palmer23 EUR AMOC
+
+Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
+
+10.5194/esd-14-457-2023
+
+```
+- key: Palmer23 EUR AMOC
+  doi: 10.5194/esd-14-457-2023
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  data_source: author
+  metric:
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
+      for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6.  THE TEXT OF THE COMMENTS HAS TO BE ADAPTED
+      TO EACH SCORES EXTRACTED FROM Palmer et al. 2013 The scoring has been
+      changed from the traffic light coding in the paper to numbers here 1
+      (white)  - Satisfactory. It gathers two categories: Low errors over both
+      local and remote regions and Some substantial errors present but not
+      widespread or not present in the local region of interest.
+      Location of larger remote errors are not known to have a downstream impact
+      in the local region of interest. Captures key characteristics of the
+      criteria spatially or temporarily. 2 (orange) - Unsatisfactory,
+      substantial errors in remote regions where downstream effects could be
+      expected to impact on the reliability of regional information and/or
+      present in the local region of interest. 3 (red)    - Inadequate. Large
+      widespread errors to the extent that the model is unable to represent the
+      present-day climatology in a useful way and future projections by the
+      model cannot be interpreted in a meaningful way.   (grey)   - Data/
+      analysis not available for a given model. This category ha sno number here
+      The authors use only the first realisation for each of the models in this
+      assessment and assume that this is generally representative of the model
+      performance. In first approximation, we consider HERE that the computed
+      score for the r1 member can be applied to any model member with the same
+      physics (p) and same forcing (f).
     best: 1
     worst: 3
   plausible_values:
@@ -643,6 +925,230 @@ Located in [CMIP6_studies/Winderlich.yaml](../CMIP6_studies/Winderlich.yaml)
     comment:
       The higher the better, SCQS between reference reanalysis (ERA-Interim) and
       an alternative reanalysis (NCAR-NCEP1) is in the table for comparison.
+
+```
+
+#### Palmer23 MED tas DJF
+
+Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
+
+10.5194/esd-14-457-2023
+
+```
+- key: Palmer23 MED tas DJF
+  doi: 10.5194/esd-14-457-2023
+  type: performance
+  spatial_scope: MED
+  temporal_scope: DJF
+  data_source: author
+  metric:
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
+      for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6.  THE TEXT OF THE COMMENTS HAS TO BE ADAPTED
+      TO EACH SCORES EXTRACTED FROM Palmer et al. 2013 The scoring has been
+      changed from the traffic light coding in the paper to numbers here 1
+      (white)  - Satisfactory. It gathers two categories: Low errors over both
+      local and remote regions and Some substantial errors present but not
+      widespread or not present in the local region of interest.
+      Location of larger remote errors are not known to have a downstream impact
+      in the local region of interest. Captures key characteristics of the
+      criteria spatially or temporarily. 2 (orange) - Unsatisfactory,
+      substantial errors in remote regions where downstream effects could be
+      expected to impact on the reliability of regional information and/or
+      present in the local region of interest. 3 (red)    - Inadequate. Large
+      widespread errors to the extent that the model is unable to represent the
+      present-day climatology in a useful way and future projections by the
+      model cannot be interpreted in a meaningful way.   (grey)   - Data/
+      analysis not available for a given model. This category ha sno number here
+      The authors use only the first realisation for each of the models in this
+      assessment and assume that this is generally representative of the model
+      performance. In first approximation, we consider HERE that the computed
+      score for the r1 member can be applied to any model member with the same
+      physics (p) and same forcing (f).
+    best: 1
+    worst: 3
+  plausible_values:
+  - min: 1
+    max: 2
+    source: author
+    comment:
+      In agreement with the authors we decided to eliminate only models with the
+      Red flag (Inadequate, value = 3)
+
+```
+
+#### Palmer23 MED tas JJA
+
+Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
+
+10.5194/esd-14-457-2023
+
+```
+- key: Palmer23 MED tas JJA
+  doi: 10.5194/esd-14-457-2023
+  type: performance
+  spatial_scope: MED
+  temporal_scope: JJA
+  data_source: author
+  metric:
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
+      for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6.  THE TEXT OF THE COMMENTS HAS TO BE ADAPTED
+      TO EACH SCORES EXTRACTED FROM Palmer et al. 2013 The scoring has been
+      changed from the traffic light coding in the paper to numbers here 1
+      (white)  - Satisfactory. It gathers two categories: Low errors over both
+      local and remote regions and Some substantial errors present but not
+      widespread or not present in the local region of interest.
+      Location of larger remote errors are not known to have a downstream impact
+      in the local region of interest. Captures key characteristics of the
+      criteria spatially or temporarily. 2 (orange) - Unsatisfactory,
+      substantial errors in remote regions where downstream effects could be
+      expected to impact on the reliability of regional information and/or
+      present in the local region of interest. 3 (red)    - Inadequate. Large
+      widespread errors to the extent that the model is unable to represent the
+      present-day climatology in a useful way and future projections by the
+      model cannot be interpreted in a meaningful way.   (grey)   - Data/
+      analysis not available for a given model. This category ha sno number here
+      The authors use only the first realisation for each of the models in this
+      assessment and assume that this is generally representative of the model
+      performance. In first approximation, we consider HERE that the computed
+      score for the r1 member can be applied to any model member with the same
+      physics (p) and same forcing (f).
+    best: 1
+    worst: 3
+  plausible_values:
+  - min: 1
+    max: 2
+    source: author
+    comment:
+      In agreement with the authors we decided to eliminate only models with the
+      Red flag (Inadequate, value = 3)
+
+```
+
+#### Palmer23 MED Storm Track DJF
+
+Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
+
+10.5194/esd-14-457-2023
+
+```
+- key: Palmer23 MED Storm Track DJF
+  doi: 10.5194/esd-14-457-2023
+  type: performance
+  spatial_scope: MED
+  temporal_scope: DJF
+  data_source: author
+  metric:
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
+      for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6.  THE TEXT OF THE COMMENTS HAS TO BE ADAPTED
+      TO EACH SCORES EXTRACTED FROM Palmer et al. 2013 The scoring has been
+      changed from the traffic light coding in the paper to numbers here 1
+      (white)  - Satisfactory. It gathers two categories: Low errors over both
+      local and remote regions and Some substantial errors present but not
+      widespread or not present in the local region of interest.
+      Location of larger remote errors are not known to have a downstream impact
+      in the local region of interest. Captures key characteristics of the
+      criteria spatially or temporarily. 2 (orange) - Unsatisfactory,
+      substantial errors in remote regions where downstream effects could be
+      expected to impact on the reliability of regional information and/or
+      present in the local region of interest. 3 (red)    - Inadequate. Large
+      widespread errors to the extent that the model is unable to represent the
+      present-day climatology in a useful way and future projections by the
+      model cannot be interpreted in a meaningful way.   (grey)   - Data/
+      analysis not available for a given model. This category ha sno number here
+      The authors use only the first realisation for each of the models in this
+      assessment and assume that this is generally representative of the model
+      performance. In first approximation, we consider HERE that the computed
+      score for the r1 member can be applied to any model member with the same
+      physics (p) and same forcing (f).
+    best: 1
+    worst: 3
+  plausible_values:
+  - min: 1
+    max: 2
+    source: author
+    comment:
+      In agreement with the authors we decided to eliminate only models with the
+      Red flag (Inadequate, value = 3)
+
+```
+
+#### Palmer23 MED Storm Track JJA
+
+Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
+
+10.5194/esd-14-457-2023
+
+```
+- key: Palmer23 MED Storm Track JJA
+  doi: 10.5194/esd-14-457-2023
+  type: performance
+  spatial_scope: MED
+  temporal_scope: JJA
+  data_source: author
+  metric:
+    name: circulation
+    long_name: plausibillity of the large scale atmospherc circulation pattern for Europe
+    units: categorical
+    variables: ua850 va850
+    comment:
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
+      1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
+      for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
+      (2015) and adapted for CMIP6.  THE TEXT OF THE COMMENTS HAS TO BE ADAPTED
+      TO EACH SCORES EXTRACTED FROM Palmer et al. 2013 The scoring has been
+      changed from the traffic light coding in the paper to numbers here 1
+      (white)  - Satisfactory. It gathers two categories: Low errors over both
+      local and remote regions and Some substantial errors present but not
+      widespread or not present in the local region of interest.
+      Location of larger remote errors are not known to have a downstream impact
+      in the local region of interest. Captures key characteristics of the
+      criteria spatially or temporarily. 2 (orange) - Unsatisfactory,
+      substantial errors in remote regions where downstream effects could be
+      expected to impact on the reliability of regional information and/or
+      present in the local region of interest. 3 (red)    - Inadequate. Large
+      widespread errors to the extent that the model is unable to represent the
+      present-day climatology in a useful way and future projections by the
+      model cannot be interpreted in a meaningful way.   (grey)   - Data/
+      analysis not available for a given model. This category ha sno number here
+      The authors use only the first realisation for each of the models in this
+      assessment and assume that this is generally representative of the model
+      performance. In first approximation, we consider HERE that the computed
+      score for the r1 member can be applied to any model member with the same
+      physics (p) and same forcing (f).
+    best: 1
+    worst: 3
+  plausible_values:
+  - min: 1
+    max: 2
+    source: author
+    comment:
+      In agreement with the authors we decided to eliminate only models with the
+      Red flag (Inadequate, value = 3)
 
 ```
 
