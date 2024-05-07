@@ -6,7 +6,7 @@
     units: categorical
     variables: ua850 va850
     comment: >
-      Qualitative large scale circulation patter score based on overall pattern, bias and RMSE.
+      Qualitative large scale circulation pattern score based on overall pattern, bias and RMSE.
       Based on 20 year climatology comparison with ERA5 1995-2014.
       criteria is an updated on the work by McSweeney et al. 2015 but for CMIP6
       Based on the method of qualitative scoring in McSweeney et al. (2015) and
@@ -17,6 +17,9 @@
       2 (orange) - Unsatisfactory, substantial errors in remote regions where downstream effects could be expected to impact on the reliability of regional information and/or present in the local region of interest.
       3 (red)    - Inadequate. Large widespread errors to the extent that the model is unable to represent the present-day climatology in a useful way and future projections by the model cannot be interpreted in a meaningful way.
         (grey)   - Data/ analysis not available for a given model. This category ha sno number here
+
+      The authors use only the first realisation for each of the models in this assessment and assume that this is generally representative of the model performance.
+      In first approximation, we consider HERE that the computed score for the r1 member can be applied to any model member with the same physics (p) and same forcing (f). 
     best: 1
     worst: 3
   type: performance
@@ -30,37 +33,41 @@
       In agreement with the authors we decided to eliminate only models with the Red flag (Inadequate, value = 3)
   data_source: author
   data:
-    ACCESS-CM2_r1i1p1f1:     1
-    ACCESS-ESM1-5_r1i1p1f1:  2
-    BCC-ESM1_r1i1p1f1:       1
-    CAMS-CSM1-0_r1i1p1f1:    1
-    CanESM5_r1i1p1f1:        3
-    CESM2_r1i1p1f1:          1
-    CESM2-WACCM_r1i1p1f1:    1
-    CNRM-CM6-1_r1i1p1f2:     1
-    CNRM-CM6-1-HR_r1i1p1f2:  1
-    CNRM-ESM2-1_r1i1p1f2:    1
-    EC-Earth3_r1i1p1f1:      1
-    EC-Earth3-Veg_r1i1p1f1:  1
-    FGOALS-f3-L_r1i1p1f1:    3
-    FGOALS-g3_r1i1p1f1:      3
-    GFDL-CM4_r1i1p1f1:       1
-    GFDL-ESM4_r1i1p1f1:      1
-    GISS-E2-1-G_r1i1p3f1:    3
-    HadGEM3-GC31-LL_r1i1p1f3: 1
-    HadGEM3-GC31-MM_r1i1p1f3: 1
-    INM-CM4-8_r1i1p1f1:      1
-    INM-CM5-0_r1i1p1f1:      1
-    IPSL-CM6A-LR_r1i1p1f1:   2
-    KACE-1-0-G_r1i1p1f1:     1
-    MIROC6_r1i1p1f1:         2
-    MIROC-ES2L_r1i1p1f2:     3
-    MPI-ESM1-2-HR_r1i1p1f1:  1
-    MRI-ESM2-0_r1i1p1f1:     1
-    NESM3_r1i1p1f1:          3
-    NorESM2-LM_r1i1p1f1:     3
-    TaiESM1_r1i1p1f1:        2
-    UKESM1-0-LL_r1i1p1f2:    1
+    ACCESS-CM2_r1-5i1p1f1:       1
+    ACCESS-ESM1-5_r1-10i1p1f1:   2
+    BCC-ESM1_r1i1p1f1:           1
+    CAMS-CSM1-0_r1-2i1p1f1:      1
+    CanESM5_r1-25i1p1f1:         3
+    CESM2_r1-6i1p1f1:            1
+    CESM2_r10-11i1p1f1:          1
+    CESM2-WACCM_r1-3i1p1f1:      1
+    CNRM-CM6-1_r1-6i1p1f2:       1
+    CNRM-CM6-1-HR_r1i1p1f2:      1
+    CNRM-ESM2-1_r1-5i1p1f2:      1
+    EC-Earth3_r1-7i1p1f1:        1
+    EC-Earth3_r11i1p1f1:         1
+    EC-Earth3-Veg_r1-6i1p1f1:    1
+    FGOALS-f3-L_r1i1p1f1:        3
+    FGOALS-g3_r1-4i1p1f1:        3
+    GFDL-CM4_r1i1p1f1:           1
+    GFDL-ESM4_r1-2i1p1f1:        1
+    GISS-E2-1-G_r1-4i1p3f1:      3
+    HadGEM3-GC31-LL_r1-4i1p1f3:  1
+    HadGEM3-GC31-MM_r1-4i1p1f3:  1
+    INM-CM4-8_r1i1p1f1:          1
+    INM-CM5-0_r1-5i1p1f1:        1
+    IPSL-CM6A-LR_r1-10i1p1f1:    2
+    IPSL-CM6A-LR_r1-14i1p1f1:    2
+    IPSL-CM6A-LR_r1-33i1p1f1:    2   
+    KACE-1-0-G_r1-3i1p1f1:       1
+    MIROC6_r1-50i1p1f1:          2
+    MIROC-ES2L_r1-10i1p1f2:      3
+    MPI-ESM1-2-HR_r1-2i1p1f1:    1
+    MRI-ESM2-0_r1-5i1p1f1:       1
+    NESM3_r1-2i1p1f1:            3
+    NorESM2-LM_r1-3i1p1f1:       3
+    TaiESM1_r1i1p1f1:            2
+    UKESM1-0-LL_r1-19i1p1f2:     1
 
 - key: Palmer23 Circ EUR Circ JJA
   doi: 10.5194/esd-14-457-2023
@@ -71,34 +78,38 @@
   plausible_values: *plausval_circ_djf
   data_source: author
   data:
-    ACCESS-CM2_r1i1p1f1:     1
-    ACCESS-ESM1-5_r1i1p1f1:  3
-    BCC-ESM1_r1i1p1f1:       1
-    CAMS-CSM1-0_r1i1p1f1:    1
-    CanESM5_r1i1p1f1:        2
-    CESM2_r1i1p1f1:          2
-    CESM2-WACCM_r1i1p1f1:    1
-    CNRM-CM6-1_r1i1p1f2:     2
-    CNRM-CM6-1-HR_r1i1p1f2:  1
-    CNRM-ESM2-1_r1i1p1f2:    2
-    EC-Earth3_r1i1p1f1:      1
-    EC-Earth3-Veg_r1i1p1f1:  1
-    FGOALS-f3-L_r1i1p1f1:    1
-    FGOALS-g3_r1i1p1f1:      2
-    GFDL-CM4_r1i1p1f1:       1
-    GFDL-ESM4_r1i1p1f1:      1
-    GISS-E2-1-G_r1i1p3f1:    1
-    HadGEM3-GC31-LL_r1i1p1f3: 1
-    HadGEM3-GC31-MM_r1i1p1f3: 1
-    INM-CM4-8_r1i1p1f1:      3
-    INM-CM5-0_r1i1p1f1:      3
-    IPSL-CM6A-LR_r1i1p1f1:   1
-    KACE-1-0-G_r1i1p1f1:     1
-    MIROC6_r1i1p1f1:         1
-    MIROC-ES2L_r1i1p1f2:     2
-    MPI-ESM1-2-HR_r1i1p1f1:  1
-    MRI-ESM2-0_r1i1p1f1:     1
-    NESM3_r1i1p1f1:          2
-    NorESM2-LM_r1i1p1f1:     3
-    TaiESM1_r1i1p1f1:        1
-    UKESM1-0-LL_r1i1p1f2:    1
+    ACCESS-CM2_r1-5i1p1f1:       1
+    ACCESS-ESM1-5_r1-10i1p1f1:   3
+    BCC-ESM1_r1i1p1f1:           1
+    CAMS-CSM1-0_r1-2i1p1f1:      1
+    CanESM5_r1-25i1p1f1:         2
+    CESM2_r1-6i1p1f1:            2
+    CESM2_r10-11i1p1f1:          2
+    CESM2-WACCM_r1-3i1p1f1:      1
+    CNRM-CM6-1_r1-6i1p1f2:       2
+    CNRM-CM6-1-HR_r1i1p1f2:      1
+    CNRM-ESM2-1_r1-5i1p1f2:      2
+    EC-Earth3_r1-7i1p1f1:        1
+    EC-Earth3_r11i1p1f1:         1
+    EC-Earth3-Veg_r1-6i1p1f1:    1
+    FGOALS-f3-L_r1i1p1f1:        1
+    FGOALS-g3_r1-4i1p1f1:        2
+    GFDL-CM4_r1i1p1f1:           1
+    GFDL-ESM4_r1-2i1p1f1:        1
+    GISS-E2-1-G_r1-4i1p3f1:      1
+    HadGEM3-GC31-LL_r1-4i1p1f3:  1
+    HadGEM3-GC31-MM_r1-4i1p1f3:  1
+    INM-CM4-8_r1i1p1f1:          3
+    INM-CM5-0_r1-5i1p1f1:        3
+    IPSL-CM6A-LR_r1-10i1p1f1:    1
+    IPSL-CM6A-LR_r14i1p1f1:      1
+    IPSL-CM6A-LR_r33i1p1f1:      1
+    KACE-1-0-G_r1-3i1p1f1:       1
+    MIROC6_r1-50i1p1f1:          1
+    MIROC-ES2L_r1-10i1p1f2:      2
+    MPI-ESM1-2-HR_r1-2i1p1f1:    1
+    MRI-ESM2-0_r1-5i1p1f1:       1
+    NESM3_r1-2i1p1f1:            2
+    NorESM2-LM_r1-3i1p1f1:       3
+    TaiESM1_r1i1p1f1:            1
+    UKESM1-0-LL_r1-19i1p1f2:     1
