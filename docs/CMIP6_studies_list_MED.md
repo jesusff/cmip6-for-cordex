@@ -459,8 +459,8 @@ Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
     units: categorical
     variables: ua850 va850
     comment:
-      Qualitative large scale circulation patter score based on overall pattern,
-      bias and RMSE. Based on 20 year climatology comparison with ERA5
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
       1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
       for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
       (2015) and adapted for CMIP6. The scoring has been changed from the
@@ -477,7 +477,12 @@ Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
       extent that the model is unable to represent the present-day climatology
       in a useful way and future projections by the model cannot be interpreted
       in a meaningful way.   (grey)   - Data/ analysis not available for a given
-      model. This category ha sno number here
+      model. This category ha sno number here  The authors use only the first
+      realisation for each of the models in this assessment and assume that this
+      is generally representative of the model performance. In first
+      approximation, we consider HERE that the computed score for the r1 member
+      can be applied to any model member with the same physics (p) and same
+      forcing (f).
     best: 1
     worst: 3
   plausible_values:
@@ -509,8 +514,8 @@ Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
     units: categorical
     variables: ua850 va850
     comment:
-      Qualitative large scale circulation patter score based on overall pattern,
-      bias and RMSE. Based on 20 year climatology comparison with ERA5
+      Qualitative large scale circulation pattern score based on overall
+      pattern, bias and RMSE. Based on 20 year climatology comparison with ERA5
       1995-2014. criteria is an updated on the work by McSweeney et al. 2015 but
       for CMIP6 Based on the method of qualitative scoring in McSweeney et al.
       (2015) and adapted for CMIP6. The scoring has been changed from the
@@ -527,7 +532,12 @@ Located in [CMIP6_studies/Palmer23.yaml](../CMIP6_studies/Palmer23.yaml)
       extent that the model is unable to represent the present-day climatology
       in a useful way and future projections by the model cannot be interpreted
       in a meaningful way.   (grey)   - Data/ analysis not available for a given
-      model. This category ha sno number here
+      model. This category ha sno number here  The authors use only the first
+      realisation for each of the models in this assessment and assume that this
+      is generally representative of the model performance. In first
+      approximation, we consider HERE that the computed score for the r1 member
+      can be applied to any model member with the same physics (p) and same
+      forcing (f).
     best: 1
     worst: 3
   plausible_values:
