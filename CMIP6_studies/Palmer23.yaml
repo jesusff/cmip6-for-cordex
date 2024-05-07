@@ -10,8 +10,10 @@
       Based on 20 year climatology comparison with ERA5 1995-2014.
       criteria is an updated on the work by McSweeney et al. 2015 but for CMIP6
       Based on the method of qualitative scoring in McSweeney et al. (2015) and
-      adapted for CMIP6. The scoring has been changed from the traffic light
-      coding in the paper to numbers here
+      adapted for CMIP6. 
+      THE TEXT OF THE COMMENTS HAS TO BE ADAPTED TO EACH SCORES EXTRACTED FROM Palmer et al. 2013
+      
+      The scoring has been changed from the traffic light coding in the paper to numbers here
       1 (white)  - Satisfactory. It gathers two categories: Low errors over both local and remote regions and Some substantial errors present but not widespread or not present in the local region of interest. 
                    Location of larger remote errors are not known to have a downstream impact in the local region of interest. Captures key characteristics of the criteria spatially or temporarily.
       2 (orange) - Unsatisfactory, substantial errors in remote regions where downstream effects could be expected to impact on the reliability of regional information and/or present in the local region of interest.
@@ -69,12 +71,12 @@
     TaiESM1_r1i1p1f1:            2
     UKESM1-0-LL_r1-19i1p1f2:     1
 
-- key: Palmer23 Circ EUR Circ JJA
+- key: Palmer23 EUR Circ JJA
   doi: 10.5194/esd-14-457-2023
   metric: *circ_djf
   type: performance
   spatial_scope: EUR
-  temporal_scope: DJF
+  temporal_scope: JJA
   plausible_values: *plausval_circ_djf
   data_source: author
   data:
@@ -113,3 +115,330 @@
     NorESM2-LM_r1-3i1p1f1:       3
     TaiESM1_r1i1p1f1:            1
     UKESM1-0-LL_r1-19i1p1f2:     1
+
+- key: Palmer23 EUR Blocking DJFM
+  doi: 10.5194/esd-14-457-2023
+  metric: *circ_djf
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJFM
+  plausible_values: *plausval_circ_djf
+  data_source: author
+  data:
+    ACCESS-CM2_r1-5i1p1f1:       1
+    BCC-ESM1_r1i1p1f1:           1
+    CanESM5_r1-25i1p1f1:         3
+    CESM2_r1-6i1p1f1:            2
+    CESM2_r10-11i1p1f1:          2
+    CESM2-WACCM_r1-3i1p1f1:      1
+    CNRM-CM6-1_r1-6i1p1f2:       1
+    CNRM-CM6-1-HR_r1i1p1f2:      1
+    CNRM-ESM2-1_r1-5i1p1f2:      1
+    EC-Earth3_r1-7i1p1f1:        1
+    EC-Earth3_r11i1p1f1:         1
+    FGOALS-f3-L_r1i1p1f1:        3
+    FGOALS-g3_r1-4i1p1f1:        3
+    GISS-E2-1-G_r1-4i1p3f1:      3
+    HadGEM3-GC31-LL_r1-4i1p1f3:  1
+    HadGEM3-GC31-MM_r1-4i1p1f3:  1
+    INM-CM4-8_r1i1p1f1:          1
+    INM-CM5-0_r1-5i1p1f1:        1
+    IPSL-CM6A-LR_r1-10i1p1f1:    2
+    IPSL-CM6A-LR_r14i1p1f1:      2
+    IPSL-CM6A-LR_r33i1p1f1:      2
+    KACE-1-0-G_r1-3i1p1f1:       1
+    MIROC6_r1-50i1p1f1:          2
+    MPI-ESM1-2-HR_r1-2i1p1f1:    1
+    MRI-ESM2-0_r1-5i1p1f1:       1
+    UKESM1-0-LL_r1-19i1p1f2:     1
+
+- key: Palmer23 EUR Blocking JJAS
+  doi: 10.5194/esd-14-457-2023
+  metric: *circ_djf
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: JJAS
+  plausible_values: *plausval_circ_djf
+  data_source: author
+  data:
+    ACCESS-CM2_r1-5i1p1f1:       2
+    BCC-ESM1_r1i1p1f1:           2
+    CanESM5_r1-25i1p1f1:         1
+    CESM2_r1-6i1p1f1:            1
+    CESM2_r10-11i1p1f1:          1
+    CESM2-WACCM_r1-3i1p1f1:      2
+    CNRM-CM6-1_r1-6i1p1f2:       2
+    CNRM-CM6-1-HR_r1i1p1f2:      2
+    CNRM-ESM2-1_r1-5i1p1f2:      2
+    EC-Earth3_r1-7i1p1f1:        1
+    EC-Earth3_r11i1p1f1:         1
+    FGOALS-f3-L_r1i1p1f1:        1
+    FGOALS-g3_r1-4i1p1f1:        2
+    GISS-E2-1-G_r1-4i1p3f1:      1
+    HadGEM3-GC31-LL_r1-4i1p1f3:  2
+    HadGEM3-GC31-MM_r1-4i1p1f3:  1
+    INM-CM4-8_r1i1p1f1:          3
+    INM-CM5-0_r1-5i1p1f1:        3
+    IPSL-CM6A-LR_r1-10i1p1f1:    1
+    IPSL-CM6A-LR_r14i1p1f1:      1
+    IPSL-CM6A-LR_r33i1p1f1:      1
+    KACE-1-0-G_r1-3i1p1f1:       2
+    MIROC6_r1-50i1p1f1:          1
+    MPI-ESM1-2-HR_r1-2i1p1f1:    1
+    MRI-ESM2-0_r1-5i1p1f1:       1
+    UKESM1-0-LL_r1-19i1p1f2:     2
+
+- key: Palmer23 EUR Storm Track DJF
+  doi: 10.5194/esd-14-457-2023
+  metric: *circ_djf
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: DJF
+  plausible_values: *plausval_circ_djf
+  data_source: author
+  data:
+    ACCESS-CM2_r1-5i1p1f1:       1
+    ACCESS-ESM1-5_r1-10i1p1f1:   1
+    BCC-ESM1_r1i1p1f1:           1
+    CNRM-CM6-1-HR_r1i1p1f2:      1
+    EC-Earth3_r1-7i1p1f1:        1
+    EC-Earth3_r11i1p1f1:         1
+    EC-Earth3-Veg_r1-6i1p1f1:    1
+    FGOALS-f3-L_r1i1p1f1:        3
+    GFDL-CM4_r1i1p1f1:           1
+    GISS-E2-1-G_r1-4i1p3f1:      3
+    HadGEM3-GC31-LL_r1-4i1p1f3:  1
+    HadGEM3-GC31-MM_r1-4i1p1f3:  1
+    IPSL-CM6A-LR_r1-10i1p1f1:    3
+    IPSL-CM6A-LR_r14i1p1f1:      3
+    IPSL-CM6A-LR_r33i1p1f1:      3
+    KACE-1-0-G_r1-3i1p1f1:       1
+    MIROC6_r1-50i1p1f1:          2
+    MIROC-ES2L_r1-10i1p1f2:      3
+    MPI-ESM1-2-HR_r1-2i1p1f1:    1
+    MRI-ESM2-0_r1-5i1p1f1:       1
+    NESM3_r1-2i1p1f1:            1
+    NorESM2-LM_r1-3i1p1f1:       3
+    TaiESM1_r1i1p1f1:            2
+    UKESM1-0-LL_r1-19i1p1f2:     1
+
+- key: Palmer23 EUR Storm Track JJA
+  doi: 10.5194/esd-14-457-2023
+  metric: *circ_djf
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: JJA
+  plausible_values: *plausval_circ_djf
+  data_source: author
+  data:
+    ACCESS-CM2_r1-5i1p1f1:       2
+    ACCESS-ESM1-5_r1-10i1p1f1:   3
+    BCC-ESM1_r1i1p1f1:           2
+    CNRM-CM6-1-HR_r1i1p1f2:      1
+    EC-Earth3_r1-7i1p1f1:        1
+    EC-Earth3_r11i1p1f1:         1
+    EC-Earth3-Veg_r1-6i1p1f1:    1
+    FGOALS-f3-L_r1i1p1f1:        2
+    GFDL-CM4_r1i1p1f1:           1
+    GISS-E2-1-G_r1-4i1p3f1:      1
+    HadGEM3-GC31-LL_r1-4i1p1f3:  1
+    HadGEM3-GC31-MM_r1-4i1p1f3:  1
+    IPSL-CM6A-LR_r1-10i1p1f1:    2
+    IPSL-CM6A-LR_r14i1p1f1:      2
+    IPSL-CM6A-LR_r33i1p1f1:      2
+    KACE-1-0-G_r1-3i1p1f1:       1
+    MIROC6_r1-50i1p1f1:          1
+    MIROC-ES2L_r1-10i1p1f2:      3
+    MPI-ESM1-2-HR_r1-2i1p1f1:    1
+    MRI-ESM2-0_r1-5i1p1f1:       1
+    NESM3_r1-2i1p1f1:            1
+    NorESM2-LM_r1-3i1p1f1:       3
+    TaiESM1_r1i1p1f1:            1
+    UKESM1-0-LL_r1-19i1p1f2:     2
+
+- key: Palmer23 MED tas DJF
+  doi: 10.5194/esd-14-457-2023
+  metric: *circ_djf
+  type: performance
+  spatial_scope: MED
+  temporal_scope: DJF
+  plausible_values: *plausval_circ_djf
+  data_source: author
+  data:
+    ACCESS-CM2_r1-5i1p1f1:       2
+    ACCESS-ESM1-5_r1-10i1p1f1:   1
+    BCC-ESM1_r1i1p1f1:           1
+    CAMS-CSM1-0_r1-2i1p1f1:      2
+    CanESM5_r1-25i1p1f1:         2
+    CESM2_r1-6i1p1f1:            1
+    CESM2_r10-11i1p1f1:          1
+    CESM2-WACCM_r1-3i1p1f1:      1
+    CNRM-CM6-1_r1-6i1p1f2:       1
+    CNRM-CM6-1-HR_r1i1p1f2:      1
+    CNRM-ESM2-1_r1-5i1p1f2:      1
+    EC-Earth3_r1-7i1p1f1:        1
+    EC-Earth3_r11i1p1f1:         1
+    EC-Earth3-Veg_r1-6i1p1f1:    1
+    FGOALS-f3-L_r1i1p1f1:        1
+    FGOALS-g3_r1-4i1p1f1:        1
+    GFDL-CM4_r1i1p1f1:           1
+    GFDL-ESM4_r1-2i1p1f1:        1
+    GISS-E2-1-G_r1-4i1p3f1:      1
+    HadGEM3-GC31-LL_r1-4i1p1f3:  1
+    HadGEM3-GC31-MM_r1-4i1p1f3:  1
+    INM-CM4-8_r1i1p1f1:          1
+    INM-CM5-0_r1-5i1p1f1:        1
+    IPSL-CM6A-LR_r1-10i1p1f1:    1
+    IPSL-CM6A-LR_r14i1p1f1:      1
+    IPSL-CM6A-LR_r33i1p1f1:      1
+    KACE-1-0-G_r1-3i1p1f1:       1
+    MIROC6_r1-50i1p1f1:          2
+    MIROC-ES2L_r1-10i1p1f2:      2
+    MPI-ESM1-2-HR_r1-2i1p1f1:    1
+    MRI-ESM2-0_r1-5i1p1f1:       1
+    NESM3_r1-2i1p1f1:            2
+    NorESM2-LM_r1-3i1p1f1:       2
+    TaiESM1_r1i1p1f1:            1
+    UKESM1-0-LL_r1-19i1p1f2:     2
+
+- key: Palmer23 MED tas JJA
+  doi: 10.5194/esd-14-457-2023
+  metric: *circ_djf
+  type: performance
+  spatial_scope: MED
+  temporal_scope: JJA
+  plausible_values: *plausval_circ_djf
+  data_source: author
+  data:
+    ACCESS-CM2_r1-5i1p1f1:       1
+    ACCESS-ESM1-5_r1-10i1p1f1:   1
+    BCC-ESM1_r1i1p1f1:           1
+    CAMS-CSM1-0_r1-2i1p1f1:      2
+    CanESM5_r1-25i1p1f1:         1
+    CESM2_r1-6i1p1f1:            1
+    CESM2_r10-11i1p1f1:          1
+    CESM2-WACCM_r1-3i1p1f1:      1
+    CNRM-CM6-1_r1-6i1p1f2:       1
+    CNRM-CM6-1-HR_r1i1p1f2:      2
+    CNRM-ESM2-1_r1-5i1p1f2:      1
+    EC-Earth3_r1-7i1p1f1:        1
+    EC-Earth3_r11i1p1f1:         1
+    EC-Earth3-Veg_r1-6i1p1f1:    1
+    FGOALS-f3-L_r1i1p1f1:        2
+    FGOALS-g3_r1-4i1p1f1:        2
+    GFDL-CM4_r1i1p1f1:           1
+    GFDL-ESM4_r1-2i1p1f1:        1
+    GISS-E2-1-G_r1-4i1p3f1:      1
+    HadGEM3-GC31-LL_r1-4i1p1f3:  1
+    HadGEM3-GC31-MM_r1-4i1p1f3:  1
+    INM-CM4-8_r1i1p1f1:          3
+    INM-CM5-0_r1-5i1p1f1:        2
+    IPSL-CM6A-LR_r1-10i1p1f1:    2
+    IPSL-CM6A-LR_r14i1p1f1:      2
+    IPSL-CM6A-LR_r33i1p1f1:      2
+    KACE-1-0-G_r1-3i1p1f1:       1
+    MIROC6_r1-50i1p1f1:          3
+    MIROC-ES2L_r1-10i1p1f2:      3
+    MPI-ESM1-2-HR_r1-2i1p1f1:    1
+    MRI-ESM2-0_r1-5i1p1f1:       1
+    NESM3_r1-2i1p1f1:            2
+    NorESM2-LM_r1-3i1p1f1:       2
+    TaiESM1_r1i1p1f1:            2
+    UKESM1-0-LL_r1-19i1p1f2:     1
+    
+- key: Palmer23 MED Storm Track DJF
+  doi: 10.5194/esd-14-457-2023
+  metric: *circ_djf
+  type: performance
+  spatial_scope: MED
+  temporal_scope: DJF
+  plausible_values: *plausval_circ_djf
+  data_source: author
+  data:
+    ACCESS-CM2_r1-5i1p1f1:       1
+    ACCESS-ESM1-5_r1-10i1p1f1:   2
+    BCC-ESM1_r1i1p1f1:           1
+    CNRM-CM6-1-HR_r1i1p1f2:      2
+    EC-Earth3_r1-7i1p1f1:        1
+    EC-Earth3_r11i1p1f1:         1
+    EC-Earth3-Veg_r1-6i1p1f1:    1
+    GFDL-CM4_r1i1p1f1:           1
+    GISS-E2-1-G_r1-4i1p3f1:      2
+    HadGEM3-GC31-LL_r1-4i1p1f3:  1
+    HadGEM3-GC31-MM_r1-4i1p1f3:  1
+    IPSL-CM6A-LR_r1-10i1p1f1:    1
+    IPSL-CM6A-LR_r14i1p1f1:      1
+    IPSL-CM6A-LR_r33i1p1f1:      1
+    KACE-1-0-G_r1-3i1p1f1:       2
+    MIROC6_r1-50i1p1f1:          1
+    MIROC-ES2L_r1-10i1p1f2:      2
+    MPI-ESM1-2-HR_r1-2i1p1f1:    1
+    MRI-ESM2-0_r1-5i1p1f1:       1
+    NESM3_r1-2i1p1f1:            1
+    NorESM2-LM_r1-3i1p1f1:       2
+    TaiESM1_r1i1p1f1:            1
+
+ - key: Palmer23 MED Storm Track JJA
+  doi: 10.5194/esd-14-457-2023
+  metric: *circ_djf
+  type: performance
+  spatial_scope: MED
+  temporal_scope: JJA
+  plausible_values: *plausval_circ_djf
+  data_source: author
+  data:
+    ACCESS-CM2_r1-5i1p1f1:       1
+    ACCESS-ESM1-5_r1-10i1p1f1:   1
+    BCC-ESM1_r1i1p1f1:           2
+    CNRM-CM6-1-HR_r1i1p1f2:      1
+    EC-Earth3_r1-7i1p1f1:        1
+    EC-Earth3_r11i1p1f1:         1
+    EC-Earth3-Veg_r1-6i1p1f1:    1
+    GFDL-CM4_r1i1p1f1:           1
+    GISS-E2-1-G_r1-4i1p3f1:      1
+    HadGEM3-GC31-LL_r1-4i1p1f3:  2
+    HadGEM3-GC31-MM_r1-4i1p1f3:  1
+    IPSL-CM6A-LR_r1-10i1p1f1:    1
+    IPSL-CM6A-LR_r14i1p1f1:      1
+    IPSL-CM6A-LR_r33i1p1f1:      1
+    KACE-1-0-G_r1-3i1p1f1:       1
+    MIROC6_r1-50i1p1f1:          1
+    MIROC-ES2L_r1-10i1p1f2:      1
+    MPI-ESM1-2-HR_r1-2i1p1f1:    1
+    MRI-ESM2-0_r1-5i1p1f1:       2
+    NESM3_r1-2i1p1f1:            1
+    NorESM2-LM_r1-3i1p1f1:       2
+    TaiESM1_r1i1p1f1:            1
+
+- key: Palmer23 EUR AMOC
+  doi: 10.5194/esd-14-457-2023
+  metric: *circ_djf
+  type: performance
+  spatial_scope: EUR
+  temporal_scope: Annual
+  plausible_values: *plausval_circ_djf
+  data_source: author
+  data:
+    BCC-ESM1_r1i1p1f1:           1
+    CAMS-CSM1-0_r1-2i1p1f1:      2
+    CanESM5_r1-25i1p1f1:         1
+    CESM2_r1-6i1p1f1:            1
+    CESM2_r10-11i1p1f1:          1
+    CESM2-WACCM_r1-3i1p1f1:      1
+    CNRM-CM6-1_r1-6i1p1f2:       1
+    CNRM-CM6-1-HR_r1i1p1f2:      1
+    CNRM-ESM2-1_r1-5i1p1f2:      1
+    EC-Earth3_r1-7i1p1f1:        1
+    EC-Earth3_r11i1p1f1:         1
+    EC-Earth3-Veg_r1-6i1p1f1:    1
+    GFDL-CM4_r1i1p1f1:           1
+    GISS-E2-1-G_r1-4i1p3f1:      1
+    HadGEM3-GC31-LL_r1-4i1p1f3:  1
+    INM-CM4-8_r1i1p1f1:          1
+    INM-CM5-0_r1-5i1p1f1:        1
+    IPSL-CM6A-LR_r1-10i1p1f1:    2
+    IPSL-CM6A-LR_r14i1p1f1:      2
+    IPSL-CM6A-LR_r33i1p1f1:      2
+    MIROC6_r1-50i1p1f1:          1
+    NESM3_r1-2i1p1f1:            3
+    NorESM2-LM_r1-3i1p1f1:       2
