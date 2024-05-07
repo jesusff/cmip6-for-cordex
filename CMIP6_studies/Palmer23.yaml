@@ -378,7 +378,7 @@
     NorESM2-LM_r1-3i1p1f1:       2
     TaiESM1_r1i1p1f1:            1
 
- - key: Palmer23 MED Storm Track JJA
+- key: Palmer23 MED Storm Track JJA
   doi: 10.5194/esd-14-457-2023
   metric: *circ_djf
   type: performance
