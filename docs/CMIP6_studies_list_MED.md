@@ -1,30 +1,30 @@
 ## Incomplete entries
 
- * [Cob21](CMIP6_studies/Cob21.yaml)
  * [Fas20](CMIP6_studies/Fas20.yaml)
  * [Beo21](CMIP6_studies/Beo21.yaml)
+ * [Cob21](CMIP6_studies/Cob21.yaml)
 ## Globally disabled entries
 
- · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
- · [Pri20 storm track DJF](CMIP6_studies/Pri20.yaml)
- · [Pri20 storm track JJA](CMIP6_studies/Pri20.yaml)
- · [Cob21](CMIP6_studies/Cob21.yaml)
+ · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
  · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
  · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Fas20](CMIP6_studies/Fas20.yaml)
- · [Dobler SST rmse MED](CMIP6_studies/Dobler.yaml)
- · [Beo21](CMIP6_studies/Beo21.yaml)
+ · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
  · [Can20 marle](CMIP6_studies/Can20.yaml)
+ · [Fas20](CMIP6_studies/Fas20.yaml)
+ · [Pri20 storm track DJF](CMIP6_studies/Pri20.yaml)
+ · [Pri20 storm track JJA](CMIP6_studies/Pri20.yaml)
+ · [Beo21](CMIP6_studies/Beo21.yaml)
  · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
- · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
+ · [Cob21](CMIP6_studies/Cob21.yaml)
+ · [Dobler SST rmse MED](CMIP6_studies/Dobler.yaml)
 ## Entries disabled in MED
 
  · [Sevault MED SST](CMIP6_studies/Sevault.yaml)
- · [Dobler SST rmse EUR](CMIP6_studies/Dobler.yaml)
  · [McSw15 circ DJF](CMIP6_studies/McSw15.yaml)
  · [McSw15 circ JJA](CMIP6_studies/McSw15.yaml)
+ · [Dobler SST rmse EUR](CMIP6_studies/Dobler.yaml)
 ## Available entries (MED scope)
 ### Plausibility
 #### AR6 TCR

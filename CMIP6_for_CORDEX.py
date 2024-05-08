@@ -32,6 +32,12 @@ contexts = {
     'experiment_id': ['historical']+scenarios,
     'variable_id': ['tos','siconc','od550aer'],
   },
+  'Ocean' : {
+    'project': 'CMIP6',
+    'experiment_id': ['historical']+scenarios,
+    'variable_id': ['thetao', 'bigthetao','so','zos'],
+    'table_id': 'Omon',
+  },
    'AerosolExtra' : {
     'project': 'CMIP6',
     'experiment_id': ['historical']+scenarios,
@@ -55,7 +61,11 @@ facets = (
   'run', 'table', 'variable', 'grid', 'version'
 )
 tags = { # Values are python sets
-  'RCM': {'hus-ml', 'ta-ml', 'ua-ml', 'va-ml', 'tos', 'siconc', 'od550aer'},
+  'AORCM': [
+    {'thetao' ,'zos', 'so','hus-ml', 'ta-ml', 'ua-ml', 'va-ml', 'tos', 'siconc', 'od550aer'},
+    {'bigthetao' ,'zos', 'so','hus-ml', 'ta-ml', 'ua-ml', 'va-ml', 'tos', 'siconc', 'od550aer'},
+    ],
+  'ARCM': {'hus-ml', 'ta-ml', 'ua-ml', 'va-ml', 'tos', 'siconc', 'od550aer'},
   '3Dml': {'hus-ml', 'ta-ml', 'ua-ml', 'va-ml'},
   'ESD': [
     {'hus', 'zg', 'ta', 'ua', 'va', 'psl', 'pr', 'tas', 'tasmax', 'tasmin'},

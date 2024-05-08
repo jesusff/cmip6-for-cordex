@@ -83,13 +83,14 @@ non_esgf = pd.read_csv('CMIP6_for_CORDEX_availability_non_ESGF.csv').set_index([
 tableavail.update(non_esgf)
 # - update synthesis column
 mandatory_scenarios = ['historical','ssp126', 'ssp370']
+lbc_for_source_type = config['lbc_for_source_type'].get(CORDEX_DOMAIN, config['lbc_for_source_type']['default'])
 tableavail.loc[:,'synthesis'] = np.logical_and.reduce(
-  tableavail.loc[:,mandatory_scenarios] == 'RCM', axis=1
+  tableavail.loc[:,mandatory_scenarios] == lbc_for_source_type, axis=1
 ) * 1
 tableavail.loc[:,'synthesis'] = tableavail.loc[:,'synthesis'].astype(int)
 # - filter out entries with less than 2 scenarios unless a metric is available for it
 availscenarios = ['ssp126', 'ssp245', 'ssp370', 'ssp585']
-tableavail_row_filter = np.sum(tableavail.loc[:,availscenarios] == 'RCM', axis=1) >= 2
+tableavail_row_filter = np.sum(tableavail.loc[:,availscenarios] == lbc_for_source_type, axis=1) >= 2
 row_filter = set(tableavail.index[tableavail_row_filter]).union(
   tableprange.index,
   tablespread.index,
@@ -132,7 +133,7 @@ def greyout_non_rcm(df):
 # Bug in pandas https://github.com/pandas-dev/pandas/issues/35429
 #  return(df.where(df == 'RCM', attr))
   rval = df.copy()
-  rval.iloc[:] = np.where((rval == 'RCM').fillna(False), rval, attr)
+  rval.iloc[:] = np.where((rval == lbc_for_source_type).fillna(False), rval, attr)
   return(rval)
 
 def greyout_unplausible(df):
