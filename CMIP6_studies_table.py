@@ -145,7 +145,7 @@ def greyout_unplausible_rows(df):
   global filter_plausible
   attr = 'color: grey'
   rval = df.copy().astype('string')
-  rval.update(filter_plausible.map({False: attr, True: ''}))
+  rval.update(filters['filter_plausible'].map({False: attr, True: ''}))
   return(rval)
 
 def highligh_plausible_range(df):
@@ -199,18 +199,21 @@ perfcols = get_cols_under(main_headers[1], tablefull, drop = 'Synthesis')
 spreadcols = get_cols_under(main_headers[2], tablefull)
 othercols = get_cols_under(main_headers[3], tablefull)
 # Row filters
-filter_avail = tablefull[(main_headers[0], 'synthesis')] == 1
-filter_plausible = synthesis(tablefull[(main_headers[1], 'Synthesis')], test = True)
-filter_avail_and_plausible = filter_avail & filter_plausible
-filter_all = filter_avail.copy()
+filters = dict()
+filters['filter_avail'] = tablefull[(main_headers[0], 'synthesis')] == 1
+filters['filter_plausible'] = synthesis(tablefull[(main_headers[1], 'Synthesis')], test = True)
+filters['filter_avail_and_plausible'] = filters['filter_avail'] & filters['filter_plausible']
+filter_all = filters['filter_avail'].copy()
 filter_all.iloc[:] = True
+filters['filter_all'] = filter_all
 plans = pd.read_csv('CMIP6_downscaling_plans.csv')
 selected = plans[plans['domain'].str.startswith(CORDEX_DOMAIN)]
 filter_selected = filter_all.copy()
 filter_selected.iloc[:] = filter_selected.index.isin(set(zip(selected['driving_model'],selected['ensemble'])))
-filter_avail = single_member(filter_avail)
-filter_avail_and_plausible = single_member(filter_avail_and_plausible)
-filter_plausible = single_member(filter_plausible)
+filters['filter_selected'] = filter_selected
+# Convert some filters to show a single member
+for filtname in ['filter_avail', 'filter_avail_and_plausible', 'filter_plausible']:
+  filters[filtname] = single_member(filters[filtname])
 pd.set_option('precision', 2)
 format_dict = { # Format exceptions
                          ('2. Plausibility', 'Nabat EUR AOD hist trend'): '{:.3f}',
@@ -258,28 +261,46 @@ Numbers for simulations showing some unplausible performace metric are greyed ou
 The values for simulations showing some unplausible performace metric are also greyed out.
 </p>
 <ul>''')
-headers = [
-  'Filter: available and plausible (single member)', 
-  'Filter: available (single member)', 
-  'Filter: plausible (single member)', 
-  'Selected GCMs + institutional plans',
-  'All members with 2 or more scenarios and/or some metric available'
-]
-text = [
-  '', '', '', 
-  'See institutional plans at <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CMIP6_downscaling_plans.csv" target="_blank">CMIP6_downscaling_plans.csv</a><br>',
-  ''
-]
-ids = ['avail-and-plausible', 'available', 'plausible', 'selected', 'all']
-f.write('\n'.join([f'\n<li><a href="#{ids[k]}">{header}</a></li>' for k,header in enumerate(headers)]))
+filter_metadata = {
+  'filter_avail_and_plausible': dict(
+    id='avail-and-plausible',
+    header='Filter: available and plausible (single member)',
+    text=''
+  ), 
+  'filter_avail': dict(
+    id='avail',
+    header='Filter: available (single member)',
+    text=''
+  ),
+  'filter_plausible': dict(
+    id='plausible',
+    header='Filter: plausible (single member)',
+    text=''
+  ),
+  'filter_selected': dict(
+    id='selected',
+    header='Selected GCMs + institutional plans',
+    text='See institutional plans at <a href="https://github.com/WCRP-CORDEX/simulation-status/blob/main/CMIP6_downscaling_plans.csv" target="_blank">CMIP6_downscaling_plans.csv</a><br>'
+  ),
+  'filter_all': dict(
+    id='all',
+    header='All members with 2 or more scenarios and/or some metric available',
+    text=''
+  )
+}
+domain_filters = config['tables_filter'].get(CORDEX_DOMAIN, config['tables_filter']['default'])
+f.write('\n'.join([f'\n<li><a href="#{filter_metadata[filtname]["id"]}">{filter_metadata[filtname]["header"]}</a></li>' for filtname in domain_filters]))
 f.write('</ul>')
-for item,filter_rows in enumerate([filter_avail_and_plausible, filter_avail, filter_plausible, filter_selected, filter_all]):
-  if ~filter_rows.any(): # Skip empty tables
+for filtname in domain_filters:
+  if ~filters[filtname].any(): # Skip empty tables
     continue
-  filter_rows.iloc[0:2] = True # keep plausible value rows
-  f.write(f'<h2 id="{ids[item]}">{headers[item]}</h2>\n{text[item]}')
+  filters[filtname].iloc[0:2] = True # keep plausible value rows
+  id = filter_metadata[filtname]['id']
+  header = filter_metadata[filtname]['header']
+  text = filter_metadata[filtname]['text']
+  f.write(f'<h2 id="{id}">{header}</h2>\n{text}')
   f.write(tablefull
-    .loc[filter_rows]
+    .loc[filters[filtname]]
     .convert_dtypes(convert_string = False, convert_boolean = False)
     .style
       .format(format_dict)
