@@ -162,8 +162,9 @@ Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
     variables: tas
     comment:
       Constrained global annual temperature future climate change range,
-      2041-2060 vs 1850-1900, SSP245 (adapted from Ribes et al. 2021 by S.
-      Qasmi). In particular by adding recently available CMIP6 GCM, now 40 GCMs.
+      2041-2060 vs 1850-1900, SSP245 (adapted from Ribes et al. 2021, Science
+      Advances by S. Qasmi). In particular by adding recently available CMIP6
+      GCM, now 40 GCMs.
   period:
     reference: 1850-1900
     target: 2041-2060
@@ -1413,53 +1414,6 @@ Located in [CMIP6_studies/Oud20.yaml](../CMIP6_studies/Oud20.yaml)
 
 ```
 
-#### Qasmi Constr EUR Dtas ssp245 2050 JJA
-
-Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
-
-10.1126/sciadv.abo6872
-
-```
-- key: Qasmi Constr EUR Dtas ssp245 2050 JJA
-  doi: 10.1126/sciadv.abo6872
-  type: future_spread
-  spatial_scope: MED+NEU+CEU
-  temporal_scope: JJA
-  data_source: author
-  metric:
-    name: deltatas_class
-    long_name: Warming classes according to Observationally-constrained Summer European future surface air temperature change in 2041-2060 in Summer
-    units: categorical
-    variables: tas
-    comment:
-      Regional tas change in Europe MED, NEU, CEU, MED+NEU+CEU, DJF, JJA,
-      2041-2060 vs 1850-1900, SSP245. Values are given only for land points.
-      Adapted from Qasmi and Ribes 2022, Sci. Adv. by S. Qasmi following S.
-      Somot's request Numerical values available soon. Only warming classes for
-      now. We report here only warming classes for JJA and for the joined
-      MED+NEU+CEU domain
-  period:
-    reference: 1850-1900
-    target: 2041-2060
-  classes:
-  - limits: [0.5, 1.5, 2.5, 3.5, 4.5, 5.5]
-    labels: ['implausible cold', 'weak warming', 'medium warming', 'strong warming', 'implausible warm']
-    source: author
-    comment:
-      Warming classes are determined wrt an observationally-constrained range
-      for the future regional warming based on Ribes et al. 2021, Qasmi et al.
-      (in rev). The observational constraint is a global constraint on the GMST
-      but it allows to constraint the regional climate warming. The 90% interval
-      of future warming plausible range is [2.3 ; 3.3]degC The 50% interval of
-      future warming plausible range is [2.5 ; 3.0]degC The best estimate is a
-      warming of 2.8 degC Category definition (new since 5 jan 2022): Categories
-      1 and 5 are considered as implausible by S. Qasmi. Category 2, 3, 4 are
-      plausible. Class 1 is below the Q5 of the constrained range. Class 2 is
-      between Q5 and Q25 Class 3 is between Q25 and Q75 Class 4 is between Q75
-      and Q95 Class 5 is above Q95
-
-```
-
 #### Atlas Dtas MED DJF
 
 Located in [CMIP6_studies/AtlasIPCC.yaml](../CMIP6_studies/AtlasIPCC.yaml)
@@ -1565,6 +1519,100 @@ Located in [CMIP6_studies/AtlasIPCC.yaml](../CMIP6_studies/AtlasIPCC.yaml)
   period:
     reference: 1981-2010
     target: 2071-2100
+
+```
+
+#### Qasmi Constrained Mediterranean Dtas ssp245 2050 JJA
+
+Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
+
+10.1126/sciadv.abo6872
+
+```
+- key: Qasmi Constrained Mediterranean Dtas ssp245 2050 JJA
+  doi: 10.1126/sciadv.abo6872
+  type: future_spread
+  spatial_scope: MED
+  temporal_scope: JJA
+  data_source: author
+  metric:
+    name: deltatas_class
+    long_name: Warming classes according to Observationally-constrained Summer European future surface air temperature change in 2041-2060 in Summer
+    units: categorical
+    variables: tas
+    comment:
+      Regional tas change in Europe MED, NEU, CEU, MED+NEU+CEU, DJF, JJA,
+      2041-2060 vs 1850-1900, SSP245.  Warming classes are determined wrt an
+      observationally-constrained range for the future regional warming based on
+      Qasmi and Ribes 2022 Applied observationnal constraint here is a global
+      temperature constraint + a regional temperature constraint Adapted from
+      Qasmi and Ribes 2022, Sci. Adv. by S. Qasmi following S. Somot's request
+      The criteria applies to all members of a given GCM. Values are given only
+      for land points. We report here only warming classes for now. Numerical
+      values could come later.
+  period:
+    reference: 1850-1900
+    target: 2041-2060
+  classes:
+  - limits: [0.5, 1.5, 2.5, 3.5, 4.5, 5.5]
+    labels: ['implausible cold', 'weak warming', 'medium warming', 'strong warming', 'implausible warm']
+    source: author
+    comment:
+      The 90% interval of future warming plausible range is [2.55 ; 3.57]degC
+      The 50% interval of future warming plausible range is [XXX ; XXX]degC The
+      best estimate is a warming of 3.06 degC 13 may 2024 -> add the MED domain
+      Categories 1 and 5 are considered as implausible by S. Qasmi. Category 2,
+      3, 4 are plausible. Class 1 is below the Q5 of the constrained range ->
+      implausible cold Class 2 is between Q5 and Q25 -> weak warming Class 3 is
+      between Q25 and Q75 -> medium warming Class 4 is between Q75 and Q95 ->
+      strong warming Class 5 is above Q95 -> implausible warm
+
+```
+
+#### Qasmi Constrained Mediterranean Dtas ssp245 2050 DJF
+
+Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
+
+10.1126/sciadv.abo6872
+
+```
+- key: Qasmi Constrained Mediterranean Dtas ssp245 2050 DJF
+  doi: 10.1126/sciadv.abo6872
+  type: future_spread
+  spatial_scope: MED
+  temporal_scope: DJF
+  data_source: author
+  metric:
+    name: deltatas_class
+    long_name: Warming classes according to Observationally-constrained Summer European future surface air temperature change in 2041-2060 in Summer
+    units: categorical
+    variables: tas
+    comment:
+      Regional tas change in Europe MED, NEU, CEU, MED+NEU+CEU, DJF, JJA,
+      2041-2060 vs 1850-1900, SSP245.  Warming classes are determined wrt an
+      observationally-constrained range for the future regional warming based on
+      Qasmi and Ribes 2022 Applied observationnal constraint here is a global
+      temperature constraint + a regional temperature constraint Adapted from
+      Qasmi and Ribes 2022, Sci. Adv. by S. Qasmi following S. Somot's request
+      The criteria applies to all members of a given GCM. Values are given only
+      for land points. We report here only warming classes for now. Numerical
+      values could come later.
+  period:
+    reference: 1850-1900
+    target: 2041-2060
+  classes:
+  - limits: [0.5, 1.5, 2.5, 3.5, 4.5, 5.5]
+    labels: ['implausible cold', 'weak warming', 'medium warming', 'strong warming', 'implausible warm']
+    source: author
+    comment:
+      The 90% interval of future warming plausible range is [1.47 ; 2.45]degC
+      The 50% interval of future warming plausible range is [XXX ; XXX]degC The
+      best estimate is a warming of 1.96 degC 13 may 2024 -> add the MED domain
+      Categories 1 and 5 are considered as implausible by S. Qasmi. Category 2,
+      3, 4 are plausible. Class 1 is below the Q5 of the constrained range ->
+      implausible cold Class 2 is between Q5 and Q25 -> weak warming Class 3 is
+      between Q25 and Q75 -> medium warming Class 4 is between Q75 and Q95 ->
+      strong warming Class 5 is above Q95 -> implausible warm
 
 ```
 

@@ -194,7 +194,7 @@
     reference: 1850-1900
     target: 2041-2060
   classes:
-    limits: [1.5, 2.5, 3.5, 4.5]
+    limits: [0.5, 1.5, 2.5, 3.5, 4.5, 5.5]
     labels: [implausible cold, weak warming, medium warming, strong warming, implausible warm]
     source: author
     comment: >
@@ -213,62 +213,62 @@
   data_source: author
   data:
     ssp245: 
-    ACCESS-CM2_r1-3i1p1f1: 4
-    ACCESS-ESM1-5_r1-11i1p1f1: 3
-    ACCESS-ESM1-5_r19i1p1f1: 3
-    ACCESS-ESM1-5_r21i1p1f1: 3
-    ACCESS-ESM1-5_r24-29i1p1f1: 3
-    AWI-CM-1-1-MR_r1i1p1f1: 5  
-    BCC-CSM2-MR_r1i1p1f1: 3
-    CanESM5-CanOE_r1-3i1p1f1: 5
-    CanESM5_r1-25i1p1f1: 5
-    CanESM5_r1-25i1p2f1: 5
-    CAS-ESM2-0_r1i1p1f1: 5
-    CAS-ESM2-0_r3i1p1f1: 5 
-    CESM2_r1i1p1f1: 2
-    CESM2-WACCM_r1i1p1f1: 3 
-    CIESM_r1i1p1f1: 1
-    CMCC-CM2-SR5_r1i1p1f1: 4  
-    CMCC-ESM2_r1i1p1f1: 3
-    CNRM-CM6-1_r1-6i1p1f2: 3
-    CNRM-CM6-1-HR_r1i1p1f2: 5 
-    CNRM-ESM2-1_r1-10i1p1f2: 2
-    EC-Earth3_r1-2i1p1f1: 5
-    EC-Earth3_r4i1p1f1: 5
-    EC-Earth3_r6-7i1p1f1: 5
-    EC-Earth3_r9-25i1p1f1: 5
-    EC-Earth3-Veg_r1-4i1p1f1: 5 
-    EC-Earth3-Veg_r6i1p1f1: 5 
-    FGOALS-f3-L_r1i1p1f1: 5
-    FGOALS-g3_r1-4i1p1f1: 3
-    FIO-ESM-2-0_r1-3i1p1f1: 3 
-    GFDL-CM4_r1i1p1f1: 4
-    GFDL-ESM4_r1-3i1p1f1: 2
-    GISS-E2-1-G_r1-5i1p3f1: 3  
-    GISS-E2-1-G_r1-4i1p5f1: 3 
-    HadGEM3-GC31-LL_r1i1p1f3: 4      
-    INM-CM4-8_r1i1p1f1: 2
-    INM-CM5-0_r1i1p1f1: 3
-    IPSL-CM6A-LR_r1-6i1p1f1: 5 
-    IPSL-CM6A-LR_r10-11i1p1f1: 5  
-    IPSL-CM6A-LR_r14i1p1f1: 5
-    IPSL-CM6A-LR_r22i1p1f1: 5
-    IPSL-CM6A-LR_r25i1p1f1: 5
-    KACE-1-0-G_r1-3i1p1f1: 5
-    KIOST-ESM_r1i1p1f1: 3
-    MCM-UA-1-0_r1i1p1f2: 3
-    MIROC6_r1-3i1p1f1: 2
-    MIROC6-ES2L_r1-10i1p1f2: 3  
-    MPI-ESM1-2-HR_r1-2i1p1f1: 2 
-    MPI-ESM1-2-LR_r1-10i1p1f1: 3
-    MRI-ESM2-0_r1i1p1f1: 2
-    NESM3_r1i1p1f1: 4
-    NorESM2-LM_r1-3i1p1f1: 1  
-    NorESM2-MM_r1-2i1p1f1: 1
-    TaiESM1_r1i1p1f1: 3
-    UKESM1-0-LL_r1-4i1p1f2: 5 
-    UKESM1-0-LL_r8i1p1f2: 5
-    UKESM1-0-LL_r13i1p1f2: 5
+      ACCESS-CM2_r1-3i1p1f1: 4
+      ACCESS-ESM1-5_r1-11i1p1f1: 3
+      ACCESS-ESM1-5_r19i1p1f1: 3
+      ACCESS-ESM1-5_r21i1p1f1: 3
+      ACCESS-ESM1-5_r24-29i1p1f1: 3
+      AWI-CM-1-1-MR_r1i1p1f1: 5  
+      BCC-CSM2-MR_r1i1p1f1: 3
+      CanESM5-CanOE_r1-3i1p1f1: 5
+      CanESM5_r1-25i1p1f1: 5
+      CanESM5_r1-25i1p2f1: 5
+      CAS-ESM2-0_r1i1p1f1: 5
+      CAS-ESM2-0_r3i1p1f1: 5 
+      CESM2_r1i1p1f1: 2
+      CESM2-WACCM_r1i1p1f1: 3 
+      CIESM_r1i1p1f1: 1
+      CMCC-CM2-SR5_r1i1p1f1: 4  
+      CMCC-ESM2_r1i1p1f1: 3
+      CNRM-CM6-1_r1-6i1p1f2: 3
+      CNRM-CM6-1-HR_r1i1p1f2: 5 
+      CNRM-ESM2-1_r1-10i1p1f2: 2
+      EC-Earth3_r1-2i1p1f1: 5
+      EC-Earth3_r4i1p1f1: 5
+      EC-Earth3_r6-7i1p1f1: 5
+      EC-Earth3_r9-25i1p1f1: 5
+      EC-Earth3-Veg_r1-4i1p1f1: 5 
+      EC-Earth3-Veg_r6i1p1f1: 5 
+      FGOALS-f3-L_r1i1p1f1: 5
+      FGOALS-g3_r1-4i1p1f1: 3
+      FIO-ESM-2-0_r1-3i1p1f1: 3 
+      GFDL-CM4_r1i1p1f1: 4
+      GFDL-ESM4_r1-3i1p1f1: 2
+      GISS-E2-1-G_r1-5i1p3f1: 3  
+      GISS-E2-1-G_r1-4i1p5f1: 3 
+      HadGEM3-GC31-LL_r1i1p1f3: 4      
+      INM-CM4-8_r1i1p1f1: 2
+      INM-CM5-0_r1i1p1f1: 3
+      IPSL-CM6A-LR_r1-6i1p1f1: 5 
+      IPSL-CM6A-LR_r10-11i1p1f1: 5  
+      IPSL-CM6A-LR_r14i1p1f1: 5
+      IPSL-CM6A-LR_r22i1p1f1: 5
+      IPSL-CM6A-LR_r25i1p1f1: 5
+      KACE-1-0-G_r1-3i1p1f1: 5
+      KIOST-ESM_r1i1p1f1: 3
+      MCM-UA-1-0_r1i1p1f2: 3
+      MIROC6_r1-3i1p1f1: 2
+      MIROC6-ES2L_r1-10i1p1f2: 3  
+      MPI-ESM1-2-HR_r1-2i1p1f1: 2 
+      MPI-ESM1-2-LR_r1-10i1p1f1: 3
+      MRI-ESM2-0_r1i1p1f1: 2
+      NESM3_r1i1p1f1: 4
+      NorESM2-LM_r1-3i1p1f1: 1  
+      NorESM2-MM_r1-2i1p1f1: 1
+      TaiESM1_r1i1p1f1: 3
+      UKESM1-0-LL_r1-4i1p1f2: 5 
+      UKESM1-0-LL_r8i1p1f2: 5
+      UKESM1-0-LL_r13i1p1f2: 5
 
 - key: Qasmi Constrained Mediterranean Dtas ssp245 2050 JJA
   doi: 10.1126/sciadv.abo6872
@@ -280,7 +280,7 @@
     reference: 1850-1900
     target: 2041-2060
   classes:
-    limits: [1.5, 2.5, 3.5, 4.5]
+    limits: [0.5, 1.5, 2.5, 3.5, 4.5, 5.5]
     labels: [implausible cold, weak warming, medium warming, strong warming, implausible warm]
     source: author
     comment: >
@@ -299,62 +299,62 @@
   data_source: author
   data:
     ssp245: 
-    ACCESS-CM2_r1-3i1p1f1: 4
-    ACCESS-ESM1-5_r1-11i1p1f1: 3
-    ACCESS-ESM1-5_r19i1p1f1: 3
-    ACCESS-ESM1-5_r21i1p1f1: 3
-    ACCESS-ESM1-5_r24-29i1p1f1: 3
-    AWI-CM-1-1-MR_r1i1p1f1: 5  
-    BCC-CSM2-MR_r1i1p1f1: 2
-    CanESM5-CanOE_r1-3i1p1f1: 5
-    CanESM5_r1-25i1p1f1: 5
-    CanESM5_r1-25i1p2f1: 5
-    CAS-ESM2-0_r1i1p1f1: 4
-    CAS-ESM2-0_r3i1p1f1: 4 
-    CESM2_r1i1p1f1: 3
-    CESM2-WACCM_r1i1p1f1: 2 
-    CIESM_r1i1p1f1: 4
-    CMCC-CM2-SR5_r1i1p1f1: 5  
-    CMCC-ESM2_r1i1p1f1: 5
-    CNRM-CM6-1_r1-6i1p1f2: 3
-    CNRM-CM6-1-HR_r1i1p1f2: 4 
-    CNRM-ESM2-1_r1-10i1p1f2: 2
-    EC-Earth3_r1-2i1p1f1: 3
-    EC-Earth3_r4i1p1f1: 3
-    EC-Earth3_r6-7i1p1f1: 3
-    EC-Earth3_r9-25i1p1f1: 3
-    EC-Earth3-Veg_r1-4i1p1f1: 4 
-    EC-Earth3-Veg_r6i1p1f1: 4 
-    FGOALS-f3-L_r1i1p1f1: 2
-    FGOALS-g3_r1-4i1p1f1: 1
-    FIO-ESM-2-0_r1-3i1p1f1: 4 
-    GFDL-CM4_r1i1p1f1: 3
-    GFDL-ESM4_r1-3i1p1f1: 1
-    GISS-E2-1-G_r1-5i1p3f1: 2  
-    GISS-E2-1-G_r1-4i1p5f1: 2 
-    HadGEM3-GC31-LL_r1i1p1f3: 4   
-    INM-CM4-8_r1i1p1f1: 3
-    INM-CM5-0_r1i1p1f1: 3
-    IPSL-CM6A-LR_r1-6i1p1f1: 5 
-    IPSL-CM6A-LR_r10-11i1p1f1: 5  
-    IPSL-CM6A-LR_r14i1p1f1: 5
-    IPSL-CM6A-LR_r22i1p1f1: 5
-    IPSL-CM6A-LR_r25i1p1f1: 5
-    KACE-1-0-G_r1-3i1p1f1: 5
-    KIOST-ESM_r1i1p1f1: 4
-    MCM-UA-1-0_r1i1p1f2: 2
-    MIROC6_r1-3i1p1f1: 2
-    MIROC6-ES2L_r1-10i1p1f2: 2  
-    MPI-ESM1-2-HR_r1-2i1p1f1: 3 
-    MPI-ESM1-2-LR_r1-10i1p1f1: 3
-    MRI-ESM2-0_r1i1p1f1: 2
-    NESM3_r1i1p1f1: 5
-    NorESM2-LM_r1-3i1p1f1: 2  
-    NorESM2-MM_r1-2i1p1f1: 2
-    TaiESM1_r1i1p1f1: 4
-    UKESM1-0-LL_r1-4i1p1f2: 5 
-    UKESM1-0-LL_r8i1p1f2: 5
-    UKESM1-0-LL_r13i1p1f2: 5
+      ACCESS-CM2_r1-3i1p1f1: 4
+      ACCESS-ESM1-5_r1-11i1p1f1: 3
+      ACCESS-ESM1-5_r19i1p1f1: 3
+      ACCESS-ESM1-5_r21i1p1f1: 3
+      ACCESS-ESM1-5_r24-29i1p1f1: 3
+      AWI-CM-1-1-MR_r1i1p1f1: 5  
+      BCC-CSM2-MR_r1i1p1f1: 2
+      CanESM5-CanOE_r1-3i1p1f1: 5
+      CanESM5_r1-25i1p1f1: 5
+      CanESM5_r1-25i1p2f1: 5
+      CAS-ESM2-0_r1i1p1f1: 4
+      CAS-ESM2-0_r3i1p1f1: 4 
+      CESM2_r1i1p1f1: 3
+      CESM2-WACCM_r1i1p1f1: 2 
+      CIESM_r1i1p1f1: 4
+      CMCC-CM2-SR5_r1i1p1f1: 5  
+      CMCC-ESM2_r1i1p1f1: 5
+      CNRM-CM6-1_r1-6i1p1f2: 3
+      CNRM-CM6-1-HR_r1i1p1f2: 4 
+      CNRM-ESM2-1_r1-10i1p1f2: 2
+      EC-Earth3_r1-2i1p1f1: 3
+      EC-Earth3_r4i1p1f1: 3
+      EC-Earth3_r6-7i1p1f1: 3
+      EC-Earth3_r9-25i1p1f1: 3
+      EC-Earth3-Veg_r1-4i1p1f1: 4 
+      EC-Earth3-Veg_r6i1p1f1: 4 
+      FGOALS-f3-L_r1i1p1f1: 2
+      FGOALS-g3_r1-4i1p1f1: 1
+      FIO-ESM-2-0_r1-3i1p1f1: 4 
+      GFDL-CM4_r1i1p1f1: 3
+      GFDL-ESM4_r1-3i1p1f1: 1
+      GISS-E2-1-G_r1-5i1p3f1: 2  
+      GISS-E2-1-G_r1-4i1p5f1: 2 
+      HadGEM3-GC31-LL_r1i1p1f3: 4   
+      INM-CM4-8_r1i1p1f1: 3
+      INM-CM5-0_r1i1p1f1: 3
+      IPSL-CM6A-LR_r1-6i1p1f1: 5 
+      IPSL-CM6A-LR_r10-11i1p1f1: 5  
+      IPSL-CM6A-LR_r14i1p1f1: 5
+      IPSL-CM6A-LR_r22i1p1f1: 5
+      IPSL-CM6A-LR_r25i1p1f1: 5
+      KACE-1-0-G_r1-3i1p1f1: 5
+      KIOST-ESM_r1i1p1f1: 4
+      MCM-UA-1-0_r1i1p1f2: 2
+      MIROC6_r1-3i1p1f1: 2
+      MIROC6-ES2L_r1-10i1p1f2: 2  
+      MPI-ESM1-2-HR_r1-2i1p1f1: 3 
+      MPI-ESM1-2-LR_r1-10i1p1f1: 3
+      MRI-ESM2-0_r1i1p1f1: 2
+      NESM3_r1i1p1f1: 5
+      NorESM2-LM_r1-3i1p1f1: 2  
+      NorESM2-MM_r1-2i1p1f1: 2
+      TaiESM1_r1i1p1f1: 4
+      UKESM1-0-LL_r1-4i1p1f2: 5 
+      UKESM1-0-LL_r8i1p1f2: 5
+      UKESM1-0-LL_r13i1p1f2: 5
 
 - key: Qasmi Constrained Mediterranean Dtas ssp245 2050 DJF
   doi: 10.1126/sciadv.abo6872
@@ -366,7 +366,7 @@
     reference: 1850-1900
     target: 2041-2060
   classes:
-    limits: [1.5, 2.5, 3.5, 4.5]
+    limits: [0.5, 1.5, 2.5, 3.5, 4.5, 5.5]
     labels: [implausible cold, weak warming, medium warming, strong warming, implausible warm]
     source: author
     comment: >
@@ -385,59 +385,59 @@
   data_source: author
   data:
     ssp245: 
-    ACCESS-CM2_r1-3i1p1f1: 5
-    ACCESS-ESM1-5_r1-11i1p1f1: 4
-    ACCESS-ESM1-5_r19i1p1f1: 4
-    ACCESS-ESM1-5_r21i1p1f1: 4
-    ACCESS-ESM1-5_r24-29i1p1f1: 4
-    AWI-CM-1-1-MR_r1i1p1f1: 5  
-    BCC-CSM2-MR_r1i1p1f1: 3
-    CanESM5-CanOE_r1-3i1p1f1: 5
-    CanESM5_r1-25i1p1f1: 5
-    CanESM5_r1-25i1p2f1: 5
-    CAS-ESM2-0_r1i1p1f1: 4
-    CAS-ESM2-0_r3i1p1f1: 4 
-    CESM2_r1i1p1f1: 3
-    CESM2-WACCM_r1i1p1f1: 3 
-    CIESM_r1i1p1f1: 3
-    CMCC-CM2-SR5_r1i1p1f1: 5  
-    CMCC-ESM2_r1i1p1f1: 5
-    CNRM-CM6-1_r1-6i1p1f2: 3
-    CNRM-CM6-1-HR_r1i1p1f2: 5 
-    CNRM-ESM2-1_r1-10i1p1f2: 2
-    EC-Earth3_r1-2i1p1f1: 5
-    EC-Earth3_r4i1p1f1: 5
-    EC-Earth3_r6-7i1p1f1: 5
-    EC-Earth3_r9-25i1p1f1: 5
-    EC-Earth3-Veg_r1-4i1p1f1: 5
-    EC-Earth3-Veg_r6i1p1f1: 5 
-    FGOALS-f3-L_r1i1p1f1: 4
-    FGOALS-g3_r1-4i1p1f1: 3
-    FIO-ESM-2-0_r1-3i1p1f1: 4 
-    GFDL-CM4_r1i1p1f1: 3
-    GFDL-ESM4_r1-3i1p1f1: 2
-    GISS-E2-1-G_r1-5i1p3f1: 3  
-    GISS-E2-1-G_r1-4i1p5f1: 3 
-    HadGEM3-GC31-LL_r1i1p1f3: 5   
-    INM-CM4-8_r1i1p1f1: 1
-    INM-CM5-0_r1i1p1f1: 3
-    IPSL-CM6A-LR_r1-6i1p1f1: 5 
-    IPSL-CM6A-LR_r10-11i1p1f1: 5  
-    IPSL-CM6A-LR_r14i1p1f1: 5
-    IPSL-CM6A-LR_r22i1p1f1: 5
-    IPSL-CM6A-LR_r25i1p1f1: 5
-    KACE-1-0-G_r1-3i1p1f1: 5
-    KIOST-ESM_r1i1p1f1: 4
-    MCM-UA-1-0_r1i1p1f2: 3
-    MIROC6_r1-3i1p1f1: 3
-    MIROC6-ES2L_r1-10i1p1f2: 3  
-    MPI-ESM1-2-HR_r1-2i1p1f1: 3 
-    MPI-ESM1-2-LR_r1-10i1p1f1: 3
-    MRI-ESM2-0_r1i1p1f1: 2
-    NESM3_r1i1p1f1: 4
-    NorESM2-LM_r1-3i1p1f1: 1  
-    NorESM2-MM_r1-2i1p1f1: 3
-    TaiESM1_r1i1p1f1: 4
-    UKESM1-0-LL_r1-4i1p1f2: 5 
-    UKESM1-0-LL_r8i1p1f2: 5
-    UKESM1-0-LL_r13i1p1f2: 5
+      ACCESS-CM2_r1-3i1p1f1: 5
+      ACCESS-ESM1-5_r1-11i1p1f1: 4
+      ACCESS-ESM1-5_r19i1p1f1: 4
+      ACCESS-ESM1-5_r21i1p1f1: 4
+      ACCESS-ESM1-5_r24-29i1p1f1: 4
+      AWI-CM-1-1-MR_r1i1p1f1: 5  
+      BCC-CSM2-MR_r1i1p1f1: 3
+      CanESM5-CanOE_r1-3i1p1f1: 5
+      CanESM5_r1-25i1p1f1: 5
+      CanESM5_r1-25i1p2f1: 5
+      CAS-ESM2-0_r1i1p1f1: 4
+      CAS-ESM2-0_r3i1p1f1: 4 
+      CESM2_r1i1p1f1: 3
+      CESM2-WACCM_r1i1p1f1: 3 
+      CIESM_r1i1p1f1: 3
+      CMCC-CM2-SR5_r1i1p1f1: 5  
+      CMCC-ESM2_r1i1p1f1: 5
+      CNRM-CM6-1_r1-6i1p1f2: 3
+      CNRM-CM6-1-HR_r1i1p1f2: 5 
+      CNRM-ESM2-1_r1-10i1p1f2: 2
+      EC-Earth3_r1-2i1p1f1: 5
+      EC-Earth3_r4i1p1f1: 5
+      EC-Earth3_r6-7i1p1f1: 5
+      EC-Earth3_r9-25i1p1f1: 5
+      EC-Earth3-Veg_r1-4i1p1f1: 5
+      EC-Earth3-Veg_r6i1p1f1: 5 
+      FGOALS-f3-L_r1i1p1f1: 4
+      FGOALS-g3_r1-4i1p1f1: 3
+      FIO-ESM-2-0_r1-3i1p1f1: 4 
+      GFDL-CM4_r1i1p1f1: 3
+      GFDL-ESM4_r1-3i1p1f1: 2
+      GISS-E2-1-G_r1-5i1p3f1: 3  
+      GISS-E2-1-G_r1-4i1p5f1: 3 
+      HadGEM3-GC31-LL_r1i1p1f3: 5   
+      INM-CM4-8_r1i1p1f1: 1
+      INM-CM5-0_r1i1p1f1: 3
+      IPSL-CM6A-LR_r1-6i1p1f1: 5 
+      IPSL-CM6A-LR_r10-11i1p1f1: 5  
+      IPSL-CM6A-LR_r14i1p1f1: 5
+      IPSL-CM6A-LR_r22i1p1f1: 5
+      IPSL-CM6A-LR_r25i1p1f1: 5
+      KACE-1-0-G_r1-3i1p1f1: 5
+      KIOST-ESM_r1i1p1f1: 4
+      MCM-UA-1-0_r1i1p1f2: 3
+      MIROC6_r1-3i1p1f1: 3
+      MIROC6-ES2L_r1-10i1p1f2: 3  
+      MPI-ESM1-2-HR_r1-2i1p1f1: 3 
+      MPI-ESM1-2-LR_r1-10i1p1f1: 3
+      MRI-ESM2-0_r1i1p1f1: 2
+      NESM3_r1i1p1f1: 4
+      NorESM2-LM_r1-3i1p1f1: 1  
+      NorESM2-MM_r1-2i1p1f1: 3
+      TaiESM1_r1i1p1f1: 4
+      UKESM1-0-LL_r1-4i1p1f2: 5 
+      UKESM1-0-LL_r8i1p1f2: 5
+      UKESM1-0-LL_r13i1p1f2: 5
