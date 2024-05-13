@@ -7,7 +7,7 @@
     variables: tas
     comment: >
       Constrained global annual temperature future climate change range, 2041-2060 vs
-      1850-1900, SSP245 (adapted from Ribes et al. 2021 by S. Qasmi). In
+      1850-1900, SSP245 (adapted from Ribes et al. 2021, Science Advances by S. Qasmi). In
       particular by adding recently available CMIP6 GCM, now 40 GCMs.
   type: performance
   spatial_scope: Global
@@ -22,20 +22,22 @@
     comment: >
       models lying outside the observationally-constrained 90% interval obtained by the method
       are considered as implausible. The 90% interval is [1.5 ; 2.1]degC for the period 2041-2060 vs
-      1850-1900, SSP245. Multi-member ensemble mean is used in this study for
-      every model.
+      1850-1900, SSP245. Multi-member ensemble mean is used in this study for every model.
       Note that this criteria is very strict and can potentially eliminate a large number of GCMs.
   data_source: author
   data:
-    ACCESS-CM2_r1i1p1f1: 0
-    ACCESS-CM2_r4-5i1p1f1: 0
-    ACCESS-ESM1-5_r1-3i1p1f1: 1
+    ACCESS-CM2_r1-3i1p1f1: 0
+    ACCESS-ESM1-5_r1-11i1p1f1: 1
+    ACCESS-ESM1-5_r19i1p1f1: 1
+    ACCESS-ESM1-5_r21i1p1f1: 1
+    ACCESS-ESM1-5_r24-29i1p1f1: 1
     AWI-CM-1-1-MR_r1i1p1f1: 0
     BCC-CSM2-MR_r1i1p1f1: 1
     CanESM5-CanOE_r1i1p2f1: 0
     CanESM5_r1-25i1p1f1: 0
     CanESM5_r1-25i1p2f1: 0
     CAS-ESM2-0_r1i1p1f1: 1
+    CAS-ESM2-0_r3i1p1f1: 1
     CESM2_r1-2i1p1f1: 0
     CESM2_r4i1p1f1: 0
     CESM2_r11i1p1f1: 0
@@ -45,52 +47,60 @@
     CMCC-ESM2_r1i1p1f1: 0
     CNRM-CM6-1_r1-6i1p1f2: 1
     CNRM-CM6-1-HR_r1i1p1f2: 0
-    CNRM-ESM2-1_r1-5i1p1f2: 1
-    EC-Earth3_r1-7i1p1f1: 0
-    EC-Earth3-Veg_r1-3i1p1f1: 0
+    CNRM-ESM2-1_r1-10i1p1f2: 1
+    EC-Earth3_r1-2i1p1f1: 0
+    EC-Earth3_r4i1p1f1: 0
+    EC-Earth3_r6-7i1p1f1: 0
+    EC-Earth3_r9-25i1p1f1: 0
+    EC-Earth3-Veg_r1-4i1p1f1: 0
     EC-Earth3-Veg_r6i1p1f1: 0
     FGOALS-f3-L_r1i1p1f1: 0
-    FGOALS-g3_r1i1p1f1: 1
-    FGOALS-g3_r3i1p1f1: 1
+    FGOALS-g3_r1-4i1p1f1: 1
     FIO-ESM-2-0_r1-3i1p1f1: 0
     GFDL-CM4_r1i1p1f1: 1
-    GFDL-ESM4_r1i1p1f1: 1
-    GISS-E2-1-G_r1i1p1f1: 1
-    HadGEM3-GC31-LL_r1i1p1f1: 0
+    GFDL-ESM4_r1-3i1p1f1: 1
+    GISS-E2-1-G_r1-5i1p3f1: 1
+    GISS-E2-1-G_r1-4i1p5f1: 1
     HadGEM3-GC31-LL_r1i1p1f3: 0
     INM-CM4-8_r1i1p1f1: 1
     INM-CM5-0_r1i1p1f1: 1
     IPSL-CM6A-LR_r1-6i1p1f1: 0
-    IPSL-CM6A-LR_r10i1p1f1: 0
+    IPSL-CM6A-LR_r10-11i1p1f1: 0
     IPSL-CM6A-LR_r14i1p1f1: 0
-    KACE-1-0-G_r1i1p1f1: 0
+    IPSL-CM6A-LR_r22i1p1f1: 0
+    IPSL-CM6A-LR_r25i1p1f1: 0
+    KACE-1-0-G_r1-3i1p1f1: 0
     KIOST-ESM_r1i1p1f1: 1
     MCM-UA-1-0_r1i1p1f1: 1
-    MIROC6_r1i1p1f1: 1
-    MIROC-ES2L_r1-3i1p1f2: 1
-    MIROC-ES2L_r5i1p1f2: 1
+    MIROC6_r1-3i1p1f1: 1
+    MIROC-ES2L_r1-10i1p1f2: 1
     MPI-ESM1-2-HR_r1-2i1p1f1: 1
     MPI-ESM1-2-LR_r1-10i1p1f1: 1
     MRI-ESM2-0_r1i1p1f1: 1
     NESM3_r1i1p1f1: 1
-    NorESM2-LM_r1i1p1f1: 0
-    NorESM2-MM_r1i1p1f1: 1
+    NorESM2-LM_r1-3i1p1f1: 0
+    NorESM2-MM_r1-2i1p1f1: 1
     TaiESM1_r1i1p1f1: 0
-    UKESM1-0-LL_r1-3i1p1f2: 0
+    UKESM1-0-LL_r1-4i1p1f2: 0
+    UKESM1-0-LL_r8i1p1f2: 0
+    UKESM1-0-LL_r13i1p1f2: 0
 
 - key: Qasmi Constr EUR Dtas ssp245 2050 JJA
   doi: 10.1126/sciadv.abo6872
-  metric:
+  metric: &obs-const
     name: deltatas_class
     long_name: Warming classes according to Observationally-constrained Summer European future surface air temperature change in 2041-2060 in Summer
     units: categorical
     variables: tas
     comment: >
       Regional tas change in Europe MED, NEU, CEU, MED+NEU+CEU, DJF, JJA, 2041-2060 vs
-      1850-1900, SSP245. Values are given only for land points.
+      1850-1900, SSP245. 
+      Warming classes are determined wrt an observationally-constrained range for the future regional warming based on Qasmi and Ribes 2022
+      Applied observationnal constraint here is a global temperature constraint + a regional temperature constraint
       Adapted from Qasmi and Ribes 2022, Sci. Adv. by S. Qasmi following S. Somot's request
-      Numerical values available soon. Only warming classes for now.
-      We report here only warming classes for JJA and for the joined MED+NEU+CEU domain
+      The criteria applies to all members of a given GCM.
+      Values are given only for land points.
+      We report here only warming classes for now. Numerical values could come later.
   type: future_spread
   spatial_scope: MED+NEU+CEU
   temporal_scope: JJA
@@ -102,64 +112,161 @@
     labels: [implausible cold, weak warming, medium warming, strong warming, implausible warm]
     source: author
     comment: |
-      Warming classes are determined wrt an observationally-constrained range
-      for the future regional warming based on Ribes et al. 2021, Qasmi et al. (in rev).
-      The observational constraint is a global constraint on the GMST but it
-      allows to constraint the regional climate warming.
-      The 90% interval of future warming plausible range is [2.3 ; 3.3]degC
-      The 50% interval of future warming plausible range is [2.5 ; 3.0]degC
+      The 90% interval of future warming plausible range is [2.21 ; 3.31]degC
+      The 50% interval of future warming plausible range is [2.55 ; 3.0]degC
       The best estimate is a warming of 2.8 degC
-      Category definition (new since 5 jan 2022):
+      5 jan 2022 -> changing category definition and adding new GCMs
       Categories 1 and 5 are considered as implausible by S. Qasmi.
       Category 2, 3, 4 are plausible.
-      Class 1 is below the Q5 of the constrained range.
-      Class 2 is between Q5 and Q25
-      Class 3 is between Q25 and Q75
-      Class 4 is between Q75 and Q95
-      Class 5 is above Q95
+      Class 1 is below the Q5 of the constrained range -> implausible cold
+      Class 2 is between Q5 and Q25 -> weak warming
+      Class 3 is between Q25 and Q75 -> medium warming
+      Class 4 is between Q75 and Q95 -> strong warming
+      Class 5 is above Q95 -> implausible warm
+
   data_source: author
   data:
-    ssp245:
-      ACCESS-CM2_r1i1p1f1: 5
-      ACCESS-CM2_r4-5i1p1f1: 5
-      ACCESS-ESM1-5_r1i1p1f1: 4
-      AWI-CM-1-1-MR_r1i1p1f1: 5
+    ssp245: 
+      ACCESS-CM2_r1-3i1p1f1: 5
+      ACCESS-ESM1-5_r1-11i1p1f1: 4
+      ACCESS-ESM1-5_r19i1p1f1: 4
+      ACCESS-ESM1-5_r21i1p1f1: 4
+      ACCESS-ESM1-5_r24-29i1p1f1: 4
+      AWI-CM-1-1-MR_r1i1p1f1: 5  
       BCC-CSM2-MR_r1i1p1f1: 3
-      CanESM5-CanOE_r1i1p1f1: 5
-      CanESM5_r1-3i1p2f1: 5
-      CAS-ESM2-0_r1i1p1f1: 5
-      CESM2_r2i1p1f1: 3
-      CESM2_r11i1p1f1: 3
-      CESM2-WACCM_r1i1p1f1: 3
+      CanESM5-CanOE_r1-3i1p1f1: 5
+      CanESM5_r1-25i1p1f1: 5
+      CanESM5_r1-25i1p2f1: 5
+      CAS-ESM2-0_r1i1p1f1: 5 
+      CAS-ESM2-0_r3i1p1f1: 5 
+      CESM2_r1i1p1f1: 3
+      CESM2-WACCM_r1i1p1f1: 3 
       CIESM_r1i1p1f1: 5
-      CMCC-CM2-SR5_r1i1p1f1: 5
+      CMCC-CM2-SR5_r1i1p1f1: 5  
       CMCC-ESM2_r1i1p1f1: 5
-      CNRM-CM6-1_r1i1p1f2: 3
-      CNRM-CM6-1-HR_r1i1p1f2: 4
-      CNRM-ESM2-1_r1i1p1f2: 3
-      EC-Earth3_r1i1p1f1: 4
-      EC-Earth3-Veg_r1-3i1p1f1: 5
+      CNRM-CM6-1_r1-6i1p1f2: 3
+      CNRM-CM6-1-HR_r1i1p1f2: 4 
+      CNRM-ESM2-1_r1-10i1p1f2: 3
+      EC-Earth3_r1-2i1p1f1: 4
+      EC-Earth3_r4i1p1f1: 4
+      EC-Earth3_r6-7i1p1f1: 4
+      EC-Earth3_r9-25i1p1f1: 4
+      EC-Earth3-Veg_r1-4i1p1f1: 5 
+      EC-Earth3-Veg_r6i1p1f1: 5 
       FGOALS-f3-L_r1i1p1f1: 2
-      FGOALS-g3_r1i1p1f1: 1
-      FIO-ESM-2-0_r1i1p1f1: 4
+      FGOALS-g3_r1-4i1p1f1: 1
+      FIO-ESM-2-0_r1-3i1p1f1: 4 
       GFDL-CM4_r1i1p1f1: 3
-      GFDL-ESM4_r1i1p1f1: 1
-      GISS-E2-1-G_r1i1p1f1: 2
-      HadGEM3-GC31-LL_r1i1p1f1: 4
+      GFDL-ESM4_r1-3i1p1f1: 1
+      GISS-E2-1-G_r1-5i1p3f1: 2 
+      GISS-E2-1-G_r1-4i1p5f1: 2 
+      HadGEM3-GC31-LL_r1i1p1f3: 4      
       INM-CM4-8_r1i1p1f1: 3
       INM-CM5-0_r1i1p1f1: 3
-      IPSL-CM6A-LR_r1-6i1p1f1: 5
-      IPSL-CM6A-LR_r14i1p1f1: 5
-      KACE-1-0-G_r1i1p1f1: 5
+      IPSL-CM6A-LR_r1-6i1p1f1: 5 
+      IPSL-CM6A-LR_r10-11i1p1f1: 5 
+      IPSL-CM6A-LR_r14i1p1f1: 5 
+      IPSL-CM6A-LR_r22i1p1f1: 5 
+      IPSL-CM6A-LR_r25i1p1f1: 5 
+      KACE-1-0-G_r1-3i1p1f1: 5
       KIOST-ESM_r1i1p1f1: 3
-      MCM-UA-1-0_r1i1p1f1: 2
-      MIROC6_r1i1p1f1: 2
-      MIROC-ES2L_r1i1p1f2: 3
-      MPI-ESM1-2-HR_r1-2i1p1f1: 3
+      MCM-UA-1-0_r1i1p1f2: 2
+      MIROC6_r1-3i1p1f1: 2
+      MIROC6-ES2L_r1-10i1p1f2: 3 
+      MPI-ESM1-2-HR_r1-2i1p1f1: 3 
       MPI-ESM1-2-LR_r1-10i1p1f1: 3
       MRI-ESM2-0_r1i1p1f1: 2
       NESM3_r1i1p1f1: 4
-      NorESM2-LM_r1i1p1f1: 2
-      NorESM2-MM_r1i1p1f1: 2
+      NorESM2-LM_r1-3i1p1f1: 2 
+      NorESM2-MM_r1-2i1p1f1: 2
       TaiESM1_r1i1p1f1: 4
-      UKESM1-0-LL_r1-3i1p1f2: 5
+      UKESM1-0-LL_r1-4i1p1f2: 5
+      UKESM1-0-LL_r8i1p1f2: 5
+      UKESM1-0-LL_r13i1p1f2: 5
+      
+- key: Qasmi Constrained Europe Dtas ssp245 2050 DJF
+  doi: 10.1126/sciadv.abo6872
+  metric: *obs-const
+  type: future_spread
+  spatial_scope: MED+NEU+CEU
+  temporal_scope: DJF
+  period:
+    reference: 1850-1900
+    target: 2041-2060
+  classes:
+    limits: [1.5, 2.5, 3.5, 4.5]
+    labels: [implausible cold, weak warming, medium warming, strong warming, implausible warm]
+    source: author
+    comment: >
+      The 90% interval of future warming plausible range is [2.02 ; 3.32]degC
+      The 50% interval of future warming plausible range is [2.4 ; 2.95]degC
+      The best estimate is a warming of 2.67 degC
+      4 april 2022 -> add the DJF season
+      Categories 1 and 5 are considered as implausible by S. Qasmi.
+      Category 2, 3, 4 are plausible.
+      Class 1 is below the Q5 of the constrained range -> implausible cold
+      Class 2 is between Q5 and Q25 -> weak warming
+      Class 3 is between Q25 and Q75 -> medium warming
+      Class 4 is between Q75 and Q95 -> strong warming
+      Class 5 is above Q95 -> implausible warm
+  
+  data_source: author
+  data:
+    ssp245: 
+    ACCESS-CM2_r1-3i1p1f1: 4
+    ACCESS-ESM1-5_r1-11i1p1f1: 3
+    ACCESS-ESM1-5_r19i1p1f1: 3
+    ACCESS-ESM1-5_r21i1p1f1: 3
+    ACCESS-ESM1-5_r24-29i1p1f1: 3
+    AWI-CM-1-1-MR_r1i1p1f1: 5  
+    BCC-CSM2-MR_r1i1p1f1: 3
+    CanESM5-CanOE_r1-3i1p1f1: 5
+    CanESM5_r1-25i1p1f1: 5
+    CanESM5_r1-25i1p2f1: 5
+    CAS-ESM2-0_r1i1p1f1: 5
+    CAS-ESM2-0_r3i1p1f1: 5 
+    CESM2_r1i1p1f1: 2
+    CESM2-WACCM_r1i1p1f1: 3 
+    CIESM_r1i1p1f1: 1
+    CMCC-CM2-SR5_r1i1p1f1: 4  
+    CMCC-ESM2_r1i1p1f1: 3
+    CNRM-CM6-1_r1-6i1p1f2: 3
+    CNRM-CM6-1-HR_r1i1p1f2: 5 
+    CNRM-ESM2-1_r1-10i1p1f2: 2
+    EC-Earth3_r1-2i1p1f1: 5
+    EC-Earth3_r4i1p1f1: 5
+    EC-Earth3_r6-7i1p1f1: 5
+    EC-Earth3_r9-25i1p1f1: 5
+    EC-Earth3-Veg_r1-4i1p1f1: 5 
+    EC-Earth3-Veg_r6i1p1f1: 5 
+    FGOALS-f3-L_r1i1p1f1: 5
+    FGOALS-g3_r1-4i1p1f1: 3
+    FIO-ESM-2-0_r1-3i1p1f1: 3 
+    GFDL-CM4_r1i1p1f1: 4
+    GFDL-ESM4_r1-3i1p1f1: 2
+    GISS-E2-1-G_r1-5i1p3f1: 3  
+    GISS-E2-1-G_r1-4i1p5f1: 3 
+    HadGEM3-GC31-LL_r1i1p1f3: 4      
+    INM-CM4-8_r1i1p1f1: 2
+    INM-CM5-0_r1i1p1f1: 3
+    IPSL-CM6A-LR_r1-6i1p1f1: 5 
+    IPSL-CM6A-LR_r10-11i1p1f1: 5  
+    IPSL-CM6A-LR_r14i1p1f1: 5
+    IPSL-CM6A-LR_r22i1p1f1: 5
+    IPSL-CM6A-LR_r25i1p1f1: 5
+    KACE-1-0-G_r1-3i1p1f1: 5
+    KIOST-ESM_r1i1p1f1: 3
+    MCM-UA-1-0_r1i1p1f2: 3
+    MIROC6_r1-3i1p1f1: 2
+    MIROC6-ES2L_r1-10i1p1f2: 3  
+    MPI-ESM1-2-HR_r1-2i1p1f1: 2 
+    MPI-ESM1-2-LR_r1-10i1p1f1: 3
+    MRI-ESM2-0_r1i1p1f1: 2
+    NESM3_r1i1p1f1: 4
+    NorESM2-LM_r1-3i1p1f1: 1  
+    NorESM2-MM_r1-2i1p1f1: 1
+    TaiESM1_r1i1p1f1: 3
+    UKESM1-0-LL_r1-4i1p1f2: 5 
+    UKESM1-0-LL_r8i1p1f2: 5
+    UKESM1-0-LL_r13i1p1f2: 5
+    
