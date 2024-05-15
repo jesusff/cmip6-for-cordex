@@ -34,8 +34,9 @@ spatial_scope_filter:
     - Global
     - NH
     - EUR
-    - MED+NEU+CEU
     - MED
+    - SNA # (Southern) North Atlantic
+    - BLK # Black Sea
     - special
 
   SEA:
@@ -45,6 +46,28 @@ spatial_scope_filter:
     - SEA
     - NWP # Northwestern Pacific
     - special
+
+lbc_for_source_type:
+  default: ARCM
+  MED: AORCM
+
+tables_filter:
+  #
+  # Filters to show in the final summary tables. Must be some of:
+  # [filter_avail_and_plausible, filter_avail, filter_plausible, filter_selected, filter_all]
+  #
+  default:
+    - filter_avail_and_plausible
+    - filter_avail
+    - filter_plausible
+    - filter_selected
+    - filter_all
+
+  MED:
+    - filter_avail_and_plausible
+    - filter_avail
+    - filter_plausible
+    - filter_selected
 
 preferred: # Not implemented
   plausible_values_source: eurocordex_gcm_selection_team

@@ -95,7 +95,6 @@
     CanESM5-CanOE_r3i1p2f1: dust ss
     EC-Earth3_r1i1p1f1: MACv2-SP approach
     EC-Earth3-Veg_r1-3i1p1f1: MACv2-SP approach
-    EC-Earth3-Veg_r6i1p1f1: MACv2-SP approach
     EC-Earth3-AerChem_r1i1p1f1: bc dust no3 oa so4 ss
     EC-Earth3-AerChem_r4i1p1f1: bc dust no3 oa so4 ss
     GFDL-ESM4_r1i1p1f1: bc dust no3 oa so4 ss

@@ -28,7 +28,7 @@ for x in alldata:
   if is_incomplete(x):
     print(f' * [{x["key"]}]({x["file"]})')
 
-print(f'## Disabled entries\n')
+print(f'## Globally disabled entries\n')
 preferred = {}
 for x in alldata:
   if 'disabled' in x:
@@ -36,7 +36,15 @@ for x in alldata:
     if x['disabled']['cause'] == 'preferred_source' and x['disabled']['preferred']:
       preferred.setdefault(x['disabled']['preferred'], []).append(x['key'])
 
-enabled_data = ys.load_from_files('CMIP6_studies/*.yaml', resolve_doi = True, skip_disabled = True)
+print(f'## Entries disabled in {CORDEX_DOMAIN}\n')
+preferred = {}
+for x in alldata:
+  if f'disabled_{CORDEX_DOMAIN}' in x:
+    print(f' · [{x["key"]}]({x["file"]})')
+    if x[f'disabled_{CORDEX_DOMAIN}']['cause'] == 'preferred_source' and x[f'disabled_{CORDEX_DOMAIN}']['preferred']:
+      preferred.setdefault(x[f'disabled_{CORDEX_DOMAIN}']['preferred'], []).append(x['key'])
+
+enabled_data = ys.load_from_files('CMIP6_studies/*.yaml', resolve_doi = False, skip_disabled = True, skip_disabled_domain = CORDEX_DOMAIN)
 # filter and sort
 enabled_data = [x for x in enabled_data if x.spatial_scope in config['spatial_scope_filter'][CORDEX_DOMAIN]]
 enabled_data.sort(key=lambda x: config['spatial_scope_filter'][CORDEX_DOMAIN].index(x.spatial_scope))

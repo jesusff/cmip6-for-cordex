@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import datetime
-from pyesgf.search import SearchConnection
 import logging
 import natsort as ns
 import numpy as np

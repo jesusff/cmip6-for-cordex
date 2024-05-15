@@ -1,34 +1,38 @@
 ## Incomplete entries
 
+ * [Mindlin21 tropampl](CMIP6_studies/Mindlin2021.yaml)
  * [Fas20](CMIP6_studies/Fas20.yaml)
- * [Beo21](CMIP6_studies/Beo21.yaml)
  * [Cob21](CMIP6_studies/Cob21.yaml)
-## Disabled entries
+ * [Beo21](CMIP6_studies/Beo21.yaml)
+## Globally disabled entries
 
- · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
- · [Atlas Dtas WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dpr NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dpr WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dpr MED DJF](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dpr NEU JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dpr WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
- · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
- · [Can20 marle](CMIP6_studies/Can20.yaml)
- · [Fas20](CMIP6_studies/Fas20.yaml)
- · [Pri20 storm track DJF](CMIP6_studies/Pri20.yaml)
- · [Pri20 storm track JJA](CMIP6_studies/Pri20.yaml)
- · [Beo21](CMIP6_studies/Beo21.yaml)
  · [Rib21 Constrained TCR](CMIP6_studies/Rib21.yaml)
- · [Cob21](CMIP6_studies/Cob21.yaml)
  · [Dobler SICE rmse BNS](CMIP6_studies/Dobler.yaml)
  · [Dobler SICE rmse NAtl](CMIP6_studies/Dobler.yaml)
  · [Dobler SST rmse NAtl](CMIP6_studies/Dobler.yaml)
  · [Dobler SST rmse MED](CMIP6_studies/Dobler.yaml)
+ · [Mindlin21 tropampl](CMIP6_studies/Mindlin2021.yaml)
+ · [Atlas Dtas WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas world DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dtas world JJA](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr NEU DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr WCE DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr world DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr NEU JJA](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr WCE JJA](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr world JJA](CMIP6_studies/AtlasIPCC.yaml)
+ · [Can20 marle](CMIP6_studies/Can20.yaml)
+ · [Pri20 storm track DJF](CMIP6_studies/Pri20.yaml)
+ · [Pri20 storm track JJA](CMIP6_studies/Pri20.yaml)
+ · [Tok20 Constrained TCR](CMIP6_studies/Tok20.yaml)
+ · [Fer21 Lamb TPMS](CMIP6_studies/Fer21.yaml)
+ · [Fas20](CMIP6_studies/Fas20.yaml)
+ · [Cob21](CMIP6_studies/Cob21.yaml)
+ · [Beo21](CMIP6_studies/Beo21.yaml)
+## Entries disabled in EUR
+
+ · [Atlas Dtas MED DJF](CMIP6_studies/AtlasIPCC.yaml)
+ · [Atlas Dpr MED DJF](CMIP6_studies/AtlasIPCC.yaml)
 ## Available entries (EUR scope)
 ### Plausibility
 #### AR6 TCR
@@ -150,11 +154,11 @@ Located in [CMIP6_studies/Dalelane.yaml](../CMIP6_studies/Dalelane.yaml)
 
 Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
 
-None
+Aur\'elien Ribes et al. (2021) Making climate projections conditional on historical observations, https://doi.org/10.1126%2Fsciadv.abc0671
 
 ```
 - key: Qasmi Constr Global Dtas ssp245 2050
-  doi: None
+  doi: 10.1126/sciadv.abc0671
   type: performance
   spatial_scope: Global
   temporal_scope: Annual
@@ -188,9 +192,6 @@ None
 #### Bra21 Lamb EUR
 
 Located in [CMIP6_studies/Bra21.yaml](../CMIP6_studies/Bra21.yaml)
-
-Preferred to [CMIP6_studies/Fer21.yaml](../CMIP6_studies/Fer21.yaml)
-[CMIP6_studies/Can20.yaml](../CMIP6_studies/Can20.yaml)
 
 Swen Brands et al. (2021) A circulation-based performance atlas of the CMIP5 and 6 models, https://doi.org/10.5194%2Fgmd-2020-418
 
@@ -594,9 +595,6 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
 
 Located in [CMIP6_studies/Pri20.yaml](../CMIP6_studies/Pri20.yaml)
 
-Preferred to [CMIP6_studies/Pri20.yaml](../CMIP6_studies/Pri20.yaml)
-[CMIP6_studies/Pri20.yaml](../CMIP6_studies/Pri20.yaml)
-
 Matthew D. K. Priestley et al. (2020) An Overview of the Extratropical Storm Tracks in CMIP6 Historical Simulations, https://doi.org/10.1175%2Fjcli-d-19-0928.1
 
 ```
@@ -693,8 +691,6 @@ Located in [CMIP6_studies/Winderlich.yaml](../CMIP6_studies/Winderlich.yaml)
 
 Located in [CMIP6_studies/Sevault.yaml](../CMIP6_studies/Sevault.yaml)
 
-Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
-
 ['pers_comm', 'F. Sevault', 'CNRM']
 
 ```
@@ -735,8 +731,6 @@ Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 #### Dobler SICE rmse NBS
 
 Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
-
-Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -785,8 +779,6 @@ Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 #### Dobler SST rmse NBS
 
 Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
-
-Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -885,8 +877,6 @@ Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 #### Dobler SICE rmse BAL
 
 Located in [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
-
-Preferred to [CMIP6_studies/Dobler.yaml](../CMIP6_studies/Dobler.yaml)
 
 ['pers. comm.', 'A. Dobler']
 
@@ -1157,11 +1147,11 @@ Thomas Oudar et al. (2020) Drivers of the Northern Extratropical Eddy-Driven Jet
 
 Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
 
-['pers_comm', 'S. Qasmi']
+Saïd Qasmi et al. (2022) Reducing uncertainty in local temperature projections, https://doi.org/10.1126%2Fsciadv.abo6872
 
 ```
 - key: Qasmi Constr EUR Dtas ssp245 2050 JJA
-  doi: ['pers_comm', 'S. Qasmi']
+  doi: 10.1126/sciadv.abo6872
   type: future_spread
   spatial_scope: MED+NEU+CEU
   temporal_scope: JJA
@@ -1173,10 +1163,11 @@ Located in [CMIP6_studies/Qasmi.yaml](../CMIP6_studies/Qasmi.yaml)
     variables: tas
     comment:
       Regional tas change in Europe MED, NEU, CEU, MED+NEU+CEU, DJF, JJA,
-      2041-2060 vs 1850-1900, SSP245. Values are given only for land points. S.
-      Qasmi, numerical values available soon. Only warming classes for now. We
-      report here only warming classes for JJA and for the joined MED+NEU+CEU
-      domain
+      2041-2060 vs 1850-1900, SSP245. Values are given only for land points.
+      Adapted from Qasmi and Ribes 2022, Sci. Adv. by S. Qasmi following S.
+      Somot's request Numerical values available soon. Only warming classes for
+      now. We report here only warming classes for JJA and for the joined
+      MED+NEU+CEU domain
   period:
     reference: 1850-1900
     target: 2041-2060

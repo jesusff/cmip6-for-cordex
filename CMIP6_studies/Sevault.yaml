@@ -19,6 +19,10 @@
       Service and CNR - ISMAR ROME).
     best: 0
     worst: inf
+  disabled_MED:
+    cause: not_relevant
+    comment: >
+      This metric is not relevant for Med-CORDEX because we are using coupled RCMs that recompute the Mediterranean SST. So the GCM Mediterranean SST is not seen by the Med-CORDEX RCM  
   type: performance
   spatial_scope: MED
   temporal_scope: Annual
