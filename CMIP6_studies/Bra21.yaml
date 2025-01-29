@@ -11,8 +11,8 @@
       regional atmospheric circulation patterns. The MAE was calculated separately
       for each grid box of a regular 2.5 deg lat-lon mesh extending from 22.5W to
       42.5E and 30N to 70N. The spatial median MAE is provided here. Reference
-      dataset to compute the metric is ERA-Interim. As reference, the value for
-      the JRA-55 reanalysis (EUR) is 0.0956
+      dataset to compute the metric is ERA5. As an estimator of reanalysis
+      uncertainty, the median MAE for the JRA-55 reanalysis is 0.1686.
     best: 0
     worst: 100
   type: performance
@@ -34,139 +34,199 @@
         the reference, the maximum MAE obtained there
         is here rounded to the next integer.
   data_source: author_adapted
-  data:  
-    ACCESS-CM2_r1i1p1f1: 0.5631
-    ACCESS-ESM1-5_r1i1p1f1: 0.6518
-    ACCESS-ESM1-5_r3i1p1f1: 0.6514
-    HadGEM3-GC31-MM_r1i1p1f3: 0.4196
-    FGOALS-g3_r3i1p1f1: 0.9647
-    MPI-ESM1-2-LR_r1i1p1f1: 0.6499
-    MPI-ESM1-2-LR_r2i1p1f1: 0.7269
-    MPI-ESM1-2-LR_r3i1p1f1: 0.6895
-    MPI-ESM1-2-LR_r4i1p1f1: 0.7059
-    MPI-ESM1-2-LR_r5i1p1f1: 0.7432
-    MPI-ESM1-2-LR_r6i1p1f1: 0.7398
-    MPI-ESM1-2-LR_r7i1p1f1: 0.6105
-    MPI-ESM1-2-LR_r8i1p1f1: 0.6349
-    MPI-ESM1-2-LR_r9i1p1f1: 0.7611
-    MPI-ESM1-2-LR_r10i1p1f1: 0.6608
-    MPI-ESM1-2-HR_r1i1p1f1: 0.5881
-    MPI-ESM1-2-HR_r2i1p1f1: 0.5162
-    MPI-ESM-1-2-HAM_r1i1p1f1: 0.7194
-    AWI-ESM-1-1-LR_r1i1p1f1: 0.6429
-    NESM3_r1i1p1f1: 0.71
-    CMCC-CM2-SR5_r1i1p1f1: 0.6344
-    CMCC-ESM2_r1i1p1f1: 0.5446
-    NorESM2-LM_r1i1p1f1: 0.996
-    NorESM2-MM_r1i1p1f1: 0.7085
-    SAM0-UNICON_r1i1p1f1: 0.7313
-    CNRM-CM6-1_r1i1p1f2: 0.7472
-    CNRM-CM6-1-HR_r1i1p1f2: 0.8225
-    CNRM-ESM2-1_r1i1p1f2: 0.7558
-    EC-Earth3_r1i1p1f1: 0.331
-    EC-Earth3-Veg_r1i1p1f1: 0.3898
-    EC-Earth3-Veg_r6i1p1f1: 0.3575 #check whether this run belongs to "data" or "data_other"
-    EC-Earth3-Veg-LR_r1i1p1f1: 0.4122
-    EC-Earth3-AerChem_r1i1p1f1: 0.4026
-    EC-Earth3-CC_r1i1p1f1: 0.3264
-    GFDL-CM4_r1i1p1f1: 0.6426
-    GFDL-ESM4_r1i1p1f1: 0.7445 #check whether this run belongs to "data" or "data_other"
-    GISS-E2-1-G_r1i1p1f1: 0.7064
-    IPSL-CM6A-LR_r1i1p1f1: 0.7877
-    IPSL-CM6A-LR_r14i1p1f1: 0.6758
-    MIROC6_r1i1p1f1: 0.8341 #check whether this run belongs to "data" or "data_other"
-    MIROC6_r3i1p1f1: 0.8931
-    MIROC-ES2L_r1i1p1f2: 1.1954
-    MIROC-ES2L_r5i1p1f2: 1.1494
-    MRI-ESM2-0_r1i1p1f1: 0.609
-    BCC-CSM2-MR_r1i1p1f1: 0.6482
-    IITM-ESM_r1i1p1f1: 0.8067
-    KIOST-ESM_r1i1p1f1: 0.876
-    TaiESM1_r1i1p1f1: 0.5147
+  data:
+    CESM2_1001.001: 0.6338 #check whether this run belongs to "data" or "data_other" for all of the 50 listed CESM2-LE runs
+    CESM2_1021.002: 0.6437
+    CESM2_1041.003: 0.5729
+    CESM2_1061.004: 0.558
+    CESM2_1081.005: 0.6342
+    CESM2_1101.006: 0.5911
+    CESM2_1121.007: 0.6458
+    CESM2_1141.008: 0.6421
+    CESM2_1161.009: 0.5301
+    CESM2_1181.010: 0.5099
+    CESM2_1231.001: 0.5696
+    CESM2_1231.002: 0.5806
+    CESM2_1231.003: 0.5392
+    CESM2_1231.004: 0.6386
+    CESM2_1231.005: 0.535
+    CESM2_1231.006: 0.5809
+    CESM2_1231.007: 0.6306
+    CESM2_1231.008: 0.5332
+    CESM2_1231.009: 0.53
+    CESM2_1231.010: 0.5977
+    CESM2_1251.001: 0.529
+    CESM2_1251.002: 0.5343
+    CESM2_1251.003: 0.5652
+    CESM2_1251.004: 0.6192
+    CESM2_1251.005: 0.5653
+    CESM2_1251.006: 0.5486
+    CESM2_1251.007: 0.6176
+    CESM2_1251.008: 0.4947
+    CESM2_1251.009: 0.6697
+    CESM2_1251.010: 0.6347
+    CESM2_1281.001: 0.6031
+    CESM2_1281.002: 0.5514
+    CESM2_1281.003: 0.5797
+    CESM2_1281.004: 0.58496
+    CESM2_1281.005: 0.6749
+    CESM2_1281.006: 0.4973
+    CESM2_1281.007: 0.6815
+    CESM2_1281.008: 0.5637
+    CESM2_1281.009: 0.6541
+    CESM2_1281.010: 0.6216
+    CESM2_1301.001: 0.5287
+    CESM2_1301.002: 0.6112
+    CESM2_1301.003: 0.6442
+    CESM2_1301.004: 0.5575
+    CESM2_1301.005: 0.657
+    CESM2_1301.006: 0.5956
+    CESM2_1301.007: 0.5496
+    CESM2_1301.008: 0.5467
+    CESM2_1301.009: 0.6842
+    CESM2_1301.010: 0.5471
+    ACCESS-CM2_r1i1p1f1: 0.5218
+    ACCESS-ESM1-5_r1i1p1f1: 0.6463
+    ACCESS-ESM1-5_r3i1p1f1: 0.6486
+    HadGEM3-GC31-MM_r1i1p1f3: 0.3931
+    FGOALS-g3_r3i1p1f1: 0.9532
+    MPI-ESM1-2-LR_r1i1p1f1: 0.6525
+    MPI-ESM1-2-LR_r2i1p1f1: 0.7196
+    MPI-ESM1-2-LR_r3i1p1f1: 0.6931
+    MPI-ESM1-2-LR_r4i1p1f1: 0.7143
+    MPI-ESM1-2-LR_r5i1p1f1: 0.7365
+    MPI-ESM1-2-LR_r6i1p1f1: 0.744
+    MPI-ESM1-2-LR_r7i1p1f1: 0.6281
+    MPI-ESM1-2-LR_r8i1p1f1: 0.6253
+    MPI-ESM1-2-LR_r9i1p1f1: 0.753
+    MPI-ESM1-2-LR_r10i1p1f1: 0.6715
+    MPI-ESM1-2-HR_r1i1p1f1: 0.5767
+    MPI-ESM1-2-HR_r2i1p1f1: 0.4931
+    MPI-ESM-1-2-HAM_r1i1p1f1: 0.7152
+    AWI-ESM-1-1-LR_r1i1p1f1: 0.654
+    NESM3_r1i1p1f1: 0.7167
+    CMCC-CM2-SR5_r1i1p1f1: 0.633
+    CMCC-CM2-HR4_r1i1p1f1: 0.9421
+    CMCC-ESM2_r1i1p1f1: 0.563
+    NorESM2-LM_r1i1p1f1: 1.0197
+    NorESM2-MM_r1i1p1f1: 0.7298
+    SAM0-UNICON_r1i1p1f1: 0.7634
+    CNRM-CM6-1_r1i1p1f2: 0.7543
+    CNRM-CM6-1-HR_r1i1p1f2: 0.7714
+    CNRM-ESM2-1_r1i1p1f2: 0.7258
+    EC-Earth3_r1i1p1f1: 0.3207
+    EC-Earth3-Veg_r1i1p1f1: 0.3814
+    EC-Earth3-Veg_r2i1p1f1: 0.3806 #check whether this run belongs to "data" or "data_other"
+    EC-Earth3-Veg_r3i1p1f1: 0.32 #check whether this run belongs to "data" or "data_other"
+    EC-Earth3-Veg_r4i1p1f1: 0.3408 #check whether this run belongs to "data" or "data_other"
+    EC-Earth3-Veg_r6i1p1f1: 0.3515 #check whether this run belongs to "data" or "data_other"
+    EC-Earth3-Veg_r11i1p1f1: 0.3157 #check whether this run belongs to "data" or "data_other"
+    EC-Earth3-Veg-LR_r1i1p1f1: 0.405
+    EC-Earth3-AerChem_r1i1p1f1: 0.402
+    EC-Earth3-CC_r1i1p1f1: 0.3252
+    GFDL-CM4_r1i1p1f1: 0.6315
+    GFDL-ESM4_r1i1p1f1: 0.7405 #check whether this run belongs to "data" or "data_other"
+    GISS-E2-1-G_r1i1p1f1: 0.708
+    IPSL-CM6A-LR_r1i1p1f1: 0.7567
+    IPSL-CM6A-LR_r14i1p1f1: 0.6495
+    MIROC6_r1i1p1f1: 0.8381 #check whether this run belongs to "data" or "data_other"
+    MIROC6_r3i1p1f1: 0.8769
+    MIROC-ES2L_r1i1p1f2: 1.1753
+    MIROC-ES2L_r5i1p1f2: 1.1382
+    MRI-ESM2-0_r1i1p1f1: 0.6176
+    BCC-CSM2-MR_r1i1p1f1: 0.6514
+    IITM-ESM_r1i1p1f1: 0.8074
+    KACE-1-0-G_r1i1p1f1: 0.6361 #check whether this run belongs to "data" or "data_other"
+    KIOST-ESM_r1i1p1f1: 0.883
+    TaiESM1_r1i1p1f1: 0.6324
+    INM-CM5_r2i1p1f1: 0.6103 #check whether this run belongs to "data" or "data_other"
   data_other: # Model provides less than 2 scenarios for RCMs and no other metrics available for them
-    CNRM-CM6-1_r2i1p1f2: 0.8193
-    CNRM-CM6-1_r3i1p1f2: 0.7851
-    EC-Earth3_r3i1p1f1: 0.3504
-    EC-Earth3_r4i1p1f1: 0.3585
-    EC-Earth3_r7i1p1f1: 0.373
-    EC-Earth3_r10i1p1f1: 0.3964
-    EC-Earth3_r12i1p1f1: 0.3149
-    EC-Earth3_r14i1p1f1: 0.3155
-    EC-Earth3_r16i1p1f1: 0.3455
-    EC-Earth3_r17i1p1f1: 0.3436
-    EC-Earth3_r18i1p1f1: 0.3254
-    EC-Earth3_r19i1p1f1: 0.3831
-    EC-Earth3_r20i1p1f1: 0.3335
-    EC-Earth3_r21i1p1f1: 0.3202
+    CNRM-CM6-1_r2i1p1f2: 0.8011
+    CNRM-CM6-1_r3i1p1f2: 0.7586
+    EC-Earth3_r3i1p1f1: 0.3245
+    EC-Earth3_r4i1p1f1: 0.344
+    EC-Earth3_r7i1p1f1: 0.3515
+    EC-Earth3_r10i1p1f1: 0.3926
+    EC-Earth3_r12i1p1f1: 0.319
+    EC-Earth3_r14i1p1f1: 0.3292
+    EC-Earth3_r16i1p1f1: 0.3472
+    EC-Earth3_r17i1p1f1: 0.3288
+    EC-Earth3_r18i1p1f1: 0.3297
+    EC-Earth3_r19i1p1f1: 0.3722
+    EC-Earth3_r20i1p1f1: 0.3157
+    EC-Earth3_r21i1p1f1: 0.3179
     EC-Earth3_r22i1p1f1: 0.3128
-    EC-Earth3_r23i1p1f1: 0.3329
-    EC-Earth3_r24i1p1f1: 0.3264
-    EC-Earth3_r25i1p1f1: 0.3434
-    IPSL-CM6A-LR_r10i1p1f1: 0.7353
-    IPSL-CM6A-LR_r11i1p1f1: 0.7273
-    IPSL-CM6A-LR_r12i1p1f1: 0.7045
-    IPSL-CM6A-LR_r13i1p1f1: 0.7156
-    IPSL-CM6A-LR_r15i1p1f1: 0.7474
-    IPSL-CM6A-LR_r16i1p1f1: 0.6336
-    IPSL-CM6A-LR_r17i1p1f1: 0.6878
-    IPSL-CM6A-LR_r18i1p1f1: 0.746
-    IPSL-CM6A-LR_r19i1p1f1: 0.6931
-    IPSL-CM6A-LR_r20i1p1f1: 0.7449
-    IPSL-CM6A-LR_r21i1p1f1: 0.6529
-    IPSL-CM6A-LR_r22i1p1f1: 0.7342
-    IPSL-CM6A-LR_r23i1p1f1: 0.6482
-    IPSL-CM6A-LR_r24i1p1f1: 0.7419
-    IPSL-CM6A-LR_r25i1p1f1: 0.7166
-    IPSL-CM6A-LR_r32i1p1f1: 0.7515
-    MPI-ESM1-2-HR_r3i1p1f1: 0.5891
-    MPI-ESM1-2-HR_r4i1p1f1: 0.5902
-    MPI-ESM1-2-HR_r5i1p1f1: 0.5566
-    MPI-ESM1-2-HR_r6i1p1f1: 0.5211
-    MPI-ESM1-2-HR_r7i1p1f1: 0.4816
-    MPI-ESM1-2-HR_r8i1p1f1: 0.5988
-    MPI-ESM1-2-HR_r9i1p1f1: 0.5727
-    MPI-ESM1-2-HR_r10i1p1f1: 0.5434
-    MRI-ESM2-0_r2i1p1f1: 0.5682
-    MRI-ESM2-0_r3i1p1f1: 0.6352
-    MRI-ESM2-0_r4i1p1f1: 0.5842
-    MRI-ESM2-0_r5i1p1f1: 0.6296
-    NESM3_r2i1p1f1: 0.6065
-    NESM3_r3i1p1f1: 0.6403
-    NESM3_r4i1p1f1: 0.6478
-    NESM3_r5i1p1f1: 0.5917
-    NorESM2-LM_r2i1p1f1: 1.1238
-    NorESM2-LM_r3i1p1f1: 1.0294
-    NorESM2-MM_r3i1p1f1: 0.6077
+    EC-Earth3_r23i1p1f1: 0.3382
+    EC-Earth3_r24i1p1f1: 0.3183
+    EC-Earth3_r25i1p1f1: 0.3239    
+    IPSL-CM6A-LR_r10i1p1f1: 0.7132
+    IPSL-CM6A-LR_r11i1p1f1: 0.7042
+    IPSL-CM6A-LR_r12i1p1f1: 0.6737
+    IPSL-CM6A-LR_r13i1p1f1: 0.6803
+    IPSL-CM6A-LR_r15i1p1f1: 0.7042
+    IPSL-CM6A-LR_r16i1p1f1: 0.6137
+    IPSL-CM6A-LR_r17i1p1f1: 0.6719
+    IPSL-CM6A-LR_r18i1p1f1: 0.7271
+    IPSL-CM6A-LR_r19i1p1f1: 0.6514
+    IPSL-CM6A-LR_r20i1p1f1: 0.7075
+    IPSL-CM6A-LR_r21i1p1f1: 0.6259
+    IPSL-CM6A-LR_r22i1p1f1: 0.6779
+    IPSL-CM6A-LR_r23i1p1f1: 0.6137
+    IPSL-CM6A-LR_r24i1p1f1: 0.7381
+    IPSL-CM6A-LR_r25i1p1f1: 0.6991
+    IPSL-CM6A-LR_r32i1p1f1: 0.6997    
+    MPI-ESM1-2-HR_r3i1p1f1: 0.5569
+    MPI-ESM1-2-HR_r4i1p1f1: 0.5663
+    MPI-ESM1-2-HR_r5i1p1f1: 0.5558
+    MPI-ESM1-2-HR_r6i1p1f1: 0.4867
+    MPI-ESM1-2-HR_r7i1p1f1: 0.4649
+    MPI-ESM1-2-HR_r8i1p1f1: 0.5859
+    MPI-ESM1-2-HR_r9i1p1f1: 0.5692
+    MPI-ESM1-2-HR_r10i1p1f1: 0.5235
+    MRI-ESM2-0_r2i1p1f1: 0.6065
+    MRI-ESM2-0_r3i1p1f1: 0.6578
+    MRI-ESM2-0_r4i1p1f1: 0.5996
+    MRI-ESM2-0_r5i1p1f1: 0.6463
+    NESM3_r2i1p1f1: 0.6075
+    NESM3_r3i1p1f1: 0.6595
+    NESM3_r4i1p1f1: 0.6484
+    NESM3_r5i1p1f1: 0.609
+    NorESM2-LM_r2i1p1f1: 1.1439
+    NorESM2-LM_r3i1p1f1: 1.0582
+    NorESM2-MM_r2i1p1f1: 0.6691
+    NorESM2-MM_r3i1p1f1: 0.6269
   data_cmip5:
-    CSIRO-MK3-6-0_r1i1p1: 1.2942
-    ACCESS1.0_r1i1p1: 0.4678
-    ACCESS1.3_r1i1p1: 0.6368
-    HadGEM2-ES_r1i1p1: 0.4679
-    HadGEM2-ES_r2i1p1: 0.4753
-    HadGEM2-CC_r1i1p1: 0.563
-    FGOALS-g2_r1i1p1: 1.5308
-    MPI-ESM-LR_r1i1p1: 0.7395
-    MPI-ESM-MR_r1i1p1: 0.8916
-    CMCC-CM_r1i1p1: 0.6527
-    NorESM1-M_r1i1p1: 0.9386
-    CCSM4_r6i1p1: 1.0204
-    CNRM-CM5_r1i1p1: 0.7825
-    EC-Earth_r12i1p1: 0.4238
-    GFDL-CM3_r1i1p1: 0.6011
-    GISS-E2-H_r6i1p1: 0.7795
-    GISS-E2-R_r6i1p1: 0.8711
-    IPSL-CM5A-LR_r1i1p1: 1.0079
-    IPSL-CM5A-LR_r2i1p1: 1.0526
-    IPSL-CM5A-LR_r3i1p1: 1.0211
-    IPSL-CM5A-LR_r4i1p1: 1.0019
-    IPSL-CM5A-LR_r5i1p1: 0.9773
-    IPSL-CM5A-LR_r6i1p1: 0.9985
-    IPSL-CM5A-MR_r1i1p1: 1.0098
-    MIROC5_r1i1p1: 0.9988
-    MIROC-ESM_r1i1p1: 1.2972
-    MRI-ESM1_r1i1p1: 0.6766
-    CanESM2_r1i1p1: 0.8735
-    INM-CM4_r1i1p1: 0.6516
+    BCC-CSM1-1_r1i1p1: 1.1643
+    CSIRO-MK3-6-0_r1i1p1: 1.2603
+    ACCESS1.0_r1i1p1: 0.454
+    ACCESS1.3_r1i1p1: 0.6268
+    HadGEM2-ES_r1i1p1: 0.4568
+    HadGEM2-ES_r2i1p1: 0.4518
+    HadGEM2-CC_r1i1p1: 0.5292
+    FGOALS-g2_r1i1p1: 1.5029
+    MPI-ESM-LR_r1i1p1: 0.7383
+    MPI-ESM-MR_r1i1p1: 0.8782
+    CMCC-CM_r1i1p1: 0.6014
+    NorESM1-M_r1i1p1: 0.9845
+    CCSM4_r6i1p1: 1.0283
+    CNRM-CM5_r1i1p1: 0.7768
+    EC-Earth_r12i1p1: 0.4285
+    GFDL-CM3_r1i1p1: 0.6191
+    GFDL-ESM2G_r1i1p1: 0.9871
+    GISS-E2-H_r6i1p1: 0.7526
+    GISS-E2-R_r6i1p1: 0.8458
+    IPSL-CM5A-LR_r1i1p1: 0.9777
+    IPSL-CM5A-LR_r2i1p1: 1.0415
+    IPSL-CM5A-LR_r3i1p1: 1.0199
+    IPSL-CM5A-LR_r4i1p1: 0.9938
+    IPSL-CM5A-LR_r5i1p1: 0.9923
+    IPSL-CM5A-LR_r6i1p1: 1.0074
+    IPSL-CM5A-MR_r1i1p1: 1.0174
+    MIROC5_r1i1p1: 0.9864
+    MIROC-ESM_r1i1p1: 1.2983
+    MRI-ESM1_r1i1p1: 0.6805
+    CanESM2_r1i1p1: 0.8588
+    INM-CM4_r1i1p1: 0.6332
  
 - key: Bra21 complexity
   doi: 10.5194/gmd-2020-418
@@ -198,6 +258,10 @@
     AWI-ESM-1-1-LR_r1i1p1f1:    2222220100 #confirmed by Christopher Danek
     BCC-CSM2-MR_r1i1p1f1:       2222221120 #confirmed by Tongwen Wu and Laurent Li
     CanESM5_r1i1p1f1:           2222222121 #confirmed by Neil Swart
+    CESM2_1001.001:             2222222221 #yet has to be confirmed by NCAR staff
+    CMCC-CM2-SR5_r1i1p1f1:      2222002000 #confirmed by Enrico Scoccimarro and Annalisa Cherchie
+    CMCC-CM2-HR4_r1i1p1f1:      2222001000 #yet has to be confirmed by Enrico Scoccimarro and Annalisa Cherchie
+    CMCC-ESM2_r1i1p1f1:         2222022020 # confirmed by Enrico Scoccimarro and Annalisa Cherchie
     CNRM-CM6-1_r1i1p1f2:        2222101100 #confirmed by Aurore Voldoire
     CNRM-CM6-1-HR_r1i1p1f2:     2222101100 #confirmed by Aurore Voldoire 
     CNRM-ESM2-1_r1i1p1f2:       2222222220 #confirmed by Aurore Voldoire under the assumption that interactive stratospheric chemistry only (i.e. tropospheric chemistriy is not interactive) merits a 2
@@ -213,6 +277,7 @@
     HadGEM3-GC31-MM_r1i1p1f3:   2222002000 #confirmed by Gill Martin    
     IITM-ESM_r1i1p1f1:          2222101020 #provided by Panickal Swapna
     IPSL-CM6A-LR_r1i1p1f1:      2222221121 #best guess from doi 10.1029/2019MS002010; commented by Olivier Boucher but not yet definetely confirmed
+    KACE-1-0-G_r1i1p1f1:        2222222000 #best guess from file metadata and doi 10.1007/s13143-019-00144-7; yet has to be confirmed
     KIOST-ESM_r1i1p1f1:         2222221120 #confirmed by YoungHo Kim
     MIROC6_r3i1p1f1:            2222102000 #confirmed by Hiroaki Tatebe
     MIROC-ES2L_r5i1p1f2:        2222022020 #confirmed by Hiroaki Tatebe
