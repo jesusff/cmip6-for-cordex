@@ -35,7 +35,7 @@
         is here rounded to the next integer.
   data_source: author_adapted
   data:
-    CESM2_1001.001: 0.6338 #check whether this run belongs to "data" or "data_other" for all of the 50 listed CESM2-LE runs
+    CESM2_1001.001: 0.6338
     CESM2_1021.002: 0.6437
     CESM2_1041.003: 0.5729
     CESM2_1061.004: 0.558
