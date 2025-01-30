@@ -8,11 +8,12 @@
     comment: >
       Mean absolute error (MAE) of the simulated vs. quasi-observed (reanalysis)
       relative frequencies for the 27 Lamb Weather Types representing recurrent
-      regional atmospheric circulation patterns. The MAE was calculated separately
-      for each grid box of a regular 2.5 deg lat-lon mesh extending from 22.5W to
-      42.5E and 30N to 70N. The spatial median MAE is provided here. Reference
-      dataset to compute the metric is ERA5. As an estimator of reanalysis
-      uncertainty, the median MAE for the JRA-55 reanalysis is 0.1686.
+      regional (synoptic) atmospheric circulation patterns. The MAE was calculated separately
+      for each grid-box of a regular 2.5 deg lat-lon mesh extending from 22.5W to 42.5E
+      and 30N to 70N for the 1979-2005 period. The spatial median MAE is provided here.
+      Reference dataset to compute the metric is ERA5. As an estimator of reanalysis
+      uncertainty, the median MAE for the JRA-55 reanalysis validated against ERA5
+      is 0.1686.
     best: 0
     worst: 100
   type: performance
