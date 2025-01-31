@@ -259,7 +259,7 @@
     AWI-ESM-1-1-LR_r1i1p1f1:    2222220100 #confirmed by Christopher Danek
     BCC-CSM2-MR_r1i1p1f1:       2222221120 #confirmed by Tongwen Wu and Laurent Li
     CanESM5_r1i1p1f1:           2222222121 #confirmed by Neil Swart
-    CESM2_1001.001:             2222222221 #yet has to be confirmed by NCAR staff
+    CESM2_1001.001:             2222222121 #from doi: 10.1029/2019MS001916, has to be confirmed by NCAR staff
     CMCC-CM2-SR5_r1i1p1f1:      2222002000 #confirmed by Enrico Scoccimarro and Annalisa Cherchie
     CMCC-CM2-HR4_r1i1p1f1:      2222001000 #yet has to be confirmed by Enrico Scoccimarro and Annalisa Cherchie
     CMCC-ESM2_r1i1p1f1:         2222022020 # confirmed by Enrico Scoccimarro and Annalisa Cherchie
